@@ -4,6 +4,7 @@
 
 | 问题 | 文件 |
 | --- | --- |
+| P0–P2 当初怎么规划；现行口径在哪 | [实施规划](faculty-implementation-plan.md) |
 | 现在按什么规则收人，2026-10-15 的官方候选怎么处理 | [收录规则](inclusion-policy.md) |
 | 每周检查、待审 PR、发布和回滚 | [每周更新](weekly-update.md) |
 | 收录的李政道研究所导师信息是不是最新、对不对，把握有多大 | [Q1 导师信息](q1-mentor-information.md) |

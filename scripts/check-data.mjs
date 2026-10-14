@@ -74,6 +74,8 @@ const legacyIds = [
   "lai", "jing", "yang", "zhangpj", "zu", "feng", "mizuno", "pan", "tan", "tang", "ogihara", "darius",
   "zheng", "wangjs", "zhouhao", "liu", "zhouning", "xu", "he", "ge", "zhangjie", "wu", "yi",
 ];
+const appSource = readFileSync(path.join(root, "src/App.tsx"), "utf8");
+if (!appSource.includes('path="/mentor/:id"')) errors.push("missing legacy route /mentor/:id");
 for (const id of legacyIds) {
   if (!personIds.has(id)) errors.push(`lost legacy id ${id}`);
 }

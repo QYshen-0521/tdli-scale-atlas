@@ -44,7 +44,7 @@ npm run deploy
 
 ## 故障时的预期
 
-`npm run check:data` 会跑 `scripts/sync/self-check.mjs` 和名录筛选自检，覆盖这些情况：
+`npm run sync:self-check` 单独回放同步故障。`npm run check:data` 也会跑这份自检和名录筛选自检。PR 的 check 工作流两者都跑。覆盖这些情况：
 
 - 页面为空或人数不够：不提出删除
 - 分页没完：这一来源失败

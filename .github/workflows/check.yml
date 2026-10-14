@@ -18,4 +18,5 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check:data
+      - run: npm run sync:self-check
       - run: npm run build
