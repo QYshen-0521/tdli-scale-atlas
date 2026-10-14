@@ -39,7 +39,7 @@ npm run preview
 - 点天体：打开说明
 - 顶栏可以按行星、致密天体、星系、宇宙学尺度筛选。导师和天体一样：对上的保持原样，其余变淡，不从画面上消失
 
-页面切换使用 View Transitions API：背景交叉淡化，头像从星图移到详情页并放大，正文同步淡入；返回时反过来。这段飞行和伴随的淡入淡出是 1050ms（原先 700ms 的速度的 2/3）。浏览器不支持时，用一段 FLIP 补上同样的位移。系统如果要求减少动效，过渡会关掉。
+页面切换使用 View Transitions API：背景交叉淡化，头像从星图移到详情页并放大，正文同步淡入；返回时反过来。这段飞行沿直线移动，时间上先加速再减速（ease-in-out），时长 1575ms（上一次 1050ms 的速度的 2/3）。伴随的淡入淡出用同一时长。浏览器不支持时，用一段 FLIP 补上同样的位移。系统如果要求减少动效，过渡会关掉。
 
 ## 数据
 
@@ -75,7 +75,7 @@ npm run dev
 
 Then open http://127.0.0.1:47231 .
 
-The horizontal axis is length in metres and the vertical axis is mass in kilograms, both logarithmic. The data window is 10³–10²⁷ m by 10¹⁸–10⁵⁵ kg, so the observable universe stays in the upper-right of the plotted content. The on-screen frame is square because length decades are drawn wider, not because the length axis was extended to 10⁴⁰ m. Celestial objects carry photographs. Each mentor with a real astrophysical locus is a translucent region; a circular portrait sits on the edge and the name appears on hover or keyboard focus. Clicking opens a detail page with a shared-element move of that portrait (1050ms, two-thirds the previous speed, with the paired fades slowed the same way). Wheel zoom is centered on the cursor; drag pans inside the frame; double-click or `0` resets. Category filters dim non-matching objects as well as mentors.
+The horizontal axis is length in metres and the vertical axis is mass in kilograms, both logarithmic. The data window is 10³–10²⁷ m by 10¹⁸–10⁵⁵ kg, so the observable universe stays in the upper-right of the plotted content. The on-screen frame is square because length decades are drawn wider, not because the length axis was extended to 10⁴⁰ m. Celestial objects carry photographs. Each mentor with a real astrophysical locus is a translucent region; a circular portrait sits on the edge and the name appears on hover or keyboard focus. Clicking opens a detail page with a shared-element move of that portrait (1575ms, two-thirds the previous speed, straight in space and ease-in-out in time, with the paired fades slowed the same way). Wheel zoom is centered on the cursor; drag pans inside the frame; double-click or `0` resets. Category filters dim non-matching objects as well as mentors.
 
 Neutrinos, dark-matter particles, and laboratory plasmas are not assigned fake coordinates. They are listed in the left margin. Dong Lai’s range runs from planets to massive black-hole binaries, so his region is a dashed outline rather than a filled wash.
 

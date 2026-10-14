@@ -1,6 +1,6 @@
 import { createContext, useContext, useLayoutEffect, useMemo, useState } from "react";
 import type { Dispatch, ReactNode, SetStateAction } from "react";
-import { FLIGHT_MS } from "./lib/motion.ts";
+import { FLIGHT_EASING, FLIGHT_MS } from "./lib/motion.ts";
 
 export type Box = { left: number; top: number; width: number; height: number };
 
@@ -56,7 +56,7 @@ export function useAvatarArrival(id: string | undefined, dest: Flip["dest"], rea
         { transform: `translate(${dx}px, ${dy}px) scale(${s})`, transformOrigin: "top left" },
         { transform: "none", transformOrigin: "top left" },
       ],
-      { duration: FLIGHT_MS, easing: "cubic-bezier(0.22, 0.61, 0.36, 1)", fill: "both" },
+      { duration: FLIGHT_MS, easing: FLIGHT_EASING, fill: "both" },
     );
     anim.onfinish = () => setFlip(null);
     return () => {

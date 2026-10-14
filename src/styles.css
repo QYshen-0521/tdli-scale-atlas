@@ -1,7 +1,8 @@
 :root {
   color-scheme: dark;
-  /* Fallback; main.tsx sets the same value from FLIGHT_MS (700ms × 3/2). */
-  --flight-ms: 1050ms;
+  /* Fallbacks; main.tsx sets the same values from motion.ts (1050ms × 3/2, ease-in-out). */
+  --flight-ms: 1575ms;
+  --flight-ease: cubic-bezier(0.42, 0, 0.58, 1);
   --bg: #090a0e;
   --ink: #f4eee4;
   --muted: #c3b7a6;
@@ -401,12 +402,12 @@ img { display: block; max-width: 100%; }
 .atlas-page.is-enter .topbar,
 .atlas-page.is-enter .margin-col,
 .atlas-page.is-enter .chart-surface {
-  animation: vt-fade-in var(--flight-ms) cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation: vt-fade-in var(--flight-ms) var(--flight-ease) both;
 }
 .back-btn {
   position: sticky;
   top: 8px;
-  margin: 8px 0 0 8px;
+  margin: 8px 0 0 14px;
   z-index: 2;
   padding: 6px 12px;
   display: inline-flex;
@@ -421,7 +422,8 @@ img { display: block; max-width: 100%; }
   font-size: 11px;
   color: var(--faint);
 }
-.detail-sheet { width: min(1600px, calc(100% - 16px)); margin: 2px auto 48px; }
+/* Middle of the tight sheet (1600px, 8px sides) and the previous one (1080px, 20px sides). */
+.detail-sheet { width: min(1340px, calc(100% - 28px)); margin: 2px auto 48px; }
 .detail-top {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 440px);
@@ -484,18 +486,19 @@ img { display: block; max-width: 100%; }
 .honors li { border: 1px solid var(--line); border-radius: 999px; padding: 6px 10px; color: var(--muted); font-size: 13px; }
 .detail-foot { display: flex; flex-wrap: wrap; gap: 14px 22px; margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--brass); }
 .detail-foot a { color: var(--brass); }
-.detail-missing { width: min(640px, calc(100% - 16px)); margin: 12vh auto; }
+.detail-missing { width: min(640px, calc(100% - 28px)); margin: 12vh auto; }
 
-::view-transition-old(root) { animation: var(--flight-ms) cubic-bezier(0.22, 0.61, 0.36, 1) both vt-fade-out; }
-::view-transition-new(root) { animation: var(--flight-ms) cubic-bezier(0.22, 0.61, 0.36, 1) both vt-fade-in; }
+::view-transition-old(root) { animation: var(--flight-ms) var(--flight-ease) both vt-fade-out; }
+::view-transition-new(root) { animation: var(--flight-ms) var(--flight-ease) both vt-fade-in; }
 ::view-transition-group(mentor-flight) {
   animation-duration: var(--flight-ms);
-  animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+  animation-timing-function: var(--flight-ease);
   z-index: 10;
 }
 ::view-transition-old(mentor-flight),
 ::view-transition-new(mentor-flight) {
   animation-duration: var(--flight-ms);
+  animation-timing-function: var(--flight-ease);
   height: 100%;
   width: 100%;
   object-fit: cover;
