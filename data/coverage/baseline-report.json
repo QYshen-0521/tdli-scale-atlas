@@ -253,5 +253,25 @@
   "ledgerRows": 208,
   "people": 51,
   "missingIds": [],
-  "originalIds": []
+  "originalIds": [],
+  "independentLedger": {
+    "files": [
+      "data/coverage/coverage-draft.md",
+      "data/coverage/astronomy-members.json",
+      "data/coverage/cross-division-candidates.json",
+      "data/coverage/supervisor-directory.json",
+      "data/coverage/fellows-professors.json",
+      "data/coverage/sources-fetched.json"
+    ],
+    "astronomyBaseline": 27,
+    "crossDivisionSuggested": 26,
+    "clearlyMeetsInIndependentPass": 20,
+    "keptDespiteIndependentDeferral": [
+      "曲慧麟",
+      "许金祥",
+      "陈一帆",
+      "Frank Wilczek"
+    ],
+    "reason": "这四人的个人页研究方向原文含中微子、暗物质、黑洞或宇宙学。独立账本用了更窄的导师名单，或未标出凝聚态个人页。"
+  }
 }

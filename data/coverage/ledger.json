@@ -2464,7 +2464,8 @@
     "current": true,
     "reason": "其他研究部官方原文涉及dark-matter。",
     "conflicts": [
-      "个人页研究方向未写暗物质；导师名单原文为「希格斯新物理、暗物质探测、高能对撞机实验」。两边都保留。纳入依据是导师名单。"
+      "个人页研究方向未写暗物质；导师名单原文为「希格斯新物理、暗物质探测、高能对撞机实验」。两边都保留。纳入依据是导师名单。",
+      "独立账本与本条一致：导师名单原文为「希格斯新物理、暗物质探测、高能对撞机实验」，个人页研究方向未写暗物质。纳入依据是导师名单。"
     ],
     "topicTags": [
       "dark-matter"
@@ -2487,7 +2488,8 @@
         "href": "https://tdli.sjtu.edu.cn/people/40051/li-shu",
         "file": "research_particle-and-nuclear-physics-division_member.html"
       }
-    ]
+    ],
+    "independentLedger": "独立账本与本条一致：导师名单原文为「希格斯新物理、暗物质探测、高能对撞机实验」，个人页研究方向未写暗物质。纳入依据是导师名单。"
   },
   {
     "candidateId": "tdli:hlqu@sjtu.edu.cn",
@@ -2502,7 +2504,8 @@
     "current": true,
     "reason": "其他研究部官方原文涉及dark-matter、neutrino。",
     "conflicts": [
-      "导师名单写「人工智能与粒子物理」；个人页研究方向另写中微子与暗物质实验。以个人页为研究方向，导师名单一句同时保留。"
+      "导师名单写「人工智能与粒子物理」；个人页研究方向另写中微子与暗物质实验。以个人页为研究方向，导师名单一句同时保留。",
+      "独立账本只采用导师名单「人工智能与粒子物理」，建议排除或暂缓。个人页研究方向原文还有「中微子与暗物质实验」。按个人页原文纳入，差异记在本条。"
     ],
     "topicTags": [
       "dark-matter",
@@ -2526,7 +2529,8 @@
         "href": "https://tdli.sjtu.edu.cn/people/44940/",
         "file": "research_particle-and-nuclear-physics-division_member.html"
       }
-    ]
+    ],
+    "independentLedger": "独立账本只采用导师名单「人工智能与粒子物理」，建议排除或暂缓。个人页研究方向原文还有「中微子与暗物质实验」。按个人页原文纳入，差异记在本条。"
   },
   {
     "candidateId": "tdli:donglianxu@sjtu.edu.cn",
@@ -2578,7 +2582,9 @@
     "decision": "include",
     "current": true,
     "reason": "其他研究部官方原文涉及dark-matter。",
-    "conflicts": [],
+    "conflicts": [
+      "独立账本只采用导师名单「加速器物理、粒子物理」，建议排除或暂缓。个人页研究方向原文含「暗物质和暗光子」。按个人页原文纳入，差异记在本条。"
+    ],
     "topicTags": [
       "dark-matter"
     ],
@@ -2600,7 +2606,8 @@
         "href": "https://tdli.sjtu.edu.cn/people/40050/kim-siang-khaw",
         "file": "research_particle-and-nuclear-physics-division_member.html"
       }
-    ]
+    ],
+    "independentLedger": "独立账本只采用导师名单「加速器物理、粒子物理」，建议排除或暂缓。个人页研究方向原文含「暗物质和暗光子」。按个人页原文纳入，差异记在本条。"
   },
   {
     "candidateId": "tdli:iblake@sjtu.edu.cn",
@@ -2688,7 +2695,9 @@
     "decision": "include",
     "current": true,
     "reason": "其他研究部官方原文涉及astronomy。",
-    "conflicts": [],
+    "conflicts": [
+      "独立账本只采用导师名单「粒子物理」，建议排除或暂缓。个人页研究方向原文还有「黑洞和引力波」。按个人页原文纳入，差异记在本条。"
+    ],
     "topicTags": [
       "astronomy"
     ],
@@ -2710,7 +2719,8 @@
         "href": "https://tdli.sjtu.edu.cn/people/44260/yifan-chen",
         "file": "research_particle-and-nuclear-physics-division_member.html"
       }
-    ]
+    ],
+    "independentLedger": "独立账本只采用导师名单「粒子物理」，建议排除或暂缓。个人页研究方向原文还有「黑洞和引力波」。按个人页原文纳入，差异记在本条。"
   },
   {
     "candidateId": "tdli:sjhan@sjtu.edu.cn",
@@ -4246,7 +4256,9 @@
     "decision": "include",
     "current": true,
     "reason": "其他研究部官方原文涉及astronomy、cosmology、dark-matter。",
-    "conflicts": [],
+    "conflicts": [
+      "独立账本写凝聚态部未发现命中。个人页研究方向原文写宇宙学、中子星，以及作为暗物质候选的轴子。按个人页原文纳入，差异记在本条。"
+    ],
     "topicTags": [
       "astronomy",
       "cosmology",
@@ -4270,7 +4282,8 @@
         "href": "https://tdli.sjtu.edu.cn/people/40028/frank-wilczek",
         "file": "research_condensed-matter-division_member.html"
       }
-    ]
+    ],
+    "independentLedger": "独立账本写凝聚态部未发现命中。个人页研究方向原文写宇宙学、中子星，以及作为暗物质候选的轴子。按个人页原文纳入，差异记在本条。"
   },
   {
     "candidateId": "tdli:40701",
@@ -6330,7 +6343,9 @@
     "decision": "include",
     "current": true,
     "reason": "其他研究部官方原文涉及dark-matter、neutrino。",
-    "conflicts": [],
+    "conflicts": [
+      "中文成员页和独立候选文件没有邮箱。英文个人页写 chenxun@sjtu.edu.cn。邮箱只作对照，不作为主键。"
+    ],
     "topicTags": [
       "dark-matter",
       "neutrino"
@@ -6353,7 +6368,8 @@
         "href": "https://tdli.sjtu.edu.cn/people/40695/chen-xun",
         "file": "research_particle-and-nuclear-physics-division_member.html"
       }
-    ]
+    ],
+    "independentLedger": "中文成员页和独立候选文件没有邮箱。英文个人页写 chenxun@sjtu.edu.cn。邮箱只作对照，不作为主键。"
   },
   {
     "candidateId": "platform:https://www.physics.sjtu.edu.cn/jsml/liuchengze.html",
