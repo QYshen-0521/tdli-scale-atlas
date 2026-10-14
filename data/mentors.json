@@ -1,0 +1,1808 @@
+[
+  {
+    "id": "lai",
+    "nameZh": "赖东",
+    "nameEn": "Dong Lai",
+    "shortZh": "赖东",
+    "seal": "赖",
+    "titleZh": "李政道讲席教授、天文与天体物理研究部主任",
+    "titleEn": "T. D. Lee Chair Professor, Division Head",
+    "divisionZh": "天文与天体物理研究部",
+    "email": "donglai@sjtu.edu.cn",
+    "homepage": "https://donglai6.github.io/research.html",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40040/dong-lai",
+    "pigment": "#e4c27a",
+    "placement": "chart",
+    "coverage": "broad",
+    "groups": [
+      "planet",
+      "compact"
+    ],
+    "blurbZh": "从热木星、原行星盘到白矮星、中子星与黑洞双星。",
+    "summaryZh": [
+      "赖东的研究沿着还能用轨道、潮汐和磁流体写下来的那些系统展开：热木星为什么会倾侧，原行星盘怎样被双星拧弯，白矮星和中子星在并合前如何交换角动量，磁星的 X 射线偏振又怎样经过量子电动力学的真空共振。李政道研究所主页把这些收成三句——地外行星、致密天体、天体物理动力学。",
+      "他1988年入选中美联合培养物理研究生项目（CUSPEA），在康奈尔大学任教多年，2024年获得美国天文学会天体动力学 Dirk Brouwer 奖。在李所，他与景益鹏同为天文与天体物理研究部主任。"
+    ],
+    "summaryEn": "Dong Lai works on exoplanet dynamics, protoplanetary and circumbinary disks, and compact objects — white dwarfs, neutron stars, and black holes — including tides, spin-orbit coupling, and gravitational-wave sources. He is a T. D. Lee Chair Professor and head of TDLI’s astronomy division, and received the 2024 AAS Dirk Brouwer Award.",
+    "interests": [
+      "系外行星动力学与原行星盘",
+      "白矮星、中子星、黑洞与引力波",
+      "天体力学、波动与不稳定性"
+    ],
+    "honors": [
+      "2024 美国天文学会 Dirk Brouwer 奖",
+      "2016 Simons 学者",
+      "2004 海外杰出青年科学基金",
+      "1988 CUSPEA"
+    ],
+    "papers": [
+      {
+        "title": "Matter in Strong Magnetic Fields",
+        "venue": "Reviews of Modern Physics 73, 629 (2001)"
+      },
+      {
+        "title": "Physics of Strongly Magnetized Neutron Stars",
+        "venue": "Reports on Progress in Physics 69, 2631 (2006)"
+      },
+      {
+        "title": "Chaotic Dynamics of Stellar Spin in Binaries and the Production of Misaligned Hot Jupiters",
+        "venue": "Science 345, 1317 (2014)"
+      },
+      {
+        "title": "Resonant Tidal Excitation of Oscillation Modes in Merging Binary Neutron Stars: Inertial-Gravity Modes",
+        "venue": "Physical Review D 96, 083005 (2017)"
+      },
+      {
+        "title": "IXPE Detection of Polarized X-rays from Magnetars and Photon Mode Conversion at QED Vacuum Resonance",
+        "venue": "PNAS 120, e2216534120 (2023)"
+      },
+      {
+        "title": "Circumbinary Accretion: From Binary Stars to Massive Binary Black Holes",
+        "venue": "Annual Review of Astronomy and Astrophysics 61, 517 (2023)"
+      }
+    ],
+    "regions": [
+      {
+        "shape": "rect",
+        "logL0": 3.95,
+        "logL1": 16.4,
+        "logM0": 24.35,
+        "logM1": 40.2
+      }
+    ],
+    "anchor": {
+      "logL": 3.7,
+      "logM": 22.5
+    },
+    "relatedObjects": [
+      "earth",
+      "jupiter",
+      "disk",
+      "siriusb",
+      "neutron",
+      "cygx1",
+      "sgr",
+      "sun"
+    ],
+    "placementNoteZh": "这是图上唯一用虚线勾边的广域包络。它从行星质量（大约地球到木星）和中子星半径，延伸到亚秒差距上的双星盘，以及 AGN 盘里直到约十亿倍太阳质量的大质量双黑洞。轴子-光子在磁化宇宙中的传播没有画进去：那不是一颗天体。包络故意几乎透明，避免挡住太阳、白矮星和黑洞。",
+    "placementNoteEn": "A dashed envelope, not a measurement error bar: planets through compact objects and out to sub-parsec disks and massive black-hole binaries. Cosmological photon-axion propagation is intentionally left off the outline.",
+    "z": 1,
+    "leader": {
+      "logL": 6.5,
+      "logM": 28.0
+    }
+  },
+  {
+    "id": "jing",
+    "nameZh": "景益鹏",
+    "nameEn": "Yipeng Jing",
+    "shortZh": "景益鹏",
+    "seal": "景",
+    "titleZh": "李政道讲席教授、天文与天体物理研究部主任、中国科学院院士",
+    "titleEn": "T. D. Lee Chair Professor, Division Head, CAS Academician",
+    "divisionZh": "天文与天体物理研究部",
+    "email": "ypjing@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40088",
+    "pigment": "#7eb8c9",
+    "placement": "chart",
+    "coverage": "wide",
+    "groups": [
+      "galaxy"
+    ],
+    "blurbZh": "星系怎么形成，又怎样嵌进宇宙的大尺度结构。",
+    "summaryZh": [
+      "景益鹏长期研究星系形成与演化、星系动力学和宇宙大尺度结构，并用数值模拟把暗晕的内部结构、吸积历史和环境联系到我们观测到的星系。他是中国科学院院士，也是天文与天体物理研究部主任。",
+      "主页列出的代表性工作包括近邻大质量星系的恒星形成、光纤碰撞对星系成团的改正，以及用机器学习理解暗晕偏置。这些工作落在星系到星系团的尺度上，而不是可观测宇宙整体。"
+    ],
+    "summaryEn": "Yipeng Jing studies galaxy formation, galactic dynamics, and the large-scale structure of the universe with simulations and surveys. He is a CAS academician and co-head of the astronomy division. The shaded region covers galaxies through clusters, not the observable universe as a whole.",
+    "interests": [
+      "星系形成与演化",
+      "天文数值模拟",
+      "宇宙大尺度结构",
+      "星系动力学与银河系"
+    ],
+    "honors": [
+      "2015 中国科学院院士",
+      "2001 国家杰出青年科学基金"
+    ],
+    "papers": [
+      {
+        "title": "Star Formation in Massive Galaxies at Redshift z ∼ 0.5",
+        "venue": "The Astrophysical Journal 895, 100 (2020)"
+      },
+      {
+        "title": "Using the Modified Nearest Neighbor Method to Correct Fiber-collision Effects on Galaxy Clustering",
+        "venue": "The Astrophysical Journal 872, 26 (2019)"
+      },
+      {
+        "title": "Accurate Modeling of the Projected Galaxy Clustering in Photometric Surveys. I. Tests with Mock Catalogs",
+        "venue": "The Astrophysical Journal 879, 71 (2019)"
+      },
+      {
+        "title": "The multidimensional dependence of halo bias in the eye of a machine: a tale of halo structure, assembly, and environment",
+        "venue": "Monthly Notices of the Royal Astronomical Society 482, 1900 (2019)"
+      }
+    ],
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 21.45,
+        "cy": 42.4,
+        "rx": 2.15,
+        "ry": 3.15
+      }
+    ],
+    "anchor": {
+      "logL": 24.25,
+      "logM": 47.7
+    },
+    "relatedObjects": [
+      "lmc",
+      "mw",
+      "globular",
+      "cluster"
+    ],
+    "placementNoteZh": "椭圆覆盖大约一千秒差距上的星系，到几十兆秒差距、千万亿倍太阳质量的星系团。可观测宇宙那一角留给以 Gpc 尺度检验宇宙学的工作。这是判断出来的包络，不是某次巡天的选择函数。",
+    "placementNoteEn": "Galaxies to clusters: roughly a kiloparsec to a few tens of megaparsecs, and halo masses from dwarfs up to rich clusters.",
+    "z": 4,
+    "leader": {
+      "logL": 21.45,
+      "logM": 42.4
+    }
+  },
+  {
+    "id": "yang",
+    "nameZh": "杨小虎",
+    "nameEn": "Xiaohu Yang",
+    "shortZh": "杨小虎",
+    "seal": "杨",
+    "titleZh": "特聘学者、副所长",
+    "titleEn": "Distinguished Fellow, Deputy Director",
+    "divisionZh": "天文与天体物理研究部",
+    "email": "xyang@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40021/xiaohu-yang",
+    "pigment": "#d7a0c4",
+    "placement": "chart",
+    "coverage": "focused",
+    "groups": [
+      "galaxy"
+    ],
+    "blurbZh": "星系群、星系团，以及星系怎样住进暗晕。",
+    "summaryZh": [
+      "杨小虎的主线是星系群和星系团：在巡天里找出群，再把中心星系、卫星星系的恒星形成历史接到暗晕的质量与吸积历史上。他也负责李所研究生培养方面的事务，并分管青海冷湖 JUST 光谱望远镜的建设。",
+      "图上的椭圆比景益鹏的包络更紧，集中在群和团的晕：大约零点几到两兆秒差距、10¹² 到 10¹⁵ 倍太阳质量。"
+    ],
+    "summaryEn": "Xiaohu Yang maps galaxy groups and clusters and the galaxy–halo connection. He is a distinguished fellow and deputy director, and oversees the JUST spectroscopic telescope in Lenghu. The ellipse is the group and cluster regime.",
+    "interests": [
+      "星系群与星系团",
+      "星系–暗晕联系",
+      "宇宙学数值模拟"
+    ],
+    "honors": [
+      "2013 黄授书奖",
+      "2014 长江学者",
+      "2009 国家杰出青年科学基金",
+      "2018 万人计划领军人才"
+    ],
+    "papers": [
+      {
+        "title": "Galaxy Groups in the SDSS DR4. III. The Luminosity and Stellar Mass Functions",
+        "venue": "The Astrophysical Journal 695, 900 (2009)"
+      },
+      {
+        "title": "The Subhalo-Satellite Connection and the Fate of Disrupted Satellite Galaxies",
+        "venue": "The Astrophysical Journal 693, 830 (2009)"
+      },
+      {
+        "title": "An Analytical Model for the Accretion of Dark Matter Subhalos",
+        "venue": "The Astrophysical Journal 741, 13 (2011)"
+      },
+      {
+        "title": "Evolution of the Galaxy-Dark Matter Connection and the Assembly of Galaxies in Dark Matter Halos",
+        "venue": "The Astrophysical Journal 752, 41 (2012)"
+      },
+      {
+        "title": "Constraining the Star Formation Histories in Dark Matter Halos. I. Central Galaxies",
+        "venue": "The Astrophysical Journal 770, 115 (2013)"
+      }
+    ],
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 22.25,
+        "cy": 43.85,
+        "rx": 1.05,
+        "ry": 1.45
+      }
+    ],
+    "anchor": {
+      "logL": 24.6,
+      "logM": 41.1
+    },
+    "relatedObjects": [
+      "mw",
+      "cluster",
+      "lmc"
+    ],
+    "placementNoteZh": "对应他用来做群目录和暗晕占据的尺度。宇宙学参数本身没有另画一块，因为参数不是天体。",
+    "placementNoteEn": "Group and cluster halos, about 0.2–2 Mpc and 10^12–10^15 solar masses.",
+    "z": 8,
+    "leader": {
+      "logL": 22.25,
+      "logM": 43.85
+    }
+  },
+  {
+    "id": "zhangpj",
+    "nameZh": "张鹏杰",
+    "nameEn": "Pengjie Zhang",
+    "shortZh": "张鹏杰",
+    "seal": "鹏",
+    "titleZh": "特聘学者、天文与天体物理研究部副主任",
+    "titleEn": "Distinguished Fellow, Deputy Division Head",
+    "divisionZh": "天文与天体物理研究部",
+    "email": "zhangpj@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40039",
+    "pigment": "#9bb7ff",
+    "placement": "chart",
+    "coverage": "focused",
+    "groups": [
+      "cosmos"
+    ],
+    "blurbZh": "在上百兆秒差距直到视界的尺度上检验宇宙是不是各向同性、引力是不是广义相对论。",
+    "summaryZh": [
+      "张鹏杰研究宇宙学和宇宙大尺度结构。代表性工作包括用动力学 Sunyaev–Zel'dovich 效应在 Gpc 尺度上检验哥白尼原理，用引力透镜和物质密度的关系检验引力，以及把宇宙微波背景从前景里分离出来。",
+      "这些不是某一个星系的质量，而是一大块宇宙体积。图上的椭圆就沿着宇宙平均密度：从大约几百兆秒差距，延伸到可观测宇宙。纵轴是临界密度或物质密度折合的质量，不是一颗天体的重量。"
+    ],
+    "summaryEn": "Pengjie Zhang tests cosmology on the largest scales: the Copernican principle with the kinetic Sunyaev–Zel'dovich effect, gravity with lensing versus density, and CMB–foreground separation. The region follows the mean cosmic density from hundreds of megaparsecs to the observable universe.",
+    "interests": [
+      "宇宙学",
+      "宇宙大尺度结构",
+      "弱引力透镜与红移畸变",
+      "宇宙微波背景"
+    ],
+    "honors": [
+      "2010 国家杰出青年科学基金",
+      "2012 黄授书奖",
+      "2019 万人计划领军人才"
+    ],
+    "papers": [
+      {
+        "title": "Mapping Dark Matter with Cosmic Magnification",
+        "venue": "Physical Review Letters 95, 241302 (2005)",
+        "url": "https://arxiv.org/abs/astro-ph/0506740"
+      },
+      {
+        "title": "Probing Gravity at Cosmological Scales by Measurements which Test the Relationship between Gravitational Lensing and Matter Overdensity",
+        "venue": "Physical Review Letters 99, 141302 (2007)",
+        "url": "https://arxiv.org/abs/0704.1932"
+      },
+      {
+        "title": "Confirmation of the Copernican Principle at Gpc Radial Scale and above from the Kinetic Sunyaev-Zel'dovich Effect Power Spectrum",
+        "venue": "Physical Review Letters 107, 041301 (2011)",
+        "url": "https://arxiv.org/abs/1009.3967"
+      },
+      {
+        "title": "Peculiar Velocity Decomposition, Redshift Space Distortion and Velocity Reconstruction in Redshift Surveys",
+        "venue": "Physical Review D 87, 063526 (2013)",
+        "url": "https://arxiv.org/abs/1207.2722"
+      },
+      {
+        "title": "ABS: an Analytical method of Blind Separation of CMB from foregrounds",
+        "venue": "Monthly Notices of the Royal Astronomical Society (2019)",
+        "url": "https://arxiv.org/abs/1608.03707"
+      }
+    ],
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 25.95,
+        "cy": 52.55,
+        "rx": 1.15,
+        "ry": 2.35
+      }
+    ],
+    "anchor": {
+      "logL": 24.35,
+      "logM": 54.2
+    },
+    "relatedObjects": [
+      "cluster",
+      "universe",
+      "mw"
+    ],
+    "placementNoteZh": "左缘大约是 Gpc 的入口，右缘越过可观测宇宙的半径。质量取该半径球体内由宇宙平均密度折合的质能，所以会一直爬到图的右上角。这是为了让“宇宙学尺度”可以被看见而做的换算，论文本身测量的是功率谱和相关函数，不是一个总质量。",
+    "placementNoteEn": "A cosmic-volume locus: hundreds of megaparsecs to the particle horizon, with mass from the mean cosmic density in that sphere — a translation, not a measured total mass.",
+    "z": 9,
+    "leader": {
+      "logL": 25.95,
+      "logM": 52.55
+    }
+  },
+  {
+    "id": "zu",
+    "nameZh": "祖颖",
+    "nameEn": "Ying Zu",
+    "shortZh": "祖颖",
+    "seal": "祖",
+    "titleZh": "长聘学者",
+    "titleEn": "Tenured Fellow",
+    "divisionZh": "天文与天体物理研究部",
+    "email": "yingzu@sjtu.edu.cn",
+    "homepage": "http://astro.sjtu.edu.cn/~yingzu",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40605/ying-zu",
+    "pigment": "#e07a5f",
+    "placement": "chart",
+    "coverage": "focused",
+    "groups": [
+      "galaxy"
+    ],
+    "blurbZh": "暗晕如何决定星系熄灭，星系团里的亮中心星系又影响到多远。",
+    "summaryZh": [
+      "祖颖的研究方向写的是宇宙学、暗物质与暗能量、大尺度结构、星系形成和活动星系核。代表性论文更多落在一个可以画出来的地方：把恒星成分映射到暗晕，论证晕质量是星系熄灭的主要驱动，并测量星系团亮中心星系在漫射光里的影响范围。",
+      "暗能量本身没有画成区域。它改变的是膨胀历史，不是一颗有半径的天体。图上的椭圆对应星系到星系群这一档，也就是上述观测实际上在称的那些晕。"
+    ],
+    "summaryEn": "Ying Zu connects galaxies to dark-matter halos, quenching, and cluster-scale diffuse light. Dark energy is discussed in the text and not given a fake object on the chart. The ellipse is the galaxy-to-group range his SDSS analyses actually weigh.",
+    "interests": [
+      "星系与暗晕",
+      "星系形成与熄灭",
+      "大尺度结构",
+      "活动星系核"
+    ],
+    "honors": [
+      "2017 国家级海外高层次人才"
+    ],
+    "papers": [
+      {
+        "title": "Mapping stellar content to dark matter haloes using galaxy clustering and galaxy-galaxy lensing in the SDSS DR7",
+        "venue": "MNRAS 454, 1161 (2015)",
+        "url": "https://ui.adsabs.harvard.edu/abs/2015MNRAS.454.1161Z"
+      },
+      {
+        "title": "Mapping stellar content to dark matter haloes - II. Halo mass is the main driver of galaxy quenching",
+        "venue": "MNRAS 457, 4360 (2016)",
+        "url": "https://ui.adsabs.harvard.edu/abs/2016MNRAS.457.4360Z"
+      },
+      {
+        "title": "Kinematics of Mg II absorbers from the redshift-space distortion around massive quiescent galaxies",
+        "venue": "MNRAS 506, 115 (2021)",
+        "url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.506..115Z"
+      },
+      {
+        "title": "The sphere of influence of the bright central galaxies in the diffuse light of SDSS clusters",
+        "venue": "MNRAS 514, 2692 (2022)",
+        "url": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.514.2692C"
+      },
+      {
+        "title": "Elucidating galaxy assembly bias in SDSS",
+        "venue": "Science China Physics, Mechanics & Astronomy 65, 109811 (2022)",
+        "url": "https://ui.adsabs.harvard.edu/abs/2022SCPMA..6509811S"
+      }
+    ],
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 21.15,
+        "cy": 42.55,
+        "rx": 1.35,
+        "ry": 1.85
+      }
+    ],
+    "anchor": {
+      "logL": 17.05,
+      "logM": 47.15
+    },
+    "relatedObjects": [
+      "mw",
+      "lmc",
+      "cluster"
+    ],
+    "placementNoteZh": "椭圆放在星系到星系群。暗能量、修改引力只在文字里出现。",
+    "placementNoteEn": "Galaxy-to-group scales. Dark energy is not assigned a dot.",
+    "z": 7,
+    "leader": {
+      "logL": 21.15,
+      "logM": 42.55
+    }
+  },
+  {
+    "id": "feng",
+    "nameZh": "冯发波",
+    "nameEn": "Fabo Feng",
+    "shortZh": "冯发波",
+    "seal": "冯",
+    "titleZh": "长聘学者",
+    "titleEn": "Tenured Fellow",
+    "divisionZh": "天文与天体物理研究部",
+    "email": "ffeng@sjtu.edu.cn",
+    "homepage": "http://web.tdli.sjtu.edu.cn/ffeng/",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40097/fabo-feng",
+    "pigment": "#8fbf9f",
+    "placement": "chart",
+    "coverage": "wide",
+    "groups": [
+      "planet"
+    ],
+    "blurbZh": "用视向速度和天体测量寻找近邻的另一套太阳系。天语计划的牵头人。",
+    "summaryZh": [
+      "冯发波寻找系外行星，尤其是近邻恒星周围、可能像地球一样小的行星。工具是视向速度、微角秒天体测量和贝叶斯时序分析。他牵头的天语计划，希望在冷湖用望远镜阵列和高精度光谱仪，靠长期测量大量恒星的速度变化，确认第二个太阳系。",
+      "主页还列出奥尔特云、双星和行星宜居性。图上因此是一条横带：从行星半径一直拉到奥尔特云的距离，质量停在地球到木星。主页也写了星系动力学，但代表论文不在那里，所以没有把这条带延长到银河系。"
+    ],
+    "summaryEn": "Fabo Feng searches for nearby exoplanets with radial velocities and astrometry and leads the Tianyu survey concept. The band runs from planet radii out to the Oort cloud at planetary masses. Galactic dynamics is listed on his profile but is not where the representative papers sit, so it is not drawn.",
+    "interests": [
+      "系外行星",
+      "视向速度与天体测量",
+      "天语计划",
+      "奥尔特云与行星宜居性"
+    ],
+    "honors": [
+      "2022 国家海外高层次人才"
+    ],
+    "papers": [
+      {
+        "title": "Color difference makes a difference: four planet candidates around tau Ceti",
+        "venue": "The Astronomical Journal (2017)"
+      },
+      {
+        "title": "A candidate super-Earth planet orbiting near the snow line of Barnard's star",
+        "venue": "Nature (2018)"
+      },
+      {
+        "title": "`Oumuamua as a messenger from the Local Association",
+        "venue": "The Astrophysical Journal Letters (2018)"
+      },
+      {
+        "title": "PEXO: a global modeling framework for nanosecond timing, microsecond astrometry, and μm/s radial velocities",
+        "venue": "The Astrophysical Journal Supplement Series (2019)"
+      },
+      {
+        "title": "Search for Nearby Earth Analogs. II. detection of five new planets, eight planet candidates, and confirmation of three planets around nine nearby M dwarfs",
+        "venue": "The Astrophysical Journal Supplement Series (2019)"
+      }
+    ],
+    "regions": [
+      {
+        "shape": "rect",
+        "logL0": 6.6,
+        "logL1": 16.15,
+        "logM0": 24.05,
+        "logM1": 27.95
+      }
+    ],
+    "anchor": {
+      "logL": 16.55,
+      "logM": 24.85
+    },
+    "relatedObjects": [
+      "earth",
+      "neptune",
+      "jupiter",
+      "solsys"
+    ],
+    "placementNoteZh": "横带的右端是奥尔特云的距离（大约 10⁴–10⁵ 天文单位），质量仍是行星，不是云本身的总质量。天语计划的望远镜在地球上，不占据这个坐标。",
+    "placementNoteEn": "Planet radii to Oort-cloud distances, at Earth-to-Jupiter masses.",
+    "z": 3,
+    "leader": {
+      "logL": 13.2,
+      "logM": 26.2
+    }
+  },
+  {
+    "id": "mizuno",
+    "nameZh": "水野阳介",
+    "nameEn": "Yosuke Mizuno",
+    "shortZh": "水野",
+    "seal": "水",
+    "titleZh": "长聘学者",
+    "titleEn": "Tenured Fellow",
+    "divisionZh": "天文与天体物理研究部",
+    "email": "mizuno@sjtu.edu.cn",
+    "homepage": "http://web.tdli.sjtu.edu.cn/mizuno",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40098/yosuke-mizuno",
+    "pigment": "#f0a3a3",
+    "placement": "chart",
+    "coverage": "focused",
+    "groups": [
+      "compact"
+    ],
+    "blurbZh": "黑洞和中子星的吸积、喷流，以及黑洞阴影如何检验引力。",
+    "summaryZh": [
+      "水野阳介做相对论磁流体数值模拟：致密天体怎样吸积、怎样喷出喷流，相对论等离子体里的重联、湍流和不稳定性，以及黑洞阴影对引力理论的分辨能力。他是事件视界望远镜合作组的成员，合作组获得过基础物理学突破奖。",
+      "喷流可以延伸到秒差距甚至千秒差距。若把外流全部画上，会横切星系区。图上只包住视界附近的引擎，以及大约再大两个数量级的内喷流；更外面的喷流写在这里，不铺成一条长带。"
+    ],
+    "summaryEn": "Yosuke Mizuno simulates black-hole and neutron-star accretion, jets, and relativistic plasma, and is a member of the Event Horizon Telescope collaboration. The drawn region is the engine and the inner jet; parsec-to-kiloparsec jets are described rather than painted across the galaxy zone.",
+    "interests": [
+      "黑洞与中子星的吸积和喷流",
+      "相对论等离子体",
+      "黑洞阴影与引力检验"
+    ],
+    "honors": [
+      "2019 基础物理学突破奖（EHT 合作组）",
+      "2019 NSF 钻石成就奖（EHT 合作组）",
+      "2021 英国皇家天文学会团队成就奖（EHT 合作组）"
+    ],
+    "papers": [
+      {
+        "title": "3D Relativistic Magnetohydrodynamic Simulations of Magnetized Spine-Sheath Relativistic Jets",
+        "venue": "The Astrophysical Journal 662, 835 (2007)"
+      },
+      {
+        "title": "Recollimation Shocks in Magnetized Relativistic Jets",
+        "venue": "The Astrophysical Journal 809, 38 (2015)"
+      },
+      {
+        "title": "The Black Hole Accretion Code",
+        "venue": "Computational Astrophysics and Cosmology 4, 1 (2017)"
+      },
+      {
+        "title": "The Current Ability to Test Theories of Gravity with Black Hole Shadows",
+        "venue": "Nature Astronomy 2, 585 (2018)"
+      },
+      {
+        "title": "First M87 Event Horizon Telescope Results. V. Physical Origin of the Asymmetric Ring",
+        "venue": "The Astrophysical Journal Letters 875, L5 (2019)"
+      }
+    ],
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 4.55,
+        "cy": 31.05,
+        "rx": 0.95,
+        "ry": 1.05
+      },
+      {
+        "shape": "polygon",
+        "points": [
+          [
+            9.55,
+            36.35
+          ],
+          [
+            12.6,
+            36.35
+          ],
+          [
+            16.15,
+            39.15
+          ],
+          [
+            16.25,
+            40.5
+          ],
+          [
+            12.95,
+            40.5
+          ],
+          [
+            9.9,
+            37.15
+          ]
+        ]
+      }
+    ],
+    "anchor": {
+      "logL": 15.75,
+      "logM": 38.1
+    },
+    "relatedObjects": [
+      "neutron",
+      "cygx1",
+      "sgr",
+      "m87"
+    ],
+    "placementNoteZh": "左边的小椭圆是中子星和恒星级黑洞的引擎，右边的多边形包住人马座 A* 和 M87* 的视界以及内喷流。外喷流的尺度见说明，不在图上拉成一条带。",
+    "placementNoteEn": "Left: neutron-star and stellar-black-hole engines. Right: Sgr A* to M87* horizons plus the inner jet.",
+    "z": 10,
+    "leader": {
+      "logL": 13.4,
+      "logM": 38.6
+    }
+  },
+  {
+    "id": "pan",
+    "nameZh": "潘震",
+    "nameEn": "Zhen Pan",
+    "shortZh": "潘震",
+    "seal": "潘",
+    "titleZh": "青年学者",
+    "titleEn": "Tenure-track Fellow",
+    "divisionZh": "天文与天体物理研究部",
+    "email": "zhpan@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40677/zhen-pan",
+    "pigment": "#c9b6ff",
+    "placement": "chart",
+    "coverage": "focused",
+    "groups": [
+      "compact"
+    ],
+    "blurbZh": "双中子星的壳层，以及活动星系核里极端质量比旋近。",
+    "summaryZh": [
+      "潘震研究引力波天体物理、致密星和多体动力学。可以落在图上的是两块：并合双中子星（包括壳层何时熔化），以及活动星系核里围绕超大质量黑洞的极端质量比旋近。",
+      "他也做过宇宙微波背景透镜，以及原初随机引力波背景。引力波背景没有一个半径和质量，所以没有为它延长色块；详情里仍然列出那篇论文。"
+    ],
+    "summaryEn": "Zhen Pan works on gravitational-wave astrophysics and compact objects. Two loci are drawn: binary neutron stars, and extreme-mass-ratio inspirals in AGN. Primordial gravitational-wave backgrounds are not given a coordinate.",
+    "interests": [
+      "引力波天体物理",
+      "致密星",
+      "极端质量比旋近",
+      "多体动力学"
+    ],
+    "honors": [
+      "2023 国家海外高层次青年人才"
+    ],
+    "papers": [
+      {
+        "title": "First detection of the acoustic oscillation phase shift expected from the cosmic neutrino background",
+        "venue": "Physical Review Letters 115, 091301 (2015)"
+      },
+      {
+        "title": "Dependence of the cosmic microwave background lensing power spectrum on the matter density",
+        "venue": "Monthly Notices of the Royal Astronomical Society 445, 2941 (2015)"
+      },
+      {
+        "title": "Probing crust meltdown in inspiraling binary neutron stars",
+        "venue": "Physical Review Letters 125, 201102 (2021)"
+      },
+      {
+        "title": "Formation rate of extreme mass ratio inspirals in active galactic nuclei",
+        "venue": "Physical Review D 103, 103018 (2022)"
+      },
+      {
+        "title": "Detecting Primordial Stochastic Gravitational Waves with Reduced Astrophysical Foregrounds",
+        "venue": "arXiv:2301.04529 (2023)",
+        "url": "https://arxiv.org/abs/2301.04529"
+      }
+    ],
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 4.85,
+        "cy": 30.9,
+        "rx": 1.2,
+        "ry": 0.8
+      },
+      {
+        "shape": "ellipse",
+        "cx": 12.05,
+        "cy": 38.05,
+        "rx": 2.25,
+        "ry": 1.95
+      }
+    ],
+    "anchor": {
+      "logL": 9.4,
+      "logM": 33.85
+    },
+    "relatedObjects": [
+      "neutron",
+      "sgr",
+      "m87",
+      "cygx1"
+    ],
+    "placementNoteZh": "两块椭圆分别对应双中子星和超大质量黑洞周围的极端质量比旋近。原初引力波背景见论文，不在图上。",
+    "placementNoteEn": "Binary neutron stars, and extreme-mass-ratio inspirals around supermassive black holes.",
+    "z": 11,
+    "leader": {
+      "logL": 12.05,
+      "logM": 38.05
+    }
+  },
+  {
+    "id": "tan",
+    "nameZh": "谭先瑜",
+    "nameEn": "Xianyu Tan",
+    "shortZh": "谭先瑜",
+    "seal": "谭",
+    "titleZh": "青年学者",
+    "titleEn": "Tenure-track Fellow",
+    "divisionZh": "天文与天体物理研究部",
+    "email": "xianyut@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/en/people/40675/xianyu-tan",
+    "pigment": "#f2c14e",
+    "placement": "chart",
+    "coverage": "focused",
+    "groups": [
+      "planet"
+    ],
+    "blurbZh": "气态巨行星和褐矮星的大气环流。",
+    "summaryZh": [
+      "谭先瑜模拟系外行星和褐矮星的大气：云的辐射反馈如何驱动环流，超热木星的风，以及纯蒸汽大气里的对流。尺度就是这些天体本身的半径，质量从木星量级到褐矮星。",
+      "大气标高比行星半径小，图上不另画一层更小的壳，否则会和地球挤在一起，却代表完全不同的东西。"
+    ],
+    "summaryEn": "Xianyu Tan models atmospheric circulation on giant exoplanets and brown dwarfs. The small ellipse sits on Jupiter-to-brown-dwarf radii and masses.",
+    "interests": [
+      "系外行星大气",
+      "褐矮星大气动力学",
+      "云与辐射反馈"
+    ],
+    "honors": [
+      "2014–2017 NASA 地球与空间科学奖学金"
+    ],
+    "papers": [
+      {
+        "title": "The atmospheric circulation of ultra-hot Jupiters",
+        "venue": "The Astrophysical Journal 886, 26 (2019)"
+      },
+      {
+        "title": "Atmospheric circulation of brown dwarfs and directly imaged exoplanets driven by cloud radiative feedback",
+        "venue": "Monthly Notices of the Royal Astronomical Society 502, 2198 (2021)"
+      },
+      {
+        "title": "Convection modeling of pure-steam atmospheres",
+        "venue": "The Astrophysical Journal Letters 923, L15 (2021)"
+      },
+      {
+        "title": "Jet streams and tracer mixing in the atmospheres of brown dwarfs and isolated young giant planets",
+        "venue": "Monthly Notices of the Royal Astronomical Society 511, 4861 (2022)"
+      },
+      {
+        "title": "Weak Seasonality on Temperate Exoplanets around Low-mass Stars",
+        "venue": "The Astrophysical Journal 926, 202 (2022)"
+      }
+    ],
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 7.82,
+        "cy": 28.15,
+        "rx": 0.48,
+        "ry": 1.05
+      }
+    ],
+    "anchor": {
+      "logL": 9.85,
+      "logM": 27.15
+    },
+    "relatedObjects": [
+      "jupiter",
+      "browndwarf",
+      "neptune"
+    ],
+    "placementNoteZh": "紧贴木星到褐矮星。大气的垂直厚度没有单独占一个坐标。",
+    "placementNoteEn": "Jupiter through brown-dwarf radii and masses.",
+    "z": 13,
+    "leader": {
+      "logL": 7.82,
+      "logM": 28.15
+    }
+  },
+  {
+    "id": "tang",
+    "nameZh": "唐梦涛",
+    "nameEn": "Mengtao Tang",
+    "shortZh": "唐梦涛",
+    "seal": "唐",
+    "titleZh": "青年学者",
+    "titleEn": "Tenure-track Fellow",
+    "divisionZh": "天文与天体物理研究部",
+    "email": "mengtao.tang@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/en/people/43985/mengtao-tang",
+    "pigment": "#6ec8c4",
+    "placement": "chart",
+    "coverage": "focused",
+    "groups": [
+      "galaxy"
+    ],
+    "blurbZh": "再电离时期的星系：莱曼 α、高电离线和第一代星系。",
+    "summaryZh": [
+      "唐梦涛用 JWST 和地面光谱研究高红移星系：红移 6 到 13 的莱曼 α 光子如何逃逸，高电离发射线说明什么样的恒星和气体，以及再电离结束时星系所处的电离泡。",
+      "电离泡可以有兆秒差距，但泡不是这些论文在称的天体。图上的小椭圆只放高红移星系本身：大约一千秒差距、10⁸ 到 10¹⁰ 倍太阳质量。"
+    ],
+    "summaryEn": "Mengtao Tang observes high-redshift galaxies and reionization with JWST, including Lyman-alpha and high-ionization lines. The ellipse is the galaxies, not the megaparsec ionized bubbles around them.",
+    "interests": [
+      "高红移星系",
+      "宇宙再电离",
+      "莱曼 α 与高电离线",
+      "活动星系核"
+    ],
+    "honors": [],
+    "papers": [
+      {
+        "title": "Rest-frame UV spectroscopy of extreme [OIII] emitters at 1.3 < z < 3.7",
+        "venue": "MNRAS 501, 3238 (2021)"
+      },
+      {
+        "title": "Stellar populations and star formation histories of the most extreme [OIII] emitters at z = 1.3–3.7",
+        "venue": "MNRAS 513, 5211 (2022)"
+      },
+      {
+        "title": "JWST/NIRSpec spectroscopy of z = 7–9 star-forming galaxies with CEERS",
+        "venue": "MNRAS 526, 1657 (2023)"
+      },
+      {
+        "title": "Lyα emission in galaxies at z ~ 5–6",
+        "venue": "MNRAS 531, 2701 (2024)"
+      },
+      {
+        "title": "JWST/NIRSpec Observations of Lyman α Emission in Star-forming Galaxies at 6.5 < z < 13",
+        "venue": "The Astrophysical Journal 975, 208 (2024)"
+      },
+      {
+        "title": "JWST/NIRSpec Observations of High-ionization Emission Lines in Galaxies at High Redshift",
+        "venue": "The Astrophysical Journal 991, 217 (2025)"
+      }
+    ],
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 19.85,
+        "cy": 39.35,
+        "rx": 0.8,
+        "ry": 1.15
+      }
+    ],
+    "anchor": {
+      "logL": 19.55,
+      "logM": 35.75
+    },
+    "relatedObjects": [
+      "lmc",
+      "mw"
+    ],
+    "placementNoteZh": "高红移星系的恒星质量和千秒差距尺度。再电离泡只在文字中出现。",
+    "placementNoteEn": "High-redshift galaxies, roughly a kiloparsec and 10^8–10^10 solar masses.",
+    "z": 14,
+    "leader": {
+      "logL": 19.85,
+      "logM": 39.35
+    }
+  },
+  {
+    "id": "ogihara",
+    "nameZh": "Masahiro Ogihara",
+    "nameEn": "Masahiro Ogihara",
+    "shortZh": "Ogihara",
+    "seal": "O",
+    "titleZh": "青年学者",
+    "titleEn": "Tenure-track Fellow",
+    "divisionZh": "天文与天体物理研究部",
+    "email": "ogihara@sjtu.edu.cn",
+    "homepage": "https://web.tdli.sjtu.edu.cn/ogihara/",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40125/masahiro-ogihara",
+    "pigment": "#e8a87c",
+    "placement": "chart",
+    "coverage": "focused",
+    "groups": [
+      "planet"
+    ],
+    "blurbZh": "在演化的原行星盘里，数值模拟类地行星和近轨超级地球如何形成。",
+    "summaryZh": [
+      "官方页面使用英文名 Masahiro Ogihara，没有给出中文姓名，这里也不另造译名。他用 N 体和盘演化模拟行星形成：星子如何在 1 天文单位附近堆积成类地行星，盘风如何把超级地球留在很近的轨道，以及气体吸积、巨撞击和光致蒸发怎样决定它们的大气。",
+      "区域从行星半径覆盖到大约 100 天文单位的原行星盘，质量从地球到百分之一个太阳质量的盘。"
+    ],
+    "summaryEn": "Masahiro Ogihara simulates planet formation: terrestrial planets near 1 au, close-in super-Earths, pebble accretion, giant impacts, and photoevaporation. His faculty page gives no Chinese personal name. The region spans planet radii to a typical disk.",
+    "interests": [
+      "行星形成",
+      "超级地球",
+      "原行星盘",
+      "太阳系"
+    ],
+    "honors": [
+      "2011、2014 日本学术振兴会奖学金"
+    ],
+    "papers": [
+      {
+        "title": "Formation of the terrestrial planets in the solar system around 1 au via radial concentration of planetesimals",
+        "venue": "Astronomy & Astrophysics 612, L5 (2018)"
+      },
+      {
+        "title": "Formation of close-in super-Earths in evolving protoplanetary disks due to disk winds",
+        "venue": "Astronomy & Astrophysics 615, A63 (2018)"
+      },
+      {
+        "title": "A limit on gas accretion onto close-in super-Earth cores by disk accretion",
+        "venue": "The Astrophysical Journal 867, 127 (2018)"
+      },
+      {
+        "title": "Unified simulations of planetary formation and atmospheric evolution",
+        "venue": "The Astrophysical Journal 892, 124 (2020)"
+      },
+      {
+        "title": "Unified simulations of planetary formation and atmospheric evolution II",
+        "venue": "The Astrophysical Journal 899, 91 (2020)"
+      }
+    ],
+    "regions": [
+      {
+        "shape": "rect",
+        "logL0": 6.7,
+        "logL1": 13.45,
+        "logM0": 24.35,
+        "logM1": 29.45
+      }
+    ],
+    "anchor": {
+      "logL": 12.55,
+      "logM": 26.55
+    },
+    "relatedObjects": [
+      "earth",
+      "jupiter",
+      "disk",
+      "solsys"
+    ],
+    "placementNoteZh": "覆盖行星和原行星盘。和冯发波的行星搜索带重叠，颜色和锚点分开：一个在盘的上缘，一个在奥尔特云那一端。",
+    "placementNoteEn": "Planets plus a protoplanetary disk, overlapping the exoplanet search band but anchored on the disk.",
+    "z": 6,
+    "leader": {
+      "logL": 11.2,
+      "logM": 27.8
+    }
+  },
+  {
+    "id": "darius",
+    "nameZh": "Darius Modirrousta-Galian",
+    "nameEn": "Darius Modirrousta-Galian",
+    "shortZh": "Darius",
+    "seal": "D",
+    "titleZh": "青年学者",
+    "titleEn": "Tenure-track Fellow",
+    "divisionZh": "天文与天体物理研究部",
+    "email": "modirrousta-galian@sjtu.edu.cn",
+    "homepage": "https://modirrousta-galian.com/",
+    "profileUrl": "https://tdli.sjtu.edu.cn/en/people/42602/darius-modirrousta-galian",
+    "pigment": "#b7d48a",
+    "placement": "chart",
+    "coverage": "focused",
+    "groups": [
+      "planet"
+    ],
+    "blurbZh": "超级地球和亚海王星的内部、大气，以及它们怎样被恒星剥掉。",
+    "summaryZh": [
+      "Darius Modirrousta-Galian 研究超级地球和亚海王星：大气何时被恒星的辐射蒸掉，氢包层能不能留下海洋，以及半径的双峰分布和核的成分有什么关系。官方页面没有中文姓名。",
+      "这些行星的半径大约是 1 到 4 个地球半径，质量大约是 1 到 20 个地球质量。椭圆就包住这一小块，比木星和原行星盘都小。"
+    ],
+    "summaryEn": "Darius Modirrousta-Galian models super-Earth and sub-Neptune interiors, atmospheres, and mass loss. The tight ellipse is about 1–4 Earth radii and 1–20 Earth masses. No Chinese personal name is given on the faculty page.",
+    "interests": [
+      "超级地球与亚海王星",
+      "行星大气逃逸",
+      "行星内部"
+    ],
+    "honors": [],
+    "papers": [
+      {
+        "title": "The bimodal distribution in exoplanet radii: considering varying core compositions and H2 envelope’s sizes",
+        "venue": "The Astrophysical Journal 891, 158 (2020)"
+      },
+      {
+        "title": "The three regimes of atmospheric evaporation for super-Earths and sub-Neptunes",
+        "venue": "The Astrophysical Journal 943, 11 (2023)"
+      },
+      {
+        "title": "The diffusion limit of photoevaporation in primordial planetary atmospheres",
+        "venue": "The Astrophysical Journal 965, 97 (2024)"
+      },
+      {
+        "title": "On the efficacy of ocean formation with a primordial hydrogen atmosphere",
+        "venue": "Journal of Geophysical Research: Planets (2025)"
+      },
+      {
+        "title": "Revising core powered mass loss: A critical assessment of the “energy limited” argument",
+        "venue": "Icarus 444, 116827 (2025)"
+      }
+    ],
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 7.12,
+        "cy": 25.45,
+        "rx": 0.42,
+        "ry": 0.78
+      }
+    ],
+    "anchor": {
+      "logL": 8.85,
+      "logM": 23.35
+    },
+    "relatedObjects": [
+      "earth",
+      "neptune"
+    ],
+    "placementNoteZh": "超级地球和亚海王星的半径–质量范围，取理论与观测里常见的 1–4 R⊕、1–20 M⊕。",
+    "placementNoteEn": "Super-Earths and sub-Neptunes: roughly 1–4 Earth radii and 1–20 Earth masses.",
+    "z": 12,
+    "leader": {
+      "logL": 7.12,
+      "logM": 25.45
+    }
+  },
+  {
+    "id": "zheng",
+    "nameZh": "郑宪忠",
+    "nameEn": "Xianzhong Zheng",
+    "shortZh": "郑宪忠",
+    "seal": "郑",
+    "titleZh": "JUST 光谱望远镜团队资深研究员",
+    "titleEn": "Senior Scientist, JUST team",
+    "divisionZh": "天文与天体物理研究部",
+    "email": "xzzheng@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40645/xianzhong-zheng",
+    "pigment": "#8fb8ff",
+    "placement": "chart",
+    "coverage": "focused",
+    "groups": [
+      "galaxy"
+    ],
+    "blurbZh": "星系的尘埃、标度关系，以及红移 2 附近的原星系团。",
+    "summaryZh": [
+      "郑宪忠研究星系结构、形成与演化，高红移原星系团和星系标度关系，并在李所 JUST 光谱望远镜团队担任资深研究员。代表工作包括恒星形成星系的尘埃消光关系，以及红移 2.24 的大质量原星系团里极端星暴和星系并合。",
+      "椭圆从成员星系的千秒差距，放到原星系团大约兆秒差距的核心；质量从大质量星系到原星系团的晕。这是把两类对象放进同一个判断区域，不是某一个团的维里质量误差棒。"
+    ],
+    "summaryEn": "Xianzhong Zheng studies galaxy structure, dust, scaling relations, and massive protoclusters near redshift 2, and is a senior scientist on the JUST team. The ellipse runs from member galaxies to the protocluster core.",
+    "interests": [
+      "星系形成与演化",
+      "高红移原星系团",
+      "尘埃与标度关系",
+      "JUST 光谱巡天"
+    ],
+    "honors": [
+      "中国科学院百人计划",
+      "墨子巡天望远镜副总设计师"
+    ],
+    "papers": [
+      {
+        "title": "Understanding the Universal Dust Attenuation Scaling Relation of Star-Forming Galaxies",
+        "venue": "MNRAS 528, 658 (2024)"
+      },
+      {
+        "title": "The Emergence of a Brightest Cluster Galaxy in a Protocluster Core at z = 2.24",
+        "venue": "The Astrophysical Journal 963, 21 (2024)"
+      },
+      {
+        "title": "What boost galaxy mergers in two massive galaxy protoclusters at z = 2.24?",
+        "venue": "MNRAS 523, 2422 (2023)"
+      },
+      {
+        "title": "Submillimetre galaxies in two massive protoclusters at z = 2.24",
+        "venue": "MNRAS 512, 4893 (2022)"
+      }
+    ],
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 20.9,
+        "cy": 42.05,
+        "rx": 1.45,
+        "ry": 1.9
+      }
+    ],
+    "anchor": {
+      "logL": 17.25,
+      "logM": 43.55
+    },
+    "relatedObjects": [
+      "lmc",
+      "mw",
+      "cluster"
+    ],
+    "placementNoteZh": "成员星系到 z≈2 原星系团。JUST 望远镜在冷湖，不画在图上。",
+    "placementNoteEn": "Member galaxies to z ≈ 2 protocluster cores.",
+    "z": 6,
+    "leader": {
+      "logL": 20.9,
+      "logM": 42.05
+    }
+  },
+  {
+    "id": "wangjs",
+    "nameZh": "王界双",
+    "nameEn": "Jieshuang Wang",
+    "shortZh": "王界双",
+    "seal": "界",
+    "titleZh": "青年学者",
+    "titleEn": "Tenure-track Fellow",
+    "divisionZh": "天文与天体物理研究部",
+    "email": "jieshuangwang@sjtu.edu.cn",
+    "homepage": "https://inspirehep.net/authors/1469384",
+    "profileUrl": "https://tdli.sjtu.edu.cn/en/people/41275/jieshuang-wang",
+    "pigment": "#f08b6d",
+    "placement": "chart",
+    "coverage": "wide",
+    "groups": [
+      "compact"
+    ],
+    "blurbZh": "致密星的爆发现象，以及相对论外流里的粒子加速。",
+    "summaryZh": [
+      "王界双研究致密天体的活动和暂现源：引力波对应体、快速射电暴、快速光学暂现源、X 射线闪和伽马暴；另一条线是宇宙线如何在相对论喷流里被加速，又如何反馈到周围介质。2022 年洪堡学者。",
+      "官方主页没有逐篇列出论文，只给了 Inspire 链接。下面三篇来自该链接中作者排序靠前的记录。宇宙线粒子本身放在左侧“尺度之外”；图上这条淡带是产生它们的引擎：中子星到恒星级黑洞的质量，尺度从半径一直到遗迹。带很窄，免得把太阳涂掉。"
+    ],
+    "summaryEn": "Jieshuang Wang studies compact-object transients — gravitational-wave counterparts, fast radio bursts, X-ray flashes, gamma-ray bursts — and cosmic-ray acceleration in relativistic outflows. The thin band is the engine, from neutron-star radii to remnant scales. The particles themselves stay off the chart.",
+    "interests": [
+      "伽马暴与快速射电暴",
+      "引力波电磁对应体",
+      "相对论喷流中的粒子加速"
+    ],
+    "honors": [
+      "2022 洪堡学者"
+    ],
+    "papers": [
+      {
+        "title": "Microquasars as the major contributors to Galactic cosmic rays around the knee",
+        "venue": "arXiv:2510.01369",
+        "url": "https://arxiv.org/abs/2510.01369"
+      },
+      {
+        "title": "A Boundary-Consistent Two-Zone Electron Kernel for Distant Pulsar Contributions to Positron Flux and Anisotropy",
+        "venue": "arXiv:2606.26597",
+        "url": "https://arxiv.org/abs/2606.26597"
+      },
+      {
+        "title": "Depolarization induced by rapid polarization angle swings: a common feature of pulsars and fast radio bursts?",
+        "venue": "MNRAS (2026), arXiv:2607.27622",
+        "url": "https://arxiv.org/abs/2607.27622"
+      }
+    ],
+    "bibliographyUrl": "https://inspirehep.net/authors/1469384",
+    "regions": [
+      {
+        "shape": "rect",
+        "logL0": 3.95,
+        "logL1": 17.05,
+        "logM0": 30.05,
+        "logM1": 32.45
+      }
+    ],
+    "anchor": {
+      "logL": 18.85,
+      "logM": 29.15
+    },
+    "relatedObjects": [
+      "neutron",
+      "cygx1",
+      "crab",
+      "betelgeuse"
+    ],
+    "placementNoteZh": "一条竖起来其实是横的窄带：质量停在中子星到恒星级黑洞，尺度从大约 10 公里拉到遗迹的秒差距。宇宙线能谱不在这条带里。",
+    "placementNoteEn": "A thin ribbon at neutron-star to stellar-black-hole masses, from kilometer radii to parsec remnants.",
+    "z": 2,
+    "leader": {
+      "logL": 15.5,
+      "logM": 31.2
+    }
+  },
+  {
+    "id": "zhouhao",
+    "nameZh": "周浩",
+    "nameEn": "Hao Zhou",
+    "shortZh": "周浩",
+    "seal": "浩",
+    "titleZh": "青年学者",
+    "titleEn": "Tenure-track Fellow",
+    "divisionZh": "天文与天体物理研究部",
+    "email": "hao_zhou@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/en/people/41271/hao-zhou",
+    "pigment": "#d4b483",
+    "placement": "offplane",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
+    "blurbZh": "高能伽马、宇宙线和中微子。信使没有单一的尺度和质量。",
+    "summaryZh": [
+      "周浩做天体粒子实验和多信使天文：高能伽马射线、宇宙线和中微子。他参与 HAWC 和 IceCube 合作组的工作时，论文写的是微类星体 SS 433 的喷流、脉冲星周围的 TeV 晕、耀变体与高能中微子的符合，以及双中子星并合的多信使观测。",
+      "这些源——脉冲星、黑洞双星、耀变体——已经作为天体出现在主图里。他的研究坐标是粒子和探测器，不是其中某一个源的半径，所以不在对数图上占一块颜色。"
+    ],
+    "summaryEn": "Hao Zhou works on astroparticle experiments: very-high-energy gamma rays, cosmic rays, and neutrinos, including HAWC and IceCube. The engines have places on the chart; the messengers do not get a region of their own.",
+    "interests": [
+      "高能伽马射线",
+      "宇宙线与中微子",
+      "多信使天文",
+      "天体粒子实验"
+    ],
+    "honors": [
+      "2019 国家级人才计划"
+    ],
+    "papers": [
+      {
+        "title": "Search for TeV gamma-rays emission from point-like sources in the inner Galactic plane with a partial configuration of the HAWC Observatory",
+        "venue": "The Astrophysical Journal 817, 3 (2015)"
+      },
+      {
+        "title": "Extended TeV gamma-ray sources around pulsars constrain the origin of the positron flux at Earth",
+        "venue": "Science 358, 911 (2017)"
+      },
+      {
+        "title": "Multi-messenger Observations of a Binary Neutron Star Merger",
+        "venue": "The Astrophysical Journal Letters 848 (2017)"
+      },
+      {
+        "title": "Multimessenger observations of a flaring blazar coincident with high-energy neutrino IceCube-170922A",
+        "venue": "Science 361, 147 (2018)"
+      },
+      {
+        "title": "Very-high-energy particle acceleration powered by the jets of the microquasar SS 433",
+        "venue": "Nature 562, 82 (2018)"
+      }
+    ],
+    "regions": [],
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
+    "relatedObjects": [
+      "neutron",
+      "cygx1",
+      "crab"
+    ],
+    "placementNoteZh": "不放置。宇宙线、中微子和伽马光子是信使。产生它们的脉冲星、微类星体和并合中子星已经在主图上。",
+    "placementNoteEn": "Not plotted. Cosmic rays, neutrinos, and gamma rays are messengers; their engines already appear as objects.",
+    "z": 0
+  },
+  {
+    "id": "liu",
+    "nameZh": "刘江来",
+    "nameEn": "Jianglai Liu",
+    "shortZh": "刘江来",
+    "seal": "刘",
+    "titleZh": "鸿文特聘学者、副所长",
+    "titleEn": "Hongwen Distinguished Fellow, Deputy Director",
+    "divisionZh": "粒子与核物理研究部",
+    "email": "jianglai.liu@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40043/liu-jianglai",
+    "pigment": "#e6d3a3",
+    "placement": "offplane",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
+    "blurbZh": "PandaX 暗物质实验的首席科学家，也做中微子。",
+    "summaryZh": [
+      "刘江来长期工作在核物理、粒子物理与天体物理的交叉处。李政道研究所的介绍写明：他目前的重点是暗物质和中微子的实验探索，担任中国锦屏地下实验室 PandaX 实验的首席科学家，并深度参与 JUNO 中微子实验。",
+      "暗物质粒子的质量用 GeV 表示，中微子更轻。本图的纵轴是天体或系统的质量，不是粒子物理的质量，因此不为 PandaX 或 JUNO 发明一个宇宙坐标。"
+    ],
+    "summaryEn": "Jianglai Liu leads the PandaX dark-matter experiment at CJPL and works on neutrino experiments including JUNO. Particle masses in GeV are not the mass axis of this chart, so he is not given a celestial coordinate.",
+    "interests": [
+      "暗物质直接探测",
+      "PandaX",
+      "中微子实验"
+    ],
+    "honors": [
+      "2023 新基石研究员",
+      "2019 科学探索奖",
+      "2019 中国物理学会王淦昌奖",
+      "2015 国家杰出青年科学基金"
+    ],
+    "papers": [
+      {
+        "title": "Observation of electron-antineutrino disappearance at Daya Bay",
+        "venue": "Physical Review Letters 108, 171803 (2012)"
+      },
+      {
+        "title": "Dark matter results from the first 98.7-day data of PandaX-II",
+        "venue": "Physical Review Letters 117, 121303 (2016)"
+      },
+      {
+        "title": "Dark matter results from a 54-ton-day exposure of PandaX-II",
+        "venue": "Physical Review Letters 119, 181302 (2017)"
+      },
+      {
+        "title": "Dark matter search results from the PandaX-4T commissioning run",
+        "venue": "Physical Review Letters 127, 261802 (2021)"
+      },
+      {
+        "title": "Limits on the luminance of dark matter from xenon recoil data",
+        "venue": "Nature 618, 47 (2023)"
+      },
+      {
+        "title": "First Indication of Solar B8 Neutrinos through Coherent Elastic Neutrino-Nucleus Scattering in PandaX-4T",
+        "venue": "Physical Review Letters 133, 191001 (2024)"
+      }
+    ],
+    "regions": [],
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
+    "relatedObjects": [
+      "mw",
+      "sun",
+      "universe"
+    ],
+    "placementNoteZh": "不放置。PandaX 在锦屏山的岩石里，JUNO 在地下，它们测量的是粒子，不是一个天体的半径和质量。银河系暗晕已经作为银河系那个点出现在主图上。",
+    "placementNoteEn": "Not plotted. PandaX and JUNO measure particles; the Galactic halo is already marked as the Milky Way.",
+    "z": 0
+  },
+  {
+    "id": "zhouning",
+    "nameZh": "周宁",
+    "nameEn": "Ning Zhou",
+    "shortZh": "周宁",
+    "seal": "宁",
+    "titleZh": "特聘学者、粒子与核物理研究部副主任",
+    "titleEn": "Distinguished Fellow, Deputy Division Head",
+    "divisionZh": "粒子与核物理研究部",
+    "email": "nzhou@sjtu.edu.cn",
+    "homepage": "https://www.physics.sjtu.edu.cn/jsml/zhouning.html",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40114/ning-zhou",
+    "pigment": "#f0c9a0",
+    "placement": "offplane",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
+    "blurbZh": "液氙里的暗物质，以及对撞机上的暗物质。",
+    "summaryZh": [
+      "周宁把 PandaX 液氙直接探测和 ATLAS 对撞机搜寻放在一起找暗物质。主页上的代表作包括 PandaX-4T 对轻暗物质、电离信号和费米子暗物质吸收的寻找，以及和葛韶锋、刘江来、袁强合作的宇宙线加速亚 GeV 暗物质的周日效应。",
+      "对撞机事例和地下探测器的反冲都没有天体半径。宇宙线来自银河系，银河系已经在主图上，这里不再把暗物质实验画成一个质量点。"
+    ],
+    "summaryEn": "Ning Zhou searches for dark matter with PandaX liquid xenon and with ATLAS. Neither detector recoils nor collider events have an astrophysical radius, so the work stays off the chart.",
+    "interests": [
+      "暗物质直接探测",
+      "PandaX",
+      "对撞机暗物质搜寻"
+    ],
+    "honors": [
+      "中国科学院粒子物理前沿卓越创新中心青年拔尖人才"
+    ],
+    "papers": [
+      {
+        "title": "Diurnal Effect of Sub-GeV Dark Matter Boosted by Cosmic Rays",
+        "venue": "Physical Review Letters 126, 091804 (2021)",
+        "url": "https://doi.org/10.1103/PhysRevLett.126.091804"
+      },
+      {
+        "title": "Dark matter search results from the PandaX-4T commissioning run",
+        "venue": "Physical Review Letters 127, 261802 (2021)"
+      },
+      {
+        "title": "A search for the cosmic ray boosted sub-GeV dark matter at the PandaX-II experiment",
+        "venue": "Physical Review Letters 128, 171801 (2022)"
+      },
+      {
+        "title": "Search for light dark matter with ionization signals in the PandaX-4T experiment",
+        "venue": "Physical Review Letters 130, 261001 (2023)"
+      },
+      {
+        "title": "Limits on the luminance of dark matter from xenon recoil data",
+        "venue": "Nature 618, 47 (2023)"
+      },
+      {
+        "title": "Search for light dark matter from atmosphere in PandaX-4T",
+        "venue": "Physical Review Letters 131, 041001 (2023)"
+      }
+    ],
+    "regions": [],
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
+    "relatedObjects": [
+      "mw",
+      "earth"
+    ],
+    "placementNoteZh": "不放置。直接探测和对撞机搜寻的是粒子反应，纵轴不是 GeV。",
+    "placementNoteEn": "Not plotted. Direct detection and collider searches do not have a radius–mass coordinate.",
+    "z": 0
+  },
+  {
+    "id": "xu",
+    "nameZh": "徐东莲",
+    "nameEn": "Donglian Xu",
+    "shortZh": "徐东莲",
+    "seal": "莲",
+    "titleZh": "长聘学者",
+    "titleEn": "Tenured Fellow",
+    "divisionZh": "粒子与核物理研究部",
+    "email": "donglianxu@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40056/donglian-xu",
+    "pigment": "#9fd0c8",
+    "placement": "offplane",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
+    "blurbZh": "中微子天文：IceCube 看到的那些来自宇宙的中微子。",
+    "summaryZh": [
+      "徐东莲的研究方向是中微子天文学、实验中微子物理和多信使天文。代表论文来自 IceCube：河外高能中微子的证据，对天体物理 tau 中微子的寻找，以及耀变体 TXS 0506+056 与中微子 IceCube-170922A 的多信使对应。",
+      "耀变体和快速射电暴有宿主星系，但她测量的是中微子。中微子在这张质量–尺度图上没有一个诚实的点。"
+    ],
+    "summaryEn": "Donglian Xu works on neutrino astronomy and multi-messenger observations, including IceCube’s high-energy astrophysical neutrinos and the TXS 0506+056 coincidence. The neutrino is not assigned a point.",
+    "interests": [
+      "中微子天文学",
+      "实验中微子物理",
+      "多信使天文"
+    ],
+    "honors": [
+      "2018 国家海外高层次青年人才",
+      "2012 美国南极洲服务奖章"
+    ],
+    "papers": [
+      {
+        "title": "Evidence for high-energy extraterrestrial neutrinos at the IceCube detector",
+        "venue": "Science 342, 1242856 (2013)"
+      },
+      {
+        "title": "Observation of high-energy astrophysical neutrinos in three years of IceCube data",
+        "venue": "Physical Review Letters 113, 101101 (2014)"
+      },
+      {
+        "title": "Search for astrophysical tau neutrinos in three years of IceCube data",
+        "venue": "Physical Review D 93, 022001 (2016)"
+      },
+      {
+        "title": "A search for neutrinos from fast radio bursts with IceCube",
+        "venue": "The Astrophysical Journal 845, 14 (2017)"
+      },
+      {
+        "title": "Neutrino emission from the direction of the blazar TXS 0506+056 prior to the IceCube-170922A alert",
+        "venue": "Science 361, 147 (2018)"
+      },
+      {
+        "title": "Multimessenger observations of a flaring blazar coincident with high-energy neutrino IceCube-170922A",
+        "venue": "Science 361, eaat1378 (2018)"
+      }
+    ],
+    "regions": [],
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
+    "relatedObjects": [
+      "mw",
+      "universe"
+    ],
+    "placementNoteZh": "不放置。高能中微子是信使。官方研究方向没有写成某一个天体的半径和质量。",
+    "placementNoteEn": "Not plotted. High-energy neutrinos are messengers.",
+    "z": 0
+  },
+  {
+    "id": "he",
+    "nameZh": "何小刚",
+    "nameEn": "Xiaogang He",
+    "shortZh": "何小刚",
+    "seal": "何",
+    "titleZh": "李政道讲席教授、粒子与核物理研究部主任",
+    "titleEn": "T. D. Lee Chair Professor, Division Head",
+    "divisionZh": "粒子与核物理研究部",
+    "email": "hexg@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40048/he-xiaogang",
+    "pigment": "#d7c4f2",
+    "placement": "offplane",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
+    "blurbZh": "粒子理论：中微子质量、轻暗物质，以及主页所列的粒子天体物理。",
+    "summaryZh": [
+      "何小刚是粒子与核物理研究部主任。主页列出的方向是电弱与强相互作用、超出标准模型的新物理、粒子天体物理，以及量子力学中的拓扑相位。代表论文包括跷跷板中微子质量、中微子混合，以及标准模型希格斯与轻暗物质搜寻的联系。",
+      "这些是拉格朗日量里的参数和粒子，不是天体。即便题目里出现宇宙和暗物质，也不为它们画一个覆盖全图的区域。"
+    ],
+    "summaryEn": "Xiaogang He leads the particle and nuclear division. His listed directions include particle astrophysics, but the representative papers are field theory — neutrino mass, flavor, and light dark matter — which have no radius–mass coordinate.",
+    "interests": [
+      "中微子质量与混合",
+      "超出标准模型的新物理",
+      "粒子天体物理",
+      "轻暗物质"
+    ],
+    "honors": [],
+    "papers": [
+      {
+        "title": "Seesaw Neutrino Masses Induced by a Triplet of Leptons",
+        "venue": "Zeitschrift für Physik C 44, 441 (1989)"
+      },
+      {
+        "title": "Some Simple Mixing and Mass Matrices for Neutrinos",
+        "venue": "Physics Letters B 560, 87 (2003)"
+      },
+      {
+        "title": "Hint of Standard Model Higgs Boson at the LHC and Light Dark Matter Searches",
+        "venue": "Physical Review D 85, 093019 (2012)"
+      },
+      {
+        "title": "Z-prime Model for b to s ll Flavor Anomalies",
+        "venue": "Physical Review D 93, 074003 (2016)"
+      }
+    ],
+    "regions": [],
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
+    "relatedObjects": [
+      "universe"
+    ],
+    "placementNoteZh": "不放置。粒子天体物理在这里是理论和唯象，没有被指定到某一段天体尺度。",
+    "placementNoteEn": "Not plotted. The particle-astrophysics direction is theoretical and has no single celestial locus.",
+    "z": 0
+  },
+  {
+    "id": "ge",
+    "nameZh": "葛韶锋",
+    "nameEn": "Shaofeng Ge",
+    "shortZh": "葛韶锋",
+    "seal": "葛",
+    "titleZh": "长聘学者、教授",
+    "titleEn": "Tenured Fellow, Professor",
+    "divisionZh": "粒子与核物理研究部",
+    "email": "gesf@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40053",
+    "pigment": "#f2b6c6",
+    "placement": "offplane",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
+    "blurbZh": "暗物质和中微子的理论：从振荡相位到宇宙线加速的轻暗物质。",
+    "summaryZh": [
+      "葛韶锋的方向是与暗物质和中微子相关的粒子物理、天体物理和宇宙学理论。官方主页没有逐篇列举论文，下面选自其主页所链 Inspire 作者记录里、作者人数较少的高被引工作，以及李所新闻报道过的 PandaX 相关合作。",
+      "理论覆盖振荡、暗物质门户和对撞机，尺度可以从实验室到宇宙学视界。这种“什么尺度都相关”并不是一个天体的质量–半径区域，所以放在尺度之外，而不是铺满整张图。"
+    ],
+    "summaryEn": "Shaofeng Ge works on neutrino and dark-matter theory and phenomenology. The official page points to an Inspire bibliography rather than a short list; the papers below are primary-author papers from that record, plus the cosmic-ray-boosted dark-matter letter. Spanning every scale is not the same as occupying the chart.",
+    "interests": [
+      "中微子振荡与 CP 相位",
+      "暗物质唯象",
+      "宇宙线加速的轻暗物质"
+    ],
+    "honors": [
+      "2024 国家杰出青年科学基金",
+      "2019 国家海外高层次青年人才"
+    ],
+    "papers": [
+      {
+        "title": "Residual Symmetries for Neutrino Mixing with a Large θ13 and Nearly Maximal δD",
+        "venue": "Physical Review Letters 108, 041801 (2012)",
+        "url": "https://doi.org/10.1103/PhysRevLett.108.041801"
+      },
+      {
+        "title": "Scalar Nonstandard Interactions in Neutrino Oscillation",
+        "venue": "Physical Review Letters 122, 211801 (2019)",
+        "url": "https://doi.org/10.1103/PhysRevLett.122.211801"
+      },
+      {
+        "title": "Constraining Photon Portal Dark Matter with Texono and Coherent Data",
+        "venue": "Journal of High Energy Physics 11, 066 (2018)",
+        "url": "https://doi.org/10.1007/JHEP11(2018)066"
+      },
+      {
+        "title": "Diurnal Effect of Sub-GeV Dark Matter Boosted by Cosmic Rays",
+        "venue": "Physical Review Letters 126, 091804 (2021)",
+        "url": "https://doi.org/10.1103/PhysRevLett.126.091804"
+      }
+    ],
+    "bibliographyUrl": "https://inspirehep.net/literature?sort=mostrecent&size=25&q=exactauthor%3AShao.Feng.Ge.1",
+    "regions": [],
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
+    "relatedObjects": [
+      "mw",
+      "universe"
+    ],
+    "placementNoteZh": "不放置。理论可以同时谈到探测器和宇宙学视界，这恰恰说明它不对应图上的一块天体。",
+    "placementNoteEn": "Not plotted. A theory that touches both detectors and the horizon is not a single object.",
+    "z": 0
+  },
+  {
+    "id": "zhangjie",
+    "nameZh": "张杰",
+    "nameEn": "Jie Zhang",
+    "shortZh": "张杰",
+    "seal": "杰",
+    "titleZh": "李政道讲席教授、所长",
+    "titleEn": "T. D. Lee Chair Professor, Director",
+    "divisionZh": "天文与天体物理研究部",
+    "email": "tdli-director@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40110/jie-zhang",
+    "pigment": "#e8b86d",
+    "placement": "offplane",
+    "coverage": "offplane",
+    "groups": [
+      "lab"
+    ],
+    "panelGroup": "lab",
+    "blurbZh": "高能量密度物理与实验室天体物理。实验室在图的左缘之外。",
+    "summaryZh": [
+      "张杰是李政道研究所所长，分管实验室天体物理实验平台。他的科学研究在高能量密度物理和等离子体：X 射线激光、激光聚变快点火，以及用强激光在实验室里做出准直的天体物理喷流。2003 年当选中国科学院院士，2015 年获得爱德华·泰勒奖章，2021 年获得未来科学大奖物质科学奖。",
+      "实验室靶的尺度是微米到厘米，质量远小于这张图的下沿。那些实验类比的天文喷流已经出现在黑洞和中子星附近。若把类比画成从实验室一直铺到星系的色块，会假装测量了并不存在的一个天体，因此放在尺度之外。"
+    ],
+    "summaryEn": "Jie Zhang directs TDLI and works on high-energy-density physics, including laboratory astrophysical jets driven by intense lasers. The lab target sits below the left edge of the chart; the astrophysical jets it analogizes are already drawn near compact objects.",
+    "interests": [
+      "高能量密度物理",
+      "激光等离子体",
+      "实验室天体物理喷流"
+    ],
+    "honors": [
+      "2003 中国科学院院士",
+      "2015 爱德华·泰勒奖章",
+      "2021 未来科学大奖物质科学奖"
+    ],
+    "papers": [
+      {
+        "title": "Laboratory Investigation of Astrophysical Collimated Jets with Intense Lasers",
+        "venue": "The Astrophysical Journal 860, 146 (2018)"
+      },
+      {
+        "title": "Manipulation of polarizations for broadband terahertz waves emitted from laser plasma filaments",
+        "venue": "Nature Photonics 12, 554 (2018)"
+      },
+      {
+        "title": "Collimated ultrabright gamma rays from electron wiggling along a petawatt laser-irradiated wire in the QED regime",
+        "venue": "PNAS 115, 9911 (2018)"
+      },
+      {
+        "title": "Multistage Coupling of Laser-Wakefield Accelerators with Curved Plasma Channels",
+        "venue": "Physical Review Letters 120, 154801 (2018)"
+      },
+      {
+        "title": "Multimillijoule coherent terahertz bursts from picosecond laser-irradiated metal foils",
+        "venue": "PNAS 116, 3994 (2019)"
+      }
+    ],
+    "regions": [],
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
+    "relatedObjects": [
+      "cygx1",
+      "neutron",
+      "m87"
+    ],
+    "placementNoteZh": "不放置。实验室尺度约在 10⁻⁶ 到 10⁰ 米，比主图左缘（约 1 公里）还小。类比的天文喷流见致密天体，不把类比本身画成包络。",
+    "placementNoteEn": "Not plotted. Laboratory targets are microns to centimeters, left of the chart’s edge.",
+    "z": 0
+  },
+  {
+    "id": "wu",
+    "nameZh": "吴益鹏",
+    "nameEn": "Yipeng Wu",
+    "shortZh": "吴益鹏",
+    "seal": "吴",
+    "titleZh": "青年学者",
+    "titleEn": "Tenure-track Fellow",
+    "divisionZh": "天文与天体物理研究部",
+    "email": "yipeng.wu@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40608/yipeng-wu",
+    "pigment": "#f0d78c",
+    "placement": "offplane",
+    "coverage": "offplane",
+    "groups": [
+      "lab"
+    ],
+    "panelGroup": "lab",
+    "blurbZh": "等离子体加速，以及用激光等离子体模拟宇宙磁场、宇宙线和喷流。",
+    "summaryZh": [
+      "吴益鹏研究基于等离子体的粒子加速、非线性光学和实验室天体物理，理论、模拟和实验都做。主页写得很明确：强激光可以在实验室里制造与天体环境相似的极端条件，用来理解宇宙大尺度磁场的起源、高能宇宙线的加速、相对论喷流和快速射电暴。",
+      "这是类比实验。宇宙线和快速射电暴的天文版本要么是信使，要么已经画在致密星的窄带上。实验室本身不占主图的一个点。"
+    ],
+    "summaryEn": "Yipeng Wu studies plasma-based acceleration and laboratory astrophysics. His faculty page explicitly frames the experiments as analogs of cosmic magnetism, cosmic rays, jets, and fast radio bursts. The analog is not given a fake astronomical coordinate.",
+    "interests": [
+      "激光尾波加速",
+      "等离子体光学",
+      "实验室天体物理"
+    ],
+    "honors": [
+      "2023 国家海外高层次人才",
+      "2021 蔡诗东等离子体物理奖",
+      "John Dawson Thesis Prize"
+    ],
+    "papers": [
+      {
+        "title": "Phase space dynamics of a plasma wakefield dechirper for energy spread reduction",
+        "venue": "Physical Review Letters 122, 204804 (2019)"
+      },
+      {
+        "title": "High-throughput injection-acceleration of electron bunches from a linear accelerator to a laser wakefield accelerator",
+        "venue": "Nature Physics 17, 801 (2021)"
+      },
+      {
+        "title": "Mapping the self-generated magnetic fields due to thermal Weibel instability",
+        "venue": "PNAS 119, e2211713119 (2022)"
+      },
+      {
+        "title": "Efficient generation and amplification of intense vortex and vector laser pulses via strongly-coupled stimulated Brillouin scattering in plasmas",
+        "venue": "Communications Physics 7, 18 (2024)"
+      }
+    ],
+    "regions": [],
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
+    "relatedObjects": [
+      "crab",
+      "cygx1",
+      "mw"
+    ],
+    "placementNoteZh": "不放置。主页自己把实验写成对天文现象的可控模拟，模拟装置的尺度不在主图范围内。",
+    "placementNoteEn": "Not plotted. The experiments analogize astrophysical processes at laboratory scales.",
+    "z": 0
+  },
+  {
+    "id": "yi",
+    "nameZh": "易龙卿",
+    "nameEn": "Longqing Yi",
+    "shortZh": "易龙卿",
+    "seal": "易",
+    "titleZh": "青年学者",
+    "titleEn": "Tenure-track Fellow",
+    "divisionZh": "天文与天体物理研究部",
+    "email": "lqyi@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40681/longqing-yi",
+    "pigment": "#f3c1a0",
+    "placement": "offplane",
+    "coverage": "offplane",
+    "groups": [
+      "lab"
+    ],
+    "panelGroup": "lab",
+    "blurbZh": "强激光与微等离子体：重联、高次谐波，和实验室里的相对论电子。",
+    "summaryZh": [
+      "易龙卿的方向是激光等离子体相互作用、强场光学和实验室天体物理。代表工作包括微等离子体波导里的亮 X 射线源、激光驱动微等离子体片上的相对论磁重联，以及相对论强度下的衍射辐射和孤立阿秒电子束。",
+      "重联和喷流在天文上可以发生在磁层、吸积盘和喷流里，但这些论文的系统是微米到毫米的等离子体。不把论文标题里的“相对论”自动翻译成黑洞的坐标。"
+    ],
+    "summaryEn": "Longqing Yi studies laser–plasma interaction and laboratory astrophysics, including relativistic magnetic reconnection in a micro-scale plasma slab. The physical system in the papers is microscopic, so it is not placed on the astronomical chart.",
+    "interests": [
+      "激光等离子体",
+      "强场光学",
+      "实验室磁重联"
+    ],
+    "honors": [],
+    "papers": [
+      {
+        "title": "Bright X-ray source from a laser-driven microplasma waveguide",
+        "venue": "Physical Review Letters 116, 115001 (2016)"
+      },
+      {
+        "title": "Relativistic magnetic reconnection driven by a laser interacting with a micro-scale plasma slab",
+        "venue": "Nature Communications 9, 1601 (2018)"
+      },
+      {
+        "title": "Coherent diffraction radiation of relativistic terahertz pulses from a laser-driven microplasma",
+        "venue": "Physical Review Letters 123, 094801 (2019)"
+      },
+      {
+        "title": "High-harmonics generation and spin-orbit interaction of light in a relativistic oscillating window",
+        "venue": "Physical Review Letters 126, 134801 (2021)"
+      },
+      {
+        "title": "Generation of isolated subfemtosecond electron bunches by the diffraction of a polarization-tailored intense laser beam",
+        "venue": "Physical Review Letters 133, 045001 (2024)"
+      },
+      {
+        "title": "Relativistic Oscillating Window Driven by an Intense Laguerre-Gaussian Laser Pulse",
+        "venue": "Physical Review Letters 135, 165001 (2025)"
+      }
+    ],
+    "regions": [],
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
+    "relatedObjects": [
+      "cygx1",
+      "sun"
+    ],
+    "placementNoteZh": "不放置。论文中的等离子体片是微观的。天文磁重联发生在图上的致密天体附近，但那不是这些实验的坐标。",
+    "placementNoteEn": "Not plotted. The plasma slabs in the papers are microscopic.",
+    "z": 0
+  }
+]
