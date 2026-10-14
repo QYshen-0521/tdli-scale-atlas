@@ -7,7 +7,7 @@
 
 # 尺度衡星
 
-李政道研究所天文与粒子天体物理导师的一张对数图。横轴是尺度，纵轴是质量，图框是正方形。天体带着图像落在自己的位置上；导师的研究画成半透明的区域，头像放在区域边缘，名字在悬停或键盘聚焦时出现。点开头像，进入这位导师的研究、论文和相关天体。
+李政道研究所天文与粒子天体物理导师的一张对数图。横轴是尺度，纵轴是质量。数据范围是 L = 10³–10²⁷ m、M = 10¹⁸–10⁵⁵ kg，可观测宇宙在右上角；画面上把横轴拉宽，使图框成为正方形，而不是把横轴延长到 10⁴⁰ m。天体带着图像落在自己的位置上；导师的研究画成半透明的区域，头像放在区域边缘，名字在悬停或键盘聚焦时出现。点开头像，进入这位导师的研究、论文和相关天体。
 
 中微子、暗物质粒子和实验室等离子体没有被硬塞进这张图。它们在左侧「尺度之外」。
 
@@ -39,7 +39,7 @@ npm run preview
 - 点天体：打开说明
 - 顶栏可以按行星、致密天体、星系、宇宙学尺度筛选。导师和天体一样：对上的保持原样，其余变淡，不从画面上消失
 
-页面切换使用 View Transitions API：背景交叉淡化，头像从星图移到详情页并放大，正文同步淡入；返回时反过来。浏览器不支持时，用一段 FLIP 补上同样的位移。系统如果要求减少动效，过渡会关掉。
+页面切换使用 View Transitions API：背景交叉淡化，头像从星图移到详情页并放大，正文同步淡入；返回时反过来。这段飞行和伴随的淡入淡出是 1050ms（原先 700ms 的速度的 2/3）。浏览器不支持时，用一段 FLIP 补上同样的位移。系统如果要求减少动效，过渡会关掉。
 
 ## 数据
 
@@ -60,7 +60,9 @@ npm run preview
 
 夜空是暖的黑，不是霓虹。导师用朱砂印章，研究区域用矿物色（花青、石绿、赭石、藤黄）区分。参考线只有两条：黑洞视界，和水的密度。中文用衬线，英文用 Fraunces，数字用 Outfit。若字体服务不可用，会退回系统里的中文字体。
 
-导师头像来自李政道研究所官网个人页，文件和来源页记在 `data/SOURCES.md`。照片打不开时退回印章。图框把横轴拉宽到和纵轴一样的 37 个数量级，右缘因此空着。拖到图框边缘就不能再拖进框外的空白；横轴已经完整出现在画面里时，图会保持水平居中。
+导师头像来自李政道研究所官网个人页，文件和来源页记在 `data/SOURCES.md`。照片打不开时退回印章。图框在画面上是正方形：横轴只有 24 个数量级，纵轴有 37 个，所以横轴每一格被画得更宽。右缘就是可观测宇宙附近，没有空的数量级。拖到图框边缘就不能再拖进框外的空白；已经完整出现的那条轴会保持居中。
+
+项目设定和三则方法说明在 `docs/project-settings/`。
 
 ## Run in English
 
@@ -73,7 +75,7 @@ npm run dev
 
 Then open http://127.0.0.1:47231 .
 
-The horizontal axis is length in metres and the vertical axis is mass in kilograms, both logarithmic. The frame is square: 37 decades on each axis, so the length axis runs past the observable universe. Celestial objects carry photographs. Each mentor with a real astrophysical locus is a translucent region; a circular portrait sits on the edge and the name appears on hover or keyboard focus. Clicking opens a detail page with a shared-element move of that portrait. Wheel zoom is centered on the cursor; drag pans inside the frame; double-click or `0` resets. Category filters dim non-matching objects as well as mentors.
+The horizontal axis is length in metres and the vertical axis is mass in kilograms, both logarithmic. The data window is 10³–10²⁷ m by 10¹⁸–10⁵⁵ kg, so the observable universe stays in the upper-right of the plotted content. The on-screen frame is square because length decades are drawn wider, not because the length axis was extended to 10⁴⁰ m. Celestial objects carry photographs. Each mentor with a real astrophysical locus is a translucent region; a circular portrait sits on the edge and the name appears on hover or keyboard focus. Clicking opens a detail page with a shared-element move of that portrait (1050ms, two-thirds the previous speed, with the paired fades slowed the same way). Wheel zoom is centered on the cursor; drag pans inside the frame; double-click or `0` resets. Category filters dim non-matching objects as well as mentors.
 
 Neutrinos, dark-matter particles, and laboratory plasmas are not assigned fake coordinates. They are listed in the left margin. Dong Lai’s range runs from planets to massive black-hole binaries, so his region is a dashed outline rather than a filled wash.
 

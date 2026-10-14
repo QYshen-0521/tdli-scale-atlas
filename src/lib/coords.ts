@@ -1,7 +1,8 @@
 export const BOUNDS = {
-  // Equal spans so one decade is the same length on both axes and the frame is square.
-  // The horizontal axis is widened past the observable universe; nothing is plotted there.
-  logL: [3, 40] as const,
+  // Data ranges. Length stops just past the observable universe (log10 L ≈ 26.64).
+  // The on-screen frame is square because length decades are drawn wider, not
+  // because empty decades were added out to 10^40 m.
+  logL: [3, 27] as const,
   logM: [18, 55] as const,
 };
 
@@ -16,29 +17,44 @@ export function span() {
   };
 }
 
+/**
+ * Pixels per decade. `k` is the mass-axis scale. Length decades are stretched
+ * by dM/dL so the data rectangle is a square at every zoom.
+ */
+export function axisScales(k: number) {
+  const { dL, dM } = span();
+  return { kx: k * (dM / dL), ky: k };
+}
+
 export function fitView(width: number, height: number, pad: Pads): View {
   const { dL, dM } = span();
   const availW = Math.max(80, width - pad.l - pad.r);
   const availH = Math.max(80, height - pad.t - pad.b);
-  const k = Math.min(availW / dL, availH / dM);
+  const side = Math.min(availW, availH);
+  const k = side / dM;
+  const { kx, ky } = axisScales(k);
+  const plotW = dL * kx;
+  const plotH = dM * ky;
   return {
     k,
-    x: pad.l + (availW - dL * k) / 2,
-    y: pad.t + (availH - dM * k) / 2,
+    x: pad.l + (availW - plotW) / 2,
+    y: pad.t + (availH - plotH) / 2,
   };
 }
 
 export function project(logL: number, logM: number, view: View) {
+  const { kx, ky } = axisScales(view.k);
   return {
-    x: view.x + (logL - BOUNDS.logL[0]) * view.k,
-    y: view.y + (BOUNDS.logM[1] - logM) * view.k,
+    x: view.x + (logL - BOUNDS.logL[0]) * kx,
+    y: view.y + (BOUNDS.logM[1] - logM) * ky,
   };
 }
 
 export function unproject(px: number, py: number, view: View) {
+  const { kx, ky } = axisScales(view.k);
   return {
-    logL: BOUNDS.logL[0] + (px - view.x) / view.k,
-    logM: BOUNDS.logM[1] - (py - view.y) / view.k,
+    logL: BOUNDS.logL[0] + (px - view.x) / kx,
+    logM: BOUNDS.logM[1] - (py - view.y) / ky,
   };
 }
 
@@ -57,10 +73,11 @@ export function zoomAt(
 ): View {
   const nextK = clamp(view.k * factor, minK, maxK);
   const { logL, logM } = unproject(px, py, view);
+  const { kx, ky } = axisScales(nextK);
   return {
     k: nextK,
-    x: px - (logL - BOUNDS.logL[0]) * nextK,
-    y: py - (BOUNDS.logM[1] - logM) * nextK,
+    x: px - (logL - BOUNDS.logL[0]) * kx,
+    y: py - (BOUNDS.logM[1] - logM) * ky,
   };
 }
 
@@ -70,8 +87,9 @@ export function zoomAt(
  */
 export function clampPan(view: View, width: number, height: number, pad: Pads = { l: 0, r: 0, t: 0, b: 0 }): View {
   const { dL, dM } = span();
-  const plotW = dL * view.k;
-  const plotH = dM * view.k;
+  const { kx, ky } = axisScales(view.k);
+  const plotW = dL * kx;
+  const plotH = dM * ky;
   const innerW = Math.max(0, width - pad.l - pad.r);
   const innerH = Math.max(0, height - pad.t - pad.b);
 

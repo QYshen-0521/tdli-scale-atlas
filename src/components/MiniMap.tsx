@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { chartMentors, objects } from "../content.ts";
-import { BOUNDS, fitView, project } from "../lib/coords.ts";
+import { BOUNDS, axisScales, fitView, project } from "../lib/coords.ts";
 import type { Mentor } from "../types.ts";
 
 const W = 760;
@@ -28,7 +28,8 @@ export function MiniMap({ mentor }: { mentor: Mentor }) {
           };
           if (region.shape === "ellipse") {
             const c = project(region.cx, region.cy, view);
-            return <ellipse key={`${m.id}-${i}`} cx={c.x} cy={c.y} rx={region.rx * view.k} ry={region.ry * view.k} {...props} />;
+            const { kx, ky } = axisScales(view.k);
+            return <ellipse key={`${m.id}-${i}`} cx={c.x} cy={c.y} rx={region.rx * kx} ry={region.ry * ky} {...props} />;
           }
           if (region.shape === "rect") {
             const a = project(region.logL0, region.logM1, view);

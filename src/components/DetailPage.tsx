@@ -67,42 +67,41 @@ export default function DetailPage() {
         <kbd>Esc</kbd>
       </button>
       <article className="detail-sheet">
-        <header className="detail-hero">
-          <div className="detail-seal">
-            <MentorAvatar mentor={mentor} size={112} />
-          </div>
-          <div className="detail-copy">
-            <p className="eyebrow">{mentor.divisionZh}</p>
-            <h1 ref={headingRef} tabIndex={-1}>
-              {mentor.nameZh}
-              <small>{mentor.nameEn}</small>
-            </h1>
-            <p className="detail-title">{mentor.titleZh}</p>
-            <p className="detail-title en">{mentor.titleEn}</p>
-            <ul className="chips">
-              {mentor.interests.slice(0, 4).map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </div>
-        </header>
-
-        <div className="detail-rest">
-        <div className="detail-grid">
-          <section className="prose">
-            {mentor.summaryZh.map((para) => (
-              <p key={para}>{para}</p>
-            ))}
-            <p className="en-block">{mentor.summaryEn}</p>
-          </section>
+        <div className="detail-top">
+          <header className="detail-hero">
+            <div className="detail-seal">
+              <MentorAvatar mentor={mentor} size={112} />
+            </div>
+            <div className="detail-copy">
+              <p className="eyebrow">{mentor.divisionZh}</p>
+              <h1 ref={headingRef} tabIndex={-1}>
+                {mentor.nameZh}
+                <small>{mentor.nameEn}</small>
+              </h1>
+              <p className="detail-title">{mentor.titleZh}</p>
+              <p className="detail-title en">{mentor.titleEn}</p>
+              <ul className="chips">
+                {mentor.interests.slice(0, 4).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          </header>
           <aside className="place-card">
             <h2>{mentor.placement === "chart" ? "在图上的位置" : "为什么不在图上"}</h2>
             {mentor.placement === "chart" ? <MiniMap mentor={mentor} /> : null}
             <p>{mentor.placementNoteZh}</p>
             <p className="en-block">{mentor.placementNoteEn}</p>
           </aside>
+          <section className="prose">
+            {mentor.summaryZh.map((para) => (
+              <p key={para}>{para}</p>
+            ))}
+            <p className="en-block">{mentor.summaryEn}</p>
+          </section>
         </div>
 
+        <div className="detail-rest">
         {pictures.length ? (
           <section className="gallery">
             <h2>相关天体</h2>

@@ -9,6 +9,7 @@ import {
   RS_OFFSET,
   WATER_OFFSET,
   WATER_SLOPE,
+  axisScales,
   clampPan,
   fitView,
   project,
@@ -423,16 +424,17 @@ export function Chart({
 
 function ChartGrid({ view, width, height }: { view: View; width: number; height: number }) {
   const { dL, dM } = span();
+  const { kx, ky } = axisScales(view.k);
   const lines: { x1: number; y1: number; x2: number; y2: number; key: string }[] = [];
   for (let n = BOUNDS.logL[0]; n <= BOUNDS.logL[1]; n += 1) {
-    const x = view.x + (n - BOUNDS.logL[0]) * view.k;
+    const x = view.x + (n - BOUNDS.logL[0]) * kx;
     if (x < -20 || x > width + 20) continue;
-    lines.push({ x1: x, y1: view.y, x2: x, y2: view.y + dM * view.k, key: `v${n}` });
+    lines.push({ x1: x, y1: view.y, x2: x, y2: view.y + dM * ky, key: `v${n}` });
   }
   for (let n = BOUNDS.logM[0]; n <= BOUNDS.logM[1]; n += 1) {
-    const y = view.y + (BOUNDS.logM[1] - n) * view.k;
+    const y = view.y + (BOUNDS.logM[1] - n) * ky;
     if (y < -20 || y > height + 20) continue;
-    lines.push({ x1: view.x, y1: y, x2: view.x + dL * view.k, y2: y, key: `h${n}` });
+    lines.push({ x1: view.x, y1: y, x2: view.x + dL * kx, y2: y, key: `h${n}` });
   }
   return (
     <g className="grid">
@@ -591,13 +593,14 @@ function MentorShapes({
         };
         if (region.shape === "ellipse") {
           const c = project(region.cx, region.cy, view);
+          const { kx, ky } = axisScales(view.k);
           return (
             <ellipse
               key={index}
               cx={c.x}
               cy={c.y}
-              rx={Math.max(8, region.rx * view.k)}
-              ry={Math.max(8, region.ry * view.k)}
+              rx={Math.max(8, region.rx * kx)}
+              ry={Math.max(8, region.ry * ky)}
               {...paint}
               pointerEvents={mentor.coverage === "broad" ? "none" : "auto"}
               {...(mentor.coverage === "broad" ? {} : handlers)}
