@@ -1,0 +1,1231 @@
+{
+  "sourceRoot": "https://tdli.sjtu.edu.cn/people/fellows-professors",
+  "subcategoriesTraversed": [
+    "tdlee-chair-professors",
+    "fellows-professors",
+    "distinguished-fellows",
+    "tenured-fellows",
+    "tenure-track-fellows",
+    "senior-fellows"
+  ],
+  "subcategories": [
+    {
+      "subcategory": "李政道讲席教授 / 含兼职退休标注",
+      "slug": "tdlee-chair-professors",
+      "url": "https://tdli.sjtu.edu.cn/people/fellows-professors/tdlee-chair-professors",
+      "count": 13,
+      "people": [
+        {
+          "name": "景益鹏",
+          "titleRaw": "李政道讲席教授 、 研究部主任",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40088/jing-yipeng",
+          "email": "ypjing@sjtu.edu.cn",
+          "office": "S502",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "李政道讲席教授 / 含兼职退休标注",
+          "fellowsSlug": "tdlee-chair-professors"
+        },
+        {
+          "name": "赖东",
+          "titleRaw": "李政道讲席教授、 研究部主任",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40040/dong-lai",
+          "email": "donglai@sjtu.edu.cn",
+          "office": "S433",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "李政道讲席教授 / 含兼职退休标注",
+          "fellowsSlug": "tdlee-chair-professors"
+        },
+        {
+          "name": "张杰",
+          "titleRaw": "李政道讲席教授 、 所长",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40110/jie-zhang",
+          "email": "tdli-director@sjtu.edu.cn",
+          "office": "上海市浦东新区李所路1号李政道研究所",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "李政道讲席教授 / 含兼职退休标注",
+          "fellowsSlug": "tdlee-chair-professors"
+        },
+        {
+          "name": "Frank Wilczek",
+          "titleRaw": "李政道讲席教授、首席科学家",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40028/frank-wilczek",
+          "email": "wilczek@sjtu.edu.cn",
+          "office": null,
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "李政道讲席教授 / 含兼职退休标注",
+          "fellowsSlug": "tdlee-chair-professors"
+        },
+        {
+          "name": "戴希",
+          "titleRaw": "兼职学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40701/xi-dai",
+          "email": null,
+          "office": null,
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "李政道讲席教授 / 含兼职退休标注",
+          "fellowsSlug": "tdlee-chair-professors"
+        },
+        {
+          "name": "丁洪",
+          "titleRaw": "李政道讲席教授 、 副所长 、 研究部主任",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40190/hong-ding",
+          "email": "dingh@sjtu.edu.cn",
+          "office": "S505",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "李政道讲席教授 / 含兼职退休标注",
+          "fellowsSlug": "tdlee-chair-professors"
+        },
+        {
+          "name": "贾金锋",
+          "titleRaw": "李政道讲席教授 、 研究部主任",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40057/jia-jinfeng",
+          "email": null,
+          "office": "S503",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "李政道讲席教授 / 含兼职退休标注",
+          "fellowsSlug": "tdlee-chair-professors"
+        },
+        {
+          "name": "牛谦",
+          "titleRaw": "李政道讲席教授（兼职）",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40704/qian-niu",
+          "email": null,
+          "office": null,
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "李政道讲席教授 / 含兼职退休标注",
+          "fellowsSlug": "tdlee-chair-professors"
+        },
+        {
+          "name": "王楠林",
+          "titleRaw": "李政道讲席教授",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/44517/",
+          "email": "nlwang@sjtu.edu.cn",
+          "office": "S506",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "李政道讲席教授 / 含兼职退休标注",
+          "fellowsSlug": "tdlee-chair-professors"
+        },
+        {
+          "name": "Michael Ramsey-Musolf",
+          "titleRaw": "李政道讲席教授",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40046/michael-ramsey-musolf",
+          "email": "mjrm@sjtu.edu.cn",
+          "office": "N628",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "李政道讲席教授 / 含兼职退休标注",
+          "fellowsSlug": "tdlee-chair-professors"
+        },
+        {
+          "name": "Tsutomu Yanagida",
+          "titleRaw": "李政道讲席教授（退休）",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40047/y",
+          "email": "tsutomu.tyanagida@sjtu.edu.cn",
+          "office": "N656",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "李政道讲席教授 / 含兼职退休标注",
+          "fellowsSlug": "tdlee-chair-professors"
+        },
+        {
+          "name": "何小刚",
+          "titleRaw": "李政道讲席教授、研究部主任",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40048/he-xiaogang",
+          "email": "hexg@sjtu.edu.cn",
+          "office": "N645",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "李政道讲席教授 / 含兼职退休标注",
+          "fellowsSlug": "tdlee-chair-professors"
+        },
+        {
+          "name": "季向东",
+          "titleRaw": "鸿文讲席教授",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/45213/ji-xiangdong",
+          "email": "xdji@sjtu.edu.cn",
+          "office": "S515",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "李政道讲席教授 / 含兼职退休标注",
+          "fellowsSlug": "tdlee-chair-professors"
+        }
+      ]
+    },
+    {
+      "subcategory": "学者系列默认页（同讲席）",
+      "slug": "fellows-professors",
+      "url": "https://tdli.sjtu.edu.cn/people/fellows-professors",
+      "count": 13,
+      "people": [
+        {
+          "name": "景益鹏",
+          "titleRaw": "李政道讲席教授 、 研究部主任",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40088/jing-yipeng",
+          "email": "ypjing@sjtu.edu.cn",
+          "office": "S502",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "学者系列默认页（同讲席）",
+          "fellowsSlug": "fellows-professors"
+        },
+        {
+          "name": "赖东",
+          "titleRaw": "李政道讲席教授、 研究部主任",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40040/dong-lai",
+          "email": "donglai@sjtu.edu.cn",
+          "office": "S433",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "学者系列默认页（同讲席）",
+          "fellowsSlug": "fellows-professors"
+        },
+        {
+          "name": "张杰",
+          "titleRaw": "李政道讲席教授 、 所长",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40110/jie-zhang",
+          "email": "tdli-director@sjtu.edu.cn",
+          "office": "上海市浦东新区李所路1号李政道研究所",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "学者系列默认页（同讲席）",
+          "fellowsSlug": "fellows-professors"
+        },
+        {
+          "name": "Frank Wilczek",
+          "titleRaw": "李政道讲席教授、首席科学家",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40028/frank-wilczek",
+          "email": "wilczek@sjtu.edu.cn",
+          "office": null,
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "学者系列默认页（同讲席）",
+          "fellowsSlug": "fellows-professors"
+        },
+        {
+          "name": "戴希",
+          "titleRaw": "兼职学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40701/xi-dai",
+          "email": null,
+          "office": null,
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "学者系列默认页（同讲席）",
+          "fellowsSlug": "fellows-professors"
+        },
+        {
+          "name": "丁洪",
+          "titleRaw": "李政道讲席教授 、 副所长 、 研究部主任",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40190/hong-ding",
+          "email": "dingh@sjtu.edu.cn",
+          "office": "S505",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "学者系列默认页（同讲席）",
+          "fellowsSlug": "fellows-professors"
+        },
+        {
+          "name": "贾金锋",
+          "titleRaw": "李政道讲席教授 、 研究部主任",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40057/jia-jinfeng",
+          "email": null,
+          "office": "S503",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "学者系列默认页（同讲席）",
+          "fellowsSlug": "fellows-professors"
+        },
+        {
+          "name": "牛谦",
+          "titleRaw": "李政道讲席教授（兼职）",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40704/qian-niu",
+          "email": null,
+          "office": null,
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "学者系列默认页（同讲席）",
+          "fellowsSlug": "fellows-professors"
+        },
+        {
+          "name": "王楠林",
+          "titleRaw": "李政道讲席教授",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/44517/",
+          "email": "nlwang@sjtu.edu.cn",
+          "office": "S506",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "学者系列默认页（同讲席）",
+          "fellowsSlug": "fellows-professors"
+        },
+        {
+          "name": "Michael Ramsey-Musolf",
+          "titleRaw": "李政道讲席教授",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40046/michael-ramsey-musolf",
+          "email": "mjrm@sjtu.edu.cn",
+          "office": "N628",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "学者系列默认页（同讲席）",
+          "fellowsSlug": "fellows-professors"
+        },
+        {
+          "name": "Tsutomu Yanagida",
+          "titleRaw": "李政道讲席教授（退休）",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40047/y",
+          "email": "tsutomu.tyanagida@sjtu.edu.cn",
+          "office": "N656",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "学者系列默认页（同讲席）",
+          "fellowsSlug": "fellows-professors"
+        },
+        {
+          "name": "何小刚",
+          "titleRaw": "李政道讲席教授、研究部主任",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40048/he-xiaogang",
+          "email": "hexg@sjtu.edu.cn",
+          "office": "N645",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "学者系列默认页（同讲席）",
+          "fellowsSlug": "fellows-professors"
+        },
+        {
+          "name": "季向东",
+          "titleRaw": "鸿文讲席教授",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/45213/ji-xiangdong",
+          "email": "xdji@sjtu.edu.cn",
+          "office": "S515",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "学者系列默认页（同讲席）",
+          "fellowsSlug": "fellows-professors"
+        }
+      ]
+    },
+    {
+      "subcategory": "特聘学者",
+      "slug": "distinguished-fellows",
+      "url": "https://tdli.sjtu.edu.cn/people/fellows-professors/distinguished-fellows",
+      "count": 13,
+      "people": [
+        {
+          "name": "钱列加",
+          "titleRaw": "特聘学者（双聘）",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40023/liejia-qian",
+          "email": "QianLJ19@sjtu.edu.cn",
+          "office": "上海交通大学激光等离子体实验室305室",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "特聘学者",
+          "fellowsSlug": "distinguished-fellows"
+        },
+        {
+          "name": "盛政明",
+          "titleRaw": "特聘学者（双聘）",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40024/zhengming-sheng",
+          "email": "zmsheng@sjtu.edu.cn",
+          "office": "上海交通激光与等离子体实验室301",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "特聘学者",
+          "fellowsSlug": "distinguished-fellows"
+        },
+        {
+          "name": "杨小虎",
+          "titleRaw": "特聘学者 、 副所长",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40021/xiaohu-yang",
+          "email": "xyang@sjtu.edu.cn",
+          "office": "S439",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "特聘学者",
+          "fellowsSlug": "distinguished-fellows"
+        },
+        {
+          "name": "张鹏杰",
+          "titleRaw": "特聘学者（双聘） 、 研究部副主任",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40039/pengjie-zhang",
+          "email": "zhangpj@sjtu.edu.cn",
+          "office": "理科楼5号楼519",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "特聘学者",
+          "fellowsSlug": "distinguished-fellows"
+        },
+        {
+          "name": "钱冬",
+          "titleRaw": "特聘学者（双聘）",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40058/qian-dong",
+          "email": "dqian@sjtu.edu.cn",
+          "office": "理科楼5号楼718室",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "特聘学者",
+          "fellowsSlug": "distinguished-fellows"
+        },
+        {
+          "name": "张卫平",
+          "titleRaw": "特聘学者（双聘）",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40077/zhang-weiping",
+          "email": "wpz@sjtu.edu.cn",
+          "office": "理科楼5号楼",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "特聘学者",
+          "fellowsSlug": "distinguished-fellows"
+        },
+        {
+          "name": "郑浩",
+          "titleRaw": "特聘学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40156/hao-zheng",
+          "email": "haozheng1@sjtu.edu.cn",
+          "office": "N656",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "特聘学者",
+          "fellowsSlug": "distinguished-fellows"
+        },
+        {
+          "name": "葛韶锋",
+          "titleRaw": "特聘学者、教授、所长助理、研究生培养办公室主任",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40053/shao-feng-ge",
+          "email": "gesf@sjtu.edu.cn",
+          "office": "N661",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "特聘学者",
+          "fellowsSlug": "distinguished-fellows"
+        },
+        {
+          "name": "何红建",
+          "titleRaw": "特聘学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40042/he-hongjian",
+          "email": "hjhe@sjtu.edu.cn",
+          "office": "李政道研究所N545",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "特聘学者",
+          "fellowsSlug": "distinguished-fellows"
+        },
+        {
+          "name": "刘江来",
+          "titleRaw": "鸿文特聘学者 副所长",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40043/liu-jianglai",
+          "email": "jianglai.liu@sjtu.edu.cn",
+          "office": "N417",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "特聘学者",
+          "fellowsSlug": "distinguished-fellows"
+        },
+        {
+          "name": "向导",
+          "titleRaw": "特聘学者（双聘）",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40062/xiang-dao",
+          "email": "dxiang@sjtu.edu.cn",
+          "office": "上海交通大学智能电网大楼407室",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "特聘学者",
+          "fellowsSlug": "distinguished-fellows"
+        },
+        {
+          "name": "杨海军",
+          "titleRaw": "特聘学者 （双聘）",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40041/haijun-yang",
+          "email": "haijun.yang@sjtu.edu.cn",
+          "office": "上海交通大学理科楼5号楼625室",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "特聘学者",
+          "fellowsSlug": "distinguished-fellows"
+        },
+        {
+          "name": "周宁",
+          "titleRaw": "特聘学者、 研究部副主任",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40114/ning-zhou",
+          "email": "nzhou@sjtu.edu.cn",
+          "office": "理科楼5号楼642室",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "特聘学者",
+          "fellowsSlug": "distinguished-fellows"
+        }
+      ]
+    },
+    {
+      "subcategory": "长聘学者",
+      "slug": "tenured-fellows",
+      "url": "https://tdli.sjtu.edu.cn/people/fellows-professors/tenured-fellows",
+      "count": 12,
+      "people": [
+        {
+          "name": "Yosuke Mizuno",
+          "titleRaw": "长聘学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40098/yosuke-mizuno",
+          "email": "mizuno@sjtu.edu.cn",
+          "office": "S422",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "长聘学者",
+          "fellowsSlug": "tenured-fellows"
+        },
+        {
+          "name": "冯发波",
+          "titleRaw": "长聘学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40097/feng-fabo",
+          "email": "ffeng@sjtu.edu.cn",
+          "office": "S421",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "长聘学者",
+          "fellowsSlug": "tenured-fellows"
+        },
+        {
+          "name": "祖颖",
+          "titleRaw": "长聘学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40605/ying-zu",
+          "email": "yingzu@sjtu.edu.cn",
+          "office": "S457",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "长聘学者",
+          "fellowsSlug": "tenured-fellows"
+        },
+        {
+          "name": "Vadim Grinenko",
+          "titleRaw": "长聘学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40186/vadim-grinenko",
+          "email": "vadim.grinenko@sjtu.edu.cn",
+          "office": "N552",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "长聘学者",
+          "fellowsSlug": "tenured-fellows"
+        },
+        {
+          "name": "蒋庆东",
+          "titleRaw": "长聘学者、教授 、 凝聚态物理研究部主任助理",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40123/qingdong-jiang",
+          "email": "qingdong.jiang@sjtu.edu.cn",
+          "office": "N653",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "长聘学者",
+          "fellowsSlug": "tenured-fellows"
+        },
+        {
+          "name": "李耀义",
+          "titleRaw": "长聘学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40155/yaoyi-li",
+          "email": "yaoyili@sjtu.edu.cn",
+          "office": "N557",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "长聘学者",
+          "fellowsSlug": "tenured-fellows"
+        },
+        {
+          "name": "钟瑞丹",
+          "titleRaw": "长聘学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40105/ruidan-zhong",
+          "email": "rzhong@sjtu.edu.cn",
+          "office": "N658",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "长聘学者",
+          "fellowsSlug": "tenured-fellows"
+        },
+        {
+          "name": "Yuichiro Nakai",
+          "titleRaw": "长聘学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40019/yuichiro-nakai",
+          "email": "ynakai@sjtu.edu.cn",
+          "office": "N643",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "长聘学者",
+          "fellowsSlug": "tenured-fellows"
+        },
+        {
+          "name": "李数",
+          "titleRaw": "长聘学者、教授",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40051/li-shu",
+          "email": "shuli@sjtu.edu.cn",
+          "office": "N642",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "长聘学者",
+          "fellowsSlug": "tenured-fellows"
+        },
+        {
+          "name": "曲慧麟",
+          "titleRaw": "长聘学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/44940/",
+          "email": "hlqu@sjtu.edu.cn",
+          "office": "N431",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "长聘学者",
+          "fellowsSlug": "tenured-fellows"
+        },
+        {
+          "name": "徐东莲",
+          "titleRaw": "长聘学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40056/donglian-xu",
+          "email": "donglianxu@sjtu.edu.cn",
+          "office": "N670",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "长聘学者",
+          "fellowsSlug": "tenured-fellows"
+        },
+        {
+          "name": "许金祥",
+          "titleRaw": "长聘学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40050/kim-siang-khaw",
+          "email": "kimsiang84@sjtu.edu.cn",
+          "office": "N669",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "长聘学者",
+          "fellowsSlug": "tenured-fellows"
+        }
+      ]
+    },
+    {
+      "subcategory": "青年学者",
+      "slug": "tenure-track-fellows",
+      "url": "https://tdli.sjtu.edu.cn/people/fellows-professors/tenure-track-fellows",
+      "count": 28,
+      "people": [
+        {
+          "name": "Darius Modirrousta-Galian",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/42601/",
+          "email": "modirrousta-galian@sjtu.edu.cn",
+          "office": "S467",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "Masahiro Ogihara",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40125/masahiro-ogihara",
+          "email": "ogihara@sjtu.edu.cn",
+          "office": "S418",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "潘震",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40677/zhen-pan",
+          "email": "zhpan@sjtu.edu.cn",
+          "office": "S468",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "谭先瑜",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40265/xianyu-tan",
+          "email": "xianyut@sjtu.edu.cn",
+          "office": "S466",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "唐梦涛",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/43984/",
+          "email": "mengtao.tang@sjtu.edu.cn",
+          "office": "S417",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "王界双",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40018/jieshuang-wang",
+          "email": "jieshuangwang@sjtu.edu.cn",
+          "office": "S456",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "吴益鹏",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40608/yipeng-wu",
+          "email": "yipeng.wu@sjtu.edu.cn",
+          "office": "S419",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "易龙卿",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40270/longqin-yi",
+          "email": "lqyi@sjtu.edu.cn",
+          "office": "S408",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "周浩",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40022/hao-zhou",
+          "email": "hao_zhou@sjtu.edu.cn",
+          "office": "S415",
+          "divisionOrGroup": "天文与天体物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "董涛",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/44954/",
+          "email": "taodong@sjtu.edu.cn",
+          "office": "N554",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "高安远",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40620/anyuan-gao",
+          "email": "anyuangao@sjtu.edu.cn",
+          "office": "N662",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "顾强强",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/43037/qiangqiang-gu",
+          "email": "qiangqianggu@sjtu.edu.cn",
+          "office": "N541",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "刘纯骁",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/44364/chunxiao-liu",
+          "email": "chunxiaoliu62@sjtu.edu.cn",
+          "office": "N542",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "刘亮",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40196/liang-liu",
+          "email": "liul21@sjtu.edu.cn",
+          "office": "N543",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "刘晓雪",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40191/xiaoxue-liu",
+          "email": "xxliu90@sjtu.edu.cn",
+          "office": "N555",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "吕佰晴",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40202/baiqing-lv",
+          "email": "baiqing@sjtu.edu.cn",
+          "office": "N544",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "彭金波",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40194/jinbo-peng",
+          "email": "jinbopeng@sjtu.edu.cn",
+          "office": "N560",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "严智明",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40091/chi-ming-yim",
+          "email": "c.m.yim@sjtu.edu.cn",
+          "office": "N659",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "伊合绵",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40634/hemian-yi",
+          "email": "hemianyi@sjtu.edu.cn",
+          "office": "N660",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "袁凡奇",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/42292/noah-f.-q.-yuan",
+          "email": "yuanfanqi@sjtu.edu.cn",
+          "office": "N644",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "周海彪",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/41284/haibiao-zhou",
+          "email": "haibiao.zhou@sjtu.edu.cn",
+          "office": "N641",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "Iwan Morton-Blake",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40193/iwan-morton-blake",
+          "email": "iblake@sjtu.edu.cn",
+          "office": "N627",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "艾稳元",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/44830/",
+          "email": "wenyuanai@sjtu.edu.cn",
+          "office": "N652",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "陈一帆",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/44260/yifan-chen",
+          "email": "chen.yifan@sjtu.edu.cn",
+          "office": "N571",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "韩君",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40189/han-jun",
+          "email": "sjhan@sjtu.edu.cn",
+          "office": "N553",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "梅华林",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40480/hualin-mei",
+          "email": "mei.hualin@sjtu.edu.cn",
+          "office": "N561",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "向昕",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40458/xin-xiang",
+          "email": "xxiang@sjtu.edu.cn",
+          "office": "N559",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        },
+        {
+          "name": "谢可平",
+          "titleRaw": "青年学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/44934/",
+          "email": "kepingxie@sjtu.edu.cn",
+          "office": "N655",
+          "divisionOrGroup": "粒子与核物理研究部",
+          "fellowsSubcategory": "青年学者",
+          "fellowsSlug": "tenure-track-fellows"
+        }
+      ]
+    },
+    {
+      "subcategory": "资深学者",
+      "slug": "senior-fellows",
+      "url": "https://tdli.sjtu.edu.cn/people/fellows-professors/senior-fellows",
+      "count": 1,
+      "people": [
+        {
+          "name": "刘鑫",
+          "titleRaw": "资深学者",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/42320/xin-liu",
+          "email": "phyliuxin@sjtu.edu.cn",
+          "office": "N656",
+          "divisionOrGroup": "凝聚态物理研究部",
+          "fellowsSubcategory": "资深学者",
+          "fellowsSlug": "senior-fellows"
+        }
+      ]
+    }
+  ],
+  "relatedSeriesPages": [
+    {
+      "page": "研究员系列",
+      "url": "https://tdli.sjtu.edu.cn/people/scientists",
+      "count": 16,
+      "people": [
+        {
+          "name": "葛绪雷",
+          "titleRaw": "实验室天体物理实验平台助理研究员",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40622/xulei-ge",
+          "email": "gexulei@sjtu.edu.cn",
+          "office": "S4F-East LAP",
+          "section": "天文与天体物理研究部"
+        },
+        {
+          "name": "顾一舟",
+          "titleRaw": "交通大学光谱望远镜团队助理研究员",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40631/yizhou-gu",
+          "email": "guyizhou@sjtu.edu.cn",
+          "office": "S437",
+          "section": "天文与天体物理研究部"
+        },
+        {
+          "name": "黄小军",
+          "titleRaw": "实验室天体物理实验平台研究员",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40629/xiaojun-huang",
+          "email": "hxj740204@sjtu.edu.cn",
+          "office": "S407",
+          "section": "天文与天体物理研究部"
+        },
+        {
+          "name": "姜海娇",
+          "titleRaw": "JUST光谱望远镜团队副研究员",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/44366/",
+          "email": "jianghaijiao@sjtu.edu.cn",
+          "office": "S463",
+          "section": "天文与天体物理研究部"
+        },
+        {
+          "name": "孙清辉",
+          "titleRaw": "JUST光谱望远镜团队副研究员",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40654/qinghui-sun",
+          "email": "qinghuisun@sjtu.edu.cn",
+          "office": "S465",
+          "section": "天文与天体物理研究部"
+        },
+        {
+          "name": "杨楷",
+          "titleRaw": "JUST光谱望远镜团队助理研究员",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/45622/y",
+          "email": "kyang2146@sjtu.edu.cn",
+          "office": "S437",
+          "section": "天文与天体物理研究部"
+        },
+        {
+          "name": "郑宪忠",
+          "titleRaw": "JUST光谱望远镜团队资深研究员",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40645/xianzhong-zheng",
+          "email": "xzzheng@sjtu.edu.cn",
+          "office": "S438",
+          "section": "天文与天体物理研究部"
+        },
+        {
+          "name": "朱鹏飞",
+          "titleRaw": "实验室天体物理实验平台副研究员",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40625/pengfei-zhu",
+          "email": "flypeng@sjtu.edu.cn",
+          "office": "S411",
+          "section": "天文与天体物理研究部"
+        },
+        {
+          "name": "高波",
+          "titleRaw": "拓扑材料研究平台资深研究员",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40653/bo-gao",
+          "email": "gaobo_79@sjtu.edu.cn",
+          "office": "N562",
+          "section": "凝聚态物理研究部"
+        },
+        {
+          "name": "潘默君",
+          "titleRaw": "拓扑材料研究平台助理研究员",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40698/mojun-pan",
+          "email": "panmojun@sjtu.edu.cn",
+          "office": null,
+          "section": "凝聚态物理研究部"
+        },
+        {
+          "name": "潘银萍",
+          "titleRaw": "助理研究员",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/42994/",
+          "email": "panyinping@sjtu.edu.cn",
+          "office": "N548",
+          "section": "凝聚态物理研究部"
+        },
+        {
+          "name": "应江华",
+          "titleRaw": "助理研究员",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/42346/jianghua-ying",
+          "email": "qyingjh@sjtu.edu.cn",
+          "office": "N524",
+          "section": "凝聚态物理研究部"
+        },
+        {
+          "name": "谌勋",
+          "titleRaw": "液氙暗物质探测实验团队副研究员",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40695/chen-xun",
+          "email": null,
+          "office": "N567",
+          "section": "粒子与核物理研究部"
+        },
+        {
+          "name": "崔祥仪",
+          "titleRaw": "液氙暗物质探测实验团队助理研究员",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40090/cui-xiangyi",
+          "email": "hongloumeng@sjtu.edu.cn",
+          "office": null,
+          "section": "粒子与核物理研究部"
+        },
+        {
+          "name": "黄天奇",
+          "titleRaw": "南海中微子望远镜计划助理研究员",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/45605/h",
+          "email": "tianqi.huang@sjtu.edu.cn",
+          "office": "N521",
+          "section": "粒子与核物理研究部"
+        },
+        {
+          "name": "王舟",
+          "titleRaw": "液氙暗物质探测实验团队副研究员",
+          "profileUrl": "https://tdli.sjtu.edu.cn/people/40623/wang-zhou",
+          "email": "wangzhou0303@sjtu.edu.cn",
+          "office": "N558",
+          "section": "粒子与核物理研究部"
+        }
+      ]
+    },
+    {
+      "page": "平台相关(platform-fellows)",
+      "url": "https://tdli.sjtu.edu.cn/people/platform-fellows",
+      "count": 28,
+      "people": [
+        {
+          "name": "刘成则",
+          "titleRaw": "副研究员",
+          "profileUrl": "https://www.physics.sjtu.edu.cn/jsml/liuchengze.html",
+          "email": "czliu@sjtu.edu.cn",
+          "section": "交通大学光谱望远镜",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "张昊彤",
+          "titleRaw": "研究员",
+          "profileUrl": "https://nao.cas.cn/nrc/zg/202204/t20220406_6985984.html",
+          "email": null,
+          "section": "交通大学光谱望远镜",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "朱青峰",
+          "titleRaw": "副教授",
+          "profileUrl": "https://faculty.ustc.edu.cn/zhuqingfeng/zh_CN/",
+          "email": "zhuqf@ustc.edu.cn",
+          "section": "交通大学光谱望远镜",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "田新亮",
+          "titleRaw": "教授",
+          "profileUrl": "https://naoce.sjtu.edu.cn/teachers/tianxinliang.html",
+          "email": "tianxinliang@sjtu.edu.cn",
+          "section": "南海中微子望远镜计划",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "魏汉迪",
+          "titleRaw": "副教授",
+          "profileUrl": "https://naoce.sjtu.edu.cn/teachers/weihandi.html",
+          "email": "weihandi@sjtu.edu.cn",
+          "section": "南海中微子望远镜计划",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "胡亮",
+          "titleRaw": "副教授",
+          "profileUrl": "https://ee.sjtu.edu.cn/FacultyDetail.aspx?id=184&amp;infoid=66&amp;flag=66",
+          "email": "liang.hu@sjtu.edu.cn",
+          "section": "南海中微子望远镜计划",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "江平开",
+          "titleRaw": "教授",
+          "profileUrl": "https://scce.sjtu.edu.cn/teachers/1667.html",
+          "email": "pkjiang@sjtu.edu.cn",
+          "section": "南海中微子望远镜计划",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "刘飞",
+          "titleRaw": "工程师",
+          "profileUrl": "https://scce.sjtu.edu.cn/teachers/1502.html",
+          "email": "feiliu@sjtu.edu.cn",
+          "section": "南海中微子望远镜计划",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "李纪",
+          "titleRaw": "副教授",
+          "profileUrl": "https://soo.sjtu.edu.cn/teacher-list/248.html",
+          "email": "liji81@sjtu.edu.cn",
+          "section": "南海中微子望远镜计划",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "杨勇",
+          "titleRaw": "副教授",
+          "profileUrl": "https://www.physics.sjtu.edu.cn/jsml/yangyong.html",
+          "email": "yong.yang@sjtu.edu.cn",
+          "section": "南海中微子望远镜计划",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "郭军",
+          "titleRaw": "副教授",
+          "profileUrl": "https://www.physics.sjtu.edu.cn/jsml/guojun.html",
+          "email": "jun.guo@sjtu.edu.cn",
+          "section": "南海中微子望远镜计划",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "邬维浩",
+          "titleRaw": "副教授",
+          "profileUrl": "https://www.physics.sjtu.edu.cn/jsml/wuweihao.html",
+          "email": "wuweihao@sjtu.edu.cn",
+          "section": "南海中微子望远镜计划",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "李亮",
+          "titleRaw": "教授",
+          "profileUrl": "https://www.physics.sjtu.edu.cn/jsml/liliang.html",
+          "email": "liangliphy@sjtu.edu.cn",
+          "section": "南海中微子望远镜计划",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "高俊",
+          "titleRaw": "教授",
+          "profileUrl": "https://www.physics.sjtu.edu.cn/jsml/gaojun.html",
+          "email": "jung49@sjtu.edu.cn",
+          "section": "南海中微子望远镜计划",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "韩柯",
+          "titleRaw": "教授",
+          "profileUrl": "https://www.physics.sjtu.edu.cn/jsml/hanke.html",
+          "email": "ke.han@sjtu.edu.cn",
+          "section": "液氙暗物质探测实验",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "杨勇",
+          "titleRaw": "副教授",
+          "profileUrl": "https://www.physics.sjtu.edu.cn/jsml/yangyong.html",
+          "email": "yong.yang@sjtu.edu.cn",
+          "section": "液氙暗物质探测实验",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "孟月",
+          "titleRaw": "副教授",
+          "profileUrl": "https://www.physics.sjtu.edu.cn/jsml/mengyue.html",
+          "email": "mengyue@sjtu.edu.cn",
+          "section": "液氙暗物质探测实验",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "邬维浩",
+          "titleRaw": "副教授",
+          "profileUrl": "https://www.physics.sjtu.edu.cn/jsml/wuweihao.html",
+          "email": "wuweihao@sjtu.edu.cn",
+          "section": "液氙暗物质探测实验",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "黄俊挺",
+          "titleRaw": "副教授",
+          "profileUrl": "https://www.physics.sjtu.edu.cn/jsml/huangjunting.html",
+          "email": "junting@sjtu.edu.cn",
+          "section": "液氙暗物质探测实验",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "王少博",
+          "titleRaw": "副教授",
+          "profileUrl": "https://www.physics.sjtu.edu.cn/jsml/wangshaobo.html",
+          "email": "shaobo.wang@sjtu.edu.cn",
+          "section": "液氙暗物质探测实验",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "肖梦姣",
+          "titleRaw": "副教授",
+          "profileUrl": "https://www.physics.sjtu.edu.cn/jsml/xiaomengjiao.html",
+          "email": "xmjzcc@sjtu.edu.cn",
+          "section": "液氙暗物质探测实验",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "巨永林",
+          "titleRaw": "教授",
+          "profileUrl": "https://me.sjtu.edu.cn/teacher_directory1/juyonglin.html",
+          "email": "yju@sjtu.edu.cn",
+          "section": "液氙暗物质探测实验",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "陈黎明",
+          "titleRaw": "特聘教授",
+          "profileUrl": "https://www.physics.sjtu.edu.cn/jsml/chenliming.html",
+          "email": "lmchen@sjtu.edu.cn",
+          "section": "实验室天体物理实验平台",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "陈民",
+          "titleRaw": "特聘教授",
+          "profileUrl": "https://www.physics.sjtu.edu.cn/jsml/chenmin.html",
+          "email": "minchen@sjtu.edu.cn",
+          "section": "实验室天体物理实验平台",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "闫文超",
+          "titleRaw": "准聘副教授",
+          "profileUrl": "https://www.physics.sjtu.edu.cn/jsml/yanwenchao.html",
+          "email": "wenchaoyan@sjtu.edu.cn",
+          "section": "实验室天体物理实验平台",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "杨浩",
+          "titleRaw": "助理研究员",
+          "profileUrl": "https://www.physics.sjtu.edu.cn/jsml/yanghao.html",
+          "email": "yang-hao@sjtu.edu.cn",
+          "section": "拓扑材料研究实验平台",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "管海兵",
+          "titleRaw": "教授",
+          "profileUrl": "https://www.cs.sjtu.edu.cn/PeopleDetail.aspx?id=102",
+          "email": "hbguan@sjtu.edu.cn",
+          "section": "高性能科学计算平台",
+          "note": "平台页条目；外链常见"
+        },
+        {
+          "name": "林新华",
+          "titleRaw": "副教授",
+          "profileUrl": "https://hpc.sjtu.edu.cn/~lin/",
+          "email": "james@sjtu.edu.cn",
+          "section": "高性能科学计算平台",
+          "note": "平台页条目；外链常见"
+        }
+      ],
+      "note": "含交大物理系等外链；按实验平台分组；不单独改变教师收录口径"
+    }
+  ],
+  "note": "兼职/退休写在 titleRaw（戴希兼职、牛谦兼职、Yanagida 退休）。导航未列的 junior/young/adjunct/retired/part-time slug 返回异常大页，未计入正式子类。 platform-fellows 已按外链 teacher-item 解析。"
+}

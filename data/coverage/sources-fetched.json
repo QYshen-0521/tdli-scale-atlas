@@ -1,0 +1,109 @@
+{
+  "generatedAtAsiaShanghai": "2026-10-15T02:57:05+0800",
+  "sources": [
+    {
+      "name": "astronomy-members",
+      "url": "https://tdli.sjtu.edu.cn/research/astronomy-and-astrophysics-division/member",
+      "httpStatus": 200,
+      "bytes": 226377,
+      "fetchedAtAsiaShanghai": "2026-10-15T02:35:32+0800",
+      "personCountEstimate": 27
+    },
+    {
+      "name": "condensed-members",
+      "url": "https://tdli.sjtu.edu.cn/research/condensed-matter-division/member",
+      "httpStatus": 200,
+      "bytes": 221338,
+      "fetchedAtAsiaShanghai": "2026-10-15T02:40:11+0800",
+      "personCountEstimate": 30
+    },
+    {
+      "name": "fellows-default",
+      "url": "https://tdli.sjtu.edu.cn/people/fellows-professors",
+      "httpStatus": 200,
+      "bytes": 106721,
+      "fetchedAtAsiaShanghai": "2026-10-15T02:40:27+0800",
+      "personCountEstimate": 13
+    },
+    {
+      "name": "fellows-distinguished",
+      "url": "https://tdli.sjtu.edu.cn/people/fellows-professors/distinguished-fellows",
+      "httpStatus": 200,
+      "bytes": 107284,
+      "fetchedAtAsiaShanghai": "2026-10-15T02:40:27+0800",
+      "personCountEstimate": 13
+    },
+    {
+      "name": "fellows-senior",
+      "url": "https://tdli.sjtu.edu.cn/people/fellows-professors/senior-fellows",
+      "httpStatus": 200,
+      "bytes": 71387,
+      "fetchedAtAsiaShanghai": "2026-10-15T02:40:27+0800",
+      "personCountEstimate": 1
+    },
+    {
+      "name": "fellows-tdlee-chair",
+      "url": "https://tdli.sjtu.edu.cn/people/fellows-professors/tdlee-chair-professors",
+      "httpStatus": 200,
+      "bytes": 106767,
+      "fetchedAtAsiaShanghai": "2026-10-15T02:40:50+0800",
+      "personCountEstimate": 13
+    },
+    {
+      "name": "fellows-tenure-track",
+      "url": "https://tdli.sjtu.edu.cn/people/fellows-professors/tenure-track-fellows",
+      "httpStatus": 200,
+      "bytes": 142709,
+      "fetchedAtAsiaShanghai": "2026-10-15T02:40:27+0800",
+      "personCountEstimate": 28
+    },
+    {
+      "name": "fellows-tenured",
+      "url": "https://tdli.sjtu.edu.cn/people/fellows-professors/tenured-fellows",
+      "httpStatus": 200,
+      "bytes": 104478,
+      "fetchedAtAsiaShanghai": "2026-10-15T02:40:27+0800",
+      "personCountEstimate": 12
+    },
+    {
+      "name": "particle-members",
+      "url": "https://tdli.sjtu.edu.cn/research/particle-and-nuclear-physics-division/member",
+      "httpStatus": 200,
+      "bytes": 241650,
+      "fetchedAtAsiaShanghai": "2026-10-15T02:39:58+0800",
+      "personCountEstimate": 26
+    },
+    {
+      "name": "people-directory",
+      "url": "https://tdli.sjtu.edu.cn/people/directory",
+      "httpStatus": 200,
+      "bytes": 82439,
+      "fetchedAtAsiaShanghai": "2026-10-15T02:40:27+0800",
+      "personCountEstimate": null
+    },
+    {
+      "name": "platform-fellows",
+      "url": "https://tdli.sjtu.edu.cn/people/platform-fellows",
+      "httpStatus": 200,
+      "bytes": 141680,
+      "fetchedAtAsiaShanghai": "2026-10-15T02:40:27+0800",
+      "personCountEstimate": 28
+    },
+    {
+      "name": "scientists",
+      "url": "https://tdli.sjtu.edu.cn/people/scientists",
+      "httpStatus": 200,
+      "bytes": 111619,
+      "fetchedAtAsiaShanghai": "2026-10-15T02:40:27+0800",
+      "personCountEstimate": 16
+    },
+    {
+      "name": "supervisor-directory",
+      "url": "https://tdli.sjtu.edu.cn/grad-students/supervisor-directory",
+      "httpStatus": 200,
+      "bytes": 140293,
+      "fetchedAtAsiaShanghai": "2026-10-15T02:39:06+0800",
+      "personCountEstimate": 57
+    }
+  ]
+}

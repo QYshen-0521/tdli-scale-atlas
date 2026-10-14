@@ -1,0 +1,161 @@
+[
+  {
+    "id": "tdli-astro-member",
+    "title": "天文与天体物理研究部成员",
+    "url": "https://tdli.sjtu.edu.cn/research/astronomy-and-astrophysics-division/member",
+    "language": "zh",
+    "fetchedAt": "2026-10-15",
+    "expectedMarkers": [
+      "department-title",
+      "teacher-item",
+      "天文与天体物理研究部"
+    ],
+    "minFaculty": 20,
+    "notes": "学者系列与研究员系列去重后 27 人。主任/副主任栏与职级栏重复，不另计。"
+  },
+  {
+    "id": "tdli-astro-member-en",
+    "title": "Astronomy and Astrophysics Division members",
+    "url": "https://tdli.sjtu.edu.cn/en/research/astronomy-and-astrophysics-division/member",
+    "language": "en",
+    "fetchedAt": "2026-10-15",
+    "expectedMarkers": [
+      "teacher-item"
+    ],
+    "minFaculty": 20,
+    "notes": "用于英文姓名和中英文个人页编号对照。"
+  },
+  {
+    "id": "tdli-particle-member",
+    "title": "粒子与核物理研究部成员",
+    "url": "https://tdli.sjtu.edu.cn/research/particle-and-nuclear-physics-division/member",
+    "language": "zh",
+    "fetchedAt": "2026-10-15",
+    "expectedMarkers": [
+      "teacher-item",
+      "粒子与核物理研究部"
+    ],
+    "minFaculty": 15,
+    "notes": "含兼职、退休、双聘。博士后与工程师排除。"
+  },
+  {
+    "id": "tdli-particle-member-en",
+    "title": "Particle and Nuclear Physics Division members",
+    "url": "https://tdli.sjtu.edu.cn/en/research/particle-and-nuclear-physics-division/member",
+    "language": "en",
+    "fetchedAt": "2026-10-15",
+    "expectedMarkers": [
+      "teacher-item"
+    ],
+    "minFaculty": 15,
+    "notes": "韩君的英文页姓名是 Sophia Han。谌勋的邮箱写在英文页。"
+  },
+  {
+    "id": "tdli-condensed-member",
+    "title": "凝聚态物理研究部成员",
+    "url": "https://tdli.sjtu.edu.cn/research/condensed-matter-division/member",
+    "language": "zh",
+    "fetchedAt": "2026-10-15",
+    "expectedMarkers": [
+      "teacher-item",
+      "凝聚态物理研究部"
+    ],
+    "minFaculty": 15,
+    "notes": "逐人查看研究方向。Frank Wilczek 的个人页写明宇宙学、中子星和暗物质候选。"
+  },
+  {
+    "id": "tdli-condensed-member-en",
+    "title": "Condensed Matter Division members",
+    "url": "https://tdli.sjtu.edu.cn/en/research/condensed-matter-division/member",
+    "language": "en",
+    "fetchedAt": "2026-10-15",
+    "expectedMarkers": [
+      "teacher-item"
+    ],
+    "minFaculty": 15,
+    "notes": ""
+  },
+  {
+    "id": "tdli-technical-member",
+    "title": "工程技术部成员",
+    "url": "https://tdli.sjtu.edu.cn/research/technical-division/member",
+    "language": "zh",
+    "fetchedAt": "2026-10-15",
+    "expectedMarkers": [
+      "teacher-item"
+    ],
+    "minFaculty": 1,
+    "notes": "页面均为工程师或技术工人，整页排除。"
+  },
+  {
+    "id": "tdli-supervisors",
+    "title": "研究生导师名单",
+    "url": "https://tdli.sjtu.edu.cn/grad-students/supervisor-directory",
+    "language": "zh",
+    "fetchedAt": "2026-10-15",
+    "expectedMarkers": [
+      "section-item"
+    ],
+    "minFaculty": 30,
+    "notes": "提供方向短句。不能单独证明教师身份。Bhawna Mukhija 在此出现，天文成员页分类为博士后。"
+  },
+  {
+    "id": "tdli-fellows",
+    "title": "学者系列及五个职级子页",
+    "url": "https://tdli.sjtu.edu.cn/people/fellows-professors",
+    "language": "zh",
+    "fetchedAt": "2026-10-15",
+    "expectedMarkers": [
+      "teacher-item"
+    ],
+    "minFaculty": 10,
+    "notes": "已打开讲席、特聘、资深、长聘、青年学者五个子页，人员与三个研究部成员页一致，含兼职与退休。"
+  },
+  {
+    "id": "tdli-scientists",
+    "title": "研究员系列",
+    "url": "https://tdli.sjtu.edu.cn/people/scientists",
+    "language": "zh",
+    "fetchedAt": "2026-10-15",
+    "expectedMarkers": [
+      "teacher-item"
+    ],
+    "minFaculty": 8,
+    "notes": "与各研究部研究员系列一致。"
+  },
+  {
+    "id": "tdli-platform",
+    "title": "平台学者",
+    "url": "https://tdli.sjtu.edu.cn/people/platform-fellows",
+    "language": "zh",
+    "fetchedAt": "2026-10-15",
+    "expectedMarkers": [
+      "teacher-item"
+    ],
+    "minFaculty": 10,
+    "notes": "外链到其他学院或研究所。不在三个研究部的学者/研究员系列内。"
+  },
+  {
+    "id": "tdli-profile",
+    "title": "个人主页",
+    "url": "https://tdli.sjtu.edu.cn/people/",
+    "language": "zh",
+    "fetchedAt": "2026-10-15",
+    "expectedMarkers": [
+      "研究方向",
+      "name fnt36"
+    ],
+    "minFaculty": 1,
+    "notes": "纳入者的个人页均在 2026-10-15 打开过。研究方向取页面「研究方向」栏目。"
+  },
+  {
+    "id": "repository-2026-10-14",
+    "title": "仓库既有导师内容",
+    "url": "data/mentors.json",
+    "language": "zh",
+    "fetchedAt": "2026-10-14",
+    "expectedMarkers": [],
+    "minFaculty": 23,
+    "notes": "简介、论文、色块、照片的原有内容。本轮不自动升为已核验。"
+  }
+]

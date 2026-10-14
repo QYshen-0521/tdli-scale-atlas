@@ -9,6 +9,8 @@
     "lint": "oxlint",
     "preview": "vite preview --host 0.0.0.0 --port 47231",
     "check:data": "node scripts/check-data.mjs",
+    "sync:self-check": "node scripts/sync/self-check.mjs",
+    "sync:faculty": "node scripts/faculty-sync.mjs --out proposals/runs/latest",
     "deploy": "GITHUB_PAGES=true npm run build && cp dist/index.html dist/404.html && gh-pages -d dist -b gh-pages -m \"Deploy static site\""
   },
   "dependencies": {

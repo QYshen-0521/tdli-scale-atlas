@@ -1,18 +1,19 @@
-import { offplaneMentors } from "../content.ts";
 import type { Mentor } from "../types.ts";
 import { MentorAvatar } from "./MentorAvatar.tsx";
 
 export function OffplanePanel({
   open,
+  people,
   onToggle,
   onOpen,
 }: {
   open: boolean;
+  people: Mentor[];
   onToggle: () => void;
   onOpen: (id: string) => void;
 }) {
-  const particle = offplaneMentors.filter((m) => m.panelGroup === "particle");
-  const lab = offplaneMentors.filter((m) => m.panelGroup === "lab");
+  const particle = people.filter((m) => m.panelGroup === "particle");
+  const lab = people.filter((m) => m.panelGroup === "lab");
   return (
     <aside className={`margin-col${open ? " is-open" : ""}`} aria-label="没有单一尺度–质量坐标的研究">
       <div className="margin-head">
@@ -27,12 +28,13 @@ export function OffplanePanel({
           <p className="margin-lead">
             纵轴是天体或系统的质量，不是 GeV。中微子、暗物质粒子和宇宙线没有一个诚实的半径；实验室靶则比图的左缘还小。
           </p>
-          <Section title="粒子与信使" en="Particles & messengers" people={particle} onOpen={onOpen} />
-          <Section title="实验室天体物理" en="Laboratory astrophysics" people={lab} onOpen={onOpen} />
+          {particle.length ? <Section title="粒子与信使" en="Particles & messengers" people={particle} onOpen={onOpen} /> : null}
+          {lab.length ? <Section title="实验室天体物理" en="Laboratory astrophysics" people={lab} onOpen={onOpen} /> : null}
+          {!particle.length && !lab.length ? <p className="margin-lead">当前筛选下，没有人在尺度之外。</p> : null}
         </div>
       ) : (
         <button type="button" className="margin-tab" onClick={onToggle}>
-          尺度之外 · {offplaneMentors.length}
+          尺度之外 · {people.length}
         </button>
       )}
     </aside>

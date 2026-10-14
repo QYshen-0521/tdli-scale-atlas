@@ -1,0 +1,1214 @@
+[
+  {
+    "id": "jing",
+    "nameOriginal": "景益鹏",
+    "nameZh": "景益鹏",
+    "nameEn": "Yipeng Jing",
+    "aliases": [
+      "Yipeng Jing",
+      "景益鹏"
+    ],
+    "email": "ypjing@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40088",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40088/jing-yipeng",
+      "https://tdli.sjtu.edu.cn/en/people/41225/yipeng-jing",
+      "https://tdli.sjtu.edu.cn/people/40088"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "cosmology"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "lai",
+    "nameOriginal": "赖东",
+    "nameZh": "赖东",
+    "nameEn": "Dong Lai",
+    "aliases": [
+      "Dong Lai",
+      "赖东"
+    ],
+    "email": "donglai@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40040/dong-lai",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40040/dong-lai",
+      "https://tdli.sjtu.edu.cn/en/people/41258/dong-lai"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "neutrino"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "zhangjie",
+    "nameOriginal": "张杰",
+    "nameZh": "张杰",
+    "nameEn": "Jie Zhang",
+    "aliases": [
+      "Jie Zhang",
+      "张杰"
+    ],
+    "email": "tdli-director@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40110/jie-zhang",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40110/jie-zhang",
+      "https://tdli.sjtu.edu.cn/en/people/41215/jie-zhang"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "lab"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "qian",
+    "nameOriginal": "钱列加",
+    "nameZh": "钱列加",
+    "nameEn": "Liejia Qian",
+    "aliases": [
+      "Liejia Qian",
+      "钱列加"
+    ],
+    "email": "qianlj19@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40023/liejia-qian",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40023/liejia-qian",
+      "https://tdli.sjtu.edu.cn/en/people/41270/liejia-qian"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [],
+    "routeAliases": []
+  },
+  {
+    "id": "sheng",
+    "nameOriginal": "盛政明",
+    "nameZh": "盛政明",
+    "nameEn": "Zhengming Sheng",
+    "aliases": [
+      "Zhengming Sheng",
+      "盛政明"
+    ],
+    "email": "zmsheng@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40024/zhengming-sheng",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40024/zhengming-sheng",
+      "https://tdli.sjtu.edu.cn/en/people/41269/zhengming-sheng"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "lab"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "yang",
+    "nameOriginal": "杨小虎",
+    "nameZh": "杨小虎",
+    "nameEn": "Xiaohu Yang",
+    "aliases": [
+      "Xiaohu Yang",
+      "杨小虎"
+    ],
+    "email": "xyang@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40021/xiaohu-yang",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40021/xiaohu-yang",
+      "https://tdli.sjtu.edu.cn/en/people/41272/xiaohu-yang"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "cosmology"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "zhangpj",
+    "nameOriginal": "张鹏杰",
+    "nameZh": "张鹏杰",
+    "nameEn": "Pengjie Zhang",
+    "aliases": [
+      "Pengjie Zhang",
+      "张鹏杰"
+    ],
+    "email": "zhangpj@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40039",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40039/pengjie-zhang",
+      "https://tdli.sjtu.edu.cn/en/people/41259/pengjie-zhang",
+      "https://tdli.sjtu.edu.cn/people/40039"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "cosmology"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "mizuno",
+    "nameOriginal": "Yosuke Mizuno",
+    "nameZh": "",
+    "nameEn": "Yosuke Mizuno",
+    "aliases": [
+      "Yosuke Mizuno"
+    ],
+    "email": "mizuno@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40098/yosuke-mizuno",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40098/yosuke-mizuno",
+      "https://tdli.sjtu.edu.cn/en/people/41219/yosuke-mizuno"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "cosmology"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "feng",
+    "nameOriginal": "冯发波",
+    "nameZh": "冯发波",
+    "nameEn": "Fabo Feng",
+    "aliases": [
+      "Fabo Feng",
+      "冯发波"
+    ],
+    "email": "ffeng@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40097/fabo-feng",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40097/feng-fabo",
+      "https://tdli.sjtu.edu.cn/en/people/41220/fabo-feng",
+      "https://tdli.sjtu.edu.cn/people/40097/fabo-feng"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "cosmology"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "zu",
+    "nameOriginal": "祖颖",
+    "nameZh": "祖颖",
+    "nameEn": "Ying Zu",
+    "aliases": [
+      "Ying Zu",
+      "祖颖"
+    ],
+    "email": "yingzu@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40605/ying-zu",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40605/ying-zu",
+      "https://tdli.sjtu.edu.cn/en/people/40984/ying-zu"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "cosmology",
+      "dark-matter"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "darius",
+    "nameOriginal": "Darius Modirrousta-Galian",
+    "nameZh": "",
+    "nameEn": "Darius Modirrousta-Galian",
+    "aliases": [
+      "Darius Modirrousta-Galian"
+    ],
+    "email": "modirrousta-galian@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/en/people/42602/darius-modirrousta-galian",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/42601/",
+      "https://tdli.sjtu.edu.cn/en/people/42602/darius-modirrousta-galian"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "ogihara",
+    "nameOriginal": "Masahiro Ogihara",
+    "nameZh": "",
+    "nameEn": "Masahiro Ogihara",
+    "aliases": [
+      "Masahiro Ogihara"
+    ],
+    "email": "ogihara@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40125/masahiro-ogihara",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40125/masahiro-ogihara",
+      "https://tdli.sjtu.edu.cn/en/people/41206/masahiro-ogihara"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "cosmology"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "pan",
+    "nameOriginal": "潘震",
+    "nameZh": "潘震",
+    "nameEn": "Zhen Pan",
+    "aliases": [
+      "Zhen Pan",
+      "潘震"
+    ],
+    "email": "zhpan@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40677/zhen-pan",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40677/zhen-pan",
+      "https://tdli.sjtu.edu.cn/en/people/40678/zhen-pan"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "cosmology"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "tan",
+    "nameOriginal": "谭先瑜",
+    "nameZh": "谭先瑜",
+    "nameEn": "Xianyu Tan",
+    "aliases": [
+      "Xianyu Tan",
+      "谭先瑜"
+    ],
+    "email": "xianyut@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/en/people/40675/xianyu-tan",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40265/xianyu-tan",
+      "https://tdli.sjtu.edu.cn/en/people/40675/xianyu-tan"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "tang",
+    "nameOriginal": "唐梦涛",
+    "nameZh": "唐梦涛",
+    "nameEn": "Mengtao Tang",
+    "aliases": [
+      "Mengtao Tang",
+      "唐梦涛"
+    ],
+    "email": "mengtao.tang@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/en/people/43985/mengtao-tang",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/43984/",
+      "https://tdli.sjtu.edu.cn/en/people/43985/mengtao-tang"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "cosmology"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "wangjs",
+    "nameOriginal": "王界双",
+    "nameZh": "王界双",
+    "nameEn": "Jieshuang Wang",
+    "aliases": [
+      "Jieshuang Wang",
+      "王界双"
+    ],
+    "email": "jieshuangwang@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/en/people/41275/jieshuang-wang",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40018/jieshuang-wang",
+      "https://tdli.sjtu.edu.cn/en/people/41275/jieshuang-wang"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "cosmology",
+      "astroparticle"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "wu",
+    "nameOriginal": "吴益鹏",
+    "nameZh": "吴益鹏",
+    "nameEn": "Yipeng Wu",
+    "aliases": [
+      "Yipeng Wu",
+      "吴益鹏"
+    ],
+    "email": "yipeng.wu@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40608/yipeng-wu",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40608/yipeng-wu",
+      "https://tdli.sjtu.edu.cn/en/people/40981/yipeng-wu"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "cosmology",
+      "lab"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "yi",
+    "nameOriginal": "易龙卿",
+    "nameZh": "易龙卿",
+    "nameEn": "Longqing Yi",
+    "aliases": [
+      "Longqing Yi",
+      "易龙卿"
+    ],
+    "email": "lqyi@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40681/longqing-yi",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40270/longqin-yi",
+      "https://tdli.sjtu.edu.cn/en/people/40681/longqing-yi",
+      "https://tdli.sjtu.edu.cn/people/40681/longqing-yi"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "lab"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "zhouhao",
+    "nameOriginal": "周浩",
+    "nameZh": "周浩",
+    "nameEn": "Hao Zhou",
+    "aliases": [
+      "Hao Zhou",
+      "周浩"
+    ],
+    "email": "hao_zhou@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/en/people/41271/hao-zhou",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40022/hao-zhou",
+      "https://tdli.sjtu.edu.cn/en/people/41271/hao-zhou"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "cosmology",
+      "astroparticle",
+      "neutrino"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "gexulei",
+    "nameOriginal": "葛绪雷",
+    "nameZh": "葛绪雷",
+    "nameEn": "Xulei Ge",
+    "aliases": [
+      "Xulei Ge",
+      "葛绪雷"
+    ],
+    "email": "gexulei@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40622/xulei-ge",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40622/xulei-ge",
+      "https://tdli.sjtu.edu.cn/en/people/40969/xulei-ge"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "lab"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "guyizhou",
+    "nameOriginal": "顾一舟",
+    "nameZh": "顾一舟",
+    "nameEn": "Yizhou Gu",
+    "aliases": [
+      "Yizhou Gu",
+      "顾一舟"
+    ],
+    "email": "guyizhou@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40631/yizhou-gu",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40631/yizhou-gu",
+      "https://tdli.sjtu.edu.cn/en/people/40960/yizhou-gu"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "huangxj",
+    "nameOriginal": "黄小军",
+    "nameZh": "黄小军",
+    "nameEn": "Xiaojun Huang",
+    "aliases": [
+      "Xiaojun Huang",
+      "黄小军"
+    ],
+    "email": "hxj740204@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40629/xiaojun-huang",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40629/xiaojun-huang",
+      "https://tdli.sjtu.edu.cn/en/people/40962/xiaojun-huang"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "lab"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "jianghj",
+    "nameOriginal": "姜海娇",
+    "nameZh": "姜海娇",
+    "nameEn": "Haijiao Jiang",
+    "aliases": [
+      "Haijiao Jiang",
+      "姜海娇"
+    ],
+    "email": "jianghaijiao@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/44366/",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/44366/",
+      "https://tdli.sjtu.edu.cn/en/people/44367/haijiao-jiang"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "sunqh",
+    "nameOriginal": "孙清辉",
+    "nameZh": "孙清辉",
+    "nameEn": "Qinghui Sun",
+    "aliases": [
+      "Qinghui Sun",
+      "孙清辉"
+    ],
+    "email": "qinghuisun@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40654/qinghui-sun",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40654/qinghui-sun",
+      "https://tdli.sjtu.edu.cn/en/people/40941/qinghui-sun"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "yangkai",
+    "nameOriginal": "杨楷",
+    "nameZh": "杨楷",
+    "nameEn": "Kai Yang",
+    "aliases": [
+      "Kai Yang",
+      "杨楷"
+    ],
+    "email": "kyang2146@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/45622/y",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/45622/y",
+      "https://tdli.sjtu.edu.cn/en/people/45623/kai-yang"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "zheng",
+    "nameOriginal": "郑宪忠",
+    "nameZh": "郑宪忠",
+    "nameEn": "Xianzhong Zheng",
+    "aliases": [
+      "Xianzhong Zheng",
+      "郑宪忠"
+    ],
+    "email": "xzzheng@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40645/xianzhong-zheng",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40645/xianzhong-zheng",
+      "https://tdli.sjtu.edu.cn/en/people/40950/xianzhong-zheng"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "zhupf",
+    "nameOriginal": "朱鹏飞",
+    "nameZh": "朱鹏飞",
+    "nameEn": "Pengfei Zhu",
+    "aliases": [
+      "Pengfei Zhu",
+      "朱鹏飞"
+    ],
+    "email": "flypeng@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40625/pengfei-zhu",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40625/pengfei-zhu",
+      "https://tdli.sjtu.edu.cn/en/people/40966/pengfei-zhu"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "lab"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "ramsey",
+    "nameOriginal": "Michael Ramsey-Musolf",
+    "nameZh": "",
+    "nameEn": "Michael Ramsey-Musolf",
+    "aliases": [
+      "Michael Ramsey-Musolf"
+    ],
+    "email": "mjrm@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40046/michael-ramsey-musolf",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40046/michael-ramsey-musolf",
+      "https://tdli.sjtu.edu.cn/en/people/41252/michael-ramsey-musolf"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "cosmology",
+      "dark-matter",
+      "neutrino"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "yanagida",
+    "nameOriginal": "Tsutomu Yanagida",
+    "nameZh": "",
+    "nameEn": "Tsutomu Yanagida",
+    "aliases": [
+      "Tsutomu Yanagida"
+    ],
+    "email": "tsutomu.tyanagida@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40047/y",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40047/y",
+      "https://tdli.sjtu.edu.cn/en/people/41251/tsutomu-yanagida"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "cosmology",
+      "astroparticle",
+      "neutrino"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "he",
+    "nameOriginal": "何小刚",
+    "nameZh": "何小刚",
+    "nameEn": "Xiaogang He",
+    "aliases": [
+      "Xiaogang He",
+      "何小刚"
+    ],
+    "email": "hexg@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40048/he-xiaogang",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40048/he-xiaogang",
+      "https://tdli.sjtu.edu.cn/en/people/41250/xiaogang-he"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "ge",
+    "nameOriginal": "葛韶锋",
+    "nameZh": "葛韶锋",
+    "nameEn": "Shaofeng Ge",
+    "aliases": [
+      "Shao-Feng Ge",
+      "葛韶锋",
+      "Shaofeng Ge"
+    ],
+    "email": "gesf@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40053",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40053/shao-feng-ge",
+      "https://tdli.sjtu.edu.cn/en/people/41246/shao-feng-ge",
+      "https://tdli.sjtu.edu.cn/people/40053"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "cosmology",
+      "dark-matter",
+      "neutrino"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "hehj",
+    "nameOriginal": "何红建",
+    "nameZh": "何红建",
+    "nameEn": "Hongjian He",
+    "aliases": [
+      "Hongjian He",
+      "何红建"
+    ],
+    "email": "hjhe@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40042/he-hongjian",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40042/he-hongjian",
+      "https://tdli.sjtu.edu.cn/en/people/41256/hongjian-he"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "dark-matter",
+      "neutrino"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "liu",
+    "nameOriginal": "刘江来",
+    "nameZh": "刘江来",
+    "nameEn": "Jianglai Liu",
+    "aliases": [
+      "Jianglai Liu",
+      "刘江来"
+    ],
+    "email": "jianglai.liu@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40043/liu-jianglai",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40043/liu-jianglai",
+      "https://tdli.sjtu.edu.cn/en/people/41255/jianglai-liu"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "dark-matter",
+      "neutrino"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "zhouning",
+    "nameOriginal": "周宁",
+    "nameZh": "周宁",
+    "nameEn": "Ning Zhou",
+    "aliases": [
+      "Ning Zhou",
+      "周宁"
+    ],
+    "email": "nzhou@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40114/ning-zhou",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40114/ning-zhou",
+      "https://tdli.sjtu.edu.cn/en/people/40976/ning-zhou"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "dark-matter"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "nakai",
+    "nameOriginal": "Yuichiro Nakai",
+    "nameZh": "",
+    "nameEn": "Yuichiro Nakai",
+    "aliases": [
+      "Yuichiro Nakai"
+    ],
+    "email": "ynakai@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40019/yuichiro-nakai",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40019/yuichiro-nakai",
+      "https://tdli.sjtu.edu.cn/en/people/41274/yuichiro-nakai"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "cosmology"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "lishu",
+    "nameOriginal": "李数",
+    "nameZh": "李数",
+    "nameEn": "Shu Li",
+    "aliases": [
+      "Shu Li",
+      "李数"
+    ],
+    "email": "shuli@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40051/li-shu",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40051/li-shu",
+      "https://tdli.sjtu.edu.cn/en/people/41247/shu-li"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "dark-matter"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "quhl",
+    "nameOriginal": "曲慧麟",
+    "nameZh": "曲慧麟",
+    "nameEn": "Huilin Qu",
+    "aliases": [
+      "Huilin Qu",
+      "曲慧麟"
+    ],
+    "email": "hlqu@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/44940/",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/44940/",
+      "https://tdli.sjtu.edu.cn/en/people/44941/huilin-qu"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "dark-matter",
+      "neutrino"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "xu",
+    "nameOriginal": "徐东莲",
+    "nameZh": "徐东莲",
+    "nameEn": "Donglian Xu",
+    "aliases": [
+      "Donglian Xu",
+      "徐东莲"
+    ],
+    "email": "donglianxu@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40056/donglian-xu",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40056/donglian-xu",
+      "https://tdli.sjtu.edu.cn/en/people/41244/donglian-xu"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "astroparticle",
+      "neutrino"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "khaw",
+    "nameOriginal": "许金祥",
+    "nameZh": "许金祥",
+    "nameEn": "Kim Siang Khaw",
+    "aliases": [
+      "Kim Siang Khaw",
+      "许金祥"
+    ],
+    "email": "kimsiang84@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40050/kim-siang-khaw",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40050/kim-siang-khaw",
+      "https://tdli.sjtu.edu.cn/en/people/41248/kim-siang-khaw"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "dark-matter"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "blake",
+    "nameOriginal": "Iwan Morton-Blake",
+    "nameZh": "",
+    "nameEn": "Iwan Morton-Blake",
+    "aliases": [
+      "Iwan Morton-Blake"
+    ],
+    "email": "iblake@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40193/iwan-morton-blake",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40193/iwan-morton-blake",
+      "https://tdli.sjtu.edu.cn/en/people/41166/iwan-morton-blake"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "neutrino"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "aiwy",
+    "nameOriginal": "艾稳元",
+    "nameZh": "艾稳元",
+    "nameEn": "Wenyuan Ai",
+    "aliases": [
+      "Wenyuan Ai",
+      "艾稳元"
+    ],
+    "email": "wenyuanai@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/44830/",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/44830/",
+      "https://tdli.sjtu.edu.cn/en/people/44831/wenyuan-ai"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "cosmology",
+      "dark-matter"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "chenyf",
+    "nameOriginal": "陈一帆",
+    "nameZh": "陈一帆",
+    "nameEn": "Yifan Chen",
+    "aliases": [
+      "Yifan Chen",
+      "陈一帆"
+    ],
+    "email": "chen.yifan@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/44260/yifan-chen",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/44260/yifan-chen",
+      "https://tdli.sjtu.edu.cn/en/people/44261/yifan-chen"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "hanjun",
+    "nameOriginal": "韩君",
+    "nameZh": "韩君",
+    "nameEn": "Sophia Han",
+    "aliases": [
+      "Sophia Han",
+      "韩君"
+    ],
+    "email": "sjhan@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40189/han-jun",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40189/han-jun",
+      "https://tdli.sjtu.edu.cn/en/people/41169/sophia-han"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "astroparticle"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "meihl",
+    "nameOriginal": "梅华林",
+    "nameZh": "梅华林",
+    "nameEn": "Hualin Mei",
+    "aliases": [
+      "Hualin Mei",
+      "梅华林"
+    ],
+    "email": "mei.hualin@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40480/hualin-mei",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40480/hualin-mei",
+      "https://tdli.sjtu.edu.cn/en/people/41063/hualin-mei"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "neutrino"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "xiangxin",
+    "nameOriginal": "向昕",
+    "nameZh": "向昕",
+    "nameEn": "Xin Xiang",
+    "aliases": [
+      "Xin Xiang",
+      "向昕"
+    ],
+    "email": "xxiang@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40458/xin-xiang",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40458/xin-xiang",
+      "https://tdli.sjtu.edu.cn/en/people/41067/xin-xiang"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "dark-matter",
+      "neutrino"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "xiekp",
+    "nameOriginal": "谢可平",
+    "nameZh": "谢可平",
+    "nameEn": "Keping Xie",
+    "aliases": [
+      "Keping Xie",
+      "谢可平"
+    ],
+    "email": "kepingxie@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/44934/",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/44934/",
+      "https://tdli.sjtu.edu.cn/en/people/44935/keping-xie"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "neutrino"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "cuixy",
+    "nameOriginal": "崔祥仪",
+    "nameZh": "崔祥仪",
+    "nameEn": "Xiangyi Cui",
+    "aliases": [
+      "Xiangyi Cui",
+      "崔祥仪"
+    ],
+    "email": "hongloumeng@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40090/cui-xiangyi",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40090/cui-xiangyi",
+      "https://tdli.sjtu.edu.cn/en/people/41223/xiangyi-cui"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "dark-matter"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "huangtq",
+    "nameOriginal": "黄天奇",
+    "nameZh": "黄天奇",
+    "nameEn": "Tianqi Huang",
+    "aliases": [
+      "Tianqi Huang",
+      "黄天奇"
+    ],
+    "email": "tianqi.huang@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/45605/h",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/45605/h",
+      "https://tdli.sjtu.edu.cn/en/people/45606/tianqi-huang"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "neutrino"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "wangzhou",
+    "nameOriginal": "王舟",
+    "nameZh": "王舟",
+    "nameEn": "Zhou Wang",
+    "aliases": [
+      "Zhou Wang",
+      "王舟"
+    ],
+    "email": "wangzhou0303@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40623/wang-zhou",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40623/wang-zhou",
+      "https://tdli.sjtu.edu.cn/en/people/40968/zhou-wang"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "dark-matter"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "wilczek",
+    "nameOriginal": "Frank Wilczek",
+    "nameZh": "",
+    "nameEn": "Frank Wilczek",
+    "aliases": [
+      "Frank Wilczek"
+    ],
+    "email": "wilczek@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40028/frank-wilczek",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40028/frank-wilczek",
+      "https://tdli.sjtu.edu.cn/en/people/41267/frank-wilczek"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "astronomy",
+      "cosmology",
+      "dark-matter"
+    ],
+    "routeAliases": []
+  },
+  {
+    "id": "chenxun",
+    "nameOriginal": "谌勋",
+    "nameZh": "谌勋",
+    "nameEn": "Xun Chen",
+    "aliases": [
+      "Xun Chen",
+      "谌勋"
+    ],
+    "email": "chenxun@sjtu.edu.cn",
+    "profileUrl": "https://tdli.sjtu.edu.cn/people/40695/chen-xun",
+    "profileUrls": [
+      "https://tdli.sjtu.edu.cn/people/40695/chen-xun",
+      "https://tdli.sjtu.edu.cn/en/people/40696/xun-chen"
+    ],
+    "orcid": "",
+    "openAlexId": "",
+    "identifierStatus": "unchecked",
+    "topicTags": [
+      "dark-matter",
+      "neutrino"
+    ],
+    "routeAliases": []
+  }
+]

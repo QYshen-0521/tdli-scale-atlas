@@ -1,0 +1,608 @@
+{
+  "source": "https://tdli.sjtu.edu.cn/research/astronomy-and-astrophysics-division/member",
+  "fetchedAt": "2026-10-15T02:35:32+0800",
+  "httpStatus": 200,
+  "inclusionPolicy": "学者系列+研究员系列；排除主任/副主任重复、工程师、博士后、科研助理",
+  "candidateCount": 27,
+  "candidates": [
+    {
+      "name": "张杰",
+      "title": "李政道讲席教授 、 所长",
+      "role": "李政道讲席教授",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40110/jie-zhang",
+      "email": "tdli-director@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "上海市浦东新区李所路1号李政道研究所"
+    },
+    {
+      "name": "景益鹏",
+      "title": "李政道讲席教授 、 研究部主任",
+      "role": "李政道讲席教授",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40088/jing-yipeng",
+      "email": "ypjing@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S502"
+    },
+    {
+      "name": "赖东",
+      "title": "李政道讲席教授、 研究部主任",
+      "role": "李政道讲席教授",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40040/dong-lai",
+      "email": "donglai@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S433"
+    },
+    {
+      "name": "张鹏杰",
+      "title": "特聘学者（双聘） 、 研究部副主任",
+      "role": "特聘学者",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40039/pengjie-zhang",
+      "email": "zhangpj@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "理科楼5号楼519"
+    },
+    {
+      "name": "杨小虎",
+      "title": "特聘学者 、 副所长",
+      "role": "特聘学者",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40021/xiaohu-yang",
+      "email": "xyang@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S439"
+    },
+    {
+      "name": "盛政明",
+      "title": "特聘学者（双聘）",
+      "role": "特聘学者",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40024/zhengming-sheng",
+      "email": "zmsheng@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "上海交通激光与等离子体实验室301"
+    },
+    {
+      "name": "钱列加",
+      "title": "特聘学者（双聘）",
+      "role": "特聘学者",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40023/liejia-qian",
+      "email": "QianLJ19@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "上海交通大学激光等离子体实验室305室"
+    },
+    {
+      "name": "Yosuke Mizuno",
+      "title": "长聘学者",
+      "role": "长聘学者",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40098/yosuke-mizuno",
+      "email": "mizuno@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S422"
+    },
+    {
+      "name": "冯发波",
+      "title": "长聘学者",
+      "role": "长聘学者",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40097/feng-fabo",
+      "email": "ffeng@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S421"
+    },
+    {
+      "name": "祖颖",
+      "title": "长聘学者",
+      "role": "长聘学者",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40605/ying-zu",
+      "email": "yingzu@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S457"
+    },
+    {
+      "name": "Darius Modirrousta-Galian",
+      "title": "青年学者",
+      "role": "青年学者",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/42601/",
+      "email": "modirrousta-galian@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S467"
+    },
+    {
+      "name": "Masahiro Ogihara",
+      "title": "青年学者",
+      "role": "青年学者",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40125/masahiro-ogihara",
+      "email": "ogihara@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S418"
+    },
+    {
+      "name": "吴益鹏",
+      "title": "青年学者",
+      "role": "青年学者",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40608/yipeng-wu",
+      "email": "yipeng.wu@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S419"
+    },
+    {
+      "name": "周浩",
+      "title": "青年学者",
+      "role": "青年学者",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40022/hao-zhou",
+      "email": "hao_zhou@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S415"
+    },
+    {
+      "name": "唐梦涛",
+      "title": "青年学者",
+      "role": "青年学者",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/43984/",
+      "email": "mengtao.tang@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S417"
+    },
+    {
+      "name": "易龙卿",
+      "title": "青年学者",
+      "role": "青年学者",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40270/longqin-yi",
+      "email": "lqyi@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S408"
+    },
+    {
+      "name": "潘震",
+      "title": "青年学者",
+      "role": "青年学者",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40677/zhen-pan",
+      "email": "zhpan@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S468"
+    },
+    {
+      "name": "王界双",
+      "title": "青年学者",
+      "role": "青年学者",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40018/jieshuang-wang",
+      "email": "jieshuangwang@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S456"
+    },
+    {
+      "name": "谭先瑜",
+      "title": "青年学者",
+      "role": "青年学者",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40265/xianyu-tan",
+      "email": "xianyut@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S466"
+    },
+    {
+      "name": "姜海娇",
+      "title": "JUST光谱望远镜团队副研究员",
+      "role": "研究员系列",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/44366/",
+      "email": "jianghaijiao@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S463"
+    },
+    {
+      "name": "孙清辉",
+      "title": "JUST光谱望远镜团队副研究员",
+      "role": "研究员系列",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40654/qinghui-sun",
+      "email": "qinghuisun@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S465"
+    },
+    {
+      "name": "朱鹏飞",
+      "title": "实验室天体物理实验平台副研究员",
+      "role": "研究员系列",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40625/pengfei-zhu",
+      "email": "flypeng@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S411"
+    },
+    {
+      "name": "杨楷",
+      "title": "JUST光谱望远镜团队助理研究员",
+      "role": "研究员系列",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/45622/y",
+      "email": "kyang2146@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S437"
+    },
+    {
+      "name": "葛绪雷",
+      "title": "实验室天体物理实验平台助理研究员",
+      "role": "研究员系列",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40622/xulei-ge",
+      "email": "gexulei@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S4F-East LAP"
+    },
+    {
+      "name": "郑宪忠",
+      "title": "JUST光谱望远镜团队资深研究员",
+      "role": "研究员系列",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40645/xianzhong-zheng",
+      "email": "xzzheng@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S438"
+    },
+    {
+      "name": "顾一舟",
+      "title": "交通大学光谱望远镜团队助理研究员",
+      "role": "研究员系列",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40631/yizhou-gu",
+      "email": "guyizhou@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S437"
+    },
+    {
+      "name": "黄小军",
+      "title": "实验室天体物理实验平台研究员",
+      "role": "研究员系列",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40629/xiaojun-huang",
+      "email": "hxj740204@sjtu.edu.cn",
+      "division": "天文与天体物理研究部",
+      "office": "S407"
+    }
+  ],
+  "excludedCount": 31,
+  "excluded": [
+    {
+      "name": "玉米提·麦合木提",
+      "titleRaw": "助理工程师",
+      "roleSection": "工程师系列",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/42438/umut-mahmut",
+      "email": null,
+      "office": "S437",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「工程师系列」，按规划不纳入"
+    },
+    {
+      "name": "袁鹏",
+      "titleRaw": "实验室天体物理实验平台工程师",
+      "roleSection": "工程师系列",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40633/peng-yuan",
+      "email": "yuan.peng@sjtu.edu.cn",
+      "office": "S4F-East LAP",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「工程师系列」，按规划不纳入"
+    },
+    {
+      "name": "Bhawna Mukhija",
+      "titleRaw": "李政道博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/45988/",
+      "email": "bhawnam@sjtu.edu.cn",
+      "office": "S431",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "Hélène, Solange, Michèle ROUSSEAU",
+      "titleRaw": "博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/45610/hélène,-solange,-michèle-rousseau",
+      "email": "hrousseau@sjtu.edu.cn",
+      "office": "S472",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "Rishabh Singh Teja",
+      "titleRaw": "李政道博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/44116/rishabh-singh-teja",
+      "email": "rsteja@sjtu.edu.cn",
+      "office": "S431",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "Sandeep Kumar Mondal",
+      "titleRaw": "博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/43055/sandeep-kumar-mondal",
+      "email": "sandeep@sjtu.edu.cn",
+      "office": "S475",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "Sergio Hernández Cadena",
+      "titleRaw": "博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40610/sergio-hernández-cadena",
+      "email": "shkdna@sjtu.edu.cn",
+      "office": "S431",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "Tamami Okamoto",
+      "titleRaw": "博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/43051/tamami-okamoto",
+      "email": "tamasjtu@sjtu.edu.cn",
+      "office": "S473",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "Thomas Baycroft",
+      "titleRaw": "李政道博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/44376/",
+      "email": "tbaycroft@sjtu.edu.cn",
+      "office": "S432",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "包逸炜",
+      "titleRaw": "李政道博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40642/yiwei-bao",
+      "email": "sjtu0538015@sjtu.edu.cn",
+      "office": "S472",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "段晓苇",
+      "titleRaw": "博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/41308/xiaowei-duan",
+      "email": "duanxw@sjtu.edu.cn",
+      "office": "S472",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "耿盼飞",
+      "titleRaw": "博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40636/panfei-geng",
+      "email": "gengpanfei0218@sjtu.edu.cn",
+      "office": "S473",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "郭光洲",
+      "titleRaw": "博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/43063/guangzhou-guo",
+      "email": "guangzhou@sjtu.edu.cn",
+      "office": "S473",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "郭康柔",
+      "titleRaw": "李政道博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40204/kangrou-guo",
+      "email": "carol.guo@sjtu.edu.cn",
+      "office": "S432",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "郭新菊",
+      "titleRaw": "博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40539/xinju-guo",
+      "email": "xjguo@sjtu.edu.cn",
+      "office": "S472",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "侯业辉",
+      "titleRaw": "李政道博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/43827/yehui-hou",
+      "email": "yehuihou@sjtu.edu.cn",
+      "office": "S436",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "黄硕",
+      "titleRaw": "李政道博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/45608/博士后",
+      "email": "huangs26@sjtu.edu.cn",
+      "office": "S432",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "赖燕红",
+      "titleRaw": "博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40643/yanhong-lai",
+      "email": "yanhonglai@sjtu.edu.cn",
+      "office": "S436",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "刘景隆",
+      "titleRaw": "博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/43047/jinglong-liu",
+      "email": "jinglong_liu@sjtu.edu.cn",
+      "office": "S475",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "刘俊言",
+      "titleRaw": "李政道博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/42239/jun-yan-lau",
+      "email": "junlau@sjtu.edu.cn",
+      "office": "S432",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "缪志强",
+      "titleRaw": "李政道博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40531/zhiqiang-miao",
+      "email": "zq_miao@sjtu.edu.cn",
+      "office": "S432",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "税擎苍",
+      "titleRaw": "李政道博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/45973/",
+      "email": "shuiqingcang@sjtu.edu.cn",
+      "office": "S436",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "王广威",
+      "titleRaw": "博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/45620/wang-guangwei",
+      "email": "wangguangwei@sjtu.edu.cn",
+      "office": "S472",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "文润",
+      "titleRaw": "博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/43059/run-wen",
+      "email": "wenrun1214@sjtu.edu.cn",
+      "office": "S437",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "徐啸天",
+      "titleRaw": "李政道博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/44501/",
+      "email": "xxu-tdli@sjtu.edu.cn",
+      "office": "S431",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "徐迎中",
+      "titleRaw": "博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/44120/",
+      "email": "xuyz@sjtu.edu.cn",
+      "office": "S475",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "张闳一",
+      "titleRaw": "博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40616/hongyi-zhang",
+      "email": "hongyi18@sjtu.edu.cn",
+      "office": "S436",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "张萌",
+      "titleRaw": "博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/44528/",
+      "email": "mengzhangastro@sjtu.edu.cn",
+      "office": "S473",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "张琢闻",
+      "titleRaw": "李政道博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/41278/zhuowen-zhang",
+      "email": "zzhang13@sjtu.edu.cn",
+      "office": "S436",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "周骢",
+      "titleRaw": "博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/45940/",
+      "email": "dysania@sjtu.edu.cn",
+      "office": "S475",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    },
+    {
+      "name": "邹小舟",
+      "titleRaw": "博士后",
+      "roleSection": "博士后",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/44596/xiaozhou-zou",
+      "email": "xiaozhou.zou@sjtu.edu.cn",
+      "office": "S410",
+      "division": "天文与天体物理研究部",
+      "inScope": false,
+      "excludeReason": "页面分类为「博士后」，按规划不纳入"
+    }
+  ],
+  "sectionsRawCounts": {
+    "主任": 0,
+    "副主任": 0,
+    "李政道讲席教授": 3,
+    "特聘学者": 4,
+    "长聘学者": 3,
+    "青年学者": 9,
+    "研究员系列": 8,
+    "工程师系列": 2,
+    "博士后": 29,
+    "科研助理": 0
+  }
+}

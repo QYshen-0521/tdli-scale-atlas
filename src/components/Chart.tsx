@@ -2,7 +2,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import type { MouseEvent as ReactMouseEvent, PointerEvent as ReactPointerEvent } from "react";
 import { useAtlasState, useAvatarArrival } from "../atlas-state.tsx";
 import { useCamera } from "../camera.tsx";
-import { chartMentors, objects } from "../content.ts";
+import { objects } from "../content.ts";
 import { publicUrl } from "../lib/assets.ts";
 import {
   BOUNDS,
@@ -59,10 +59,12 @@ function limits(viewKBase: number) {
 export function Chart({
   filter,
   guides,
+  mentors,
   onOpenMentor,
 }: {
   filter: FilterKey;
   guides: boolean;
+  mentors: Mentor[];
   onOpenMentor: (id: string) => void;
 }) {
   const surfaceRef = useRef<HTMLDivElement>(null);
@@ -255,7 +257,7 @@ export function Chart({
   const occupied: Box[] = [];
   const labelIds = new Set<string>();
   if (view) {
-    for (const mentor of chartMentors) {
+    for (const mentor of mentors) {
       const p = project(mentor.anchor.logL, mentor.anchor.logM, view);
       const w = Math.max(sealSizeNow, mentor.shortZh.length * 14 + 8);
       const h = sealSizeNow + 16;
@@ -305,8 +307,8 @@ export function Chart({
           <svg className="chart-svg" width="100%" height="100%">
             <ChartGrid view={view} width={size.w} height={size.h} />
             {guides ? <Guides view={view} /> : null}
-            <LeaderLines view={view} dimFilter={filter} />
-            {chartMentors.map((mentor) => (
+            <LeaderLines view={view} dimFilter={filter} mentors={mentors} />
+            {mentors.map((mentor) => (
               <MentorShapes
                 key={mentor.id}
                 mentor={mentor}
@@ -370,7 +372,7 @@ export function Chart({
               </div>
             );
           })}
-          {chartMentors.map((mentor) => {
+          {mentors.map((mentor) => {
             const p = project(mentor.anchor.logL, mentor.anchor.logM, view);
             const dim = dimmed(mentor, filter);
             const sealSize = zoom < 1.45 ? 34 : 44;
@@ -403,7 +405,7 @@ export function Chart({
             );
           })}
           <Axes view={view} width={size.w} height={size.h} zoom={zoom} />
-          {hoverMentor ? <MentorTip mentorId={hoverMentor} view={view} width={size.w} /> : null}
+          {hoverMentor ? <MentorTip mentorId={hoverMentor} view={view} width={size.w} mentors={mentors} /> : null}
         </>
       ) : (
         <p className="chart-wait">正在展开星图</p>
@@ -472,10 +474,10 @@ function Guides({ view }: { view: View }) {
   );
 }
 
-function LeaderLines({ view, dimFilter }: { view: View; dimFilter: FilterKey }) {
+function LeaderLines({ view, dimFilter, mentors }: { view: View; dimFilter: FilterKey; mentors: Mentor[] }) {
   return (
     <g className="leaders">
-      {chartMentors.map((mentor) => {
+      {mentors.map((mentor) => {
         if (!mentor.leader) return null;
         const a = project(mentor.anchor.logL, mentor.anchor.logM, view);
         const b = project(mentor.leader.logL, mentor.leader.logM, view);
@@ -662,8 +664,8 @@ function MentorShapes({
   );
 }
 
-function MentorTip({ mentorId, view, width }: { mentorId: string; view: View; width: number }) {
-  const mentor = chartMentors.find((item) => item.id === mentorId);
+function MentorTip({ mentorId, view, width, mentors }: { mentorId: string; view: View; width: number; mentors: Mentor[] }) {
+  const mentor = mentors.find((item) => item.id === mentorId);
   if (!mentor) return null;
   const p = project(mentor.anchor.logL, mentor.anchor.logM, view);
   const left = Math.min(width - 240, Math.max(8, p.x + 28));

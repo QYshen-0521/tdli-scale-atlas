@@ -7,7 +7,7 @@ export type Box = { left: number; top: number; width: number; height: number };
 export type Flip = {
   id: string;
   from: Box;
-  dest: "detail" | "atlas";
+  dest: "detail" | "atlas" | "directory";
   token: number;
 };
 

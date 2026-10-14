@@ -1,0 +1,92 @@
+[
+  {
+    "id": "sjtu",
+    "nameZh": "上海交通大学",
+    "nameEn": "Shanghai Jiao Tong University",
+    "aliases": [
+      "交大",
+      "SJTU"
+    ],
+    "type": "university",
+    "parentId": "",
+    "url": "https://www.sjtu.edu.cn",
+    "country": "CN",
+    "countryName": "中国",
+    "locality": "上海",
+    "ror": "https://ror.org/0220qvk04"
+  },
+  {
+    "id": "tdli",
+    "nameZh": "李政道研究所",
+    "nameEn": "Tsung-Dao Lee Institute",
+    "aliases": [
+      "李所",
+      "TDLI"
+    ],
+    "type": "institute",
+    "parentId": "sjtu",
+    "url": "https://tdli.sjtu.edu.cn",
+    "country": "CN",
+    "countryName": "中国",
+    "locality": "上海",
+    "ror": ""
+  },
+  {
+    "id": "tdli-astro",
+    "nameZh": "天文与天体物理研究部",
+    "nameEn": "Astronomy and Astrophysics Division",
+    "aliases": [
+      "天文部"
+    ],
+    "type": "division",
+    "parentId": "tdli",
+    "url": "https://tdli.sjtu.edu.cn/research/astronomy-and-astrophysics-division/member",
+    "country": "CN",
+    "countryName": "中国",
+    "locality": "上海",
+    "ror": ""
+  },
+  {
+    "id": "tdli-particle",
+    "nameZh": "粒子与核物理研究部",
+    "nameEn": "Particle and Nuclear Physics Division",
+    "aliases": [
+      "粒子部"
+    ],
+    "type": "division",
+    "parentId": "tdli",
+    "url": "https://tdli.sjtu.edu.cn/research/particle-and-nuclear-physics-division/member",
+    "country": "CN",
+    "countryName": "中国",
+    "locality": "上海",
+    "ror": ""
+  },
+  {
+    "id": "tdli-condensed",
+    "nameZh": "凝聚态物理研究部",
+    "nameEn": "Condensed Matter Division",
+    "aliases": [
+      "凝聚态"
+    ],
+    "type": "division",
+    "parentId": "tdli",
+    "url": "https://tdli.sjtu.edu.cn/research/condensed-matter-division/member",
+    "country": "CN",
+    "countryName": "中国",
+    "locality": "上海",
+    "ror": ""
+  },
+  {
+    "id": "tdli-technical",
+    "nameZh": "工程技术部",
+    "nameEn": "Technical Division",
+    "aliases": [],
+    "type": "division",
+    "parentId": "tdli",
+    "url": "https://tdli.sjtu.edu.cn/research/technical-division/member",
+    "country": "CN",
+    "countryName": "中国",
+    "locality": "上海",
+    "ror": ""
+  }
+]

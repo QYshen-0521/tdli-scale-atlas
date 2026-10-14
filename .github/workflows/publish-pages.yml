@@ -1,0 +1,38 @@
+name: Publish GitHub Pages
+
+# The live site is the gh-pages branch (repository Pages setting), not the
+# disabled Actions artifact workflow at deploy-pages.yml.disabled.
+# Merging to main publishes. An unmerged faculty PR does not.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-gh-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npm run check:data
+      - run: npm run build
+        env:
+          GITHUB_PAGES: "true"
+      - run: cp dist/index.html dist/404.html
+      - name: Publish the gh-pages branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx gh-pages -d dist -b gh-pages -m "Deploy static site" -u "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"

@@ -1,0 +1,466 @@
+{
+  "source": "https://tdli.sjtu.edu.cn/grad-students/supervisor-directory",
+  "fetchedAt": "2026-10-15T02:39:06+0800",
+  "httpStatus": 200,
+  "entryCount": 57,
+  "bhawnaMukhijaPresent": true,
+  "note": "规划提到导师名单曾出现 Bhawna Mukhija；以本次抓取 bhawnaMukhijaPresent 为准。研究方向取自 icon-global 字段原文。",
+  "entries": [
+    {
+      "name": "Vadim Grinenko",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40186/vadim-grinenko",
+      "email": "vadim.grinenko@sjtu.edu.cn",
+      "office": "N552",
+      "division": "凝聚态物理研究部",
+      "researchInterestRaw": "凝聚态物理、超导"
+    },
+    {
+      "name": "丁洪",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40190/hong-ding",
+      "email": "dingh@sjtu.edu.cn",
+      "office": "S505",
+      "division": "凝聚态物理研究部",
+      "researchInterestRaw": "量子材料、量子计算"
+    },
+    {
+      "name": "严智明",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40091/chi-ming-yim",
+      "email": "c.m.yim@sjtu.edu.cn",
+      "office": "N659",
+      "division": "凝聚态物理研究部",
+      "researchInterestRaw": "量子材料、量子成像"
+    },
+    {
+      "name": "伊合绵",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40634/hemian-yi",
+      "email": "hemianyi@sjtu.edu.cn",
+      "office": "N660",
+      "division": "凝聚态物理研究部",
+      "researchInterestRaw": "凝聚态物理实验研究"
+    },
+    {
+      "name": "刘亮",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40196/liang-liu",
+      "email": "liul21@sjtu.edu.cn",
+      "office": "N543",
+      "division": "凝聚态物理研究部",
+      "researchInterestRaw": "自旋电子学、拓扑量子材料电学输运"
+    },
+    {
+      "name": "刘晓雪",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40191/xiaoxue-liu",
+      "email": "xxliu90@sjtu.edu.cn",
+      "office": "N555",
+      "division": "凝聚态物理研究部",
+      "researchInterestRaw": "凝聚态物理、二维材料"
+    },
+    {
+      "name": "刘鑫",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/42320/xin-liu",
+      "email": "phyliuxin@sjtu.edu.cn",
+      "office": "N656",
+      "division": "凝聚态物理研究部",
+      "researchInterestRaw": "拓扑物态、拓扑量子计算"
+    },
+    {
+      "name": "吕佰晴",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40202/baiqing-lv",
+      "email": "baiqing@sjtu.edu.cn",
+      "office": "N544",
+      "division": "凝聚态物理研究部",
+      "researchInterestRaw": "凝聚态物理、拓扑材料"
+    },
+    {
+      "name": "周海彪",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/41284/haibiao-zhou",
+      "email": "haibiao.zhou@sjtu.edu.cn",
+      "office": "N641",
+      "division": "凝聚态物理研究部",
+      "researchInterestRaw": "扫描探针显微镜、量子器件"
+    },
+    {
+      "name": "彭金波",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40194/jinbo-peng",
+      "email": "jinbopeng@sjtu.edu.cn",
+      "office": "N560",
+      "division": "凝聚态物理研究部",
+      "researchInterestRaw": "凝聚态物理、光谱成像"
+    },
+    {
+      "name": "李耀义",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40155/yaoyi-li",
+      "email": "yaoyili@sjtu.edu.cn",
+      "office": "N557",
+      "division": "凝聚态物理研究部",
+      "researchInterestRaw": "拓扑超导体与Majorana零能模、表面与低维物理、扫描隧道显微镜与分子束外延生长"
+    },
+    {
+      "name": "王楠林",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/44517/",
+      "email": "nlwang@sjtu.edu.cn",
+      "office": "S506",
+      "division": "凝聚态物理研究部",
+      "researchInterestRaw": null
+    },
+    {
+      "name": "蒋庆东",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40123/qingdong-jiang",
+      "email": "qingdong.jiang@sjtu.edu.cn",
+      "office": "N653",
+      "division": "凝聚态物理研究部",
+      "researchInterestRaw": "量子物理、超导、超流"
+    },
+    {
+      "name": "袁凡奇",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/42292/noah-f.-q.-yuan",
+      "email": "yuanfanqi@sjtu.edu.cn",
+      "office": "N644",
+      "division": "凝聚态物理研究部",
+      "researchInterestRaw": "超导、二维材料"
+    },
+    {
+      "name": "贾金锋",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40057/jia-jinfeng",
+      "email": null,
+      "office": "S503",
+      "division": "凝聚态物理研究部",
+      "researchInterestRaw": "拓扑超导体与马约拉纳费米子、拓扑绝缘子与新量子物质"
+    },
+    {
+      "name": "郑浩",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40156/hao-zheng",
+      "email": "haozheng1@sjtu.edu.cn",
+      "office": "N656",
+      "division": "凝聚态物理研究部",
+      "researchInterestRaw": "拓扑物态、低维量子体系"
+    },
+    {
+      "name": "钟瑞丹",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40105/ruidan-zhong",
+      "email": "rzhong@sjtu.edu.cn",
+      "office": "N658",
+      "division": "凝聚态物理研究部",
+      "researchInterestRaw": "量子材料、量子磁性材料"
+    },
+    {
+      "name": "顾强强",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/43037/qiangqiang-gu",
+      "email": "qiangqianggu@sjtu.edu.cn",
+      "office": "N541",
+      "division": "凝聚态物理研究部",
+      "researchInterestRaw": "凝聚态物理"
+    },
+    {
+      "name": "高安远",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40620/anyuan-gao",
+      "email": "anyuangao@sjtu.edu.cn",
+      "office": "N662",
+      "division": "凝聚态物理研究部",
+      "researchInterestRaw": "二维材料拓扑量子输运、二维材料光电特性研究"
+    },
+    {
+      "name": "高波",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40653/bo-gao",
+      "email": "gaobo_79@sjtu.edu.cn",
+      "office": "N562",
+      "division": "凝聚态物理研究部",
+      "researchInterestRaw": "超导电子学、凝聚态物理"
+    },
+    {
+      "name": "Bhawna Mukhija",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/45988/",
+      "email": "bhawnam@sjtu.edu.cn",
+      "office": "S431",
+      "division": "天文与天体物理研究部",
+      "researchInterestRaw": null
+    },
+    {
+      "name": "Darius Modirrousta-Galian",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/42601/",
+      "email": "modirrousta-galian@sjtu.edu.cn",
+      "office": "S467",
+      "division": "天文与天体物理研究部",
+      "researchInterestRaw": null
+    },
+    {
+      "name": "Masahiro Ogihara",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40125/masahiro-ogihara",
+      "email": "ogihara@sjtu.edu.cn",
+      "office": "S418",
+      "division": "天文与天体物理研究部",
+      "researchInterestRaw": "行星物理、宇宙学"
+    },
+    {
+      "name": "Yosuke Mizuno",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40098/yosuke-mizuno",
+      "email": "mizuno@sjtu.edu.cn",
+      "office": "S422",
+      "division": "天文与天体物理研究部",
+      "researchInterestRaw": "天体物理、宇宙学"
+    },
+    {
+      "name": "冯发波",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40097/feng-fabo",
+      "email": "ffeng@sjtu.edu.cn",
+      "office": "S421",
+      "division": "天文与天体物理研究部",
+      "researchInterestRaw": "天体物理、宇宙学"
+    },
+    {
+      "name": "吴益鹏",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40608/yipeng-wu",
+      "email": "yipeng.wu@sjtu.edu.cn",
+      "office": "S419",
+      "division": "天文与天体物理研究部",
+      "researchInterestRaw": "等离子体尾波加速、实验室天体物理"
+    },
+    {
+      "name": "周浩",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40022/hao-zhou",
+      "email": "hao_zhou@sjtu.edu.cn",
+      "office": "S415",
+      "division": "天文与天体物理研究部",
+      "researchInterestRaw": "天体粒子物理、多信使天文学"
+    },
+    {
+      "name": "唐梦涛",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/43984/",
+      "email": "mengtao.tang@sjtu.edu.cn",
+      "office": "S417",
+      "division": "天文与天体物理研究部",
+      "researchInterestRaw": null
+    },
+    {
+      "name": "张杰",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40110/jie-zhang",
+      "email": "tdli-director@sjtu.edu.cn",
+      "office": "上海市浦东新区李所路1号李政道研究所",
+      "division": "天文与天体物理研究部",
+      "researchInterestRaw": "高能量密度物理与激光聚变"
+    },
+    {
+      "name": "易龙卿",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40270/longqin-yi",
+      "email": "lqyi@sjtu.edu.cn",
+      "office": "S408",
+      "division": "天文与天体物理研究部",
+      "researchInterestRaw": "等离子体物理、实验室天体物理"
+    },
+    {
+      "name": "景益鹏",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40088/jing-yipeng",
+      "email": "ypjing@sjtu.edu.cn",
+      "office": "S502",
+      "division": "天文与天体物理研究部",
+      "researchInterestRaw": "星系形成和演化、天文学数值模拟"
+    },
+    {
+      "name": "杨小虎",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40021/xiaohu-yang",
+      "email": "xyang@sjtu.edu.cn",
+      "office": "S439",
+      "division": "天文与天体物理研究部",
+      "researchInterestRaw": "宇宙学、星系群和星系团"
+    },
+    {
+      "name": "潘震",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40677/zhen-pan",
+      "email": "zhpan@sjtu.edu.cn",
+      "office": "S468",
+      "division": "天文与天体物理研究部",
+      "researchInterestRaw": "Gravitational Wave Astrophysics and Cosmology"
+    },
+    {
+      "name": "王界双",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40018/jieshuang-wang",
+      "email": "jieshuangwang@sjtu.edu.cn",
+      "office": "S456",
+      "division": "天文与天体物理研究部",
+      "researchInterestRaw": null
+    },
+    {
+      "name": "祖颖",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40605/ying-zu",
+      "email": "yingzu@sjtu.edu.cn",
+      "office": "S457",
+      "division": "天文与天体物理研究部",
+      "researchInterestRaw": "宇宙学、暗物质与暗能量"
+    },
+    {
+      "name": "谭先瑜",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40265/xianyu-tan",
+      "email": "xianyut@sjtu.edu.cn",
+      "office": "S466",
+      "division": "天文与天体物理研究部",
+      "researchInterestRaw": "系外行星大气的理论模拟、行星大气动力学的基础研究"
+    },
+    {
+      "name": "赖东",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40040/dong-lai",
+      "email": "donglai@sjtu.edu.cn",
+      "office": "S433",
+      "division": "天文与天体物理研究部",
+      "researchInterestRaw": "行星演化、致密星"
+    },
+    {
+      "name": "郑宪忠",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40645/xianzhong-zheng",
+      "email": "xzzheng@sjtu.edu.cn",
+      "office": "S438",
+      "division": "天文与天体物理研究部",
+      "researchInterestRaw": "星系形成与演化、高红移星系研究"
+    },
+    {
+      "name": "Iwan Morton-Blake",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40193/iwan-morton-blake",
+      "email": "iblake@sjtu.edu.cn",
+      "office": "N627",
+      "division": "粒子与核物理研究部",
+      "researchInterestRaw": null
+    },
+    {
+      "name": "Michael Ramsey-Musolf",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40046/michael-ramsey-musolf",
+      "email": "mjrm@sjtu.edu.cn",
+      "office": "N628",
+      "division": "粒子与核物理研究部",
+      "researchInterestRaw": "核物理、宇宙学"
+    },
+    {
+      "name": "Yuichiro Nakai",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40019/yuichiro-nakai",
+      "email": "ynakai@sjtu.edu.cn",
+      "office": "N643",
+      "division": "粒子与核物理研究部",
+      "researchInterestRaw": "粒子物理、粒子宇宙学"
+    },
+    {
+      "name": "何小刚",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40048/he-xiaogang",
+      "email": "hexg@sjtu.edu.cn",
+      "office": "N645",
+      "division": "粒子与核物理研究部",
+      "researchInterestRaw": "粒子物理理论、粒子天体物理"
+    },
+    {
+      "name": "何红建",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40042/he-hongjian",
+      "email": "hjhe@sjtu.edu.cn",
+      "office": "李政道研究所N545",
+      "division": "粒子与核物理研究部",
+      "researchInterestRaw": "中微子物理和费米子质量、希格斯物理和暗物质"
+    },
+    {
+      "name": "刘江来",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40043/liu-jianglai",
+      "email": "jianglai.liu@sjtu.edu.cn",
+      "office": "N417",
+      "division": "粒子与核物理研究部",
+      "researchInterestRaw": "暗物质实验、中微子实验"
+    },
+    {
+      "name": "向昕",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40458/xin-xiang",
+      "email": "xxiang@sjtu.edu.cn",
+      "office": "N559",
+      "division": "粒子与核物理研究部",
+      "researchInterestRaw": "实验高能天体中微子（TRIDENT）、暗物质实验探测"
+    },
+    {
+      "name": "周宁",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40114/ning-zhou",
+      "email": "nzhou@sjtu.edu.cn",
+      "office": "理科楼5号楼642室",
+      "division": "粒子与核物理研究部",
+      "researchInterestRaw": "暗物质直接探测、暗物质对撞机探测"
+    },
+    {
+      "name": "季向东",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/45213/ji-xiangdong",
+      "email": "xdji@sjtu.edu.cn",
+      "office": "S515",
+      "division": "粒子与核物理研究部",
+      "researchInterestRaw": "粒子物理"
+    },
+    {
+      "name": "徐东莲",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40056/donglian-xu",
+      "email": "donglianxu@sjtu.edu.cn",
+      "office": "N670",
+      "division": "粒子与核物理研究部",
+      "researchInterestRaw": "中微子物理、粒子物理"
+    },
+    {
+      "name": "曲慧麟",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/44940/",
+      "email": "hlqu@sjtu.edu.cn",
+      "office": "N431",
+      "division": "粒子与核物理研究部",
+      "researchInterestRaw": "人工智能与粒子物理"
+    },
+    {
+      "name": "李数",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40051/li-shu",
+      "email": "shuli@sjtu.edu.cn",
+      "office": "N642",
+      "division": "粒子与核物理研究部",
+      "researchInterestRaw": "希格斯新物理、暗物质探测、高能对撞机实验"
+    },
+    {
+      "name": "梅华林",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40480/hualin-mei",
+      "email": "mei.hualin@sjtu.edu.cn",
+      "office": "N561",
+      "division": "粒子与核物理研究部",
+      "researchInterestRaw": "粒子物理实验、中微子，粒子物理探测技术"
+    },
+    {
+      "name": "艾稳元",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/44830/",
+      "email": "wenyuanai@sjtu.edu.cn",
+      "office": "N652",
+      "division": "粒子与核物理研究部",
+      "researchInterestRaw": null
+    },
+    {
+      "name": "葛韶锋",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40053/shao-feng-ge",
+      "email": "gesf@sjtu.edu.cn",
+      "office": "N661",
+      "division": "粒子与核物理研究部",
+      "researchInterestRaw": "中微子和暗物质相关的粒子物理、天体物理和宇宙学理论和唯象研究"
+    },
+    {
+      "name": "许金祥",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40050/kim-siang-khaw",
+      "email": "kimsiang84@sjtu.edu.cn",
+      "office": "N669",
+      "division": "粒子与核物理研究部",
+      "researchInterestRaw": "加速器物理、粒子物理"
+    },
+    {
+      "name": "谢可平",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/44934/",
+      "email": "kepingxie@sjtu.edu.cn",
+      "office": "N655",
+      "division": "粒子与核物理研究部",
+      "researchInterestRaw": null
+    },
+    {
+      "name": "陈一帆",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/44260/yifan-chen",
+      "email": "chen.yifan@sjtu.edu.cn",
+      "office": "N571",
+      "division": "粒子与核物理研究部",
+      "researchInterestRaw": "粒子物理"
+    },
+    {
+      "name": "韩君",
+      "profileUrl": "https://tdli.sjtu.edu.cn/people/40189/han-jun",
+      "email": "sjhan@sjtu.edu.cn",
+      "office": "N553",
+      "division": "粒子与核物理研究部",
+      "researchInterestRaw": "粒子天体物理、核物理"
+    }
+  ]
+}

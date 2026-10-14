@@ -32,7 +32,7 @@ export function useOpenMentor() {
   const navigate = useNavigate();
   const { setFlyingId, setFlip } = useAtlasState();
 
-  return useCallback((id: string, to: string, dest: "detail" | "atlas") => {
+  return useCallback((id: string, to: string, dest: "detail" | "atlas" | "directory") => {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (!reduced && supportsViewTransition()) {
       flushSync(() => setFlyingId(id));
