@@ -1,3 +1,10 @@
+## 公网地址
+
+- 站点：[https://qyshen-0521.github.io/tdli-scale-atlas/](https://qyshen-0521.github.io/tdli-scale-atlas/)
+- 仓库：[https://github.com/QYshen-0521/tdli-scale-atlas](https://github.com/QYshen-0521/tdli-scale-atlas)
+
+推送到 `main` 后，GitHub Actions 会自动构建并发布到 GitHub Pages。
+
 # 尺度衡星
 
 李政道研究所天文与粒子天体物理导师的一张对数图。横轴是尺度，纵轴是质量。天体带着图像落在自己的位置上；导师的研究画成半透明的区域，印章和名字放在区域边缘。点开印章，进入这位导师的研究、论文和相关天体。
