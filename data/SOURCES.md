@@ -43,9 +43,39 @@
 
 行星和太阳的半径、质量来自 NASA Planetary Fact Sheet（https://nssdc.gsfc.nasa.gov/planetary/factsheet/ ）的常用值，并在 `objects.json` 里写成对数。黑洞质量的文献见 `PLACEMENTS.md`。可观测宇宙半径取 465 亿光年，质量用 H₀ = 67.4 km s⁻¹ Mpc⁻¹ 的临界密度乘以球体积。
 
+## 肖像
+
+圆形头像用的是李政道研究所官网个人页上公开的肖像，下载于 2026-10-14，放在 `public/assets/mentors/`。页面打不开照片时退回印章。这些照片的版权仍属拍摄机构或作者，本仓库只为在这张图上辨认导师而展示，并在下表标明来源页面。赖东的文件元数据写着 Cornell University Photography。张鹏杰所用文件在服务器上的文件名仍带「待替换」，但那就是官网当前显示的肖像。
+
+| 导师 | 文件 | 来源页面 |
+| --- | --- | --- |
+| 赖东 | lai.jpg | https://tdli.sjtu.edu.cn/people/40040/dong-lai |
+| 景益鹏 | jing.jpg | https://tdli.sjtu.edu.cn/people/40088 |
+| 杨小虎 | yang.jpg | https://tdli.sjtu.edu.cn/people/40021/xiaohu-yang |
+| 张鹏杰 | zhangpj.jpg | https://tdli.sjtu.edu.cn/people/40039 |
+| 祖颖 | zu.jpg | https://tdli.sjtu.edu.cn/people/40605/ying-zu |
+| 冯发波 | feng.jpg | https://tdli.sjtu.edu.cn/people/40097/fabo-feng |
+| 水野阳介 | mizuno.jpg | https://tdli.sjtu.edu.cn/people/40098/yosuke-mizuno |
+| 潘震 | pan.jpg | https://tdli.sjtu.edu.cn/people/40677/zhen-pan |
+| 谭先瑜 | tan.jpg | https://tdli.sjtu.edu.cn/en/people/40675/xianyu-tan |
+| 唐梦涛 | tang.jpg | https://tdli.sjtu.edu.cn/en/people/43985/mengtao-tang |
+| Masahiro Ogihara | ogihara.jpg | https://tdli.sjtu.edu.cn/people/40125/masahiro-ogihara |
+| Darius Modirrousta-Galian | darius.jpg | https://tdli.sjtu.edu.cn/en/people/42602/darius-modirrousta-galian |
+| 郑宪忠 | zheng.jpg | https://tdli.sjtu.edu.cn/people/40645/xianzhong-zheng |
+| 王界双 | wangjs.jpg | https://tdli.sjtu.edu.cn/en/people/41275/jieshuang-wang |
+| 周浩 | zhouhao.jpg | https://tdli.sjtu.edu.cn/en/people/41271/hao-zhou |
+| 刘江来 | liu.jpg | https://tdli.sjtu.edu.cn/people/40043/liu-jianglai |
+| 周宁 | zhouning.jpg | https://tdli.sjtu.edu.cn/people/40114/ning-zhou |
+| 徐东莲 | xu.jpg | https://tdli.sjtu.edu.cn/people/40056/donglian-xu |
+| 何小刚 | he.jpg | https://tdli.sjtu.edu.cn/people/40048/he-xiaogang |
+| 葛韶锋 | ge.jpg | https://tdli.sjtu.edu.cn/people/40053 |
+| 张杰 | zhangjie.jpg | https://tdli.sjtu.edu.cn/people/40110/jie-zhang |
+| 吴益鹏 | wu.jpg | https://tdli.sjtu.edu.cn/people/40608/yipeng-wu |
+| 易龙卿 | yi.jpg | https://tdli.sjtu.edu.cn/people/40681/longqing-yi |
+
 ## 图像
 
-全部放在 `public/assets/objects/`。许可只接受公有领域、CC0、CC BY、CC BY-SA；含 NC 或 ND 的没有使用。肖像没有从官网下载：那些照片的使用范围并不清楚，印章是本站画的。
+天体图像放在 `public/assets/objects/`。许可只接受公有领域、CC0、CC BY、CC BY-SA；含 NC 或 ND 的没有使用。比邻星只保留了 ESO 对比图的左半；奥尔特云裁掉了画面底部的署名水印，署名仍留在下表；拉尼亚凯亚裁到了超星系团的流域。M31* 和本星系群是本站画的示意图。
 
 | 文件 | 许可 | 署名 | 原始页面 |
 | --- | --- | --- | --- |
@@ -71,5 +101,20 @@
 | cluster.jpg | Public domain | NASA, ESA, R. Dupke et al. | https://commons.wikimedia.org/wiki/File:Abell_2744_-_Hubble_(2013-10-24).jpg |
 | cmb.png | Public domain | NASA / WMAP Science Team | https://commons.wikimedia.org/wiki/File:WMAP_2012.png |
 | browndwarf.jpg | Public domain | NASA / JPL-Caltech | https://commons.wikimedia.org/wiki/File:Artist%E2%80%99s_conception_of_a_brown_dwarf_like_2MASSJ22282889-431026.jpg |
+| mercury.jpg | Public domain | NASA / JHUAPL / Carnegie | https://commons.wikimedia.org/wiki/File:Mercury_in_true_color.jpg |
+| mars.jpg | CC BY-SA 3.0 IGO | ESA 与 OSIRIS 团队 | https://commons.wikimedia.org/wiki/File:OSIRIS_Mars_true_color.jpg |
+| saturn.jpg | Public domain | NASA / JPL / Space Science Institute | https://commons.wikimedia.org/wiki/File:Saturn_during_Equinox.jpg |
+| proxima.jpg | CC BY 4.0 | ESO（eso0232a，裁成左幅） | https://commons.wikimedia.org/wiki/File:Proxima_Centauri_-_the_nearest_star_(eso0232a).jpg |
+| rigel.jpg | CC BY-SA 4.0 | Bondboy9756 | https://commons.wikimedia.org/wiki/File:Rigel-star-beta-orionis.jpg |
+| m31bh.svg | 本站原创 | — | — |
+| oort.jpg | CC BY 4.0 | Celestialobjects（艺术想象；已裁去水印） | https://commons.wikimedia.org/wiki/File:Oort_Cloud_atristic_concept.jpg |
+| helix.jpg | Public domain | NASA, ESA, C. R. O'Dell, M. Meixner, P. McCullough | https://commons.wikimedia.org/wiki/File:NGC7293_(2004).jpg |
+| pleiades.jpg | Public domain | NASA, ESA, AURA/Caltech, Palomar Observatory | https://commons.wikimedia.org/wiki/File:Pleiades_large.jpg |
+| orion.jpg | Public domain | NASA, ESA, M. Robberto and the Hubble Orion Treasury Project Team | https://commons.wikimedia.org/wiki/File:Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg |
+| vela.jpg | CC BY 4.0 | ESO / VST / TIMER survey | https://commons.wikimedia.org/wiki/File:Vela_supernova_-_VST_-_Eso2214a.jpg |
+| smc.jpg | CC BY 4.0 | ESA/Hubble and Digitized Sky Survey 2 | https://commons.wikimedia.org/wiki/File:Small_Magellanic_Cloud_(Digitized_Sky_Survey_2).jpg |
+| m31.jpg | CC BY 2.0 | Adam Evans | https://commons.wikimedia.org/wiki/File:Andromeda_Galaxy_(with_h-alpha).jpg |
+| localgroup.svg | 本站原创 | — | — |
+| laniakea.jpg | CC BY 4.0 | R. Brent Tully et al., SDvision, DP, CEA/Saclay | https://commons.wikimedia.org/wiki/File:LaniakeaBoundaries.jpg |
 
 CC BY 与 CC BY-SA 图像仅作展示，未做超出裁成圆形以外的修改。若再分发本仓库，请保留上表署名。

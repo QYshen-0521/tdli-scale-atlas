@@ -8,7 +8,7 @@ const basename = import.meta.env.BASE_URL.replace(/\/$/, "") || "/";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter basename={basename === "/" ? undefined : basename}>
+    <BrowserRouter basename={basename === "/" ? undefined : basename} useTransitions={false}>
       <App />
     </BrowserRouter>
   </StrictMode>,

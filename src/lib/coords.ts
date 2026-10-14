@@ -1,5 +1,7 @@
 export const BOUNDS = {
-  logL: [3, 27] as const,
+  // Equal spans so one decade is the same length on both axes and the frame is square.
+  // The horizontal axis is widened past the observable universe; nothing is plotted there.
+  logL: [3, 40] as const,
   logM: [18, 55] as const,
 };
 
@@ -62,16 +64,30 @@ export function zoomAt(
   };
 }
 
-export function clampPan(view: View, width: number, height: number): View {
+/**
+ * Keep the plot inside the frame. An axis that already fits is locked to the
+ * center of the padded viewport, so panning cannot slide it into empty space.
+ */
+export function clampPan(view: View, width: number, height: number, pad: Pads = { l: 0, r: 0, t: 0, b: 0 }): View {
   const { dL, dM } = span();
-  let { x, y } = view;
-  const right = x + dL * view.k;
-  const bottom = y + dM * view.k;
-  const margin = 72;
-  if (right < margin) x += margin - right;
-  if (x > width - margin) x -= x - (width - margin);
-  if (bottom < margin) y += margin - bottom;
-  if (y > height - margin) y -= y - (height - margin);
+  const plotW = dL * view.k;
+  const plotH = dM * view.k;
+  const innerW = Math.max(0, width - pad.l - pad.r);
+  const innerH = Math.max(0, height - pad.t - pad.b);
+
+  let x: number;
+  if (plotW <= innerW + 0.5) {
+    x = pad.l + (innerW - plotW) / 2;
+  } else {
+    x = clamp(view.x, pad.l + innerW - plotW, pad.l);
+  }
+
+  let y: number;
+  if (plotH <= innerH + 0.5) {
+    y = pad.t + (innerH - plotH) / 2;
+  } else {
+    y = clamp(view.y, pad.t + innerH - plotH, pad.t);
+  }
   return { ...view, x, y };
 }
 

@@ -9,16 +9,20 @@ const ids = new Set();
 const objectIds = new Set(objects.map((obj) => obj.id));
 const errors = [];
 
+const objectGroups = new Set(["planet", "compact", "galaxy", "cosmos"]);
 for (const obj of objects) {
   if (!obj.image.startsWith("/assets/")) errors.push(`object ${obj.id} image path`);
   const file = path.join(root, "public", obj.image);
   if (!existsSync(file)) errors.push(`missing file ${obj.image}`);
   if (!(obj.logL > 0) || !(obj.logM > 0)) errors.push(`bad logs ${obj.id}`);
+  if (!objectGroups.has(obj.group)) errors.push(`object ${obj.id} group`);
 }
 
 for (const mentor of mentors) {
   if (ids.has(mentor.id)) errors.push(`duplicate ${mentor.id}`);
   ids.add(mentor.id);
+  if (!mentor.photo?.startsWith("/assets/mentors/")) errors.push(`mentor ${mentor.id} photo`);
+  else if (!existsSync(path.join(root, "public", mentor.photo))) errors.push(`missing photo ${mentor.photo}`);
   if (!mentor.papers?.length) errors.push(`no papers ${mentor.id}`);
   for (const paper of mentor.papers) {
     if (paper.url && !/^https?:\/\//.test(paper.url)) errors.push(`bad url ${mentor.id}`);

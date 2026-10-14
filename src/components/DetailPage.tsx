@@ -1,24 +1,26 @@
-import { useEffect, useRef } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { useParams } from "react-router-dom";
+import { useAtlasState, useAvatarArrival } from "../atlas-state.tsx";
 import { mentorById, objectById } from "../content.ts";
+import { publicUrl } from "../lib/assets.ts";
 import { paperHref } from "../lib/format.ts";
-import { supportsViewTransition, transitionTo } from "../lib/nav.ts";
+import { supportsViewTransition, useOpenMentor } from "../lib/nav.ts";
 import { MiniMap } from "./MiniMap.tsx";
-import { Seal } from "./Seal.tsx";
-
-const COVERAGE_LABEL = {
-  focused: "图上的一块区域",
-  wide: "较宽的色带",
-  broad: "广域虚线轮廓",
-  offplane: "不在尺度–质量图上",
-} as const;
+import { MentorAvatar } from "./MentorAvatar.tsx";
 
 export default function DetailPage() {
   const { id } = useParams();
-  const navigate = useNavigate();
+  const openMentor = useOpenMentor();
+  const { flip } = useAtlasState();
   const headingRef = useRef<HTMLHeadingElement>(null);
   const mentor = mentorById(id ?? "");
-  const enter = supportsViewTransition() ? "" : " enter";
+  useAvatarArrival(mentor?.id, "detail", true);
+  const [enter] = useState(() => flip?.dest === "detail" && flip.id === id && !supportsViewTransition());
+
+  const back = useCallback(() => {
+    if (mentor) openMentor(mentor.id, "/", "atlas");
+    else openMentor("missing", "/", "atlas");
+  }, [mentor, openMentor]);
 
   useEffect(() => {
     document.title = mentor ? `${mentor.nameZh} · 尺度衡星` : "未找到 · 尺度衡星";
@@ -31,24 +33,24 @@ export default function DetailPage() {
       if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement) return;
       if (event.key === "Escape" || event.key === "Backspace") {
         event.preventDefault();
-        transitionTo(navigate, "/");
+        back();
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [navigate]);
+  }, [back]);
 
   if (!mentor) {
     return (
-      <main className={`detail-page${enter}`}>
-        <button type="button" className="back-btn" onClick={() => transitionTo(navigate, "/")}>
+      <main className={`detail-page${enter ? " is-enter" : ""}`}>
+        <button type="button" className="back-btn" onClick={back}>
           ← 返回星图
         </button>
         <div className="detail-missing">
           <h1 ref={headingRef} tabIndex={-1}>
             没有找到这位导师
           </h1>
-          <p>链接可能写错了。星图上的印章仍然在。</p>
+          <p>链接可能写错了。星图上的位置仍然在。</p>
         </div>
       </main>
     );
@@ -59,23 +61,17 @@ export default function DetailPage() {
     .filter((item): item is NonNullable<typeof item> => Boolean(item));
 
   return (
-    <main className={`detail-page${enter}`}>
-      <button type="button" className="back-btn" onClick={() => transitionTo(navigate, "/")}>
+    <main className={`detail-page${enter ? " is-enter" : ""}`}>
+      <button type="button" className="back-btn" onClick={back}>
         ← 返回星图
         <kbd>Esc</kbd>
       </button>
       <article className="detail-sheet">
         <header className="detail-hero">
-          <div className="detail-seal" style={{ viewTransitionName: `seal-${mentor.id}` }}>
-            <Seal
-              id={mentor.id}
-              char={mentor.seal}
-              pigment={mentor.pigment}
-              broad={mentor.coverage === "broad"}
-              size={92}
-            />
+          <div className="detail-seal">
+            <MentorAvatar mentor={mentor} size={112} />
           </div>
-          <div>
+          <div className="detail-copy">
             <p className="eyebrow">{mentor.divisionZh}</p>
             <h1 ref={headingRef} tabIndex={-1}>
               {mentor.nameZh}
@@ -84,7 +80,6 @@ export default function DetailPage() {
             <p className="detail-title">{mentor.titleZh}</p>
             <p className="detail-title en">{mentor.titleEn}</p>
             <ul className="chips">
-              <li style={{ borderColor: mentor.pigment }}>{COVERAGE_LABEL[mentor.coverage]}</li>
               {mentor.interests.slice(0, 4).map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -92,6 +87,7 @@ export default function DetailPage() {
           </div>
         </header>
 
+        <div className="detail-rest">
         <div className="detail-grid">
           <section className="prose">
             {mentor.summaryZh.map((para) => (
@@ -113,7 +109,7 @@ export default function DetailPage() {
             <ul>
               {pictures.map((obj) => (
                 <li key={obj.id}>
-                  <img src={obj.image} alt={`${obj.nameZh}，${obj.nameEn}`} />
+                  <img src={publicUrl(obj.image)} alt={`${obj.nameZh}，${obj.nameEn}`} />
                   <span>
                     <strong>{obj.nameZh}</strong>
                     <small>{obj.nameEn}</small>
@@ -172,6 +168,7 @@ export default function DetailPage() {
           ) : null}
           {mentor.email ? <span>{mentor.email}</span> : null}
         </footer>
+        </div>
       </article>
     </main>
   );

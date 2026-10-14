@@ -1,6 +1,6 @@
 import { offplaneMentors } from "../content.ts";
 import type { Mentor } from "../types.ts";
-import { Seal } from "./Seal.tsx";
+import { MentorAvatar } from "./MentorAvatar.tsx";
 
 export function OffplanePanel({
   open,
@@ -59,8 +59,8 @@ function Section({
       <ul>
         {people.map((mentor) => (
           <li key={mentor.id}>
-            <button type="button" onClick={() => onOpen(mentor.id)} style={{ viewTransitionName: `seal-${mentor.id}` }}>
-              <Seal id={mentor.id} char={mentor.seal} pigment={mentor.pigment} size={40} />
+            <button type="button" onClick={() => onOpen(mentor.id)}>
+              <MentorAvatar mentor={mentor} size={40} />
               <span>
                 <strong>{mentor.nameZh}</strong>
                 <em>{mentor.nameEn}</em>

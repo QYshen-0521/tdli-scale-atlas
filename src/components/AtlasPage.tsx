@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useAtlasState } from "../atlas-state.tsx";
 import { chartMentors, offplaneMentors } from "../content.ts";
-import { transitionTo } from "../lib/nav.ts";
+import { supportsViewTransition, useOpenMentor } from "../lib/nav.ts";
 import type { FilterKey } from "../types.ts";
 import { Chart } from "./Chart.tsx";
 import { OffplanePanel } from "./OffplanePanel.tsx";
@@ -15,21 +15,22 @@ const FILTERS: { id: FilterKey; zh: string; en: string }[] = [
 ];
 
 export default function AtlasPage() {
-  const navigate = useNavigate();
+  const openMentor = useOpenMentor();
+  const { panelOpen, setPanelOpen, flip } = useAtlasState();
   const [filter, setFilter] = useState<FilterKey>("all");
   const [guides, setGuides] = useState(true);
-  const [panel, setPanel] = useState(true);
+  const [enter] = useState(() => flip?.dest === "atlas" && !supportsViewTransition());
 
   useEffect(() => {
     document.title = "尺度衡星 · 李政道研究所";
   }, []);
 
-  function openMentor(id: string) {
-    transitionTo(navigate, `/mentor/${id}`);
+  function go(id: string) {
+    openMentor(id, `/mentor/${id}`, "detail");
   }
 
   return (
-    <div className="atlas-page">
+    <div className={`atlas-page${enter ? " is-enter" : ""}`}>
       <header className="topbar">
         <div className="brand">
           <p className="eyebrow">李政道研究所 · Tsung-Dao Lee Institute</p>
@@ -61,9 +62,9 @@ export default function AtlasPage() {
           <span>滚轮按光标缩放 · 拖拽平移 · 双击空白复位 · + / − / 0</span>
         </p>
       </header>
-      <div className={`atlas-body${panel ? " panel-open" : ""}`}>
-        <OffplanePanel open={panel} onToggle={() => setPanel((v) => !v)} onOpen={openMentor} />
-        <Chart filter={filter} guides={guides} onOpenMentor={openMentor} />
+      <div className={`atlas-body${panelOpen ? " panel-open" : ""}`}>
+        <OffplanePanel open={panelOpen} onToggle={() => setPanelOpen((v) => !v)} onOpen={go} />
+        <Chart filter={filter} guides={guides} onOpenMentor={go} />
       </div>
     </div>
   );

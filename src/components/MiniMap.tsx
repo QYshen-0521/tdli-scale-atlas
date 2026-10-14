@@ -3,18 +3,18 @@ import { chartMentors, objects } from "../content.ts";
 import { BOUNDS, fitView, project } from "../lib/coords.ts";
 import type { Mentor } from "../types.ts";
 
-const W = 640;
-const H = 280;
+const W = 760;
+const H = 760;
 
 export function MiniMap({ mentor }: { mentor: Mentor }) {
-  const view = useMemo(() => fitView(W, H, { l: 28, r: 16, t: 16, b: 22 }), []);
+  const view = useMemo(() => fitView(W, H, { l: 36, r: 22, t: 22, b: 52 }), []);
   return (
     <svg className="minimap" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`${mentor.nameZh}在尺度–质量图上的位置`}>
       <rect width={W} height={H} fill="#0c0e14" rx="12" />
       {objects.map((obj) => {
         const p = project(obj.logL, obj.logM, view);
         const related = mentor.relatedObjects.includes(obj.id);
-        return <circle key={obj.id} cx={p.x} cy={p.y} r={related ? 3.2 : 1.6} fill={related ? "#f3ecdf" : "rgba(243,236,223,0.35)"} />;
+        return <circle key={obj.id} cx={p.x} cy={p.y} r={related ? 7 : 3.4} fill={related ? "#f3ecdf" : "rgba(243,236,223,0.35)"} />;
       })}
       {chartMentors.map((m) =>
         m.regions.map((region, i) => {
@@ -59,13 +59,13 @@ export function MiniMap({ mentor }: { mentor: Mentor }) {
         <circle
           cx={project(mentor.anchor.logL, mentor.anchor.logM, view).x}
           cy={project(mentor.anchor.logL, mentor.anchor.logM, view).y}
-          r="5"
+          r="11"
           fill="#f3ecdf"
           stroke={mentor.pigment}
-          strokeWidth="2"
+          strokeWidth="3"
         />
       ) : null}
-      <text x="16" y={H - 8} fill="rgba(243,236,223,0.55)" fontSize="11">
+      <text x="22" y={H - 18} fill="rgba(243,236,223,0.55)" fontSize="18">
         {`L：10^${BOUNDS.logL[0]}–10^${BOUNDS.logL[1]} m`}
       </text>
     </svg>

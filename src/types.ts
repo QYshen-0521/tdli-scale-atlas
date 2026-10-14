@@ -4,6 +4,8 @@ export type Group = "planet" | "compact" | "galaxy" | "cosmos" | "particle" | "l
 
 export type FilterKey = "all" | "planet" | "compact" | "galaxy" | "cosmos";
 
+export type ObjectGroup = Exclude<FilterKey, "all">;
+
 export type Region =
   | { shape: "ellipse"; cx: number; cy: number; rx: number; ry: number }
   | { shape: "rect"; logL0: number; logL1: number; logM0: number; logM1: number }
@@ -21,6 +23,9 @@ export type Mentor = {
   nameEn: string;
   shortZh: string;
   seal: string;
+  photo?: string;
+  photoSource?: string;
+  photoFocus?: string;
   titleZh: string;
   titleEn: string;
   divisionZh: string;
@@ -52,6 +57,7 @@ export type Celestial = {
   id: string;
   nameZh: string;
   nameEn: string;
+  group: ObjectGroup;
   logL: number;
   logM: number;
   measureZh: string;

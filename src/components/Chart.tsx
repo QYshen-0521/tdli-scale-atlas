@@ -1,7 +1,9 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import type { MouseEvent as ReactMouseEvent, PointerEvent as ReactPointerEvent } from "react";
+import { useAtlasState, useAvatarArrival } from "../atlas-state.tsx";
 import { useCamera } from "../camera.tsx";
 import { chartMentors, objects } from "../content.ts";
+import { publicUrl } from "../lib/assets.ts";
 import {
   BOUNDS,
   RS_OFFSET,
@@ -17,7 +19,7 @@ import {
 import type { Pads, View } from "../lib/coords.ts";
 import { sciParts } from "../lib/format.ts";
 import type { Celestial, FilterKey, Mentor, Region } from "../types.ts";
-import { Seal } from "./Seal.tsx";
+import { MentorAvatar } from "./MentorAvatar.tsx";
 
 type Box = { x: number; y: number; w: number; h: number };
 
@@ -25,6 +27,10 @@ const PAD: Pads = { l: 62, r: 24, t: 18, b: 46 };
 
 function dimmed(mentor: Mentor, filter: FilterKey) {
   return filter !== "all" && !mentor.groups.some((group) => group === filter);
+}
+
+function objectDimmed(obj: Celestial, filter: FilterKey) {
+  return filter !== "all" && obj.group !== filter;
 }
 
 function overlaps(a: Box, b: Box) {
@@ -65,6 +71,8 @@ export function Chart({
   const [hoverObject, setHoverObject] = useState<string | null>(null);
   const [pinned, setPinned] = useState<string | null>(null);
   const [broken, setBroken] = useState<Record<string, boolean>>({});
+  const { flip } = useAtlasState();
+  useAvatarArrival(flip?.dest === "atlas" ? flip.id : undefined, "atlas", Boolean(view));
   const drag = useRef<{ id: number; x: number; y: number; ox: number; oy: number; moved: boolean } | null>(null);
   const moved = useRef(false);
   const pts = useRef(new Map<number, { x: number; y: number }>());
@@ -93,8 +101,10 @@ export function Chart({
   const zoom = view && fitted ? view.k / fitted.k : 1;
 
   function commit(next: View, markDirty: boolean) {
+    const rect = surfaceRef.current?.getBoundingClientRect();
+    const clamped = rect ? clampPan(next, rect.width, rect.height, PAD) : next;
     if (markDirty) setDirty(true);
-    setView(next);
+    setView(clamped);
   }
 
   function reset() {
@@ -106,11 +116,13 @@ export function Chart({
     const step = (now: number) => {
       const t = Math.min(1, (now - t0) / 520);
       const e = 1 - (1 - t) ** 3;
-      setView({
+      const rect = surfaceRef.current?.getBoundingClientRect();
+      const next = {
         x: from.x + (target.x - from.x) * e,
         y: from.y + (target.y - from.y) * e,
         k: from.k + (target.k - from.k) * e,
-      });
+      };
+      setView(rect ? clampPan(next, rect.width, rect.height, PAD) : next);
       if (t < 1) raf.current = requestAnimationFrame(step);
       else setDirty(false);
     };
@@ -156,7 +168,7 @@ export function Chart({
         event.preventDefault();
         const dx = event.key === "ArrowLeft" ? 56 : event.key === "ArrowRight" ? -56 : 0;
         const dy = event.key === "ArrowUp" ? 56 : event.key === "ArrowDown" ? -56 : 0;
-        commit(clampPan({ ...view, x: view.x + dx, y: view.y + dy }, rect.width, rect.height), true);
+        commit({ ...view, x: view.x + dx, y: view.y + dy }, true);
       } else if (event.key === "Escape") {
         setPinned(null);
       }
@@ -212,7 +224,7 @@ export function Chart({
       moved.current = true;
     }
     if (!current.moved) return;
-    commit(clampPan({ x: current.ox + dx, y: current.oy + dy, k: view.k }, rect.width, rect.height), true);
+    commit({ x: current.ox + dx, y: current.oy + dy, k: view.k }, true);
   }
 
   function onPointerUp(event: ReactPointerEvent<HTMLDivElement>) {
@@ -315,8 +327,9 @@ export function Chart({
             const sizePx = markerSize(obj, force);
             const showLabel = labelIds.has(obj.id);
             const dot = sizePx <= 8 && !force;
+            const dim = objectDimmed(obj, filter);
             return (
-              <div key={obj.id}>
+              <div key={obj.id} className={`obj-layer${force ? " is-front" : ""}${dim ? " is-dim" : ""}`}>
                 <button
                   type="button"
                   className={`obj-btn${pinned === obj.id ? " is-pinned" : ""}${dot ? " is-dot" : ""}`}
@@ -338,7 +351,7 @@ export function Chart({
                     </span>
                   ) : (
                     <img
-                      src={obj.image}
+                      src={publicUrl(obj.image)}
                       alt=""
                       width={sizePx}
                       height={sizePx}
@@ -366,10 +379,8 @@ export function Chart({
                 type="button"
                 className={`avatar-btn${dim ? " is-dim" : ""}${hoverMentor === mentor.id ? " is-hot" : ""}`}
                 style={{
-                  left: p.x,
-                  top: p.y,
-                  transform: `translate(-50%, ${-sealSize / 2}px)`,
-                  viewTransitionName: `seal-${mentor.id}`,
+                  left: p.x - sealSize / 2,
+                  top: p.y - sealSize / 2,
                 }}
                 data-interactive="mentor"
                 onClick={() => {
@@ -382,13 +393,7 @@ export function Chart({
                 onBlur={() => setHoverMentor((id) => (id === mentor.id ? null : id))}
                 aria-label={`${mentor.nameZh}，${mentor.nameEn}。${mentor.blurbZh} 打开研究页。`}
               >
-                <Seal
-                  id={mentor.id}
-                  char={mentor.seal}
-                  pigment={mentor.pigment}
-                  broad={mentor.coverage === "broad"}
-                  size={sealSize}
-                />
+                <MentorAvatar mentor={mentor} size={sealSize} />
                 <span className="avatar-name">
                   {mentor.shortZh}
                   {mentor.coverage === "broad" ? <em>广域</em> : null}
@@ -676,7 +681,7 @@ function ObjectCard({ obj, onClose }: { obj: Celestial; onClose: () => void }) {
       <button type="button" className="icon-x" onClick={onClose} aria-label="关闭天体说明">
         ×
       </button>
-      <img src={obj.image} alt={`${obj.nameZh}（${obj.nameEn}）`} />
+      <img src={publicUrl(obj.image)} alt={`${obj.nameZh}（${obj.nameEn}）`} />
       <div>
         <h3>
           {obj.nameZh}
