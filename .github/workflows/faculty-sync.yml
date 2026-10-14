@@ -1,0 +1,71 @@
+name: Faculty sync proposal
+
+on:
+  schedule:
+    # Monday 01:00 UTC is Monday 09:00 in Asia/Shanghai.
+    - cron: "0 1 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: faculty-sync
+  cancel-in-progress: false
+
+jobs:
+  propose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npm run check:data
+      - run: node scripts/faculty-sync.mjs --out proposals/runs/latest
+      - name: Record the run
+        uses: actions/upload-artifact@v4
+        with:
+          name: faculty-sync-report
+          path: proposals/runs/latest
+          if-no-files-found: error
+      - name: Open or update the review pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'JS'
+          import { readFileSync, writeFileSync } from "node:fs";
+          const report = JSON.parse(readFileSync("proposals/runs/latest/report.json", "utf8"));
+          const meaningful = (report.changes || []).filter((change) => change.type !== "source-failed" && change.type !== "absent");
+          writeFileSync("proposals/runs/latest/meaningful", String(meaningful.length));
+          JS
+          count="$(cat proposals/runs/latest/meaningful)"
+          if [ "$count" = "0" ]; then
+            echo "No field changes. The run report is the artifact. No pull request."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B faculty-sync
+          node scripts/sync/apply-report.mjs proposals/runs/latest/report.json
+          npm run check:data
+          npm run build
+          if git diff --quiet; then
+            echo "Apply produced no file diff."
+            exit 0
+          fi
+          git add data
+          git commit -m "Propose faculty source updates"
+          git push --force-with-lease -u origin faculty-sync
+          if gh pr list --head faculty-sync --state open --json number --jq '.[0].number' | grep -q .; then
+            number="$(gh pr list --head faculty-sync --state open --json number --jq '.[0].number')"
+            gh pr edit "$number" --body-file proposals/runs/latest/report.md
+          else
+            gh pr create --base main --head faculty-sync --title "师资周更：待审核的来源变更" --body-file proposals/runs/latest/report.md
+          fi

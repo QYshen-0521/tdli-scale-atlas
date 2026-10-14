@@ -4,8 +4,18 @@
 
 ## 文件
 
-- `mentors.json`：导师。`placement` 为 `chart` 的人画在对数图上；`offplane` 的人出现在主页左侧「尺度之外」。
-- `objects.json`：天体与系统的尺度–质量坐标、图像和许可。
+网站读的是拆开的文件。`src/content.ts` 把它们合成页面用的导师记录。
+
+- `people.json`：稳定 id、原文姓名、别名、官方链接。
+- `organizations.json`：大学、研究所、研究部。
+- `affiliations.json`：任职原文、规范角色、双聘或退休、是否现任。
+- `evidence.json`：每个核心字段的来源、摘录、抓取日和核验状态。
+- `editorial.json`：简介、照片、英文头衔。没有新证据的旧文字标成 legacy。
+- `papers.json`：代表作。旧条目的核验状态是 legacy。
+- `atlas-annotations.json`：尺度区域。没有已审核标注的人不会被画到图上。
+- `coverage/`：来源入口和逐人收录决定。
+- `mentors.json`：2026-10-14 的旧快照，留给迁移核对。改它不会改变网站。
+- `objects.json`：天体的对数坐标、类别、图像和许可。
 - `PLACEMENTS.md`：每个坐标为什么落在那里。
 - `SOURCES.md`：网页、论文和图像来源。
 

@@ -535,6 +535,69 @@ img { display: block; max-width: 100%; }
   .inspector { grid-template-columns: 72px 1fr; }
   .brand h1 { font-size: 28px; }
 }
+.roster-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  align-items: center;
+  padding: 8px 22px 10px;
+  border-bottom: 1px solid var(--line);
+}
+.roster-bar select,
+.roster-search input {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 6px 12px;
+}
+.roster-search input { min-width: min(280px, 70vw); }
+.view-switch { display: flex; gap: 6px; }
+.view-switch a {
+  text-decoration: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 12px;
+}
+.view-switch a.is-on { border-color: var(--brass); color: var(--brass); }
+.roster-count { margin: 0; flex-basis: 100%; color: var(--muted); font-size: 13px; }
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.directory-page { height: 100%; overflow: auto; }
+.directory-top { border-bottom: 0; }
+.directory-main { padding: 8px 22px 48px; }
+.directory-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.directory-list button {
+  width: 100%;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 10px 14px;
+}
+.directory-list strong { display: block; font-family: var(--serif); font-size: 20px; }
+.directory-list em, .directory-list small { display: block; color: var(--faint); font-style: normal; }
+.directory-list b { display: block; color: var(--muted); font-weight: 500; margin-top: 2px; }
+.directory-empty { color: var(--muted); }
+.direction-list { margin: 0; padding-left: 1.1em; color: var(--muted); }
+.direction-list li { margin: 6px 0; }
+.source-links { list-style: none; margin: 12px 0 0; padding: 0; }
+.source-links li { display: flex; flex-wrap: wrap; gap: 8px 14px; padding: 6px 0; border-top: 1px solid var(--line); }
+.source-links span { color: var(--faint); min-width: 4em; }
+.source-links a { color: var(--brass); }
+.top-note a { color: var(--brass); }
+
 @media (max-width: 720px) {
   .detail-top {
     grid-template-columns: 1fr;

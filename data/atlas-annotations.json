@@ -1,0 +1,1272 @@
+[
+  {
+    "personId": "jing",
+    "status": "reviewed",
+    "applicability": "chart",
+    "coverage": "wide",
+    "groups": [
+      "galaxy"
+    ],
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 21.45,
+        "cy": 42.4,
+        "rx": 2.15,
+        "ry": 3.15
+      }
+    ],
+    "anchor": {
+      "logL": 24.25,
+      "logM": 47.7
+    },
+    "leader": {
+      "logL": 21.45,
+      "logM": 42.4
+    },
+    "relatedObjects": [
+      "lmc",
+      "mw",
+      "globular",
+      "cluster",
+      "m31",
+      "smc",
+      "localgroup"
+    ],
+    "placementNoteZh": "椭圆覆盖大约一千秒差距上的星系，到几十兆秒差距、千万亿倍太阳质量的星系团。可观测宇宙那一角留给以 Gpc 尺度检验宇宙学的工作。这是判断出来的包络，不是某次巡天的选择函数。",
+    "placementNoteEn": "Galaxies to clusters: roughly a kiloparsec to a few tens of megaparsecs, and halo masses from dwarfs up to rich clusters.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "几何沿用既有编者标注。本轮没有重新审核色块边界。"
+  },
+  {
+    "personId": "lai",
+    "status": "reviewed",
+    "applicability": "chart",
+    "coverage": "broad",
+    "groups": [
+      "planet",
+      "compact"
+    ],
+    "regions": [
+      {
+        "shape": "rect",
+        "logL0": 3.95,
+        "logL1": 16.4,
+        "logM0": 24.35,
+        "logM1": 40.2
+      }
+    ],
+    "anchor": {
+      "logL": 3.7,
+      "logM": 22.5
+    },
+    "leader": {
+      "logL": 6.5,
+      "logM": 28
+    },
+    "relatedObjects": [
+      "earth",
+      "jupiter",
+      "disk",
+      "siriusb",
+      "neutron",
+      "cygx1",
+      "sgr",
+      "sun",
+      "mars",
+      "saturn",
+      "proxima",
+      "m31bh"
+    ],
+    "placementNoteZh": "这是图上唯一用虚线勾边的广域包络。它从行星质量（大约地球到木星）和中子星半径，延伸到亚秒差距上的双星盘，以及 AGN 盘里直到约十亿倍太阳质量的大质量双黑洞。轴子-光子在磁化宇宙中的传播没有画进去：那不是一颗天体。包络故意几乎透明，避免挡住太阳、白矮星和黑洞。",
+    "placementNoteEn": "A dashed envelope, not a measurement error bar: planets through compact objects and out to sub-parsec disks and massive black-hole binaries. Cosmological photon-axion propagation is intentionally left off the outline.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "几何沿用既有编者标注。本轮没有重新审核色块边界。"
+  },
+  {
+    "personId": "zhangjie",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "lab"
+    ],
+    "panelGroup": "lab",
+    "regions": [],
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
+    "leader": null,
+    "relatedObjects": [
+      "cygx1",
+      "neutron",
+      "m87"
+    ],
+    "placementNoteZh": "不放置。实验室尺度约在 10⁻⁶ 到 10⁰ 米，比主图左缘（约 1 公里）还小。类比的天文喷流见致密天体，不把类比本身画成包络。",
+    "placementNoteEn": "Not plotted. Laboratory targets are microns to centimeters, left of the chart’s edge.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "既有页面把此人放在尺度之外，并写了理由。本轮没有把这个判断改成待标注，也没有新画坐标。"
+  },
+  {
+    "personId": "qian",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "sheng",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "yang",
+    "status": "reviewed",
+    "applicability": "chart",
+    "coverage": "focused",
+    "groups": [
+      "galaxy"
+    ],
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 22.25,
+        "cy": 43.85,
+        "rx": 1.05,
+        "ry": 1.45
+      }
+    ],
+    "anchor": {
+      "logL": 24.6,
+      "logM": 41.1
+    },
+    "leader": {
+      "logL": 22.25,
+      "logM": 43.85
+    },
+    "relatedObjects": [
+      "mw",
+      "cluster",
+      "lmc",
+      "localgroup"
+    ],
+    "placementNoteZh": "对应他用来做群目录和暗晕占据的尺度。宇宙学参数本身没有另画一块，因为参数不是天体。",
+    "placementNoteEn": "Group and cluster halos, about 0.2–2 Mpc and 10^12–10^15 solar masses.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "几何沿用既有编者标注。本轮没有重新审核色块边界。"
+  },
+  {
+    "personId": "zhangpj",
+    "status": "reviewed",
+    "applicability": "chart",
+    "coverage": "focused",
+    "groups": [
+      "cosmos"
+    ],
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 25.95,
+        "cy": 52.55,
+        "rx": 1.15,
+        "ry": 2.35
+      }
+    ],
+    "anchor": {
+      "logL": 24.35,
+      "logM": 54.2
+    },
+    "leader": {
+      "logL": 25.95,
+      "logM": 52.55
+    },
+    "relatedObjects": [
+      "cluster",
+      "universe",
+      "mw",
+      "laniakea"
+    ],
+    "placementNoteZh": "左缘大约是 Gpc 的入口，右缘越过可观测宇宙的半径。质量取该半径球体内由宇宙平均密度折合的质能，所以会一直爬到图的右上角。这是为了让“宇宙学尺度”可以被看见而做的换算，论文本身测量的是功率谱和相关函数，不是一个总质量。",
+    "placementNoteEn": "A cosmic-volume locus: hundreds of megaparsecs to the particle horizon, with mass from the mean cosmic density in that sphere — a translation, not a measured total mass.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "几何沿用既有编者标注。本轮没有重新审核色块边界。"
+  },
+  {
+    "personId": "mizuno",
+    "status": "reviewed",
+    "applicability": "chart",
+    "coverage": "focused",
+    "groups": [
+      "compact"
+    ],
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 4.55,
+        "cy": 31.05,
+        "rx": 0.95,
+        "ry": 1.05
+      },
+      {
+        "shape": "polygon",
+        "points": [
+          [
+            9.55,
+            36.35
+          ],
+          [
+            12.6,
+            36.35
+          ],
+          [
+            16.15,
+            39.15
+          ],
+          [
+            16.25,
+            40.5
+          ],
+          [
+            12.95,
+            40.5
+          ],
+          [
+            9.9,
+            37.15
+          ]
+        ]
+      }
+    ],
+    "anchor": {
+      "logL": 15.75,
+      "logM": 38.1
+    },
+    "leader": {
+      "logL": 13.4,
+      "logM": 38.6
+    },
+    "relatedObjects": [
+      "neutron",
+      "cygx1",
+      "sgr",
+      "m87",
+      "m31bh"
+    ],
+    "placementNoteZh": "左边的小椭圆是中子星和恒星级黑洞的引擎，右边的多边形包住人马座 A* 和 M87* 的视界以及内喷流。外喷流的尺度见说明，不在图上拉成一条带。",
+    "placementNoteEn": "Left: neutron-star and stellar-black-hole engines. Right: Sgr A* to M87* horizons plus the inner jet.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "几何沿用既有编者标注。本轮没有重新审核色块边界。"
+  },
+  {
+    "personId": "feng",
+    "status": "reviewed",
+    "applicability": "chart",
+    "coverage": "wide",
+    "groups": [
+      "planet"
+    ],
+    "regions": [
+      {
+        "shape": "rect",
+        "logL0": 6.6,
+        "logL1": 16.15,
+        "logM0": 24.05,
+        "logM1": 27.95
+      }
+    ],
+    "anchor": {
+      "logL": 16.55,
+      "logM": 24.85
+    },
+    "leader": {
+      "logL": 13.2,
+      "logM": 26.2
+    },
+    "relatedObjects": [
+      "earth",
+      "neptune",
+      "jupiter",
+      "solsys",
+      "mars",
+      "saturn",
+      "oort",
+      "proxima"
+    ],
+    "placementNoteZh": "横带的右端是奥尔特云的距离（大约 10⁴–10⁵ 天文单位），质量仍是行星，不是云本身的总质量。天语计划的望远镜在地球上，不占据这个坐标。",
+    "placementNoteEn": "Planet radii to Oort-cloud distances, at Earth-to-Jupiter masses.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "几何沿用既有编者标注。本轮没有重新审核色块边界。"
+  },
+  {
+    "personId": "zu",
+    "status": "reviewed",
+    "applicability": "chart",
+    "coverage": "focused",
+    "groups": [
+      "galaxy"
+    ],
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 21.15,
+        "cy": 42.55,
+        "rx": 1.35,
+        "ry": 1.85
+      }
+    ],
+    "anchor": {
+      "logL": 17.05,
+      "logM": 47.15
+    },
+    "leader": {
+      "logL": 21.15,
+      "logM": 42.55
+    },
+    "relatedObjects": [
+      "mw",
+      "lmc",
+      "cluster"
+    ],
+    "placementNoteZh": "椭圆放在星系到星系群。暗能量、修改引力只在文字里出现。",
+    "placementNoteEn": "Galaxy-to-group scales. Dark energy is not assigned a dot.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "几何沿用既有编者标注。本轮没有重新审核色块边界。"
+  },
+  {
+    "personId": "darius",
+    "status": "reviewed",
+    "applicability": "chart",
+    "coverage": "focused",
+    "groups": [
+      "planet"
+    ],
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 7.12,
+        "cy": 25.45,
+        "rx": 0.42,
+        "ry": 0.78
+      }
+    ],
+    "anchor": {
+      "logL": 8.85,
+      "logM": 23.35
+    },
+    "leader": {
+      "logL": 7.12,
+      "logM": 25.45
+    },
+    "relatedObjects": [
+      "earth",
+      "neptune"
+    ],
+    "placementNoteZh": "超级地球和亚海王星的半径–质量范围，取理论与观测里常见的 1–4 R⊕、1–20 M⊕。",
+    "placementNoteEn": "Super-Earths and sub-Neptunes: roughly 1–4 Earth radii and 1–20 Earth masses.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "几何沿用既有编者标注。本轮没有重新审核色块边界。"
+  },
+  {
+    "personId": "ogihara",
+    "status": "reviewed",
+    "applicability": "chart",
+    "coverage": "focused",
+    "groups": [
+      "planet"
+    ],
+    "regions": [
+      {
+        "shape": "rect",
+        "logL0": 6.7,
+        "logL1": 13.45,
+        "logM0": 24.35,
+        "logM1": 29.45
+      }
+    ],
+    "anchor": {
+      "logL": 12.55,
+      "logM": 26.55
+    },
+    "leader": {
+      "logL": 11.2,
+      "logM": 27.8
+    },
+    "relatedObjects": [
+      "earth",
+      "jupiter",
+      "disk",
+      "solsys"
+    ],
+    "placementNoteZh": "覆盖行星和原行星盘。和冯发波的行星搜索带重叠，颜色和锚点分开：一个在盘的上缘，一个在奥尔特云那一端。",
+    "placementNoteEn": "Planets plus a protoplanetary disk, overlapping the exoplanet search band but anchored on the disk.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "几何沿用既有编者标注。本轮没有重新审核色块边界。"
+  },
+  {
+    "personId": "pan",
+    "status": "reviewed",
+    "applicability": "chart",
+    "coverage": "focused",
+    "groups": [
+      "compact"
+    ],
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 4.85,
+        "cy": 30.9,
+        "rx": 1.2,
+        "ry": 0.8
+      },
+      {
+        "shape": "ellipse",
+        "cx": 12.05,
+        "cy": 38.05,
+        "rx": 2.25,
+        "ry": 1.95
+      }
+    ],
+    "anchor": {
+      "logL": 9.4,
+      "logM": 33.85
+    },
+    "leader": {
+      "logL": 12.05,
+      "logM": 38.05
+    },
+    "relatedObjects": [
+      "neutron",
+      "sgr",
+      "m87",
+      "cygx1",
+      "m31bh"
+    ],
+    "placementNoteZh": "两块椭圆分别对应双中子星和超大质量黑洞周围的极端质量比旋近。原初引力波背景见论文，不在图上。",
+    "placementNoteEn": "Binary neutron stars, and extreme-mass-ratio inspirals around supermassive black holes.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "几何沿用既有编者标注。本轮没有重新审核色块边界。"
+  },
+  {
+    "personId": "tan",
+    "status": "reviewed",
+    "applicability": "chart",
+    "coverage": "focused",
+    "groups": [
+      "planet"
+    ],
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 7.82,
+        "cy": 28.15,
+        "rx": 0.48,
+        "ry": 1.05
+      }
+    ],
+    "anchor": {
+      "logL": 9.85,
+      "logM": 27.15
+    },
+    "leader": {
+      "logL": 7.82,
+      "logM": 28.15
+    },
+    "relatedObjects": [
+      "jupiter",
+      "browndwarf",
+      "neptune",
+      "saturn"
+    ],
+    "placementNoteZh": "紧贴木星到褐矮星。大气的垂直厚度没有单独占一个坐标。",
+    "placementNoteEn": "Jupiter through brown-dwarf radii and masses.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "几何沿用既有编者标注。本轮没有重新审核色块边界。"
+  },
+  {
+    "personId": "tang",
+    "status": "reviewed",
+    "applicability": "chart",
+    "coverage": "focused",
+    "groups": [
+      "galaxy"
+    ],
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 19.85,
+        "cy": 39.35,
+        "rx": 0.8,
+        "ry": 1.15
+      }
+    ],
+    "anchor": {
+      "logL": 19.55,
+      "logM": 35.75
+    },
+    "leader": {
+      "logL": 19.85,
+      "logM": 39.35
+    },
+    "relatedObjects": [
+      "lmc",
+      "mw"
+    ],
+    "placementNoteZh": "高红移星系的恒星质量和千秒差距尺度。再电离泡只在文字中出现。",
+    "placementNoteEn": "High-redshift galaxies, roughly a kiloparsec and 10^8–10^10 solar masses.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "几何沿用既有编者标注。本轮没有重新审核色块边界。"
+  },
+  {
+    "personId": "wangjs",
+    "status": "reviewed",
+    "applicability": "chart",
+    "coverage": "wide",
+    "groups": [
+      "compact"
+    ],
+    "regions": [
+      {
+        "shape": "rect",
+        "logL0": 3.95,
+        "logL1": 17.05,
+        "logM0": 30.05,
+        "logM1": 32.45
+      }
+    ],
+    "anchor": {
+      "logL": 18.85,
+      "logM": 29.15
+    },
+    "leader": {
+      "logL": 15.5,
+      "logM": 31.2
+    },
+    "relatedObjects": [
+      "neutron",
+      "cygx1",
+      "crab",
+      "betelgeuse"
+    ],
+    "placementNoteZh": "一条竖起来其实是横的窄带：质量停在中子星到恒星级黑洞，尺度从大约 10 公里拉到遗迹的秒差距。宇宙线能谱不在这条带里。",
+    "placementNoteEn": "A thin ribbon at neutron-star to stellar-black-hole masses, from kilometer radii to parsec remnants.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "几何沿用既有编者标注。本轮没有重新审核色块边界。"
+  },
+  {
+    "personId": "wu",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "lab"
+    ],
+    "panelGroup": "lab",
+    "regions": [],
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
+    "leader": null,
+    "relatedObjects": [
+      "crab",
+      "cygx1",
+      "mw"
+    ],
+    "placementNoteZh": "不放置。主页自己把实验写成对天文现象的可控模拟，模拟装置的尺度不在主图范围内。",
+    "placementNoteEn": "Not plotted. The experiments analogize astrophysical processes at laboratory scales.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "既有页面把此人放在尺度之外，并写了理由。本轮没有把这个判断改成待标注，也没有新画坐标。"
+  },
+  {
+    "personId": "yi",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "lab"
+    ],
+    "panelGroup": "lab",
+    "regions": [],
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
+    "leader": null,
+    "relatedObjects": [
+      "cygx1",
+      "sun"
+    ],
+    "placementNoteZh": "不放置。论文中的等离子体片是微观的。天文磁重联发生在图上的致密天体附近，但那不是这些实验的坐标。",
+    "placementNoteEn": "Not plotted. The plasma slabs in the papers are microscopic.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "既有页面把此人放在尺度之外，并写了理由。本轮没有把这个判断改成待标注，也没有新画坐标。"
+  },
+  {
+    "personId": "zhouhao",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
+    "regions": [],
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
+    "leader": null,
+    "relatedObjects": [
+      "neutron",
+      "cygx1",
+      "crab"
+    ],
+    "placementNoteZh": "不放置。宇宙线、中微子和伽马光子是信使。产生它们的脉冲星、微类星体和并合中子星已经在主图上。",
+    "placementNoteEn": "Not plotted. Cosmic rays, neutrinos, and gamma rays are messengers; their engines already appear as objects.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "既有页面把此人放在尺度之外，并写了理由。本轮没有把这个判断改成待标注，也没有新画坐标。"
+  },
+  {
+    "personId": "gexulei",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "guyizhou",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "huangxj",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "jianghj",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "sunqh",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "yangkai",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "zheng",
+    "status": "reviewed",
+    "applicability": "chart",
+    "coverage": "focused",
+    "groups": [
+      "galaxy"
+    ],
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 20.9,
+        "cy": 42.05,
+        "rx": 1.45,
+        "ry": 1.9
+      }
+    ],
+    "anchor": {
+      "logL": 17.25,
+      "logM": 43.55
+    },
+    "leader": {
+      "logL": 20.9,
+      "logM": 42.05
+    },
+    "relatedObjects": [
+      "lmc",
+      "mw",
+      "cluster"
+    ],
+    "placementNoteZh": "成员星系到 z≈2 原星系团。JUST 望远镜在冷湖，不画在图上。",
+    "placementNoteEn": "Member galaxies to z ≈ 2 protocluster cores.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "几何沿用既有编者标注。本轮没有重新审核色块边界。"
+  },
+  {
+    "personId": "zhupf",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "ramsey",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "yanagida",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "he",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
+    "regions": [],
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
+    "leader": null,
+    "relatedObjects": [
+      "universe"
+    ],
+    "placementNoteZh": "不放置。粒子天体物理在这里是理论和唯象，没有被指定到某一段天体尺度。",
+    "placementNoteEn": "Not plotted. The particle-astrophysics direction is theoretical and has no single celestial locus.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "既有页面把此人放在尺度之外，并写了理由。本轮没有把这个判断改成待标注，也没有新画坐标。"
+  },
+  {
+    "personId": "ge",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
+    "regions": [],
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
+    "leader": null,
+    "relatedObjects": [
+      "mw",
+      "universe"
+    ],
+    "placementNoteZh": "不放置。理论可以同时谈到探测器和宇宙学视界，这恰恰说明它不对应图上的一块天体。",
+    "placementNoteEn": "Not plotted. A theory that touches both detectors and the horizon is not a single object.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "既有页面把此人放在尺度之外，并写了理由。本轮没有把这个判断改成待标注，也没有新画坐标。"
+  },
+  {
+    "personId": "hehj",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "liu",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
+    "regions": [],
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
+    "leader": null,
+    "relatedObjects": [
+      "mw",
+      "sun",
+      "universe"
+    ],
+    "placementNoteZh": "不放置。PandaX 在锦屏山的岩石里，JUNO 在地下，它们测量的是粒子，不是一个天体的半径和质量。银河系暗晕已经作为银河系那个点出现在主图上。",
+    "placementNoteEn": "Not plotted. PandaX and JUNO measure particles; the Galactic halo is already marked as the Milky Way.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "既有页面把此人放在尺度之外，并写了理由。本轮没有把这个判断改成待标注，也没有新画坐标。"
+  },
+  {
+    "personId": "zhouning",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
+    "regions": [],
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
+    "leader": null,
+    "relatedObjects": [
+      "mw",
+      "earth"
+    ],
+    "placementNoteZh": "不放置。直接探测和对撞机搜寻的是粒子反应，纵轴不是 GeV。",
+    "placementNoteEn": "Not plotted. Direct detection and collider searches do not have a radius–mass coordinate.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "既有页面把此人放在尺度之外，并写了理由。本轮没有把这个判断改成待标注，也没有新画坐标。"
+  },
+  {
+    "personId": "nakai",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "lishu",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "quhl",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "xu",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
+    "regions": [],
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
+    "leader": null,
+    "relatedObjects": [
+      "mw",
+      "universe"
+    ],
+    "placementNoteZh": "不放置。高能中微子是信使。官方研究方向没有写成某一个天体的半径和质量。",
+    "placementNoteEn": "Not plotted. High-energy neutrinos are messengers.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "",
+    "note": "既有页面把此人放在尺度之外，并写了理由。本轮没有把这个判断改成待标注，也没有新画坐标。"
+  },
+  {
+    "personId": "khaw",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "blake",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "aiwy",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "chenyf",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "hanjun",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "meihl",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "xiangxin",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "xiekp",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "cuixy",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "huangtq",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "wangzhou",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "wilczek",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  },
+  {
+    "personId": "chenxun",
+    "status": "pending",
+    "applicability": "pending",
+    "coverage": "pending",
+    "groups": [],
+    "panelGroup": "",
+    "regions": [],
+    "anchor": null,
+    "leader": null,
+    "relatedObjects": [],
+    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
+    "placementNoteEn": "",
+    "methodVersion": "",
+    "reviewedAt": "",
+    "note": "没有可靠尺度标注。"
+  }
+]

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 import { useAtlasState, useAvatarArrival } from "../atlas-state.tsx";
-import { mentorById, objectById } from "../content.ts";
+import { evidenceFor, mentorById, objectById } from "../content.ts";
 import { publicUrl } from "../lib/assets.ts";
 import { paperHref } from "../lib/format.ts";
 import { supportsViewTransition, useOpenMentor } from "../lib/nav.ts";
@@ -10,17 +10,24 @@ import { MentorAvatar } from "./MentorAvatar.tsx";
 
 export default function DetailPage() {
   const { id } = useParams();
+  const [params] = useSearchParams();
   const openMentor = useOpenMentor();
   const { flip } = useAtlasState();
   const headingRef = useRef<HTMLHeadingElement>(null);
   const mentor = mentorById(id ?? "");
   useAvatarArrival(mentor?.id, "detail", true);
   const [enter] = useState(() => flip?.dest === "detail" && flip.id === id && !supportsViewTransition());
+  const fromDirectory = params.get("from") === "directory";
+  const backTo = fromDirectory ? "/directory" : "/";
+  const backLabel = fromDirectory ? "返回名录" : "返回星图";
 
   const back = useCallback(() => {
-    if (mentor) openMentor(mentor.id, "/", "atlas");
-    else openMentor("missing", "/", "atlas");
-  }, [mentor, openMentor]);
+    const next = new URLSearchParams(params);
+    next.delete("from");
+    const text = next.toString();
+    const dest = fromDirectory ? "directory" : "atlas";
+    openMentor(mentor?.id || "missing", text ? `${backTo}?${text}` : backTo, dest);
+  }, [backTo, fromDirectory, mentor?.id, openMentor, params]);
 
   useEffect(() => {
     document.title = mentor ? `${mentor.nameZh} · 尺度衡星` : "未找到 · 尺度衡星";
@@ -44,7 +51,7 @@ export default function DetailPage() {
     return (
       <main className={`detail-page${enter ? " is-enter" : ""}`}>
         <button type="button" className="back-btn" onClick={back}>
-          ← 返回星图
+          ← {backLabel}
         </button>
         <div className="detail-missing">
           <h1 ref={headingRef} tabIndex={-1}>
@@ -63,7 +70,7 @@ export default function DetailPage() {
   return (
     <main className={`detail-page${enter ? " is-enter" : ""}`}>
       <button type="button" className="back-btn" onClick={back}>
-        ← 返回星图
+        ← {backLabel}
         <kbd>Esc</kbd>
       </button>
       <article className="detail-sheet">
@@ -79,26 +86,35 @@ export default function DetailPage() {
                 <small>{mentor.nameEn}</small>
               </h1>
               <p className="detail-title">{mentor.titleZh}</p>
-              <p className="detail-title en">{mentor.titleEn}</p>
+              {mentor.titleEn ? <p className="detail-title en">{mentor.titleEn}</p> : null}
+              {mentor.appointmentKind !== "primary" ? (
+                <p className="fine">{mentor.appointmentKind === "joint" ? "双聘" : mentor.appointmentKind === "adjunct" ? "兼职" : "退休"}</p>
+              ) : null}
               <ul className="chips">
-                {mentor.interests.slice(0, 4).map((item) => (
+                {mentor.interests.filter((item) => item.length <= 32).slice(0, 4).map((item) => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>
             </div>
           </header>
           <aside className="place-card">
-            <h2>{mentor.placement === "chart" ? "在图上的位置" : "为什么不在图上"}</h2>
+            <h2>{mentor.placement === "chart" ? "在图上的位置" : mentor.placement === "offplane" ? "为什么不在图上" : "尺度标注"}</h2>
             {mentor.placement === "chart" ? <MiniMap mentor={mentor} /> : null}
             <p>{mentor.placementNoteZh}</p>
-            <p className="en-block">{mentor.placementNoteEn}</p>
+            {mentor.placementNoteEn ? <p className="en-block">{mentor.placementNoteEn}</p> : null}
           </aside>
-          <section className="prose">
-            {mentor.summaryZh.map((para) => (
-              <p key={para}>{para}</p>
-            ))}
-            <p className="en-block">{mentor.summaryEn}</p>
-          </section>
+          {mentor.summaryZh.length || mentor.summaryEn ? (
+            <section className="prose">
+              {mentor.summaryZh.map((para) => (
+                <p key={para}>{para}</p>
+              ))}
+              {mentor.summaryEn ? <p className="en-block">{mentor.summaryEn}</p> : null}
+            </section>
+          ) : (
+            <section className="prose">
+              <p className="fine">官方简介尚未收录。下面的研究方向是官网原文，不是本站改写。</p>
+            </section>
+          )}
         </div>
 
         <div className="detail-rest">
@@ -120,22 +136,42 @@ export default function DetailPage() {
           </section>
         ) : null}
 
+        <section>
+          <h2>研究方向</h2>
+          {mentor.interests.length ? (
+            <ul className="direction-list">
+              {mentor.interests.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p className="fine">官网没有给出研究方向。</p>
+          )}
+        </section>
+
         <section className="papers">
           <h2>代表性论文</h2>
-          <p className="fine">
-            条目来自李政道研究所官方主页，或主页给出的 Inspire 记录。没有 DOI 的链接会打开
-            ADS 上的题名检索，而不是猜测文献编号。
-          </p>
-          <ol>
-            {mentor.papers.map((paper) => (
-              <li key={paper.title}>
-                <a href={paperHref(paper)} target="_blank" rel="noreferrer">
-                  {paper.title}
-                </a>
-                <span>{paper.venue}</span>
-              </li>
-            ))}
-          </ol>
+          {mentor.papers.length ? (
+            <>
+              <p className="fine">
+                {mentor.editorialStatus === "legacy"
+                  ? "这些条目沿用此前写入的代表作，本轮没有逐篇重核。没有 DOI 的链接会打开 ADS 题名检索。"
+                  : "条目来自已核验的官方列表。"}
+              </p>
+              <ol>
+                {mentor.papers.map((paper) => (
+                  <li key={paper.title}>
+                    <a href={paperHref(paper)} target="_blank" rel="noreferrer">
+                      {paper.title}
+                    </a>
+                    <span>{paper.venue}</span>
+                  </li>
+                ))}
+              </ol>
+            </>
+          ) : (
+            <p className="fine">代表性论文尚未收录。</p>
+          )}
           {mentor.bibliographyUrl ? (
             <p className="fine">
               <a href={mentor.bibliographyUrl} target="_blank" rel="noreferrer">
@@ -156,6 +192,49 @@ export default function DetailPage() {
           </section>
         ) : null}
 
+        <section className="sources">
+          <h2>来源与核验</h2>
+          <p className="fine">
+            身份、职称、研究方向和官方链接的核验日期是 {mentor.verifiedAt || "尚未填写"}。
+            抓到网页不等于完成核验。没有写出来的内容，只是这里还没有，不能据此推断没有招生、已经离任或没有成果。
+          </p>
+          {mentor.editorialStatus === "legacy" ? (
+            <p className="fine">简介、荣誉、照片和尺度区域沿用仓库里更早的内容，本轮没有逐条升为已核验。</p>
+          ) : null}
+          {mentor.conflicts.length ? (
+            <ul className="direction-list">
+              {mentor.conflicts.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          ) : null}
+          <ul className="source-links">
+            {evidenceFor(mentor.id)
+              .filter((item) => item.status !== "legacy")
+              .map((item) => (
+                <li key={item.id}>
+                  <span>{fieldLabel(item.field)}</span>
+                  {item.locator.startsWith("http") ? (
+                    <a href={item.locator} target="_blank" rel="noreferrer">
+                      {item.locator.replace("https://tdli.sjtu.edu.cn", "tdli.sjtu.edu.cn")}
+                    </a>
+                  ) : (
+                    <span>{item.locator}</span>
+                  )}
+                </li>
+              ))}
+          </ul>
+          <p className="fine">
+            <a href="https://github.com/QYshen-0521/tdli-scale-atlas/issues" target="_blank" rel="noreferrer">
+              发现错误，请在仓库提交 issue
+            </a>
+            {" · "}
+            <a href="https://github.com/QYshen-0521/tdli-scale-atlas/actions/workflows/faculty-sync.yml" target="_blank" rel="noreferrer">
+              每周检查的运行记录
+            </a>
+          </p>
+        </section>
+
         <footer className="detail-foot">
           <a href={mentor.profileUrl} target="_blank" rel="noreferrer">
             李政道研究所主页
@@ -171,4 +250,13 @@ export default function DetailPage() {
       </article>
     </main>
   );
+}
+
+function fieldLabel(field: string) {
+  if (field === "name") return "姓名";
+  if (field === "title") return "职称";
+  if (field === "directions") return "方向";
+  if (field === "profileUrl") return "主页";
+  if (field === "profileAlias") return "地址别名";
+  return field;
 }

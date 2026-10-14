@@ -1,0 +1,257 @@
+{
+  "fetchedAt": "2026-10-15",
+  "timezone": "Asia/Shanghai",
+  "astronomyFaculty": 27,
+  "crossDivision": [
+    {
+      "name": "Michael Ramsey-Musolf",
+      "division": "particle",
+      "tags": [
+        "cosmology",
+        "dark-matter",
+        "neutrino"
+      ],
+      "current": true,
+      "conflicts": []
+    },
+    {
+      "name": "Tsutomu Yanagida",
+      "division": "particle",
+      "tags": [
+        "cosmology",
+        "astroparticle",
+        "neutrino"
+      ],
+      "current": false,
+      "conflicts": []
+    },
+    {
+      "name": "何小刚",
+      "division": "particle",
+      "tags": [
+        "astronomy"
+      ],
+      "current": true,
+      "conflicts": []
+    },
+    {
+      "name": "葛韶锋",
+      "division": "particle",
+      "tags": [
+        "astronomy",
+        "cosmology",
+        "dark-matter",
+        "neutrino"
+      ],
+      "current": true,
+      "conflicts": []
+    },
+    {
+      "name": "何红建",
+      "division": "particle",
+      "tags": [
+        "dark-matter",
+        "neutrino"
+      ],
+      "current": true,
+      "conflicts": []
+    },
+    {
+      "name": "刘江来",
+      "division": "particle",
+      "tags": [
+        "dark-matter",
+        "neutrino"
+      ],
+      "current": true,
+      "conflicts": []
+    },
+    {
+      "name": "周宁",
+      "division": "particle",
+      "tags": [
+        "dark-matter"
+      ],
+      "current": true,
+      "conflicts": []
+    },
+    {
+      "name": "Yuichiro Nakai",
+      "division": "particle",
+      "tags": [
+        "cosmology"
+      ],
+      "current": true,
+      "conflicts": []
+    },
+    {
+      "name": "李数",
+      "division": "particle",
+      "tags": [
+        "dark-matter"
+      ],
+      "current": true,
+      "conflicts": [
+        "个人页研究方向未写暗物质；导师名单原文为「希格斯新物理、暗物质探测、高能对撞机实验」。两边都保留。纳入依据是导师名单。"
+      ]
+    },
+    {
+      "name": "曲慧麟",
+      "division": "particle",
+      "tags": [
+        "dark-matter",
+        "neutrino"
+      ],
+      "current": true,
+      "conflicts": [
+        "导师名单写「人工智能与粒子物理」；个人页研究方向另写中微子与暗物质实验。以个人页为研究方向，导师名单一句同时保留。"
+      ]
+    },
+    {
+      "name": "徐东莲",
+      "division": "particle",
+      "tags": [
+        "astronomy",
+        "astroparticle",
+        "neutrino"
+      ],
+      "current": true,
+      "conflicts": []
+    },
+    {
+      "name": "许金祥",
+      "division": "particle",
+      "tags": [
+        "dark-matter"
+      ],
+      "current": true,
+      "conflicts": []
+    },
+    {
+      "name": "Iwan Morton-Blake",
+      "division": "particle",
+      "tags": [
+        "neutrino"
+      ],
+      "current": true,
+      "conflicts": []
+    },
+    {
+      "name": "艾稳元",
+      "division": "particle",
+      "tags": [
+        "astronomy",
+        "cosmology",
+        "dark-matter"
+      ],
+      "current": true,
+      "conflicts": []
+    },
+    {
+      "name": "陈一帆",
+      "division": "particle",
+      "tags": [
+        "astronomy"
+      ],
+      "current": true,
+      "conflicts": []
+    },
+    {
+      "name": "韩君",
+      "division": "particle",
+      "tags": [
+        "astronomy",
+        "astroparticle"
+      ],
+      "current": true,
+      "conflicts": []
+    },
+    {
+      "name": "梅华林",
+      "division": "particle",
+      "tags": [
+        "astronomy",
+        "neutrino"
+      ],
+      "current": true,
+      "conflicts": []
+    },
+    {
+      "name": "向昕",
+      "division": "particle",
+      "tags": [
+        "astronomy",
+        "dark-matter",
+        "neutrino"
+      ],
+      "current": true,
+      "conflicts": []
+    },
+    {
+      "name": "谢可平",
+      "division": "particle",
+      "tags": [
+        "neutrino"
+      ],
+      "current": true,
+      "conflicts": []
+    },
+    {
+      "name": "崔祥仪",
+      "division": "particle",
+      "tags": [
+        "dark-matter"
+      ],
+      "current": true,
+      "conflicts": []
+    },
+    {
+      "name": "黄天奇",
+      "division": "particle",
+      "tags": [
+        "neutrino"
+      ],
+      "current": true,
+      "conflicts": []
+    },
+    {
+      "name": "王舟",
+      "division": "particle",
+      "tags": [
+        "dark-matter"
+      ],
+      "current": true,
+      "conflicts": [
+        "个人页研究方向列出实验技术，没有重复「暗物质」。成员页任职原文为液氙暗物质探测实验团队副研究员。纳入依据是任职原文。"
+      ]
+    },
+    {
+      "name": "Frank Wilczek",
+      "division": "condensed",
+      "tags": [
+        "astronomy",
+        "cosmology",
+        "dark-matter"
+      ],
+      "current": true,
+      "conflicts": []
+    },
+    {
+      "name": "谌勋",
+      "division": "particle",
+      "tags": [
+        "dark-matter",
+        "neutrino"
+      ],
+      "current": true,
+      "conflicts": []
+    }
+  ],
+  "includedTotal": 51,
+  "includedCurrent": 50,
+  "excluded": 157,
+  "ledgerRows": 208,
+  "people": 51,
+  "missingIds": [],
+  "originalIds": []
+}

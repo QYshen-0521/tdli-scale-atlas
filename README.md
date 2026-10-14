@@ -3,7 +3,7 @@
 - 站点：[https://qyshen-0521.github.io/tdli-scale-atlas/](https://qyshen-0521.github.io/tdli-scale-atlas/)
 - 仓库：[https://github.com/QYshen-0521/tdli-scale-atlas](https://github.com/QYshen-0521/tdli-scale-atlas)
 
-推送到 `main` 后，GitHub Actions 会自动构建并发布到 GitHub Pages。
+推送到 `main` 后，`.github/workflows/publish-pages.yml` 会构建并发布到 `gh-pages` 分支。这是当前 GitHub Pages 的实际来源。`.github/workflows/deploy-pages.yml.disabled` 没有启用。师资变更多走每周待审 PR，合并后才到 main。
 
 # 尺度衡星
 
@@ -38,6 +38,7 @@ npm run preview
 - 点导师的色块或头像：进入详情。`Esc` 或 `Backspace` 返回。头像会移到详情页并放大，返回时沿原路回来
 - 点天体：打开说明
 - 顶栏可以按行星、致密天体、星系、宇宙学尺度筛选。导师和天体一样：对上的保持原样，其余变淡，不从画面上消失
+- 「名录」和尺度图共用同一套筛选，条件写在地址栏里。机构、职级、方向会把人从结果和图层里拿掉。没有已审核尺度标注的人只出现在名录里
 
 页面切换使用 View Transitions API：背景交叉淡化，头像从星图移到详情页并放大，正文同步淡入；返回时反过来。这段飞行沿直线移动，时间上先加速再减速（ease-in-out），时长 1575ms（上一次 1050ms 的速度的 2/3）。伴随的淡入淡出用同一时长。浏览器不支持时，用一段 FLIP 补上同样的位移。系统如果要求减少动效，过渡会关掉。
 
@@ -45,7 +46,9 @@ npm run preview
 
 | 路径 | 内容 |
 | --- | --- |
-| `data/mentors.json` | 23 位导师：职务、研究方向、论文、图上的区域 |
+| `data/people.json` 等 | 名录、任职、证据、论文和尺度标注。说明见 `data/README.md` |
+| `data/coverage/` | 官方候选和逐人收录决定 |
+| `data/mentors.json` | 旧的 23 人快照，网站不再直接读它 |
 | `data/objects.json` | 天体的对数坐标、类别、图像和许可 |
 | `data/PLACEMENTS.md` | 每个坐标为什么在那里 |
 | `data/SOURCES.md` | 官网、文献和图像来源 |
@@ -85,9 +88,10 @@ The visual language is a warm night sky, cinnabar seals, and mineral pigments �
 
 ## 已知缺口
 
-- 肖像来自官网个人页，版权仍属原机构或拍摄者；不是知识共享许可。
+- 2026-10-15 的名录范围和仍缺的简介、论文、照片，写在 `docs/project-settings/inclusion-policy.md`。构建通过只说明数据符合检查，不代替那份账。
+- 肖像来自官网个人页，版权仍属原机构或拍摄者；不是知识共享许可。新收录的人没有照片，页面用印章。
 - Masahiro Ogihara 与 Darius Modirrousta-Galian 的主页没有中文姓名。
-- 王界双、葛韶锋的主页没有逐篇列出论文，条目来自他们页面指向的 Inspire。
+- 王界双、葛韶锋的主页没有逐篇列出论文，条目来自他们页面指向的 Inspire。这些旧论文本轮没有逐篇重核。
 - 景益鹏主页上的代表论文偏近年；更早的经典工作没有擅自补上。
 - 参宿四的半径、球状星团、大麦哲伦云、原行星盘、蟹状星云和可观测宇宙的质量都是量级。
-- 钱列加、盛政明、黄小军等实验室同事，以及博士后，没有逐一做页面。季向东的公开方向写作“粒子物理”，未放入。
+- 季向东的官方方向是核物理与高能物理，没有放入。博士后、工程师和平台学者不在这一版。
