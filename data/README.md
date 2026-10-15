@@ -10,7 +10,7 @@
 - `organizations.json`：大学、研究所、研究部。
 - `affiliations.json`：任职原文、规范角色、双聘或退休、是否现任。
 - `evidence.json`：每个核心字段的来源、摘录、抓取日和核验状态。
-- `editorial.json`：简介、照片、英文头衔。没有新证据的旧文字标成 legacy。
+- `editorial.json`：简介、照片、英文头衔。没有新证据的旧文字标成 legacy。`photo` 指向 `public/assets/mentors/<id>.jpg`，`photoSource` 是取到这张肖像的官方个人页。新增人员时同步脚本会尝试填写这两项；没有肖像就留空。
 - `papers.json`：代表作。旧条目的核验状态是 legacy。
 - `atlas-annotations.json`：尺度区域。没有已审核标注的人不会被画到图上。
 - `coverage/`：来源入口和逐人收录决定。试点机构的账在 `pilot-ledger.json`，覆盖表在 `pilot-report.json`。

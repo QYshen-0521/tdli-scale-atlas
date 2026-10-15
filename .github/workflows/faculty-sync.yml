@@ -60,7 +60,7 @@ jobs:
             echo "Apply produced no file diff."
             exit 0
           fi
-          git add data
+          git add data public/assets/mentors
           git commit -m "Propose faculty source updates"
           git push --force-with-lease -u origin faculty-sync
           if gh pr list --head faculty-sync --state open --json number --jq '.[0].number' | grep -q .; then
