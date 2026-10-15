@@ -1,9 +1,9 @@
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { memo, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import type { MouseEvent as ReactMouseEvent, PointerEvent as ReactPointerEvent } from "react";
 import { useAtlasState, useAvatarArrival } from "../atlas-state.tsx";
 import { useCamera } from "../camera.tsx";
 import { objects } from "../content.ts";
-import { publicUrl } from "../lib/assets.ts";
+import { publicUrl, thumbUrl } from "../lib/assets.ts";
 import {
   BOUNDS,
   RS_OFFSET,
@@ -56,6 +56,40 @@ function limits(viewKBase: number) {
   return { min: viewKBase * 0.72, max: viewKBase * 80 };
 }
 
+type AxisSink = (view: View, zoom: number) => void;
+
+/** Screen position is `translate(tx, ty) scale(s)` of the last committed projection. */
+function gestureTransform(base: View, live: View) {
+  const s = live.k / base.k;
+  return { s, tx: live.x - base.x * s, ty: live.y - base.y * s };
+}
+
+function paintWorld(
+  node: HTMLDivElement,
+  surface: HTMLDivElement,
+  base: View,
+  live: View,
+  fittedK: number,
+  zoomLabel: HTMLElement | null,
+  onAxis: AxisSink | null,
+) {
+  const { s, tx, ty } = gestureTransform(base, live);
+  node.style.transform = `translate3d(${tx}px, ${ty}px, 0) scale(${s})`;
+  node.style.setProperty("--inv-s", String(1 / s));
+  node.classList.add("is-live");
+  surface.classList.add("is-gesturing");
+  const zoomNow = live.k / fittedK;
+  if (zoomLabel) zoomLabel.textContent = `${zoomNow.toFixed(1)}×`;
+  onAxis?.(live, zoomNow);
+}
+
+function clearWorld(node: HTMLDivElement, surface: HTMLDivElement) {
+  node.style.transform = "";
+  node.style.setProperty("--inv-s", "1");
+  node.classList.remove("is-live");
+  surface.classList.remove("is-gesturing");
+}
+
 export function Chart({
   filter,
   guides,
@@ -73,14 +107,33 @@ export function Chart({
   const [hoverMentor, setHoverMentor] = useState<string | null>(null);
   const [hoverObject, setHoverObject] = useState<string | null>(null);
   const [pinned, setPinned] = useState<string | null>(null);
-  const [broken, setBroken] = useState<Record<string, boolean>>({});
   const { flip } = useAtlasState();
   useAvatarArrival(flip?.dest === "atlas" ? flip.id : undefined, "atlas", Boolean(view));
-  const drag = useRef<{ id: number; x: number; y: number; ox: number; oy: number; moved: boolean } | null>(null);
+  const worldRef = useRef<HTMLDivElement>(null);
+  const zoomLabelRef = useRef<HTMLSpanElement>(null);
+  const viewRef = useRef(view);
+  const fittedRef = useRef<View | null>(null);
+  const dirtyRef = useRef(dirty);
+  const sizeRef = useRef(size);
+  const liveRef = useRef<View | null>(null);
+  const pendingLive = useRef<View | null>(null);
+  const axisSink = useRef<AxisSink | null>(null);
+  const drag = useRef<{ id: number; x: number; y: number; ox: number; oy: number; k: number; moved: boolean } | null>(null);
   const moved = useRef(false);
   const pts = useRef(new Map<number, { x: number; y: number }>());
   const pinch = useRef<number | null>(null);
-  const raf = useRef(0);
+  const animRef = useRef(0);
+  const liveRaf = useRef(0);
+  const wheelTimer = useRef(0);
+  const openRef = useRef(onOpenMentor);
+  const gestureApi = useRef({
+    markDirty: () => {},
+    scheduleLive: (_next: View) => {},
+    commitGesture: (_mark: boolean) => {},
+    reset: () => {},
+    stopAnim: () => {},
+    setView: (_next: View) => {},
+  });
 
   useLayoutEffect(() => {
     const el = surfaceRef.current;
@@ -103,82 +156,198 @@ export function Chart({
   const fitted = size.w > 40 ? fitView(size.w, size.h, PAD) : null;
   const zoom = view && fitted ? view.k / fitted.k : 1;
 
-  function commit(next: View, markDirty: boolean) {
-    const rect = surfaceRef.current?.getBoundingClientRect();
-    const clamped = rect ? clampPan(next, rect.width, rect.height, PAD) : next;
-    if (markDirty) setDirty(true);
-    setView(clamped);
+  function stopAnim() {
+    cancelAnimationFrame(animRef.current);
+    animRef.current = 0;
+  }
+
+  function markDirty() {
+    if (dirtyRef.current) return;
+    dirtyRef.current = true;
+    setDirty(true);
+  }
+
+  function applyLive(next: View) {
+    const base = viewRef.current;
+    const node = worldRef.current;
+    const surface = surfaceRef.current;
+    if (!base || !node || !surface) return;
+    const fittedK = fittedRef.current?.k || base.k;
+    liveRef.current = next;
+    pendingLive.current = next;
+    paintWorld(node, surface, base, next, fittedK, zoomLabelRef.current, axisSink.current);
+  }
+
+  function scheduleLive(next: View) {
+    stopAnim();
+    pendingLive.current = next;
+    if (liveRaf.current) return;
+    liveRaf.current = requestAnimationFrame(() => {
+      liveRaf.current = 0;
+      if (pendingLive.current) applyLive(pendingLive.current);
+    });
+  }
+
+  function commitGesture(markDirtyNow: boolean) {
+    stopAnim();
+    if (wheelTimer.current) {
+      window.clearTimeout(wheelTimer.current);
+      wheelTimer.current = 0;
+    }
+    if (liveRaf.current) {
+      cancelAnimationFrame(liveRaf.current);
+      liveRaf.current = 0;
+    }
+    const next = pendingLive.current || liveRef.current;
+    const base = viewRef.current;
+    pendingLive.current = null;
+    if (!next || !base) {
+      liveRef.current = null;
+      return;
+    }
+    const same =
+      Math.abs(next.x - base.x) < 0.05 &&
+      Math.abs(next.y - base.y) < 0.05 &&
+      Math.abs(next.k - base.k) < 1e-4;
+    liveRef.current = null;
+    if (same) {
+      if (worldRef.current && surfaceRef.current) clearWorld(worldRef.current, surfaceRef.current);
+      return;
+    }
+    if (markDirtyNow) markDirty();
+    setView(next);
   }
 
   function reset() {
-    if (!fitted || !view) return;
-    const from = view;
-    const target = fitted;
+    const from = pendingLive.current || liveRef.current || viewRef.current;
+    const target = fittedRef.current;
+    if (!from || !target) return;
+    if (wheelTimer.current) {
+      window.clearTimeout(wheelTimer.current);
+      wheelTimer.current = 0;
+    }
+    stopAnim();
     const t0 = performance.now();
-    cancelAnimationFrame(raf.current);
     const step = (now: number) => {
       const t = Math.min(1, (now - t0) / 520);
       const e = 1 - (1 - t) ** 3;
-      const rect = surfaceRef.current?.getBoundingClientRect();
+      const { w, h } = sizeRef.current;
       const next = {
         x: from.x + (target.x - from.x) * e,
         y: from.y + (target.y - from.y) * e,
         k: from.k + (target.k - from.k) * e,
       };
-      setView(rect ? clampPan(next, rect.width, rect.height, PAD) : next);
-      if (t < 1) raf.current = requestAnimationFrame(step);
-      else setDirty(false);
+      applyLive(w > 40 ? clampPan(next, w, h, PAD) : next);
+      if (t < 1) animRef.current = requestAnimationFrame(step);
+      else {
+        pendingLive.current = null;
+        liveRef.current = null;
+        dirtyRef.current = false;
+        setDirty(false);
+        setView(target);
+      }
     };
-    raf.current = requestAnimationFrame(step);
+    animRef.current = requestAnimationFrame(step);
   }
+
+  useLayoutEffect(() => {
+    viewRef.current = view;
+    dirtyRef.current = dirty;
+    sizeRef.current = size;
+    fittedRef.current = fitted;
+    openRef.current = onOpenMentor;
+    gestureApi.current.markDirty = markDirty;
+    gestureApi.current.scheduleLive = scheduleLive;
+    gestureApi.current.commitGesture = commitGesture;
+    gestureApi.current.reset = reset;
+    gestureApi.current.stopAnim = stopAnim;
+    gestureApi.current.setView = setView;
+    const node = worldRef.current;
+    const surface = surfaceRef.current;
+    if (!node || !surface) return;
+    const live = liveRef.current;
+    const base = viewRef.current;
+    if (!live || !base) {
+      clearWorld(node, surface);
+      const fittedK = fittedRef.current?.k;
+      if (zoomLabelRef.current && base && fittedK) {
+        zoomLabelRef.current.textContent = `${(base.k / fittedK).toFixed(1)}×`;
+      }
+      return;
+    }
+    paintWorld(node, surface, base, live, fittedRef.current?.k || base.k, zoomLabelRef.current, axisSink.current);
+  });
 
   useEffect(() => {
     const el = surfaceRef.current;
-    if (!el || !view) return;
+    if (!el) return;
     const onWheel = (event: WheelEvent) => {
+      const current = pendingLive.current || liveRef.current || viewRef.current;
+      if (!current) return;
       event.preventDefault();
+      const api = gestureApi.current;
+      api.stopAnim();
       const rect = el.getBoundingClientRect();
       const base = fitView(rect.width, rect.height, PAD);
       const { min, max } = limits(base.k);
       const factor = Math.exp(-event.deltaY * 0.00135);
-      const next = zoomAt(view, event.clientX - rect.left, event.clientY - rect.top, factor, min, max);
-      commit(next, true);
+      const next = zoomAt(current, event.clientX - rect.left, event.clientY - rect.top, factor, min, max);
+      api.markDirty();
+      api.scheduleLive(clampPan(next, rect.width, rect.height, PAD));
+      if (wheelTimer.current) window.clearTimeout(wheelTimer.current);
+      wheelTimer.current = window.setTimeout(() => gestureApi.current.commitGesture(true), 140);
     };
     el.addEventListener("wheel", onWheel, { passive: false });
-    return () => el.removeEventListener("wheel", onWheel);
-  });
+    return () => {
+      el.removeEventListener("wheel", onWheel);
+      if (wheelTimer.current) window.clearTimeout(wheelTimer.current);
+      cancelAnimationFrame(liveRaf.current);
+      cancelAnimationFrame(animRef.current);
+    };
+  }, []);
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       const target = event.target;
       if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement) return;
-      if (!view || !surfaceRef.current) return;
+      const viewNow = pendingLive.current || liveRef.current || viewRef.current;
+      if (!viewNow || !surfaceRef.current) return;
       const rect = surfaceRef.current.getBoundingClientRect();
       const base = fitView(rect.width, rect.height, PAD);
       const { min, max } = limits(base.k);
       const cx = rect.width / 2;
       const cy = rect.height / 2;
+      const finish = (next: View) => {
+        const api = gestureApi.current;
+        api.stopAnim();
+        if (wheelTimer.current) window.clearTimeout(wheelTimer.current);
+        if (liveRaf.current) cancelAnimationFrame(liveRaf.current);
+        pendingLive.current = null;
+        liveRef.current = null;
+        api.markDirty();
+        api.setView(clampPan(next, rect.width, rect.height, PAD));
+      };
       if (event.key === "+" || event.key === "=") {
         event.preventDefault();
-        commit(zoomAt(view, cx, cy, 1.25, min, max), true);
+        finish(zoomAt(viewNow, cx, cy, 1.25, min, max));
       } else if (event.key === "-" || event.key === "_") {
         event.preventDefault();
-        commit(zoomAt(view, cx, cy, 0.8, min, max), true);
+        finish(zoomAt(viewNow, cx, cy, 0.8, min, max));
       } else if (event.key === "0") {
         event.preventDefault();
-        reset();
-      } else if (event.key.startsWith("Arrow") && view) {
+        gestureApi.current.reset();
+      } else if (event.key.startsWith("Arrow")) {
         event.preventDefault();
         const dx = event.key === "ArrowLeft" ? 56 : event.key === "ArrowRight" ? -56 : 0;
         const dy = event.key === "ArrowUp" ? 56 : event.key === "ArrowDown" ? -56 : 0;
-        commit({ ...view, x: view.x + dx, y: view.y + dy }, true);
+        finish({ ...viewNow, x: viewNow.x + dx, y: viewNow.y + dy });
       } else if (event.key === "Escape") {
         setPinned(null);
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  });
+  }, []);
 
   function onPointerDown(event: ReactPointerEvent<HTMLDivElement>) {
     const target = event.target as HTMLElement;
@@ -190,20 +359,24 @@ export function Chart({
       drag.current = null;
       return;
     }
-    if (view) {
+    const current = pendingLive.current || liveRef.current || viewRef.current;
+    if (current) {
       drag.current = {
         id: event.pointerId,
         x: event.clientX,
         y: event.clientY,
-        ox: view.x,
-        oy: view.y,
+        ox: current.x,
+        oy: current.y,
+        k: current.k,
         moved: false,
       };
     }
   }
 
   function onPointerMove(event: ReactPointerEvent<HTMLDivElement>) {
-    if (!pts.current.has(event.pointerId) || !view || !surfaceRef.current) return;
+    if (!pts.current.has(event.pointerId) || !surfaceRef.current) return;
+    const currentView = pendingLive.current || liveRef.current || viewRef.current;
+    if (!currentView) return;
     pts.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
     const rect = surfaceRef.current.getBoundingClientRect();
     if (pts.current.size >= 2 && pinch.current) {
@@ -213,9 +386,10 @@ export function Chart({
       pinch.current = dist;
       const base = fitView(rect.width, rect.height, PAD);
       const { min, max } = limits(base.k);
-      const next = zoomAt(view, (a.x + b.x) / 2 - rect.left, (a.y + b.y) / 2 - rect.top, factor, min, max);
+      const next = zoomAt(currentView, (a.x + b.x) / 2 - rect.left, (a.y + b.y) / 2 - rect.top, factor, min, max);
       moved.current = true;
-      commit(next, true);
+      markDirty();
+      scheduleLive(clampPan(next, rect.width, rect.height, PAD));
       return;
     }
     const current = drag.current;
@@ -227,13 +401,16 @@ export function Chart({
       moved.current = true;
     }
     if (!current.moved) return;
-    commit({ x: current.ox + dx, y: current.oy + dy, k: view.k }, true);
+    markDirty();
+    scheduleLive(clampPan({ x: current.ox + dx, y: current.oy + dy, k: current.k }, rect.width, rect.height, PAD));
   }
 
   function onPointerUp(event: ReactPointerEvent<HTMLDivElement>) {
     pts.current.delete(event.pointerId);
     if (pts.current.size < 2) pinch.current = null;
+    const dragged = drag.current?.moved;
     drag.current = null;
+    if (dragged || liveRef.current || pendingLive.current) commitGesture(true);
     window.setTimeout(() => {
       moved.current = false;
     }, 40);
@@ -247,21 +424,26 @@ export function Chart({
   }
 
   const sealSizeNow = zoom < 1.45 ? 34 : 44;
-  const markerSize = (obj: Celestial, force: boolean) => {
-    if (force || obj.priority >= 9 || zoom > 1.85) {
-      return Math.max(28, Math.min(68, 24 + Math.log2(Math.max(zoom, 0.85)) * 12));
-    }
-    if (obj.priority >= 7 || zoom > 1.25) return 16;
-    return 7;
-  };
-  const occupied: Box[] = [];
-  const labelIds = new Set<string>();
-  if (view) {
+  const markerLayout = useMemo(() => {
+    const layout = new Map<string, { x: number; y: number; size: number; dot: boolean; showLabel: boolean; showEn: boolean }>();
+    if (!view) return layout;
+    const markerSize = (obj: Celestial, force: boolean) => {
+      if (force || obj.priority >= 9 || zoom > 1.85) {
+        return Math.max(28, Math.min(68, 24 + Math.log2(Math.max(zoom, 0.85)) * 12));
+      }
+      if (obj.priority >= 7 || zoom > 1.25) return 16;
+      return 7;
+    };
+    const occupied: Box[] = [];
+    const labelIds = new Set<string>();
     for (const mentor of mentors) {
       const p = project(mentor.anchor.logL, mentor.anchor.logM, view);
-      const w = Math.max(sealSizeNow, mentor.shortZh.length * 14 + 8);
-      const h = sealSizeNow + 16;
-      occupied.push({ x: p.x, y: p.y + 8, w, h });
+      occupied.push({
+        x: p.x,
+        y: p.y + 8,
+        w: Math.max(sealSizeNow, mentor.shortZh.length * 14 + 8),
+        h: sealSizeNow + 16,
+      });
     }
     for (const obj of objects) {
       const p = project(obj.logL, obj.logM, view);
@@ -281,7 +463,37 @@ export function Chart({
       labelIds.add(obj.id);
       occupied.push(box);
     }
-  }
+    for (const obj of objects) {
+      const p = project(obj.logL, obj.logM, view);
+      const force = hoverObject === obj.id || pinned === obj.id;
+      const px = markerSize(obj, force);
+      layout.set(obj.id, {
+        x: p.x,
+        y: p.y,
+        size: px,
+        dot: px <= 8 && !force,
+        showLabel: labelIds.has(obj.id),
+        showEn: zoom > 2.1 || force,
+      });
+    }
+    return layout;
+  }, [hoverObject, mentors, pinned, sealSizeNow, view, zoom]);
+
+  const onMentorOpen = useCallback((id: string) => {
+    if (moved.current) return;
+    openRef.current(id);
+  }, []);
+  const onMentorEnter = useCallback((id: string) => setHoverMentor(id), []);
+  const onMentorLeave = useCallback((id: string) => setHoverMentor((current) => (current === id ? null : current)), []);
+  const onObjectToggle = useCallback((id: string) => {
+    if (moved.current) return;
+    setPinned((current) => (current === id ? null : id));
+  }, []);
+  const onObjectEnter = useCallback((id: string) => setHoverObject(id), []);
+  const onObjectLeave = useCallback((id: string) => setHoverObject((current) => (current === id ? null : current)), []);
+  const bindAxes = useCallback((sink: AxisSink | null) => {
+    axisSink.current = sink;
+  }, []);
 
   const pinnedObject = pinned ? objects.find((obj) => obj.id === pinned) : undefined;
 
@@ -304,108 +516,68 @@ export function Chart({
     >
       {view ? (
         <>
-          <svg className="chart-svg" width="100%" height="100%">
-            <ChartGrid view={view} width={size.w} height={size.h} />
-            {guides ? <Guides view={view} /> : null}
-            <LeaderLines view={view} dimFilter={filter} mentors={mentors} />
-            {mentors.map((mentor) => (
-              <MentorShapes
-                key={mentor.id}
-                mentor={mentor}
-                view={view}
-                active={hoverMentor === mentor.id}
-                dim={dimmed(mentor, filter)}
-                onEnter={() => setHoverMentor(mentor.id)}
-                onLeave={() => setHoverMentor((id) => (id === mentor.id ? null : id))}
-                onOpen={() => {
-                  if (moved.current) return;
-                  onOpenMentor(mentor.id);
-                }}
-              />
-            ))}
-          </svg>
-          {objects.map((obj) => {
-            const p = project(obj.logL, obj.logM, view);
-            const force = hoverObject === obj.id || pinned === obj.id;
-            const sizePx = markerSize(obj, force);
-            const showLabel = labelIds.has(obj.id);
-            const dot = sizePx <= 8 && !force;
-            const dim = objectDimmed(obj, filter);
-            return (
-              <div key={obj.id} className={`obj-layer${force ? " is-front" : ""}${dim ? " is-dim" : ""}`}>
-                <button
-                  type="button"
-                  className={`obj-btn${pinned === obj.id ? " is-pinned" : ""}${dot ? " is-dot" : ""}`}
-                  style={{ left: p.x, top: p.y, width: sizePx, height: sizePx }}
-                  data-interactive="object"
-                  onClick={() => {
-                    if (moved.current) return;
-                    setPinned((id) => (id === obj.id ? null : obj.id));
-                  }}
-                  onMouseEnter={() => setHoverObject(obj.id)}
-                  onMouseLeave={() => setHoverObject((id) => (id === obj.id ? null : id))}
-                  onFocus={() => setHoverObject(obj.id)}
-                  onBlur={() => setHoverObject((id) => (id === obj.id ? null : id))}
-                  aria-label={`${obj.nameZh}，${obj.nameEn}。${obj.measureZh}`}
-                >
-                  {dot ? null : broken[obj.id] ? (
-                    <span className="obj-fallback" style={{ width: sizePx, height: sizePx }}>
-                      {obj.nameZh.slice(0, 1)}
-                    </span>
-                  ) : (
-                    <img
-                      src={publicUrl(obj.image)}
-                      alt=""
-                      width={sizePx}
-                      height={sizePx}
-                      style={{ width: sizePx, height: sizePx }}
-                      onError={() => setBroken((state) => ({ ...state, [obj.id]: true }))}
-                    />
-                  )}
-                </button>
-                {showLabel ? (
-                  <span className="obj-label" style={{ left: p.x, top: p.y + sizePx / 2 + 6 }}>
-                    {obj.nameZh}
-                    {zoom > 2.1 || force ? <i>{obj.nameEn}</i> : null}
-                  </span>
-                ) : null}
-              </div>
-            );
-          })}
-          {mentors.map((mentor) => {
-            const p = project(mentor.anchor.logL, mentor.anchor.logM, view);
-            const dim = dimmed(mentor, filter);
-            const sealSize = zoom < 1.45 ? 34 : 44;
-            return (
-              <button
-                key={mentor.id}
-                type="button"
-                className={`avatar-btn${dim ? " is-dim" : ""}${hoverMentor === mentor.id ? " is-hot" : ""}`}
-                style={{
-                  left: p.x - sealSize / 2,
-                  top: p.y - sealSize / 2,
-                }}
-                data-interactive="mentor"
-                onClick={() => {
-                  if (moved.current) return;
-                  onOpenMentor(mentor.id);
-                }}
-                onMouseEnter={() => setHoverMentor(mentor.id)}
-                onMouseLeave={() => setHoverMentor((id) => (id === mentor.id ? null : id))}
-                onFocus={() => setHoverMentor(mentor.id)}
-                onBlur={() => setHoverMentor((id) => (id === mentor.id ? null : id))}
-                aria-label={`${mentor.nameZh}，${mentor.nameEn}。${mentor.blurbZh} 打开研究页。`}
-              >
-                <MentorAvatar mentor={mentor} size={sealSize} />
-                <span className="avatar-name">
-                  {mentor.shortZh}
-                  {mentor.coverage === "broad" ? <em>广域</em> : null}
-                </span>
-              </button>
-            );
-          })}
-          <Axes view={view} width={size.w} height={size.h} zoom={zoom} />
-          {hoverMentor ? <MentorTip mentorId={hoverMentor} view={view} width={size.w} mentors={mentors} /> : null}
+          <div ref={worldRef} className="chart-world">
+            <svg className="chart-svg" width="100%" height="100%">
+              <ChartGrid view={view} width={size.w} height={size.h} />
+              {guides ? <Guides view={view} /> : null}
+              <LeaderLines view={view} dimFilter={filter} mentors={mentors} />
+              {mentors.map((mentor) => (
+                <MentorShapes
+                  key={mentor.id}
+                  mentor={mentor}
+                  view={view}
+                  active={hoverMentor === mentor.id}
+                  dim={dimmed(mentor, filter)}
+                  onEnter={onMentorEnter}
+                  onLeave={onMentorLeave}
+                  onOpen={onMentorOpen}
+                />
+              ))}
+            </svg>
+            <div className="obj-layer">
+              {objects.map((obj) => {
+                const placed = markerLayout.get(obj.id);
+                if (!placed) return null;
+                return (
+                  <ObjectMarker
+                    key={obj.id}
+                    obj={obj}
+                    x={placed.x}
+                    y={placed.y}
+                    size={placed.size}
+                    dot={placed.dot}
+                    dim={objectDimmed(obj, filter)}
+                    pinned={pinned === obj.id}
+                    hot={hoverObject === obj.id}
+                    showLabel={placed.showLabel}
+                    showEn={placed.showEn}
+                    onToggle={onObjectToggle}
+                    onEnter={onObjectEnter}
+                    onLeave={onObjectLeave}
+                  />
+                );
+              })}
+            </div>
+            {mentors.map((mentor) => {
+              const p = project(mentor.anchor.logL, mentor.anchor.logM, view);
+              return (
+                <ChartAvatar
+                  key={mentor.id}
+                  mentor={mentor}
+                  x={p.x}
+                  y={p.y}
+                  sealSize={sealSizeNow}
+                  dim={dimmed(mentor, filter)}
+                  hot={hoverMentor === mentor.id}
+                  onOpen={onMentorOpen}
+                  onEnter={onMentorEnter}
+                  onLeave={onMentorLeave}
+                />
+              );
+            })}
+            {hoverMentor ? <MentorTip mentorId={hoverMentor} view={view} width={size.w} mentors={mentors} /> : null}
+          </div>
+          <LiveAxes view={view} width={size.w} height={size.h} zoom={zoom} bind={bindAxes} />
         </>
       ) : (
         <p className="chart-wait">正在展开星图</p>
@@ -418,13 +590,162 @@ export function Chart({
       ) : null}
       <button type="button" className="reset-fab" data-interactive="control" onClick={reset}>
         重置视野
-        <span>{zoom.toFixed(1)}×</span>
+        <span ref={zoomLabelRef}>{zoom.toFixed(1)}×</span>
       </button>
     </div>
   );
 }
 
-function ChartGrid({ view, width, height }: { view: View; width: number; height: number }) {
+const ChartAvatar = memo(function ChartAvatar({
+  mentor,
+  x,
+  y,
+  sealSize,
+  dim,
+  hot,
+  onOpen,
+  onEnter,
+  onLeave,
+}: {
+  mentor: Mentor;
+  x: number;
+  y: number;
+  sealSize: number;
+  dim: boolean;
+  hot: boolean;
+  onOpen: (id: string) => void;
+  onEnter: (id: string) => void;
+  onLeave: (id: string) => void;
+}) {
+  return (
+    <button
+      type="button"
+      className={`avatar-btn${dim ? " is-dim" : ""}${hot ? " is-hot" : ""}`}
+      style={{ left: x - sealSize / 2, top: y - sealSize / 2 }}
+      data-interactive="mentor"
+      onClick={() => onOpen(mentor.id)}
+      onMouseEnter={() => onEnter(mentor.id)}
+      onMouseLeave={() => onLeave(mentor.id)}
+      onFocus={() => onEnter(mentor.id)}
+      onBlur={() => onLeave(mentor.id)}
+      aria-label={`${mentor.nameZh}，${mentor.nameEn}。${mentor.blurbZh} 打开研究页。`}
+    >
+      <MentorAvatar mentor={mentor} size={sealSize} thumb />
+      {hot ? (
+        <span className="avatar-name">
+          {mentor.shortZh}
+          {mentor.coverage === "broad" ? <em>广域</em> : null}
+        </span>
+      ) : null}
+    </button>
+  );
+});
+
+const ObjectMarker = memo(function ObjectMarker({
+  obj,
+  x,
+  y,
+  size,
+  dot,
+  dim,
+  pinned,
+  hot,
+  showLabel,
+  showEn,
+  onToggle,
+  onEnter,
+  onLeave,
+}: {
+  obj: Celestial;
+  x: number;
+  y: number;
+  size: number;
+  dot: boolean;
+  dim: boolean;
+  pinned: boolean;
+  hot: boolean;
+  showLabel: boolean;
+  showEn: boolean;
+  onToggle: (id: string) => void;
+  onEnter: (id: string) => void;
+  onLeave: (id: string) => void;
+}) {
+  const [useFull, setUseFull] = useState(false);
+  const [broken, setBroken] = useState(false);
+  const svg = obj.image.endsWith(".svg");
+  const src = svg || useFull ? publicUrl(obj.image) : thumbUrl(obj.image);
+  return (
+    <div
+      className={`obj-anchor${hot || pinned ? " is-front" : ""}${dim ? " is-dim" : ""}`}
+      style={{ left: x - size / 2, top: y - size / 2, width: size, height: size }}
+    >
+      <button
+        type="button"
+        className={`obj-btn${pinned ? " is-pinned" : ""}${dot ? " is-dot" : ""}`}
+        data-interactive="object"
+        onClick={() => onToggle(obj.id)}
+        onMouseEnter={() => onEnter(obj.id)}
+        onMouseLeave={() => onLeave(obj.id)}
+        onFocus={() => onEnter(obj.id)}
+        onBlur={() => onLeave(obj.id)}
+        aria-label={`${obj.nameZh}，${obj.nameEn}。${obj.measureZh}`}
+      >
+        {dot ? null : broken ? (
+          <span className="obj-fallback">{obj.nameZh.slice(0, 1)}</span>
+        ) : (
+          <img
+            src={src}
+            alt=""
+            width={size}
+            height={size}
+            draggable={false}
+            decoding="async"
+            onError={() => {
+              if (!svg && !useFull) setUseFull(true);
+              else setBroken(true);
+            }}
+          />
+        )}
+      </button>
+      {showLabel ? (
+        <span className="obj-label">
+          {obj.nameZh}
+          {showEn ? <i>{obj.nameEn}</i> : null}
+        </span>
+      ) : null}
+    </div>
+  );
+});
+
+function LiveAxes({
+  view,
+  width,
+  height,
+  zoom,
+  bind,
+}: {
+  view: View;
+  width: number;
+  height: number;
+  zoom: number;
+  bind: (sink: AxisSink | null) => void;
+}) {
+  const [live, setLive] = useState({ view, zoom });
+  const [trackedView, setTrackedView] = useState(view);
+  const [trackedZoom, setTrackedZoom] = useState(zoom);
+  if (view !== trackedView || zoom !== trackedZoom) {
+    setTrackedView(view);
+    setTrackedZoom(zoom);
+    setLive({ view, zoom });
+  }
+  useLayoutEffect(() => {
+    bind((next, nextZoom) => setLive({ view: next, zoom: nextZoom }));
+    return () => bind(null);
+  }, [bind]);
+  return <Axes view={live.view} width={width} height={height} zoom={live.zoom} />;
+}
+
+const ChartGrid = memo(function ChartGrid({ view, width, height }: { view: View; width: number; height: number }) {
   const { dL, dM } = span();
   const { kx, ky } = axisScales(view.k);
   const lines: { x1: number; y1: number; x2: number; y2: number; key: string }[] = [];
@@ -445,9 +766,9 @@ function ChartGrid({ view, width, height }: { view: View; width: number; height:
       ))}
     </g>
   );
-}
+});
 
-function Guides({ view }: { view: View }) {
+const Guides = memo(function Guides({ view }: { view: View }) {
   const bh: string[] = [];
   for (let logM = 29.9; logM <= 53.8; logM += 0.4) {
     const logL = logM + RS_OFFSET;
@@ -472,9 +793,9 @@ function Guides({ view }: { view: View }) {
       <text x={waterLabel.x} y={waterLabel.y}>水的密度</text>
     </g>
   );
-}
+});
 
-function LeaderLines({ view, dimFilter, mentors }: { view: View; dimFilter: FilterKey; mentors: Mentor[] }) {
+const LeaderLines = memo(function LeaderLines({ view, dimFilter, mentors }: { view: View; dimFilter: FilterKey; mentors: Mentor[] }) {
   return (
     <g className="leaders">
       {mentors.map((mentor) => {
@@ -499,7 +820,7 @@ function LeaderLines({ view, dimFilter, mentors }: { view: View; dimFilter: Filt
       })}
     </g>
   );
-}
+});
 
 function Axes({ view, width, height, zoom }: { view: View; width: number; height: number; zoom: number }) {
   const step = zoom > 3 ? 1 : zoom > 1.45 ? 2 : 3;
@@ -552,7 +873,7 @@ function Axes({ view, width, height, zoom }: { view: View; width: number; height
   );
 }
 
-function MentorShapes({
+const MentorShapes = memo(function MentorShapes({
   mentor,
   view,
   active,
@@ -565,20 +886,20 @@ function MentorShapes({
   view: View;
   active: boolean;
   dim: boolean;
-  onEnter: () => void;
-  onLeave: () => void;
-  onOpen: () => void;
+  onEnter: (id: string) => void;
+  onLeave: (id: string) => void;
+  onOpen: (id: string) => void;
 }) {
   const base = mentor.coverage === "broad" ? 0.035 : mentor.coverage === "wide" ? 0.055 : 0.12;
   const fillOpacity = dim ? 0.012 : active ? Math.max(0.22, base) : base;
   const strokeOpacity = dim ? 0.18 : active ? 1 : 0.78;
   const dash = mentor.coverage === "broad" ? "7 6" : undefined;
   const handlers = {
-    onMouseEnter: onEnter,
-    onMouseLeave: onLeave,
+    onMouseEnter: () => onEnter(mentor.id),
+    onMouseLeave: () => onLeave(mentor.id),
     onClick: (event: ReactMouseEvent) => {
       event.stopPropagation();
-      onOpen();
+      onOpen(mentor.id);
     },
   };
   return (
@@ -662,7 +983,7 @@ function MentorShapes({
         : null}
     </g>
   );
-}
+});
 
 function MentorTip({ mentorId, view, width, mentors }: { mentorId: string; view: View; width: number; mentors: Mentor[] }) {
   const mentor = mentors.find((item) => item.id === mentorId);
@@ -686,7 +1007,7 @@ function ObjectCard({ obj, onClose }: { obj: Celestial; onClose: () => void }) {
       <button type="button" className="icon-x" onClick={onClose} aria-label="关闭天体说明">
         ×
       </button>
-      <img src={publicUrl(obj.image)} alt={`${obj.nameZh}（${obj.nameEn}）`} />
+      <img src={publicUrl(obj.image)} alt={`${obj.nameZh}（${obj.nameEn}）`} decoding="async" />
       <div>
         <h3>
           {obj.nameZh}

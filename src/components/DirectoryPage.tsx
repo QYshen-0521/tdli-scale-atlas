@@ -116,7 +116,7 @@ export default function DirectoryPage() {
             {result.people.map((mentor) => (
               <li key={mentor.id}>
                 <button type="button" onClick={() => open(mentor.id)}>
-                  <MentorAvatar mentor={mentor} size={52} />
+                  <MentorAvatar mentor={mentor} size={52} thumb loading="lazy" />
                   <span>
                     <strong>{mentor.nameZh}</strong>
                     {mentor.nameEn && mentor.nameEn !== mentor.nameZh ? <em>{mentor.nameEn}</em> : null}
