@@ -6,6 +6,7 @@ import { supportsViewTransition, useOpenMentor } from "../lib/nav.ts";
 import type { FilterKey } from "../types.ts";
 import { Chart } from "./Chart.tsx";
 import { OffplanePanel } from "./OffplanePanel.tsx";
+import { OrgSidebar } from "./OrgSidebar.tsx";
 import { RosterBar } from "./RosterBar.tsx";
 import { countRoster, useRoster } from "../use-roster.tsx";
 
@@ -68,13 +69,18 @@ export default function AtlasPage() {
         </div>
         <p className="top-note">
           图上 {chartPeople.length} 人 · 尺度之外 {offplanePeople.length} 人
-          <span>尺度分类只让其他人变淡。机构筛选才会从图层拿掉。滚轮缩放 · 拖拽平移 · 双击空白复位</span>
+          <span>尺度分类只让其他人变淡。左侧勾选机构才会从图层拿掉。滚轮缩放 · 拖拽平移 · 双击空白复位</span>
         </p>
       </header>
       <RosterBar people={mentors} query={query} onChange={update} onClear={clear} />
-      <div className={`atlas-body${panelOpen ? " panel-open" : ""}`}>
-        <OffplanePanel open={panelOpen} people={offplanePeople} onToggle={() => setPanelOpen((value) => !value)} onOpen={go} />
-        <Chart filter={query.scale} guides={guides} mentors={chartPeople} onOpenMentor={go} />
+      <div className="workspace">
+        <OrgSidebar people={mentors} query={query} onChange={update} />
+        <div className="workspace-main">
+          <div className={`atlas-body${panelOpen ? " panel-open" : ""}`}>
+            <OffplanePanel open={panelOpen} people={offplanePeople} onToggle={() => setPanelOpen((value) => !value)} onOpen={go} />
+            <Chart filter={query.scale} guides={guides} mentors={chartPeople} onOpenMentor={go} />
+          </div>
+        </div>
       </div>
     </div>
   );

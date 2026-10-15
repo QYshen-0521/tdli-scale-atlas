@@ -4,6 +4,7 @@ import { mentors, organizations } from "../content.ts";
 import report from "../../data/coverage/pilot-report.json";
 import { directoryScrollKey, readDirectoryScroll, writeDirectoryScroll } from "../lib/directory-scroll.ts";
 import { supportsViewTransition, useOpenMentor } from "../lib/nav.ts";
+import { OrgSidebar } from "./OrgSidebar.tsx";
 import { RosterBar } from "./RosterBar.tsx";
 import { countRoster, rosterPath, useRoster } from "../use-roster.tsx";
 import { MentorAvatar } from "./MentorAvatar.tsx";
@@ -59,7 +60,7 @@ export default function DirectoryPage() {
   }
 
   return (
-    <div ref={scrollerRef} className={`directory-page${enter ? " is-enter" : ""}`}>
+    <div className={`directory-page${enter ? " is-enter" : ""}`}>
       <header className="topbar directory-top">
         <div className="brand">
           <p className="eyebrow">李政道研究所 · Tsung-Dao Lee Institute</p>
@@ -69,16 +70,19 @@ export default function DirectoryPage() {
           </h1>
         </div>
         <p className="top-note">
-          默认显示李政道研究所现任人员。试点机构在筛选里选择，不表示这些单位或全球已经收全。
+          默认显示已收录机构的现任人员。左侧勾选可只看李政道研究所、南京大学、国家天文台或剑桥大学。试点收录不表示这些单位或全球已经收全。
           <span>
             <a href={rosterPath("/", params)}>回到尺度图</a>
           </span>
         </p>
       </header>
       <RosterBar people={mentors} query={query} onChange={update} onClear={clear} />
+      <div className="workspace">
+        <OrgSidebar people={mentors} query={query} onChange={update} />
+        <div className="workspace-main directory-scroll" ref={scrollerRef}>
       <details className="coverage-note">
         <summary>试点机构覆盖</summary>
-        <p>{report.note} 展开上一级机构会带出下属单位。国家和机构要由同一条任职同时满足。</p>
+        <p>{report.note} 勾选上一级机构会带出下属单位。国家和机构要由同一条任职同时满足。</p>
         <table className="coverage-table">
           <thead>
             <tr>
@@ -133,6 +137,8 @@ export default function DirectoryPage() {
           <p className="directory-empty">没有符合条件的人。可以清空筛选后再看。</p>
         )}
       </main>
+        </div>
+      </div>
     </div>
   );
 }
