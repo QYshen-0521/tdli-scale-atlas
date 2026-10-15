@@ -113,37 +113,50 @@
   },
   {
     "personId": "qian",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "lab"
+    ],
+    "panelGroup": "lab",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
     "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "placementNoteZh": "不放置。官网方向是超快非线性光学和强场光学，装置在微米到米，比主图左缘（约 1 公里）还小。名录保留。",
+    "placementNoteEn": "Not plotted. Ultrafast and strong-field optics sit at laboratory scales, left of the chart edge. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页「超快非线性光学及强场光学技术」。实验室尺度，不画坐标。"
   },
   {
     "personId": "sheng",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "lab"
+    ],
+    "panelGroup": "lab",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "relatedObjects": [
+      "cygx1",
+      "neutron"
+    ],
+    "placementNoteZh": "不放置。官网写明激光驱动的高能量密度物理和实验室天体物理。类比的喷流和辐射不是这些装置的质量–半径。名录保留。",
+    "placementNoteEn": "Not plotted. Laser-driven high-energy-density physics and laboratory astrophysics are not the mass and radius of the analogous jets. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页激光等离子体与实验室天体物理。装置在图的左缘之外。"
   },
   {
     "personId": "yang",
@@ -668,105 +681,202 @@
   },
   {
     "personId": "gexulei",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "lab"
+    ],
+    "panelGroup": "lab",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "relatedObjects": [
+      "cygx1"
+    ],
+    "placementNoteZh": "不放置。超强飞秒激光和激光等离子体在实验室尺度，比主图左缘还小。名录保留。",
+    "placementNoteEn": "Not plotted. Intense femtosecond lasers and laser plasmas are laboratory targets, left of the chart edge. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页「超强飞秒激光技术；激光等离子体物理」。"
   },
   {
     "personId": "guyizhou",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
+    "status": "reviewed",
+    "applicability": "chart",
+    "coverage": "wide",
+    "groups": [
+      "galaxy"
+    ],
     "panelGroup": "",
-    "regions": [],
-    "anchor": null,
-    "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 22.4,
+        "cy": 44,
+        "rx": 1.9,
+        "ry": 2.5
+      }
+    ],
+    "anchor": {
+      "logL": 20.8,
+      "logM": 48.2
+    },
+    "leader": {
+      "logL": 22.4,
+      "logM": 44
+    },
+    "relatedObjects": [
+      "lmc",
+      "mw",
+      "m31",
+      "smc",
+      "cluster",
+      "localgroup",
+      "laniakea"
+    ],
+    "placementNoteZh": "椭圆从大约十千秒差距上的星系，拉到上百兆秒差距的大尺度结构，质量大约从千亿倍太阳质量到富团以上。不到可观测宇宙。这是按官网方向画的包络，不是某次巡天的选择函数。",
+    "placementNoteEn": "Galaxies to large-scale structure, roughly ten kiloparsecs to about a hundred megaparsecs. Not the observable universe. An editorial envelope, not a survey selection function.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页「星系形成与演化；大尺度结构」。包络不到可观测宇宙。"
   },
   {
     "personId": "huangxj",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "lab"
+    ],
+    "panelGroup": "lab",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
     "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "placementNoteZh": "不放置。方向是超短超强激光技术和大型激光装置，没有天体的质量–长度坐标。名录保留。",
+    "placementNoteEn": "Not plotted. Ultrashort intense-laser technology and large laser facilities have no celestial mass–length coordinate. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页超短超强激光技术。"
   },
   {
     "personId": "jianghj",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
     "groups": [],
-    "panelGroup": "",
+    "panelGroup": "instrument",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
     "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "placementNoteZh": "不放置。官网方向是天文光谱仪和望远镜的设计研制。仪器在地面，不占质量–长度坐标。名录保留。",
+    "placementNoteEn": "Not plotted. The official direction is spectrograph and telescope design. The instruments are on the ground. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页天文光谱仪与望远镜研制。JUST 本身不占坐标。"
   },
   {
     "personId": "sunqh",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
+    "status": "reviewed",
+    "applicability": "chart",
+    "coverage": "wide",
+    "groups": [
+      "planet"
+    ],
     "panelGroup": "",
-    "regions": [],
-    "anchor": null,
-    "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 9.85,
+        "cy": 30.5,
+        "rx": 1.85,
+        "ry": 1.2
+      },
+      {
+        "shape": "ellipse",
+        "cx": 12.15,
+        "cy": 28.55,
+        "rx": 1.1,
+        "ry": 0.9
+      }
+    ],
+    "anchor": {
+      "logL": 14.6,
+      "logM": 32.2
+    },
+    "leader": {
+      "logL": 9.85,
+      "logM": 30.5
+    },
+    "relatedObjects": [
+      "proxima",
+      "sun",
+      "rigel",
+      "betelgeuse",
+      "disk",
+      "jupiter"
+    ],
+    "placementNoteZh": "左边一块是恒星半径和质量，从红矮星到超巨星；右边一块是行星形成环境，大约一个到一百天文单位的盘。恒星大气和锂丰度没有单独的坐标。这是编者判断的包络，不是选择函数。",
+    "placementNoteEn": "Stellar radii and masses, from red dwarfs through supergiants, plus planet-forming disks from about an AU to a hundred AU. An editorial envelope, not a selection function.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页恒星形成与演化、恒星大气，以及恒星与行星、行星形成环境。"
   },
   {
     "personId": "yangkai",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
+    "status": "reviewed",
+    "applicability": "chart",
+    "coverage": "focused",
+    "groups": [
+      "planet"
+    ],
     "panelGroup": "",
-    "regions": [],
-    "anchor": null,
-    "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 9.15,
+        "cy": 30.15,
+        "rx": 1.05,
+        "ry": 0.8
+      },
+      {
+        "shape": "ellipse",
+        "cx": 17.2,
+        "cy": 34.5,
+        "rx": 1.05,
+        "ry": 1.3
+      }
+    ],
+    "anchor": {
+      "logL": 13.2,
+      "logM": 36.8
+    },
+    "leader": {
+      "logL": 17.2,
+      "logM": 34.5
+    },
+    "relatedObjects": [
+      "sun",
+      "proxima",
+      "orion",
+      "pleiades"
+    ],
+    "placementNoteZh": "一块在形成中的恒星，一块在分子云和年轻星团（大约秒差距、几千到十万倍太阳质量）。谱线观测是方法，不另占坐标。这是编者判断的包络，不是选择函数。",
+    "placementNoteEn": "Forming stars, and molecular clouds or young clusters at parsec scales. Spectral-line observing is a method, not a coordinate. An editorial envelope, not a selection function.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页「恒星形成与演化；星际介质；天体化学；谱线观测」。"
   },
   {
     "personId": "zheng",
@@ -806,54 +916,75 @@
   },
   {
     "personId": "zhupf",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "lab"
+    ],
+    "panelGroup": "lab",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "relatedObjects": [
+      "cygx1"
+    ],
+    "placementNoteZh": "不放置。方向是超短电子脉冲的超快技术，任职在实验室天体物理实验平台。装置比主图左缘还小。名录保留。",
+    "placementNoteEn": "Not plotted. Ultrafast electron pulses on the laboratory-astrophysics platform sit left of the chart edge. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页超短电子脉冲技术，以及实验室天体物理实验平台任职。"
   },
   {
     "personId": "ramsey",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "relatedObjects": [
+      "universe"
+    ],
+    "placementNoteZh": "不放置。官网方向是早期宇宙的量子场论、电弱相变、暗物质、中微子和对撞机现象学，没有收成一段天体的质量–长度。名录保留。",
+    "placementNoteEn": "Not plotted. Early-universe field theory, electroweak phase transitions, dark matter, neutrinos, and collider phenomenology have no single mass–length locus. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页早期宇宙量子场论、暗物质、中微子与对撞机现象学。"
   },
   {
     "personId": "yanagida",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "relatedObjects": [
+      "universe"
+    ],
+    "placementNoteZh": "不放置。暴涨、早期宇宙、天体粒子和中微子理论可以同时谈到视界和粒子，没有单一天体坐标。名录保留。",
+    "placementNoteEn": "Not plotted. Inflation, the early universe, astroparticle theory, and neutrinos do not pick out one celestial coordinate. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页天体粒子、暴涨与早期宇宙、中微子理论。"
   },
   {
     "personId": "he",
@@ -906,20 +1037,27 @@
   },
   {
     "personId": "hehj",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "relatedObjects": [
+      "universe"
+    ],
+    "placementNoteZh": "不放置。中微子、暗物质、暗能量和暴胀是粒子与宇宙学理论，没有指定到图上的一段半径和质量。名录保留。",
+    "placementNoteEn": "Not plotted. Neutrinos, dark matter, dark energy, and inflation are not assigned one radius and mass. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页中微子、希格斯、暗物质、暗能量和暴胀。"
   },
   {
     "personId": "liu",
@@ -974,54 +1112,75 @@
   },
   {
     "personId": "nakai",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "relatedObjects": [
+      "universe"
+    ],
+    "placementNoteZh": "不放置。粒子宇宙学、超对称和超出标准模型的场论没有给出星系、黑洞或 Gpc 巡天这样的质量–长度位点。名录保留。",
+    "placementNoteEn": "Not plotted. Particle cosmology, supersymmetry, and beyond-Standard-Model field theory name no galaxy, black-hole, or gigaparsec locus. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页「粒子宇宙学」与超出标准模型的理论。未写到具体天体尺度。"
   },
   {
     "personId": "lishu",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "relatedObjects": [
+      "mw"
+    ],
+    "placementNoteZh": "不放置。规范方向采用导师名单里的暗物质探测和高能对撞机实验。测的是粒子反应，纵轴不是 GeV。名录保留。",
+    "placementNoteEn": "Not plotted. The canonical direction is the supervisor-list text on dark-matter searches and collider experiments. The vertical axis is not GeV. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "规范方向用导师名单「暗物质探测、高能对撞机实验」。个人页原文另存。"
   },
   {
     "personId": "quhl",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "relatedObjects": [
+      "mw"
+    ],
+    "placementNoteZh": "不放置。个人页的中微子与暗物质实验、对撞机物理是探测器里的粒子，不是一个天体的半径和质量。名录保留。",
+    "placementNoteEn": "Not plotted. Neutrino and dark-matter experiments, and collider physics, are particles in a detector. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "规范方向用个人页「中微子与暗物质实验」。导师名单原文另存。"
   },
   {
     "personId": "xu",
@@ -1050,223 +1209,352 @@
   },
   {
     "personId": "khaw",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "relatedObjects": [
+      "mw"
+    ],
+    "placementNoteZh": "不放置。暗物质、暗光子和缪子精密测量没有质量–长度坐标。名录保留。",
+    "placementNoteEn": "Not plotted. Dark matter, dark photons, and muon precision measurements have no mass–length coordinate. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页「暗物质和暗光子」与缪子精密测量。"
   },
   {
     "personId": "blake",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "relatedObjects": [
+      "universe"
+    ],
+    "placementNoteZh": "不放置。MeV 中微子探测和高能中微子望远镜测的是信使。名录保留。",
+    "placementNoteEn": "Not plotted. MeV neutrino detection and a high-energy neutrino telescope measure messengers. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页中微子实验与高能中微子望远镜。"
   },
   {
     "personId": "aiwy",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "relatedObjects": [
+      "universe"
+    ],
+    "placementNoteZh": "不放置。早期宇宙相变、原初黑洞形成、引力波和暗物质探测写在同一段理论里，没有被收成一段天体坐标。名录保留。",
+    "placementNoteEn": "Not plotted. Phase transitions, primordial-black-hole formation, gravitational waves, and dark-matter searches are listed together and are not one mass–length span. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页早期宇宙、原初黑洞形成、引力波与暗物质探测。未收成单一坐标。"
   },
   {
     "personId": "chenyf",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
+    "status": "reviewed",
+    "applicability": "chart",
+    "coverage": "focused",
+    "groups": [
+      "compact"
+    ],
     "panelGroup": "",
-    "regions": [],
-    "anchor": null,
-    "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 5.05,
+        "cy": 31.75,
+        "rx": 0.75,
+        "ry": 0.7
+      },
+      {
+        "shape": "ellipse",
+        "cx": 11.85,
+        "cy": 38.55,
+        "rx": 1.85,
+        "ry": 1.55
+      }
+    ],
+    "anchor": {
+      "logL": 16.4,
+      "logM": 41.2
+    },
+    "leader": {
+      "logL": 11.85,
+      "logM": 38.55
+    },
+    "relatedObjects": [
+      "cygx1",
+      "sgr",
+      "m31bh",
+      "m87"
+    ],
+    "placementNoteZh": "两块椭圆分别落在恒星级黑洞和超大质量黑洞。引力波是信使，量子精密测量没有质量–长度坐标，都不画进去。粒子物理理论本身也不铺满整张图。这是编者判断的包络，不是选择函数。",
+    "placementNoteEn": "Stellar-mass and supermassive black holes. Gravitational waves and quantum measurement are left off the outline. An editorial envelope, not a selection function.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页「黑洞和引力波」。粒子物理与量子精密测量不占坐标。"
   },
   {
     "personId": "hanjun",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
+    "status": "reviewed",
+    "applicability": "chart",
+    "coverage": "focused",
+    "groups": [
+      "compact"
+    ],
     "panelGroup": "",
-    "regions": [],
-    "anchor": null,
-    "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "regions": [
+      {
+        "shape": "ellipse",
+        "cx": 4.3,
+        "cy": 30.55,
+        "rx": 0.55,
+        "ry": 0.5
+      }
+    ],
+    "anchor": {
+      "logL": 6.2,
+      "logM": 27.8
+    },
+    "leader": {
+      "logL": 4.3,
+      "logM": 30.55
+    },
+    "relatedObjects": [
+      "neutron",
+      "crab"
+    ],
+    "placementNoteZh": "小椭圆包住中子星的半径和质量。致密物质和核天体物理落在这一带。多信使是信使，不把脉冲星风云或并合信号画成另一块。这是编者判断的包络，不是选择函数。",
+    "placementNoteEn": "A small envelope on neutron-star radii and masses. Multi-messenger signals are not given a second coordinate. An editorial envelope, not a selection function.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页「致密物质；中子星；核天体物理；多信使天文学」。"
   },
   {
     "personId": "meihl",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "relatedObjects": [
+      "universe",
+      "mw"
+    ],
+    "placementNoteZh": "不放置。中微子天文学和实验中微子物理是信使。名录保留。",
+    "placementNoteEn": "Not plotted. Neutrino astronomy and experimental neutrino physics are messengers. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页「中微子天文学；实验中微子物理」。"
   },
   {
     "personId": "xiangxin",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "relatedObjects": [
+      "mw",
+      "universe"
+    ],
+    "placementNoteZh": "不放置。中微子天文学和暗物质实验探测都没有诚实的天体半径。名录保留。",
+    "placementNoteEn": "Not plotted. Neutrino astronomy and experimental dark-matter searches have no honest celestial radius. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页中微子天文学与实验暗物质探测。"
   },
   {
     "personId": "xiekp",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
     "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "placementNoteZh": "不放置。对撞机现象学和中微子是粒子理论，没有质量–长度位点。名录保留。",
+    "placementNoteEn": "Not plotted. Collider phenomenology and neutrinos, as listed, have no mass–length locus. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页对撞机现象学与中微子。"
   },
   {
     "personId": "cuixy",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "relatedObjects": [
+      "mw",
+      "earth"
+    ],
+    "placementNoteZh": "不放置。暗物质直接探测和液氙装置测的是粒子反应，纵轴不是 GeV。名录保留。",
+    "placementNoteEn": "Not plotted. Direct dark-matter detection with liquid xenon measures particle interactions. The vertical axis is not GeV. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页暗物质直接探测与液氙制冷、纯化。"
   },
   {
     "personId": "huangtq",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "relatedObjects": [
+      "universe"
+    ],
+    "placementNoteZh": "不放置。个人页没有单独的研究方向栏目，任职原文是南海中微子望远镜计划。中微子是信使。名录保留。",
+    "placementNoteEn": "Not plotted. The profile has no separate direction field; the appointment is the South China Sea neutrino telescope. Neutrinos are messengers. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "个人页无单独研究方向。按任职「南海中微子望远镜计划」。"
   },
   {
     "personId": "wangzhou",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "relatedObjects": [
+      "mw",
+      "earth"
+    ],
+    "placementNoteZh": "不放置。规范方向采用成员页「液氙暗物质探测实验团队」。直接探测没有天体半径；个人页上的低温和纯化技术是实验室装置。名录保留。",
+    "placementNoteEn": "Not plotted. The canonical direction is the member-page liquid-xenon dark-matter team. Direct detection has no celestial radius. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "规范方向用成员页液氙暗物质任职原文。个人页实验技术另存。"
   },
   {
     "personId": "wilczek",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "relatedObjects": [
+      "neutron",
+      "cygx1",
+      "universe"
+    ],
+    "placementNoteZh": "不放置。个人页同时写到宇宙学、中子星、恒星爆炸、轴子和黑洞量子理论，不能收成一块天体。名录保留。",
+    "placementNoteEn": "Not plotted. The profile names cosmology, neutron stars, stellar explosions, axions, and black-hole quantum theory together, so there is no single envelope. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页宇宙学、中子星、轴子与黑洞量子理论。范围盖过整张图，故不画。"
   },
   {
     "personId": "chenxun",
-    "status": "pending",
-    "applicability": "pending",
-    "coverage": "pending",
-    "groups": [],
-    "panelGroup": "",
+    "status": "reviewed",
+    "applicability": "not_applicable",
+    "coverage": "offplane",
+    "groups": [
+      "particle"
+    ],
+    "panelGroup": "particle",
     "regions": [],
-    "anchor": null,
+    "anchor": {
+      "logL": 0,
+      "logM": 0
+    },
     "leader": null,
-    "relatedObjects": [],
-    "placementNoteZh": "还没有经过审核的尺度标注，所以名录里有此人，星图上不画区域，也不放进「尺度之外」。",
-    "placementNoteEn": "",
-    "methodVersion": "",
-    "reviewedAt": "",
-    "note": "没有可靠尺度标注。"
+    "relatedObjects": [
+      "mw",
+      "earth"
+    ],
+    "placementNoteZh": "不放置。暗物质直接探测和中微子探测是粒子与信使。名录保留。",
+    "placementNoteEn": "Not plotted. Direct dark-matter detection and neutrino detection are particles and messengers. Kept in the roster.",
+    "methodVersion": "placements-2026-10-14",
+    "reviewedAt": "2026-10-15",
+    "note": "按个人页暗物质直接探测与中微子探测。"
   }
 ]

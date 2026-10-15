@@ -2439,6 +2439,20 @@
     "id": "ev-lishu-directions-174",
     "personId": "lishu",
     "field": "directions",
+    "value": "希格斯新物理、暗物质探测、高能对撞机实验",
+    "sourceId": "tdli-supervisors",
+    "locator": "https://tdli.sjtu.edu.cn/grad-students/supervisor-directory",
+    "excerpt": "希格斯新物理、暗物质探测、高能对撞机实验",
+    "fetchedAt": "2026-10-15",
+    "reviewedAt": "2026-10-15",
+    "reviewer": "baseline-2026-10-15",
+    "status": "conflict",
+    "note": "来源冲突时采用天文相关表述更清楚的原文作为规范研究方向和纳入标签。已采用导师名单「希格斯新物理、暗物质探测、高能对撞机实验」（暗物质）。个人页原文仍保留：「大型强子对撞机LHC实验；超越标准模型的新物理寻找；希格斯物理；人工智能深度机器学习；新型探测器研发；粒子物理唯象学」。不排除。"
+  },
+  {
+    "id": "ev-lishu-directions-retained",
+    "personId": "lishu",
+    "field": "directions-retained",
     "value": "大型强子对撞机LHC实验；超越标准模型的新物理寻找；希格斯物理；人工智能深度机器学习；新型探测器研发；粒子物理唯象学",
     "sourceId": "tdli-profile",
     "locator": "https://tdli.sjtu.edu.cn/people/40051/li-shu",
@@ -2447,7 +2461,7 @@
     "reviewedAt": "2026-10-15",
     "reviewer": "baseline-2026-10-15",
     "status": "conflict",
-    "note": "独立账本与本条一致：导师名单原文为「希格斯新物理、暗物质探测、高能对撞机实验」，个人页研究方向未写暗物质。纳入依据是导师名单。"
+    "note": "此条保存冲突来源的原文，不作为规范研究方向，也不删除。"
   },
   {
     "id": "ev-lishu-profileUrl-175",
@@ -2503,7 +2517,21 @@
     "reviewedAt": "2026-10-15",
     "reviewer": "baseline-2026-10-15",
     "status": "conflict",
-    "note": "独立账本只采用导师名单「人工智能与粒子物理」，建议排除或暂缓。个人页研究方向原文还有「中微子与暗物质实验」。按个人页原文纳入，差异记在本条。"
+    "note": "来源冲突时采用天文相关表述更清楚的原文作为规范研究方向和纳入标签。个人页含「中微子与暗物质」，比导师名单「人工智能与粒子物理」更明确，规范方向与标签仍用个人页。导师名单原文仍保留：「人工智能与粒子物理」。不排除。"
+  },
+  {
+    "id": "ev-quhl-directions-retained",
+    "personId": "quhl",
+    "field": "directions-retained",
+    "value": "人工智能与粒子物理",
+    "sourceId": "tdli-supervisors",
+    "locator": "https://tdli.sjtu.edu.cn/grad-students/supervisor-directory",
+    "excerpt": "人工智能与粒子物理",
+    "fetchedAt": "2026-10-15",
+    "reviewedAt": "2026-10-15",
+    "reviewer": "baseline-2026-10-15",
+    "status": "conflict",
+    "note": "此条保存冲突来源的原文，不作为规范研究方向，也不删除。"
   },
   {
     "id": "ev-quhl-profileUrl-179",
@@ -3181,6 +3209,20 @@
     "id": "ev-wangzhou-directions-227",
     "personId": "wangzhou",
     "field": "directions",
+    "value": "液氙暗物质探测实验团队副研究员",
+    "sourceId": "tdli-particle-member",
+    "locator": "https://tdli.sjtu.edu.cn/research/particle-and-nuclear-physics-division/member",
+    "excerpt": "液氙暗物质探测实验团队副研究员",
+    "fetchedAt": "2026-10-15",
+    "reviewedAt": "2026-10-15",
+    "reviewer": "baseline-2026-10-15",
+    "status": "conflict",
+    "note": "来源冲突时采用天文相关表述更清楚的原文作为规范研究方向和纳入标签。个人页是实验技术，成员页任职原文为「液氙暗物质探测实验团队副研究员」，规范方向与纳入标签采用任职原文。个人页原文仍保留：「粒子物理实验；低温精馏；超高纯气体纯化；CFD传热传质模拟及电场模拟」。不排除。"
+  },
+  {
+    "id": "ev-wangzhou-directions-retained",
+    "personId": "wangzhou",
+    "field": "directions-retained",
     "value": "粒子物理实验；低温精馏；超高纯气体纯化；CFD传热传质模拟及电场模拟",
     "sourceId": "tdli-profile",
     "locator": "https://tdli.sjtu.edu.cn/people/40623/wang-zhou",
@@ -3189,7 +3231,7 @@
     "reviewedAt": "2026-10-15",
     "reviewer": "baseline-2026-10-15",
     "status": "conflict",
-    "note": "个人页研究方向列出实验技术，没有重复「暗物质」。成员页任职原文为液氙暗物质探测实验团队副研究员。纳入依据是任职原文。"
+    "note": "此条保存冲突来源的原文，不作为规范研究方向，也不删除。"
   },
   {
     "id": "ev-wangzhou-profileUrl-228",

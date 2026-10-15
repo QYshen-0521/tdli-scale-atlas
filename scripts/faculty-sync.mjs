@@ -34,12 +34,14 @@ function publishedFromRepo(root) {
   return people.map((person) => {
     const affiliation = affiliations.find((item) => item.personId === person.id);
     const directions = evidence.find((item) => item.personId === person.id && item.field === "directions");
+    const retained = evidence.find((item) => item.personId === person.id && item.field === "directions-retained");
     return {
       id: person.id,
       name: person.nameOriginal,
       email: person.email,
       title: affiliation?.rawTitle || "",
       directions: directions?.value || "",
+      retainedDirections: retained?.value || "",
       profileUrls: (person.profileUrls || []).join(" "),
       division: affiliation?.divisionLabel || "",
       current: affiliation?.current ?? true,

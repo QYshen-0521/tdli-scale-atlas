@@ -256,6 +256,7 @@ function fieldLabel(field: string) {
   if (field === "name") return "姓名";
   if (field === "title") return "职称";
   if (field === "directions") return "方向";
+  if (field === "directions-retained") return "保留原文";
   if (field === "profileUrl") return "主页";
   if (field === "profileAlias") return "地址别名";
   return field;
