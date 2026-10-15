@@ -11,6 +11,7 @@
     "check:data": "node scripts/check-data.mjs",
     "sync:self-check": "node scripts/sync/self-check.mjs",
     "sync:faculty": "node scripts/faculty-sync.mjs --out proposals/runs/latest",
+    "sync:photos": "node scripts/sync/fetch-photos.mjs",
     "deploy": "GITHUB_PAGES=true npm run build && cp dist/index.html dist/404.html && gh-pages -d dist -b gh-pages -m \"Deploy static site\" --repo https://github.com/QYshen-0521/tdli-scale-atlas.git"
   },
   "dependencies": {

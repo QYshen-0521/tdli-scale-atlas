@@ -27,7 +27,7 @@ npm run build
 npm run preview
 ```
 
-数据检查：`npm run check:data`。
+数据检查：`npm run check:data`。重下全体官方肖像：`npm run sync:photos`。新增人员时，套用师资提案（`scripts/sync/apply-report.mjs`）和试点入库（`scripts/sync/extract-pilots.mjs`）会默认尝试同一件事：从官方个人页取肖像并写入 `data/editorial.json`。取不到不拦入库。
 
 ## 怎么用
 
@@ -89,7 +89,7 @@ The visual language is a warm night sky, cinnabar seals, and mineral pigments �
 ## 已知缺口
 
 - 2026-10-15 的名录范围和仍缺的简介、论文、照片，写在 `docs/project-settings/inclusion-policy.md`。构建通过只说明数据符合检查，不代替那份账。
-- 肖像来自官网个人页，版权仍属原机构或拍摄者；不是知识共享许可。新收录的人没有照片，页面用印章。
+- 肖像来自官网个人页，版权仍属原机构或拍摄者；不是知识共享许可。新增人员时会尝试下载肖像；页面没有可用照片时留空，头像退回印章。
 - Masahiro Ogihara 与 Darius Modirrousta-Galian 的主页没有中文姓名。
 - 王界双、葛韶锋的主页没有逐篇列出论文，条目来自他们页面指向的 Inspire。这些旧论文本轮没有逐篇重核。
 - 景益鹏主页上的代表论文偏近年；更早的经典工作没有擅自补上。

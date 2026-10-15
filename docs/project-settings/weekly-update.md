@@ -24,6 +24,8 @@ npm run build
 
 看完差异再提交。不要在 main 上直接套用。
 
+新增一个人时，套用提案会默认从官方个人页尝试下载肖像到 `public/assets/mentors/<id>.jpg`（页面给出的若是 png、webp 或 gif，就保留那种格式），并写上 `editorial.json` 的 `photo` 和 `photoSource`。个人页没有肖像、下载失败，或文件不像单人照片时，人仍然入库，照片留空，终端写明原因。已有的 `photoFocus` 不动。全量重下用 `npm run sync:photos`。周更提交要带上 `public/assets/mentors`，否则新照片不会进 PR。
+
 研究方向若已按收录规则处理过来源冲突，规范字段用天文相关表述更清楚的那一份（天文、宇宙学、天体物理、天体粒子、暗物质、中微子），另一份留在 `directions-retained`。成员页文本若只是那份已保留的原文，同步不要把它写回规范字段。出现第三种新文本时仍出提案，合并前再按同一规则看一遍。
 
 ## 自动提案

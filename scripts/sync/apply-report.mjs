@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
+import { fillMissingPortraits } from "./photos.mjs";
 
 function read(root, file) {
   return JSON.parse(readFileSync(path.join(root, file), "utf8"));
@@ -9,7 +10,7 @@ function write(root, file, data) {
   writeFileSync(path.join(root, file), `${JSON.stringify(data, null, 2)}\n`);
 }
 
-export function applyReportToData(root, report) {
+export async function applyReportToData(root, report, options = {}) {
   const people = read(root, "data/people.json");
   const affiliations = read(root, "data/affiliations.json");
   const evidence = read(root, "data/evidence.json");
@@ -20,6 +21,7 @@ export function applyReportToData(root, report) {
   const pilotLedger = read(root, pilotLedgerPath);
   let pilotTouched = false;
   let touched = 0;
+  const addedEditorial = [];
   for (const change of report.changes || []) {
     if (change.type === "absent" || change.type === "source-failed") continue;
     if (change.type === "update-title") {
@@ -176,7 +178,7 @@ export function applyReportToData(root, report) {
         reviewedAt: "",
         note: "周更新增，尺度标注待审核。",
       });
-      editorial.push({
+      const entry = {
         personId: id,
         shortZh: change.name,
         seal: String(change.name || "?").slice(0, 1),
@@ -195,7 +197,9 @@ export function applyReportToData(root, report) {
         pigment: "#d4b483",
         z: 0,
         contentStatus: "absent",
-      });
+      };
+      editorial.push(entry);
+      addedEditorial.push(entry);
       const ledgerRow = {
         candidateId: `sync:${change.email || id}`,
         personId: id,
@@ -226,7 +230,12 @@ export function applyReportToData(root, report) {
       touched += 1;
     }
   }
-  if (!touched) return { touched };
+  let photoMisses = [];
+  if (touched && options.photos !== false && addedEditorial.length) {
+    const portraits = await fillMissingPortraits(root, addedEditorial, people, options);
+    photoMisses = portraits.misses;
+  }
+  if (!touched) return { touched, photoMisses };
   write(root, "data/people.json", people);
   write(root, "data/affiliations.json", affiliations);
   write(root, "data/evidence.json", evidence);
@@ -234,13 +243,14 @@ export function applyReportToData(root, report) {
   write(root, "data/editorial.json", editorial);
   write(root, "data/coverage/ledger.json", ledger);
   if (pilotTouched) write(root, pilotLedgerPath, pilotLedger);
-  return { touched };
+  return { touched, photoMisses };
 }
 
 const isMain = process.argv[1] && process.argv[1].endsWith("apply-report.mjs");
 if (isMain) {
   const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "../..");
   const report = JSON.parse(readFileSync(process.argv[2], "utf8"));
-  const result = applyReportToData(root, report);
+  const result = await applyReportToData(root, report);
   console.log(`applied ${result.touched}`);
+  for (const miss of result.photoMisses || []) console.warn(`肖像未取得，人已写入名录：${miss.id} ${miss.name} — ${miss.reason}`);
 }
