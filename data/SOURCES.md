@@ -55,7 +55,7 @@
 
 ## 肖像
 
-圆形头像用的是李政道研究所官网个人页上公开的肖像，放在 `public/assets/mentors/`。早先 23 张下载于 2026-10-14；2026-10-15 补了当时没有头像的人，仍取个人页肖像框里的那一张。页面打不开照片时退回印章。这些照片的版权仍属拍摄机构或作者，本仓库只为在这张图上辨认导师而展示，并在下表标明来源页面。赖东的文件元数据写着 Cornell University Photography。张鹏杰所用文件在服务器上的文件名仍带「待替换」，但那就是官网当前显示的肖像。
+圆形头像用的是官方个人页上公开的肖像，放在 `public/assets/mentors/`。每人用到的页面写在 `editorial.json` 的 `photoSource`，文件名与人员 id 一致。早先李政道研究所 23 张下载于 2026-10-14；2026-10-15 补了当时没有头像的李所人员，并再次按个人页肖像框重下。同一天起，南京大学天文与空间科学学院、国家天文台和剑桥大学天文研究所的人也从各自官方个人页取肖像。页面没有可用肖像时留空，界面退回印章。这些照片的版权仍属拍摄机构或作者，本仓库只为在这张图上辨认导师而展示。下表是李所旧快照里的来源页；试点机构的逐人来源以 `photoSource` 为准，不在这里再抄一遍。赖东的文件元数据写着 Cornell University Photography。张鹏杰所用文件在服务器上的文件名仍带「待替换」，但那就是官网当前显示的肖像。
 
 | 导师 | 文件 | 来源页面 |
 | --- | --- | --- |
@@ -70,33 +70,33 @@
 | 谭先瑜 | tan.jpg | https://tdli.sjtu.edu.cn/en/people/40675/xianyu-tan |
 | 唐梦涛 | tang.jpg | https://tdli.sjtu.edu.cn/en/people/43985/mengtao-tang |
 | Masahiro Ogihara | ogihara.jpg | https://tdli.sjtu.edu.cn/people/40125/masahiro-ogihara |
-| Darius Modirrousta-Galian | darius.jpg | https://tdli.sjtu.edu.cn/en/people/42602/darius-modirrousta-galian |
+| Darius Modirrousta-Galian | darius.png | https://tdli.sjtu.edu.cn/en/people/42602/darius-modirrousta-galian |
 | 郑宪忠 | zheng.jpg | https://tdli.sjtu.edu.cn/people/40645/xianzhong-zheng |
 | 王界双 | wangjs.jpg | https://tdli.sjtu.edu.cn/en/people/41275/jieshuang-wang |
 | 周浩 | zhouhao.jpg | https://tdli.sjtu.edu.cn/en/people/41271/hao-zhou |
 | 刘江来 | liu.jpg | https://tdli.sjtu.edu.cn/people/40043/liu-jianglai |
 | 周宁 | zhouning.jpg | https://tdli.sjtu.edu.cn/people/40114/ning-zhou |
 | 徐东莲 | xu.jpg | https://tdli.sjtu.edu.cn/people/40056/donglian-xu |
-| 何小刚 | he.jpg | https://tdli.sjtu.edu.cn/people/40048/he-xiaogang |
+| 何小刚 | he.jpg | https://tdli.sjtu.edu.cn/en/people/41250/xiaogang-he |
 | 葛韶锋 | ge.jpg | https://tdli.sjtu.edu.cn/people/40053 |
 | 张杰 | zhangjie.jpg | https://tdli.sjtu.edu.cn/people/40110/jie-zhang |
 | 吴益鹏 | wu.jpg | https://tdli.sjtu.edu.cn/people/40608/yipeng-wu |
 | 易龙卿 | yi.jpg | https://tdli.sjtu.edu.cn/people/40681/longqing-yi |
-| 艾稳元 | aiwy.jpg | https://tdli.sjtu.edu.cn/people/44830/ |
-| 陈一帆 | chenyf.jpg | https://tdli.sjtu.edu.cn/people/44260/yifan-chen |
+| 艾稳元 | aiwy.png | https://tdli.sjtu.edu.cn/people/44830/ |
+| 陈一帆 | chenyf.png | https://tdli.sjtu.edu.cn/people/44260/yifan-chen |
 | 谌勋 | chenxun.jpg | https://tdli.sjtu.edu.cn/people/40695/chen-xun |
 | 崔祥仪 | cuixy.jpg | https://tdli.sjtu.edu.cn/people/40090/cui-xiangyi |
 | 葛绪雷 | gexulei.jpg | https://tdli.sjtu.edu.cn/people/40622/xulei-ge |
 | 顾一舟 | guyizhou.jpg | https://tdli.sjtu.edu.cn/people/40631/yizhou-gu |
 | 韩君 | hanjun.jpg | https://tdli.sjtu.edu.cn/people/40189/han-jun |
 | 何红建 | hehj.jpg | https://tdli.sjtu.edu.cn/people/40042/he-hongjian |
-| 黄天奇 | huangtq.jpg | https://tdli.sjtu.edu.cn/people/45605/h |
+| 黄天奇 | huangtq.png | https://tdli.sjtu.edu.cn/people/45605/h |
 | 黄小军 | huangxj.jpg | https://tdli.sjtu.edu.cn/people/40629/xiaojun-huang |
 | 姜海娇 | jianghj.jpg | https://tdli.sjtu.edu.cn/people/44366/ |
 | 李数 | lishu.jpg | https://tdli.sjtu.edu.cn/people/40051/li-shu |
 | 梅华林 | meihl.jpg | https://tdli.sjtu.edu.cn/people/40480/hualin-mei |
 | 钱列加 | qian.jpg | https://tdli.sjtu.edu.cn/people/40023/liejia-qian |
-| 曲慧麟 | quhl.jpg | https://tdli.sjtu.edu.cn/people/44940/ |
+| 曲慧麟 | quhl.png | https://tdli.sjtu.edu.cn/people/44940/ |
 | 盛政明 | sheng.jpg | https://tdli.sjtu.edu.cn/people/40024/zhengming-sheng |
 | 孙清辉 | sunqh.jpg | https://tdli.sjtu.edu.cn/people/40654/qinghui-sun |
 | 王舟 | wangzhou.jpg | https://tdli.sjtu.edu.cn/people/40623/wang-zhou |

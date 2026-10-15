@@ -4,6 +4,7 @@ import { parseCambridgeFacultyHtml, parseCambridgeProfile, CAMBRIDGE_FACULTY_URL
 import { parseNjuRankHtml, NJU_PAGES } from "./adapters/nju.mjs";
 import { classifyNaocCard, parseNaocProfile, parseNaocSeniorHtml, NAOC_SENIOR_URL, NAOC_DEPARTMENTS } from "./adapters/naoc.mjs";
 import { astronomyScore, mergeableName, pilotRole, pilotTopicTags } from "./pilot-policy.mjs";
+import { fillMissingPortraits } from "./photos.mjs";
 
 const FETCHED_AT = "2026-10-15";
 const REVIEWER = "pilot-2026-10-15";
@@ -296,13 +297,14 @@ function pilotSourceId(orgId) {
   return `pilot-${orgId}`;
 }
 
-export function materialize(root, snapshot) {
+export async function materialize(root, snapshot, options = {}) {
   const pilotIds = new Set(pilotOrganizations().map((org) => org.id));
   let people = readJson(root, "data/people.json");
   let affiliations = readJson(root, "data/affiliations.json").filter((item) => !pilotIds.has(item.orgId));
   let evidence = readJson(root, "data/evidence.json").filter((item) => !String(item.sourceId || "").startsWith("pilot-"));
   let annotations = readJson(root, "data/atlas-annotations.json");
   let editorial = readJson(root, "data/editorial.json");
+  const previousEditorial = new Map(editorial.map((item) => [item.personId, item]));
   const organizations = readJson(root, "data/organizations.json").filter((org) => !pilotIds.has(org.id));
   const removed = new Set(people.filter((person) => /^(nju|cam|naoc)-/.test(person.id)).map((person) => person.id));
   people = people.filter((person) => !removed.has(person.id));
@@ -381,9 +383,9 @@ export function materialize(root, snapshot) {
         summaryEn: "",
         honors: [],
         homepage: "",
-        photo: "",
-        photoSource: "",
-        photoFocus: "",
+        photo: previousEditorial.get(card.personId)?.photo || "",
+        photoSource: previousEditorial.get(card.personId)?.photoSource || "",
+        photoFocus: previousEditorial.get(card.personId)?.photoFocus || "",
         bibliographyUrl: "",
         pigment: PIGMENTS[index % PIGMENTS.length],
         z: 0,
@@ -458,6 +460,8 @@ export function materialize(root, snapshot) {
     });
   }
 
+  let portraits = { filled: [], misses: [] };
+  if (options.photos !== false) portraits = await fillMissingPortraits(root, editorial, people, options);
   writeJson(root, "data/organizations.json", organizations);
   writeJson(root, "data/people.json", people);
   writeJson(root, "data/affiliations.json", affiliations);
@@ -476,6 +480,8 @@ export function materialize(root, snapshot) {
     people: snapshot.people.filter((item) => !item.mergeInto).length,
     merges: snapshot.merges.length,
     report: snapshot.report,
+    portraitsFilled: portraits.filled.length,
+    portraitMisses: portraits.misses,
   };
 }
 
@@ -501,7 +507,7 @@ if (isMain) {
     const { mkdirSync } = await import("node:fs");
     mkdirSync(path.dirname(out), { recursive: true });
     writeFileSync(out, JSON.stringify(snapshot, null, 2));
-    console.log("materialized", materialize(root, snapshot));
+    console.log("materialized", await materialize(root, snapshot));
   } else {
     writeFileSync(out, JSON.stringify({ report: snapshot.report, merges: snapshot.merges, deferred: snapshot.ledger.filter((row) => row.decision !== "include").map((row) => ({ name: row.nameOriginal, decision: row.decision, reason: row.reason, division: row.division })) }, null, 2));
     console.log("wrote", out);
