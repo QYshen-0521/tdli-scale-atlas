@@ -534,6 +534,74 @@ img { display: block; max-width: 100%; }
   .gallery ul { grid-template-columns: 1fr; }
   .inspector { grid-template-columns: 72px 1fr; }
   .brand h1 { font-size: 28px; }
+  .workspace { grid-template-columns: 1fr; grid-template-rows: minmax(180px, 36vh) minmax(0, 1fr); }
+  .org-sidebar { border-right: 0; border-bottom: 1px solid var(--line); }
+}
+.workspace {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 268px minmax(0, 1fr);
+}
+.workspace-main {
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.workspace-main > .atlas-body { flex: 1; }
+.org-sidebar {
+  min-height: 0;
+  overflow: auto;
+  border-right: 1px solid var(--line);
+  padding: 12px 12px 28px;
+}
+.org-sidebar h2 {
+  margin: 0 0 4px;
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+.org-lead {
+  margin: 0 0 10px;
+  color: var(--faint);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.org-all { padding-bottom: 8px; margin-bottom: 4px; border-bottom: 1px solid var(--line); }
+.org-tree { list-style: none; margin: 0; padding: 0; }
+.org-tree .org-tree { margin-left: 18px; }
+.org-row { display: flex; align-items: flex-start; gap: 2px; }
+.org-expand {
+  width: 22px;
+  height: 22px;
+  flex: none;
+  margin-top: 2px;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  padding: 0;
+  line-height: 22px;
+}
+.org-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+  padding: 3px 0;
+  cursor: pointer;
+}
+.org-check input { margin-top: 4px; accent-color: var(--brass); }
+.org-name { flex: 1; min-width: 0; line-height: 1.4; }
+.org-count {
+  flex: none;
+  color: var(--faint);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.4;
+  padding-top: 1px;
 }
 .roster-bar {
   display: flex;
@@ -581,7 +649,8 @@ img { display: block; max-width: 100%; }
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-.directory-page { height: 100%; overflow: auto; }
+.directory-page { height: 100%; overflow: hidden; display: flex; flex-direction: column; }
+.directory-scroll { overflow: auto; }
 .directory-top { border-bottom: 0; }
 .directory-main { padding: 8px 22px 48px; }
 .directory-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
