@@ -4,6 +4,14 @@
 
 访问日期：2026-10-14。当时已收录者的职务、研究方向、荣誉和代表性论文以李政道研究所官网个人主页为准。论文题名现在在 `data/papers.json`，旧快照仍在 `mentors.json`。
 
+## 试点机构（2026-10-15）
+
+覆盖人数和暂缓原因在 `data/coverage/pilot-report.json`。下面只记官方入口。
+
+- 南京大学天文与空间科学学院职称页：https://astronomy.nju.edu.cn/szll/szgk/index.html
+- 中国科学院国家天文台正高级专业技术人员：https://nao.cas.cn/nrc/zg/
+- 剑桥大学天文研究所 Faculty：https://www.ast.cam.ac.uk/people/faculty
+
 ## 机构
 
 - 天文与天体物理研究部成员：https://tdli.sjtu.edu.cn/research/astronomy-and-astrophysics-division/member

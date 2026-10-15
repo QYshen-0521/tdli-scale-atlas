@@ -1,0 +1,62 @@
+{
+  "fetchedAt": "2026-10-15",
+  "note": "这是三家试点机构在上述日期的官方名录覆盖，不是全球教师名录，也不是这些机构的历史全体。",
+  "orgs": [
+    {
+      "orgId": "nju-sass",
+      "nameZh": "南京大学天文与空间科学学院",
+      "country": "CN",
+      "adapter": "nju-rank-pages",
+      "urls": [
+        "https://astronomy.nju.edu.cn/szll/szgk/zkyys/index.html",
+        "https://astronomy.nju.edu.cn/szll/szgk/js/index.html",
+        "https://astronomy.nju.edu.cn/szll/szgk/fjs/index.html",
+        "https://astronomy.nju.edu.cn/szll/szgk/zljs/index.html",
+        "https://astronomy.nju.edu.cn/szll/szgk/zzky/index.html",
+        "https://astronomy.nju.edu.cn/szll/szgk/bsh/index.html",
+        "https://astronomy.nju.edu.cn/szll/szgk/syjs/index.html"
+      ],
+      "fetchedAt": "2026-10-15",
+      "scope": "已打开院士、教授、副教授、助理教授、专职科研、博士后、实验技术七个官方职称页。纳入前四类里写有研究方向的人；博士后和实验技术排除；专职科研未写成教师或研究员系列的暂缓。这不是学院历史全体，也不是全球教师。",
+      "rosterCount": 89,
+      "included": 55,
+      "excluded": 26,
+      "deferred": 8,
+      "status": "partial-pilot"
+    },
+    {
+      "orgId": "cam-ioa",
+      "nameZh": "剑桥大学天文研究所",
+      "country": "GB",
+      "adapter": "cambridge-faculty",
+      "urls": [
+        "https://www.ast.cam.ac.uk/people/faculty",
+        "https://www.ast.cam.ac.uk/people/research-fellow"
+      ],
+      "fetchedAt": "2026-10-15",
+      "scope": "只核验官方 Faculty 页，并打开每人的 Research 栏目。博士后、荣誉退休、专业服务人员不在这页上。Research Professors 另有页面，本轮不自动收录。",
+      "rosterCount": 21,
+      "included": 16,
+      "excluded": 0,
+      "deferred": 5,
+      "status": "partial-pilot"
+    },
+    {
+      "orgId": "naoc",
+      "nameZh": "中国科学院国家天文台",
+      "country": "CN",
+      "adapter": "naoc-senior",
+      "urls": [
+        "https://nao.cas.cn/nrc/zg/"
+      ],
+      "fetchedAt": "2026-10-15",
+      "scope": "只核验正高级专业技术人员名录。职称注释或个人页写明研究员、且个人页有研究方向原句的才纳入。正高级工程师和管理支撑部门排除。公开导航没有与此并列的副高级名录，副研究员及以下未覆盖。不含台属天文台的单独名录。",
+      "rosterCount": 148,
+      "included": 75,
+      "excluded": 36,
+      "deferred": 37,
+      "status": "partial-pilot"
+    }
+  ],
+  "merges": []
+}

@@ -13,6 +13,8 @@ const papers = read("data/papers.json");
 const organizations = read("data/organizations.json");
 const objects = read("data/objects.json");
 const ledger = read("data/coverage/ledger.json");
+const pilotLedger = read("data/coverage/pilot-ledger.json");
+const coverageRows = ledger.concat(pilotLedger);
 const legacy = read("data/mentors.json");
 const errors = [];
 
@@ -26,6 +28,9 @@ for (const obj of objects) {
 }
 
 const orgIds = new Set(organizations.map((org) => org.id));
+for (const org of organizations) {
+  if (org.parentId && !orgIds.has(org.parentId)) errors.push(`org parent ${org.id} -> ${org.parentId}`);
+}
 const personIds = new Set();
 for (const person of people) {
   if (personIds.has(person.id)) errors.push(`duplicate person ${person.id}`);
@@ -97,10 +102,13 @@ if (!annotations.some((item) => item.personId === "lai" && item.coverage === "br
   errors.push("expected lai to be the broad envelope");
 }
 
-const included = ledger.filter((row) => row.decision === "include");
+const included = coverageRows.filter((row) => row.decision === "include");
 const includedIds = new Set(included.map((row) => row.personId));
-if (includedIds.size !== included.length) errors.push("duplicate included person");
-for (const row of ledger) {
+const tdliIncluded = ledger.filter((row) => row.decision === "include").map((row) => row.personId);
+const pilotIncluded = pilotLedger.filter((row) => row.decision === "include").map((row) => row.personId);
+if (new Set(tdliIncluded).size !== tdliIncluded.length) errors.push("duplicate included person");
+if (new Set(pilotIncluded).size !== pilotIncluded.length) errors.push("duplicate pilot included person");
+for (const row of coverageRows) {
   if (!row.decision || !row.reason) errors.push(`ledger row missing decision ${row.candidateId}`);
   if (row.decision === "include" && !personIds.has(row.personId)) errors.push(`include without person ${row.candidateId}`);
 }
@@ -147,6 +155,8 @@ const roster = spawnSync(process.execPath, ["--experimental-strip-types", "scrip
   encoding: "utf8",
 });
 if (roster.status !== 0) errors.push(`roster self-check failed\n${roster.stdout}\n${roster.stderr}`);
+const pilot = spawnSync(process.execPath, ["scripts/sync/pilot-self-check.mjs"], { cwd: root, encoding: "utf8" });
+if (pilot.status !== 0) errors.push(`pilot self-check failed\n${pilot.stdout}\n${pilot.stderr}`);
 
 if (errors.length) {
   console.error(errors.join("\n"));

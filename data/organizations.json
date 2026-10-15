@@ -88,5 +88,214 @@
     "countryName": "中国",
     "locality": "上海",
     "ror": ""
+  },
+  {
+    "id": "nju",
+    "nameZh": "南京大学",
+    "nameEn": "Nanjing University",
+    "aliases": [
+      "南大",
+      "NJU"
+    ],
+    "type": "university",
+    "parentId": "",
+    "url": "https://www.nju.edu.cn",
+    "country": "CN",
+    "countryName": "中国",
+    "locality": "南京",
+    "ror": ""
+  },
+  {
+    "id": "nju-sass",
+    "nameZh": "天文与空间科学学院",
+    "nameEn": "School of Astronomy and Space Science",
+    "aliases": [
+      "南大天文"
+    ],
+    "type": "division",
+    "parentId": "nju",
+    "url": "https://astronomy.nju.edu.cn/szll/szgk/index.html",
+    "country": "CN",
+    "countryName": "中国",
+    "locality": "南京",
+    "ror": ""
+  },
+  {
+    "id": "cam",
+    "nameZh": "剑桥大学",
+    "nameEn": "University of Cambridge",
+    "aliases": [
+      "Cambridge"
+    ],
+    "type": "university",
+    "parentId": "",
+    "url": "https://www.cam.ac.uk",
+    "country": "GB",
+    "countryName": "英国",
+    "locality": "Cambridge",
+    "ror": ""
+  },
+  {
+    "id": "cam-ioa",
+    "nameZh": "天文研究所",
+    "nameEn": "Institute of Astronomy",
+    "aliases": [
+      "IoA"
+    ],
+    "type": "division",
+    "parentId": "cam",
+    "url": "https://www.ast.cam.ac.uk/people/faculty",
+    "country": "GB",
+    "countryName": "英国",
+    "locality": "Cambridge",
+    "ror": ""
+  },
+  {
+    "id": "cas",
+    "nameZh": "中国科学院",
+    "nameEn": "Chinese Academy of Sciences",
+    "aliases": [
+      "中科院",
+      "CAS"
+    ],
+    "type": "academy",
+    "parentId": "",
+    "url": "https://www.cas.cn",
+    "country": "CN",
+    "countryName": "中国",
+    "locality": "北京",
+    "ror": ""
+  },
+  {
+    "id": "naoc",
+    "nameZh": "国家天文台",
+    "nameEn": "National Astronomical Observatories",
+    "aliases": [
+      "NAOC"
+    ],
+    "type": "institute",
+    "parentId": "cas",
+    "url": "https://nao.cas.cn/nrc/zg/",
+    "country": "CN",
+    "countryName": "中国",
+    "locality": "北京",
+    "ror": ""
+  },
+  {
+    "id": "naoc-optical",
+    "nameZh": "光学天文研究部",
+    "nameEn": "Optical Astronomy Division",
+    "aliases": [],
+    "type": "division",
+    "parentId": "naoc",
+    "url": "https://nao.cas.cn/nrc/zg/",
+    "country": "CN",
+    "countryName": "中国",
+    "locality": "北京",
+    "ror": ""
+  },
+  {
+    "id": "naoc-radio",
+    "nameZh": "射电天文研究部",
+    "nameEn": "Radio Astronomy Division",
+    "aliases": [],
+    "type": "division",
+    "parentId": "naoc",
+    "url": "https://nao.cas.cn/nrc/zg/",
+    "country": "CN",
+    "countryName": "中国",
+    "locality": "北京",
+    "ror": ""
+  },
+  {
+    "id": "naoc-galaxy",
+    "nameZh": "星系宇宙学研究部",
+    "nameEn": "Galaxies and Cosmology Division",
+    "aliases": [],
+    "type": "division",
+    "parentId": "naoc",
+    "url": "https://nao.cas.cn/nrc/zg/",
+    "country": "CN",
+    "countryName": "中国",
+    "locality": "北京",
+    "ror": ""
+  },
+  {
+    "id": "naoc-solar",
+    "nameZh": "太阳物理研究部",
+    "nameEn": "Solar Physics Division",
+    "aliases": [],
+    "type": "division",
+    "parentId": "naoc",
+    "url": "https://nao.cas.cn/nrc/zg/",
+    "country": "CN",
+    "countryName": "中国",
+    "locality": "北京",
+    "ror": ""
+  },
+  {
+    "id": "naoc-space",
+    "nameZh": "空间科学研究部",
+    "nameEn": "Space Science Division",
+    "aliases": [],
+    "type": "division",
+    "parentId": "naoc",
+    "url": "https://nao.cas.cn/nrc/zg/",
+    "country": "CN",
+    "countryName": "中国",
+    "locality": "北京",
+    "ror": ""
+  },
+  {
+    "id": "naoc-lunar",
+    "nameZh": "月球与深空探测研究部",
+    "nameEn": "Lunar and Deep Space Exploration Division",
+    "aliases": [],
+    "type": "division",
+    "parentId": "naoc",
+    "url": "https://nao.cas.cn/nrc/zg/",
+    "country": "CN",
+    "countryName": "中国",
+    "locality": "北京",
+    "ror": ""
+  },
+  {
+    "id": "naoc-applied",
+    "nameZh": "应用天文研究部",
+    "nameEn": "Applied Astronomy Division",
+    "aliases": [],
+    "type": "division",
+    "parentId": "naoc",
+    "url": "https://nao.cas.cn/nrc/zg/",
+    "country": "CN",
+    "countryName": "中国",
+    "locality": "北京",
+    "ror": ""
+  },
+  {
+    "id": "naoc-deepspace",
+    "nameZh": "深空专项研究中心",
+    "nameEn": "Deep Space Exploration Center",
+    "aliases": [],
+    "type": "division",
+    "parentId": "naoc",
+    "url": "https://nao.cas.cn/nrc/zg/",
+    "country": "CN",
+    "countryName": "中国",
+    "locality": "北京",
+    "ror": ""
+  },
+  {
+    "id": "naoc-admin",
+    "nameZh": "管理支撑部门",
+    "nameEn": "Administration Support",
+    "aliases": [],
+    "type": "division",
+    "parentId": "naoc",
+    "url": "https://nao.cas.cn/nrc/zg/",
+    "country": "CN",
+    "countryName": "中国",
+    "locality": "北京",
+    "ror": ""
   }
 ]

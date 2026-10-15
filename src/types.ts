@@ -31,6 +31,11 @@ export type CanonicalRole =
   | "researcher"
   | "associate_researcher"
   | "assistant_researcher"
+  | "academician"
+  | "professor"
+  | "associate_professor"
+  | "assistant_professor"
+  | "faculty"
   | "other";
 
 export type ClaimStatus = "verified" | "conflict" | "legacy" | "missing";
@@ -40,7 +45,7 @@ export type Organization = {
   nameZh: string;
   nameEn: string;
   aliases: string[];
-  type: "university" | "institute" | "division";
+  type: "university" | "institute" | "division" | "academy";
   parentId: string;
   url: string;
   country: string;
