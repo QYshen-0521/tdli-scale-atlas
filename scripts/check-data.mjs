@@ -57,8 +57,20 @@ for (const annotation of annotations) {
   if (annotationIds.has(annotation.personId)) errors.push(`duplicate annotation ${annotation.personId}`);
   annotationIds.add(annotation.personId);
   if (!personIds.has(annotation.personId)) errors.push(`annotation person ${annotation.personId}`);
+  if (annotation.applicability !== "chart" || annotation.status !== "reviewed" || annotation.coverage === "offplane" || annotation.coverage === "pending") {
+    errors.push(`not on chart ${annotation.personId}`);
+  }
   if (annotation.applicability === "chart") {
     if (annotation.status !== "reviewed" || !annotation.regions?.length) errors.push(`chart annotation ${annotation.personId}`);
+    if (!annotation.anchor || !Number.isFinite(annotation.anchor.logL) || !Number.isFinite(annotation.anchor.logM)) {
+      errors.push(`anchor ${annotation.personId}`);
+    }
+    if (!annotation.leader || !Number.isFinite(annotation.leader.logL) || !Number.isFinite(annotation.leader.logM)) {
+      errors.push(`leader ${annotation.personId}`);
+    }
+    if (!annotation.placementNoteZh?.trim()) errors.push(`placement note ${annotation.personId}`);
+    if (!annotation.relatedObjects?.length) errors.push(`related objects ${annotation.personId}`);
+    if (!annotation.groups?.length) errors.push(`groups ${annotation.personId}`);
   } else if (annotation.regions?.length) {
     errors.push(`non-chart annotation has geometry ${annotation.personId}`);
   }
@@ -93,8 +105,10 @@ for (const mentor of legacy) {
   if (mentor.placement === "chart" && annotation?.regions?.length !== mentor.regions.length) {
     errors.push(`lost regions ${mentor.id}`);
   }
-  if (mentor.placement === "offplane" && annotation?.applicability !== "not_applicable") {
-    errors.push(`lost offplane ${mentor.id}`);
+  if (mentor.placement === "offplane") {
+    if (annotation?.applicability !== "chart" || annotation.status !== "reviewed" || !annotation.regions?.length) {
+      errors.push(`legacy offplane not placed on chart ${mentor.id}`);
+    }
   }
   if (mentor.photo && !existsSync(path.join(root, "public", mentor.photo))) errors.push(`missing photo ${mentor.photo}`);
 }

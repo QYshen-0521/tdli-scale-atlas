@@ -26,13 +26,19 @@ export function OffplanePanel({
       </div>
       {open ? (
         <div className="margin-scroll">
-          <p className="margin-lead">
-            纵轴是天体或系统的质量，不是 GeV。中微子、暗物质粒子和宇宙线没有一个诚实的半径；实验室靶则比图的左缘还小。地面望远镜和光谱仪同样不占这块坐标。
-          </p>
-          {particle.length ? <Section title="粒子与信使" en="Particles & messengers" people={particle} onOpen={onOpen} /> : null}
-          {lab.length ? <Section title="实验室天体物理" en="Laboratory astrophysics" people={lab} onOpen={onOpen} /> : null}
-          {instrument.length ? <Section title="望远镜与仪器" en="Telescopes & instruments" people={instrument} onOpen={onOpen} /> : null}
-          {!particle.length && !lab.length && !instrument.length ? <p className="margin-lead">当前筛选下，没有人在尺度之外。</p> : null}
+          {people.length === 0 ? (
+            <p className="margin-lead">这一轮已经把原先放在尺度之外的人，改画到他们工作所对应的天体尺度上。当前筛选下没有人留在图外。</p>
+          ) : (
+            <>
+              <p className="margin-lead">
+                纵轴是天体或系统的质量，不是 GeV。中微子、暗物质粒子和宇宙线没有一个诚实的半径；实验室靶则比图的左缘还小。地面望远镜和光谱仪同样不占这块坐标。
+              </p>
+              {particle.length ? <Section title="粒子与信使" en="Particles & messengers" people={particle} onOpen={onOpen} /> : null}
+              {lab.length ? <Section title="实验室天体物理" en="Laboratory astrophysics" people={lab} onOpen={onOpen} /> : null}
+              {instrument.length ? <Section title="望远镜与仪器" en="Telescopes & instruments" people={instrument} onOpen={onOpen} /> : null}
+              {!particle.length && !lab.length && !instrument.length ? <p className="margin-lead">当前筛选下，没有人在尺度之外。</p> : null}
+            </>
+          )}
         </div>
       ) : (
         <button type="button" className="margin-tab" onClick={onToggle}>
