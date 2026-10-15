@@ -13,7 +13,7 @@
 - `editorial.json`：简介、照片、英文头衔。没有新证据的旧文字标成 legacy。
 - `papers.json`：代表作。旧条目的核验状态是 legacy。
 - `atlas-annotations.json`：尺度区域。没有已审核标注的人不会被画到图上。
-- `coverage/`：来源入口和逐人收录决定。
+- `coverage/`：来源入口和逐人收录决定。试点机构的账在 `pilot-ledger.json`，覆盖表在 `pilot-report.json`。
 - `mentors.json`：2026-10-14 的旧快照，留给迁移核对。改它不会改变网站。
 - `objects.json`：天体的对数坐标、类别、图像和许可。
 - `PLACEMENTS.md`：每个坐标为什么落在那里。

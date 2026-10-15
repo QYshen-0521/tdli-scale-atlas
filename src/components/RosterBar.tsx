@@ -1,7 +1,7 @@
 import { Link, useLocation, useSearchParams } from "react-router-dom";
 import { organizations } from "../content.ts";
 import { selectRoster, type RosterQuery } from "../roster.ts";
-import type { Mentor } from "../types.ts";
+import type { Mentor, Organization } from "../types.ts";
 import { rosterPath } from "../use-roster.tsx";
 
 const ROLES: { id: string; zh: string }[] = [
@@ -15,6 +15,11 @@ const ROLES: { id: string; zh: string }[] = [
   { id: "researcher", zh: "研究员" },
   { id: "associate_researcher", zh: "副研究员" },
   { id: "assistant_researcher", zh: "助理研究员" },
+  { id: "academician", zh: "院士" },
+  { id: "professor", zh: "教授" },
+  { id: "associate_professor", zh: "副教授" },
+  { id: "assistant_professor", zh: "助理教授" },
+  { id: "faculty", zh: "教师" },
 ];
 
 const POSTS: { id: RosterQuery["post"]; zh: string }[] = [
@@ -42,6 +47,44 @@ const ATLAS: { id: RosterQuery["atlas"]; zh: string }[] = [
   { id: "pending", zh: "待标注" },
 ];
 
+function ancestorIds(orgId: string, byId: Map<string, Organization>) {
+  const ids = new Set<string>();
+  let cursor = byId.get(orgId);
+  const guard = new Set<string>();
+  while (cursor && !guard.has(cursor.id)) {
+    guard.add(cursor.id);
+    ids.add(cursor.id);
+    cursor = cursor.parentId ? byId.get(cursor.parentId) : undefined;
+  }
+  return ids;
+}
+
+function orgChoices(orgs: Organization[], people: Mentor[]) {
+  const byId = new Map(orgs.map((org) => [org.id, org]));
+  const visible = new Set<string>();
+  for (const person of people) {
+    for (const affiliation of person.affiliations) {
+      for (const id of ancestorIds(affiliation.orgId, byId)) visible.add(id);
+    }
+  }
+  const byParent = new Map<string, Organization[]>();
+  for (const org of orgs) {
+    const list = byParent.get(org.parentId || "") || [];
+    list.push(org);
+    byParent.set(org.parentId || "", list);
+  }
+  const rows: { id: string; label: string }[] = [];
+  const walk = (parentId: string, depth: number) => {
+    for (const org of byParent.get(parentId) || []) {
+      if (!visible.has(org.id)) continue;
+      rows.push({ id: org.id, label: `${"　".repeat(depth)}${org.nameZh}` });
+      walk(org.id, depth + 1);
+    }
+  };
+  walk("", 0);
+  return rows;
+}
+
 export function RosterBar({
   people,
   query,
@@ -56,7 +99,15 @@ export function RosterBar({
   const location = useLocation();
   const [params] = useSearchParams();
   const result = selectRoster(people, organizations, query);
-  const divisions = organizations.filter((org) => org.type === "division");
+  const choices = orgChoices(organizations, people);
+  const choiceIds = new Set(choices.map((item) => item.id));
+  const countries: { id: string; zh: string }[] = [];
+  const seenCountries = new Set<string>();
+  for (const org of organizations) {
+    if (!choiceIds.has(org.id) || !org.country || seenCountries.has(org.country)) continue;
+    seenCountries.add(org.country);
+    countries.push({ id: org.country, zh: org.countryName });
+  }
   const onAtlas = location.pathname === "/";
   return (
     <div className="roster-bar">
@@ -81,12 +132,22 @@ export function RosterBar({
         />
       </label>
       <label>
+        <span className="sr">国家或地区</span>
+        <select value={query.country} onChange={(event) => onChange({ country: event.target.value })}>
+          <option value="">不限国家或地区</option>
+          {countries.map((item) => (
+            <option key={item.id} value={item.id}>
+              {item.zh}
+            </option>
+          ))}
+        </select>
+      </label>
+      <label>
         <span className="sr">机构</span>
         <select value={query.org} onChange={(event) => onChange({ org: event.target.value })}>
-          <option value="tdli">李政道研究所</option>
-          {divisions.map((org) => (
+          {choices.map((org) => (
             <option key={org.id} value={org.id}>
-              {org.nameZh}
+              {org.label}
             </option>
           ))}
           <option value="all">不限机构</option>

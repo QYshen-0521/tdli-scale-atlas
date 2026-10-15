@@ -1,7 +1,9 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { assessHealth, parseMemberHtml } from "./sync/parse.mjs";
+import { NAOC_DEPARTMENTS } from "./sync/adapters/naoc.mjs";
 import { applyChanges, compareSources, semanticChanges } from "./sync/compare.mjs";
+import { collectCambridge, collectNaoc, collectNju } from "./sync/extract-pilots.mjs";
+import { assessHealth, parseMemberHtml } from "./sync/parse.mjs";
 
 const SOURCES = [
   {
@@ -27,12 +29,40 @@ const SOURCES = [
   },
 ];
 
+const PILOTS = [
+  {
+    id: "pilot-nju-sass",
+    policy: "pilot",
+    division: "nju-sass",
+    orgIds: ["nju-sass"],
+    minCards: 30,
+    collect: collectNju,
+  },
+  {
+    id: "pilot-cam-ioa",
+    policy: "pilot",
+    division: "cam-ioa",
+    orgIds: ["cam-ioa"],
+    minCards: 15,
+    collect: (fetchHtml) => collectCambridge(fetchHtml, { enrich: true }),
+  },
+  {
+    id: "pilot-naoc",
+    policy: "pilot",
+    division: "naoc",
+    orgIds: Object.values(NAOC_DEPARTMENTS),
+    minCards: 80,
+    collect: (fetchHtml) => collectNaoc(fetchHtml, { enrich: true }),
+  },
+];
+
 function publishedFromRepo(root) {
   const people = JSON.parse(readFileSync(path.join(root, "data/people.json"), "utf8"));
   const affiliations = JSON.parse(readFileSync(path.join(root, "data/affiliations.json"), "utf8"));
   const evidence = JSON.parse(readFileSync(path.join(root, "data/evidence.json"), "utf8"));
   return people.map((person) => {
-    const affiliation = affiliations.find((item) => item.personId === person.id);
+    const personAffiliations = affiliations.filter((item) => item.personId === person.id);
+    const affiliation = personAffiliations[0];
     const directions = evidence.find((item) => item.personId === person.id && item.field === "directions");
     const retained = evidence.find((item) => item.personId === person.id && item.field === "directions-retained");
     return {
@@ -44,6 +74,9 @@ function publishedFromRepo(root) {
       retainedDirections: retained?.value || "",
       profileUrls: (person.profileUrls || []).join(" "),
       division: affiliation?.divisionLabel || "",
+      orgId: affiliation?.orgId || "",
+      orgIds: personAffiliations.map((item) => item.orgId),
+      titlesByOrg: Object.fromEntries(personAffiliations.map((item) => [item.orgId, item.rawTitle])),
       current: affiliation?.current ?? true,
     };
   });
@@ -61,6 +94,22 @@ async function fetchText(url) {
 export async function runFacultySync({ root, fetchHtml = fetchText, outDir }) {
   const published = publishedFromRepo(root);
   const sources = [];
+  for (const source of PILOTS) {
+    try {
+      const cards = await source.collect(fetchHtml);
+      const health = cards.length >= source.minCards
+        ? { ok: true, reason: "ok", count: cards.length }
+        : { ok: false, reason: "short-list", count: cards.length };
+      sources.push({ ...source, health, cards: health.ok ? cards : [], error: "" });
+    } catch (error) {
+      sources.push({
+        ...source,
+        health: { ok: false, reason: "fetch", count: 0 },
+        cards: [],
+        error: error instanceof Error ? error.message : String(error),
+      });
+    }
+  }
   for (const source of SOURCES) {
     try {
       const html = await fetchHtml(source.url, source);

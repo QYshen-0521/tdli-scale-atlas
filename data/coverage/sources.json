@@ -157,5 +157,41 @@
     "expectedMarkers": [],
     "minFaculty": 23,
     "notes": "简介、论文、色块、照片的原有内容。本轮不自动升为已核验。"
+  },
+  {
+    "id": "pilot-nju-sass",
+    "title": "南京大学天文与空间科学学院试点名录",
+    "url": "https://astronomy.nju.edu.cn/szll/szgk/zkyys/index.html",
+    "language": "zh",
+    "fetchedAt": "2026-10-15",
+    "expectedMarkers": [
+      "right-main"
+    ],
+    "minFaculty": 30,
+    "notes": "已打开院士、教授、副教授、助理教授、专职科研、博士后、实验技术七个官方职称页。纳入前四类里写有研究方向的人；博士后和实验技术排除；专职科研未写成教师或研究员系列的暂缓。这不是学院历史全体，也不是全球教师。 适配器 nju-rank-pages。纳入 55，排除 26，暂缓 8。"
+  },
+  {
+    "id": "pilot-cam-ioa",
+    "title": "剑桥大学天文研究所试点名录",
+    "url": "https://www.ast.cam.ac.uk/people/faculty",
+    "language": "en",
+    "fetchedAt": "2026-10-15",
+    "expectedMarkers": [
+      "views-field-title"
+    ],
+    "minFaculty": 15,
+    "notes": "只核验官方 Faculty 页，并打开每人的 Research 栏目。博士后、荣誉退休、专业服务人员不在这页上。Research Professors 另有页面，本轮不自动收录。 适配器 cambridge-faculty。纳入 16，排除 0，暂缓 5。"
+  },
+  {
+    "id": "pilot-naoc",
+    "title": "中国科学院国家天文台试点名录",
+    "url": "https://nao.cas.cn/nrc/zg/",
+    "language": "zh",
+    "fetchedAt": "2026-10-15",
+    "expectedMarkers": [
+      "yjy-name"
+    ],
+    "minFaculty": 80,
+    "notes": "只核验正高级专业技术人员名录。职称注释或个人页写明研究员、且个人页有研究方向原句的才纳入。正高级工程师和管理支撑部门排除。公开导航没有与此并列的副高级名录，副研究员及以下未覆盖。不含台属天文台的单独名录。 适配器 naoc-senior。纳入 75，排除 36，暂缓 37。"
   }
 ]

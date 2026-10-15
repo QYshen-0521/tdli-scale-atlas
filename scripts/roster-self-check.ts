@@ -6,6 +6,10 @@ const orgs: Organization[] = [
   { id: "tdli", nameZh: "李政道研究所", nameEn: "TDLI", aliases: ["李所"], type: "institute", parentId: "sjtu", url: "", country: "CN", countryName: "中国", locality: "上海", ror: "" },
   { id: "tdli-astro", nameZh: "天文与天体物理研究部", nameEn: "Astronomy", aliases: [], type: "division", parentId: "tdli", url: "", country: "CN", countryName: "中国", locality: "上海", ror: "" },
   { id: "harvard", nameZh: "哈佛大学", nameEn: "Harvard", aliases: [], type: "university", parentId: "", url: "", country: "US", countryName: "美国", locality: "Cambridge", ror: "" },
+  { id: "nju", nameZh: "南京大学", nameEn: "NJU", aliases: [], type: "university", parentId: "", url: "", country: "CN", countryName: "中国", locality: "南京", ror: "" },
+  { id: "nju-sass", nameZh: "天文与空间科学学院", nameEn: "SASS", aliases: [], type: "division", parentId: "nju", url: "", country: "CN", countryName: "中国", locality: "南京", ror: "" },
+  { id: "cam", nameZh: "剑桥大学", nameEn: "Cambridge", aliases: [], type: "university", parentId: "", url: "", country: "GB", countryName: "英国", locality: "Cambridge", ror: "" },
+  { id: "cam-ioa", nameZh: "天文研究所", nameEn: "IoA", aliases: [], type: "division", parentId: "cam", url: "", country: "GB", countryName: "英国", locality: "Cambridge", ror: "" },
 ];
 
 const people = [
@@ -59,6 +63,41 @@ const retired = selectRoster(people, orgs, { ...base, post: "retired" });
 expect("retired-view", retired.people[0]?.id, "retired-person");
 const search = selectRoster(people, orgs, { ...base, q: "联聘" });
 expect("alias-search", search.total, 1);
+
+const pilotPeople = [
+  ...people,
+  {
+    id: "nju-one",
+    nameZh: "陈",
+    nameEn: "Chen",
+    aliases: [],
+    interests: ["太阳"],
+    topicTags: ["astronomy"],
+    atlasStatus: "pending" as const,
+    placement: "pending" as const,
+    affiliations: [
+      { orgId: "nju-sass", role: "professor" as const, kind: "primary" as const, current: true, country: "CN", rawTitle: "教授" },
+    ],
+  },
+  {
+    id: "cam-one",
+    nameZh: "",
+    nameEn: "Wyn Evans",
+    aliases: [],
+    interests: ["银河"],
+    topicTags: ["astronomy"],
+    atlasStatus: "pending" as const,
+    placement: "pending" as const,
+    affiliations: [
+      { orgId: "cam-ioa", role: "professor" as const, kind: "primary" as const, current: true, country: "GB", rawTitle: "Professor" },
+    ],
+  },
+];
+expect("parent-shows-child", selectRoster(pilotPeople, orgs, { ...base, org: "nju" }).total, 1);
+expect("child-itself", selectRoster(pilotPeople, orgs, { ...base, org: "nju-sass" }).people[0]?.id, "nju-one");
+expect("default-stays-tdli", selectRoster(pilotPeople, orgs, base).people.some((person) => person.id === "nju-one"), false);
+expect("country-and-org", selectRoster(pilotPeople, orgs, { ...base, org: "cam", country: "CN" }).total, 0);
+expect("country-and-org-match", selectRoster(pilotPeople, orgs, { ...base, org: "cam", country: "GB" }).people[0]?.id, "cam-one");
 
 if (failures.length) {
   console.error(failures.join("\n"));

@@ -1,12 +1,20 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useAtlasState, useAvatarArrival } from "../atlas-state.tsx";
-import { mentors } from "../content.ts";
+import { mentors, organizations } from "../content.ts";
+import report from "../../data/coverage/pilot-report.json";
 import { directoryScrollKey, readDirectoryScroll, writeDirectoryScroll } from "../lib/directory-scroll.ts";
 import { supportsViewTransition, useOpenMentor } from "../lib/nav.ts";
 import { RosterBar } from "./RosterBar.tsx";
 import { countRoster, rosterPath, useRoster } from "../use-roster.tsx";
 import { MentorAvatar } from "./MentorAvatar.tsx";
 import { useLocation, useSearchParams } from "react-router-dom";
+
+function placeOf(mentor: (typeof mentors)[number]) {
+  const org = organizations.find((item) => item.id === mentor.orgId);
+  const parent = organizations.find((item) => item.id === org?.parentId);
+  if (org && parent) return `${parent.nameZh} · ${org.nameZh}`;
+  return mentor.divisionZh;
+}
 
 const KIND: Record<string, string> = {
   primary: "主聘",
@@ -61,13 +69,43 @@ export default function DirectoryPage() {
           </h1>
         </div>
         <p className="top-note">
-          默认显示李政道研究所现任人员
+          默认显示李政道研究所现任人员。试点机构在筛选里选择，不表示这些单位或全球已经收全。
           <span>
             <a href={rosterPath("/", params)}>回到尺度图</a>
           </span>
         </p>
       </header>
       <RosterBar people={mentors} query={query} onChange={update} onClear={clear} />
+      <details className="coverage-note">
+        <summary>试点机构覆盖</summary>
+        <p>{report.note} 展开上一级机构会带出下属单位。国家和机构要由同一条任职同时满足。</p>
+        <table className="coverage-table">
+          <thead>
+            <tr>
+              <th>机构</th>
+              <th>核验日</th>
+              <th>名录条目</th>
+              <th>纳入</th>
+              <th>排除</th>
+              <th>暂缓</th>
+              <th>口径</th>
+            </tr>
+          </thead>
+          <tbody>
+            {report.orgs.map((org) => (
+              <tr key={org.orgId}>
+                <td>{org.nameZh}</td>
+                <td>{org.fetchedAt}</td>
+                <td>{org.rosterCount}</td>
+                <td>{org.included}</td>
+                <td>{org.excluded}</td>
+                <td>{org.deferred}</td>
+                <td>{org.scope}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </details>
       <main className="directory-main">
         {result.people.length ? (
           <ul className="directory-list">
@@ -80,7 +118,7 @@ export default function DirectoryPage() {
                     {mentor.nameEn && mentor.nameEn !== mentor.nameZh ? <em>{mentor.nameEn}</em> : null}
                     <b>{mentor.titleZh}</b>
                     <small>
-                      {mentor.divisionZh}
+                      {placeOf(mentor)}
                       {mentor.appointmentKind !== "primary" ? ` · ${KIND[mentor.appointmentKind] || ""}` : ""}
                       {mentor.atlasStatus === "pending" ? " · 待标注" : ""}
                       {mentor.atlasStatus === "not_applicable" ? " · 无适用尺度" : ""}

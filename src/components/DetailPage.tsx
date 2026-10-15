@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useParams, useSearchParams } from "react-router-dom";
 import { useAtlasState, useAvatarArrival } from "../atlas-state.tsx";
-import { evidenceFor, mentorById, objectById } from "../content.ts";
+import { evidenceFor, mentorById, objectById, organizations } from "../content.ts";
 import { publicUrl } from "../lib/assets.ts";
 import { paperHref } from "../lib/format.ts";
 import { supportsViewTransition, useOpenMentor } from "../lib/nav.ts";
@@ -87,6 +87,19 @@ export default function DetailPage() {
               </h1>
               <p className="detail-title">{mentor.titleZh}</p>
               {mentor.titleEn ? <p className="detail-title en">{mentor.titleEn}</p> : null}
+              {mentor.affiliations.filter((item) => item.current).length > 1 ? (
+                <ul className="affiliation-list">
+                  {mentor.affiliations.filter((item) => item.current).map((item) => {
+                    const org = organizations.find((entry) => entry.id === item.orgId);
+                    return (
+                      <li key={`${item.orgId}-${item.rawTitle}`}>
+                        {org?.nameZh || item.orgId} · {item.rawTitle}
+                        {item.kind === "joint" ? " · 双聘" : item.kind === "adjunct" ? " · 兼职" : ""}
+                      </li>
+                    );
+                  })}
+                </ul>
+              ) : null}
               {mentor.appointmentKind !== "primary" ? (
                 <p className="fine">{mentor.appointmentKind === "joint" ? "双聘" : mentor.appointmentKind === "adjunct" ? "兼职" : "退休"}</p>
               ) : null}

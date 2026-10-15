@@ -16,11 +16,16 @@ export function applyReportToData(root, report) {
   const annotations = read(root, "data/atlas-annotations.json");
   const editorial = read(root, "data/editorial.json");
   const ledger = read(root, "data/coverage/ledger.json");
+  const pilotLedgerPath = "data/coverage/pilot-ledger.json";
+  const pilotLedger = read(root, pilotLedgerPath);
+  let pilotTouched = false;
   let touched = 0;
   for (const change of report.changes || []) {
     if (change.type === "absent" || change.type === "source-failed") continue;
     if (change.type === "update-title") {
-      const affiliation = affiliations.find((item) => item.personId === change.personId);
+      const affiliation = change.orgId
+        ? affiliations.find((item) => item.personId === change.personId && item.orgId === change.orgId)
+        : affiliations.find((item) => item.personId === change.personId);
       const claim = evidence.find((item) => item.personId === change.personId && item.field === "title");
       if (!affiliation) continue;
       affiliation.rawTitle = change.after;
@@ -44,10 +49,71 @@ export function applyReportToData(root, report) {
       const url = change.after.startsWith("http") ? change.after : `https://tdli.sjtu.edu.cn${change.after}`;
       if (!person.profileUrls.includes(url)) person.profileUrls.push(url);
       touched += 1;
+    } else if (change.type === "add-affiliation") {
+      if (!change.orgId || affiliations.some((item) => item.personId === change.personId && item.orgId === change.orgId)) continue;
+      affiliations.push({
+        id: `aff-${change.personId}-${change.orgId}`,
+        personId: change.personId,
+        orgId: change.orgId,
+        rawTitle: change.after || "",
+        role: "other",
+        kind: "primary",
+        current: change.current !== false,
+        startDate: "",
+        endDate: "",
+        divisionLabel: change.orgId,
+      });
+      const person = people.find((item) => item.id === change.personId);
+      const href = change.href?.startsWith("http") ? change.href : "";
+      if (person && href && !person.profileUrls.includes(href)) person.profileUrls.push(href);
+      if (change.preferDirections && change.directions) {
+        const claim = evidence.find((item) => item.personId === change.personId && item.field === "directions");
+        if (claim && claim.value !== change.directions) {
+          evidence.push({
+            id: `ev-${change.personId}-${change.orgId}-directions-retained`,
+            personId: change.personId,
+            field: "directions-retained",
+            value: claim.value,
+            sourceId: claim.sourceId,
+            locator: claim.locator,
+            excerpt: String(claim.value).slice(0, 420),
+            fetchedAt: report.checkedAt?.slice(0, 10) || "",
+            reviewedAt: "",
+            reviewer: "",
+            status: "verified",
+            note: "方向来源冲突。规范字段改用天文表述更明确的一份。",
+          });
+          claim.value = change.directions;
+          claim.note = "与另一任职来源冲突，采用天文相关表述更清楚的一份。";
+        }
+      }
+      pilotLedger.push({
+        candidateId: `sync:${change.orgId}:${change.personId}`,
+        personId: change.personId,
+        nameOriginal: change.name || person?.nameOriginal || "",
+        nameEn: "",
+        email: change.email || "",
+        division: change.orgId,
+        section: "",
+        rawTitle: change.after || "",
+        decision: "include",
+        current: true,
+        reason: "周更发现此人已在其他机构，合并为同一人的另一条任职。",
+        conflicts: [],
+        topicTags: [],
+        profileUrls: href ? [href] : [],
+        directoryUrls: href ? [href] : [],
+        aliasUrls: [],
+        supervisorTopic: "",
+        fetchedAt: report.checkedAt?.slice(0, 10) || "",
+        appearances: [],
+      });
+      pilotTouched = true;
+      touched += 1;
     } else if (change.type === "add") {
       const id = `p-${String(change.email || change.name).toLowerCase().replace(/[^a-z0-9]+/g, "").slice(0, 24)}`;
-      if (people.some((item) => item.id === id || item.email === change.email)) continue;
-      const orgId = change.division === "particle" ? "tdli-particle" : change.division === "condensed" ? "tdli-condensed" : "tdli-astro";
+      if (people.some((item) => item.id === id || (change.email && item.email === change.email))) continue;
+      const orgId = change.orgId || (change.division === "particle" ? "tdli-particle" : change.division === "condensed" ? "tdli-condensed" : "tdli-astro");
       const profileUrl = change.href?.startsWith("http") ? change.href : `https://tdli.sjtu.edu.cn${change.href || ""}`;
       people.push({
         id,
@@ -74,7 +140,7 @@ export function applyReportToData(root, report) {
         current: change.current !== false,
         startDate: "",
         endDate: "",
-        divisionLabel: change.division || "astro",
+        divisionLabel: change.orgId || change.division || "astro",
       });
       const stamp = report.checkedAt?.slice(0, 10) || "";
       for (const [field, value] of [["name", change.name], ["title", change.after], ["directions", change.directions || change.excerpt || ""], ["profileUrl", profileUrl]]) {
@@ -130,7 +196,7 @@ export function applyReportToData(root, report) {
         z: 0,
         contentStatus: "absent",
       });
-      ledger.push({
+      const ledgerRow = {
         candidateId: `sync:${change.email || id}`,
         personId: id,
         nameOriginal: change.name,
@@ -150,7 +216,13 @@ export function applyReportToData(root, report) {
         supervisorTopic: "",
         fetchedAt: stamp,
         appearances: [],
-      });
+      };
+      if (change.orgId && !String(change.orgId).startsWith("tdli")) {
+        pilotLedger.push(ledgerRow);
+        pilotTouched = true;
+      } else {
+        ledger.push(ledgerRow);
+      }
       touched += 1;
     }
   }
@@ -161,6 +233,7 @@ export function applyReportToData(root, report) {
   write(root, "data/atlas-annotations.json", annotations);
   write(root, "data/editorial.json", editorial);
   write(root, "data/coverage/ledger.json", ledger);
+  if (pilotTouched) write(root, pilotLedgerPath, pilotLedger);
   return { touched };
 }
 

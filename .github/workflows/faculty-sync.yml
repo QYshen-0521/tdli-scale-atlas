@@ -42,7 +42,7 @@ jobs:
           node --input-type=module <<'JS'
           import { readFileSync, writeFileSync } from "node:fs";
           const report = JSON.parse(readFileSync("proposals/runs/latest/report.json", "utf8"));
-          const meaningful = (report.changes || []).filter((change) => change.type !== "source-failed" && change.type !== "absent");
+          const meaningful = (report.changes || []).filter((change) => !["source-failed", "absent", "needs-profile", "direction-conflict"].includes(change.type));
           writeFileSync("proposals/runs/latest/meaningful", String(meaningful.length));
           JS
           count="$(cat proposals/runs/latest/meaningful)"

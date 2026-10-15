@@ -561,6 +561,16 @@ img { display: block; max-width: 100%; }
 }
 .view-switch a.is-on { border-color: var(--brass); color: var(--brass); }
 .roster-count { margin: 0; flex-basis: 100%; color: var(--muted); font-size: 13px; }
+.coverage-note { margin: 0 22px 8px; color: var(--muted); font-size: 13px; }
+.coverage-note summary { cursor: pointer; color: var(--ink); }
+.coverage-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.coverage-table th, .coverage-table td {
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+  padding: 6px 8px;
+}
+.affiliation-list { margin: 6px 0 0; padding-left: 1.1em; color: var(--muted); }
 .sr {
   position: absolute;
   width: 1px;
