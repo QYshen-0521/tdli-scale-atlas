@@ -1,6 +1,6 @@
 # 来源
 
-2026-10-15 的收录账和逐人证据在 `data/coverage/`。下面仍是 2026-10-14 写入的旧链接、论文和图像说明；新收录的人没有照片，也不在这张肖像表里。
+2026-10-15 的收录账和逐人证据在 `data/coverage/`。下面的论文和天体图像说明仍是 2026-10-14 写入的。肖像表在同一天补进了当时缺照片的人。
 
 访问日期：2026-10-14。当时已收录者的职务、研究方向、荣誉和代表性论文以李政道研究所官网个人主页为准。论文题名现在在 `data/papers.json`，旧快照仍在 `mentors.json`。
 
@@ -47,7 +47,7 @@
 
 ## 肖像
 
-圆形头像用的是李政道研究所官网个人页上公开的肖像，下载于 2026-10-14，放在 `public/assets/mentors/`。页面打不开照片时退回印章。这些照片的版权仍属拍摄机构或作者，本仓库只为在这张图上辨认导师而展示，并在下表标明来源页面。赖东的文件元数据写着 Cornell University Photography。张鹏杰所用文件在服务器上的文件名仍带「待替换」，但那就是官网当前显示的肖像。
+圆形头像用的是李政道研究所官网个人页上公开的肖像，放在 `public/assets/mentors/`。早先 23 张下载于 2026-10-14；2026-10-15 补了当时没有头像的人，仍取个人页肖像框里的那一张。页面打不开照片时退回印章。这些照片的版权仍属拍摄机构或作者，本仓库只为在这张图上辨认导师而展示，并在下表标明来源页面。赖东的文件元数据写着 Cornell University Photography。张鹏杰所用文件在服务器上的文件名仍带「待替换」，但那就是官网当前显示的肖像。
 
 | 导师 | 文件 | 来源页面 |
 | --- | --- | --- |
@@ -74,6 +74,34 @@
 | 张杰 | zhangjie.jpg | https://tdli.sjtu.edu.cn/people/40110/jie-zhang |
 | 吴益鹏 | wu.jpg | https://tdli.sjtu.edu.cn/people/40608/yipeng-wu |
 | 易龙卿 | yi.jpg | https://tdli.sjtu.edu.cn/people/40681/longqing-yi |
+| 艾稳元 | aiwy.jpg | https://tdli.sjtu.edu.cn/people/44830/ |
+| 陈一帆 | chenyf.jpg | https://tdli.sjtu.edu.cn/people/44260/yifan-chen |
+| 谌勋 | chenxun.jpg | https://tdli.sjtu.edu.cn/people/40695/chen-xun |
+| 崔祥仪 | cuixy.jpg | https://tdli.sjtu.edu.cn/people/40090/cui-xiangyi |
+| 葛绪雷 | gexulei.jpg | https://tdli.sjtu.edu.cn/people/40622/xulei-ge |
+| 顾一舟 | guyizhou.jpg | https://tdli.sjtu.edu.cn/people/40631/yizhou-gu |
+| 韩君 | hanjun.jpg | https://tdli.sjtu.edu.cn/people/40189/han-jun |
+| 何红建 | hehj.jpg | https://tdli.sjtu.edu.cn/people/40042/he-hongjian |
+| 黄天奇 | huangtq.jpg | https://tdli.sjtu.edu.cn/people/45605/h |
+| 黄小军 | huangxj.jpg | https://tdli.sjtu.edu.cn/people/40629/xiaojun-huang |
+| 姜海娇 | jianghj.jpg | https://tdli.sjtu.edu.cn/people/44366/ |
+| 李数 | lishu.jpg | https://tdli.sjtu.edu.cn/people/40051/li-shu |
+| 梅华林 | meihl.jpg | https://tdli.sjtu.edu.cn/people/40480/hualin-mei |
+| 钱列加 | qian.jpg | https://tdli.sjtu.edu.cn/people/40023/liejia-qian |
+| 曲慧麟 | quhl.jpg | https://tdli.sjtu.edu.cn/people/44940/ |
+| 盛政明 | sheng.jpg | https://tdli.sjtu.edu.cn/people/40024/zhengming-sheng |
+| 孙清辉 | sunqh.jpg | https://tdli.sjtu.edu.cn/people/40654/qinghui-sun |
+| 王舟 | wangzhou.jpg | https://tdli.sjtu.edu.cn/people/40623/wang-zhou |
+| 向昕 | xiangxin.jpg | https://tdli.sjtu.edu.cn/people/40458/xin-xiang |
+| 谢可平 | xiekp.jpg | https://tdli.sjtu.edu.cn/people/44934/ |
+| 许金祥 | khaw.jpg | https://tdli.sjtu.edu.cn/people/40050/kim-siang-khaw |
+| 杨楷 | yangkai.jpg | https://tdli.sjtu.edu.cn/people/45622/y |
+| 朱鹏飞 | zhupf.jpg | https://tdli.sjtu.edu.cn/people/40625/pengfei-zhu |
+| Frank Wilczek | wilczek.jpg | https://tdli.sjtu.edu.cn/people/40028/frank-wilczek |
+| Iwan Morton-Blake | blake.jpg | https://tdli.sjtu.edu.cn/people/40193/iwan-morton-blake |
+| Michael Ramsey-Musolf | ramsey.jpg | https://tdli.sjtu.edu.cn/people/40046/michael-ramsey-musolf |
+| Tsutomu Yanagida | yanagida.jpg | https://tdli.sjtu.edu.cn/people/40047/y |
+| Yuichiro Nakai | nakai.jpg | https://tdli.sjtu.edu.cn/people/40019/yuichiro-nakai |
 
 ## 图像
 

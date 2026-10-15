@@ -31,7 +31,10 @@ export function applyReportToData(root, report) {
       touched += 1;
     } else if (change.type === "update-directions") {
       const claim = evidence.find((item) => item.personId === change.personId && item.field === "directions");
+      const retained = evidence.find((item) => item.personId === change.personId && item.field === "directions-retained");
       if (!claim) continue;
+      const norm = (value) => String(value || "").replace(/\s+/g, "").replace(/[，,]/g, "、");
+      if (retained && norm(change.after) === norm(retained.value)) continue;
       claim.value = change.after;
       claim.status = "verified";
       touched += 1;

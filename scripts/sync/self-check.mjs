@@ -121,6 +121,39 @@ check("absence-apply-keeps", applyChanges(published, absent).some((person) => pe
 const added = run(`${card("甲", "jia@sjtu.edu.cn", "青年学者", "/people/100/jia", "星系形成")}<div class="department-title">研究员系列</div><a href="/people/9/ding" class="teacher-item"><div class="name">丁</div><div class="title">助理研究员</div><i class="iconfont icon-mail-o"></i>ding@sjtu.edu.cn<span data-directions="星系"></span></a>`);
 check("add-person", added.some((change) => change.type === "add" && change.email === "ding@sjtu.edu.cn"));
 
+const conflictPerson = {
+  id: "lishu",
+  name: "李",
+  email: "shu@sjtu.edu.cn",
+  title: "长聘学者",
+  directions: "中微子天文学",
+  retainedDirections: "暗物质直接探测",
+  profileUrls: "https://tdli.sjtu.edu.cn/people/51/li",
+  division: "particle",
+  current: true,
+};
+const conflictKept = compareSources({
+  sources: [{
+    id: "fixture",
+    division: "particle",
+    health: { ok: true, reason: "ok", count: 1 },
+    cards: parseMemberHtml(card("李", "shu@sjtu.edu.cn", "长聘学者", "/people/51/li", "暗物质直接探测"), "particle"),
+  }],
+  published: [conflictPerson],
+});
+check("conflict-quote-does-not-replace-canonical", !conflictKept.some((change) => change.type === "update-directions") && !conflictKept.some((change) => change.type === "absent"));
+
+const conflictNew = compareSources({
+  sources: [{
+    id: "fixture",
+    division: "particle",
+    health: { ok: true, reason: "ok", count: 1 },
+    cards: parseMemberHtml(card("李", "shu@sjtu.edu.cn", "长聘学者", "/people/51/li", "星系与暗物质"), "particle"),
+  }],
+  published: [conflictPerson],
+});
+check("new-direction-still-proposed", conflictNew.some((change) => change.type === "update-directions" && change.after === "星系与暗物质"));
+
 const snapshot = structuredClone(published);
 const rolled = applyChanges(snapshot, title);
 check("rollback", JSON.stringify(snapshot) === JSON.stringify(published) && rolled !== snapshot);

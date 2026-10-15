@@ -14,6 +14,7 @@ export function OffplanePanel({
 }) {
   const particle = people.filter((m) => m.panelGroup === "particle");
   const lab = people.filter((m) => m.panelGroup === "lab");
+  const instrument = people.filter((m) => m.panelGroup === "instrument");
   return (
     <aside className={`margin-col${open ? " is-open" : ""}`} aria-label="没有单一尺度–质量坐标的研究">
       <div className="margin-head">
@@ -26,11 +27,12 @@ export function OffplanePanel({
       {open ? (
         <div className="margin-scroll">
           <p className="margin-lead">
-            纵轴是天体或系统的质量，不是 GeV。中微子、暗物质粒子和宇宙线没有一个诚实的半径；实验室靶则比图的左缘还小。
+            纵轴是天体或系统的质量，不是 GeV。中微子、暗物质粒子和宇宙线没有一个诚实的半径；实验室靶则比图的左缘还小。地面望远镜和光谱仪同样不占这块坐标。
           </p>
           {particle.length ? <Section title="粒子与信使" en="Particles & messengers" people={particle} onOpen={onOpen} /> : null}
           {lab.length ? <Section title="实验室天体物理" en="Laboratory astrophysics" people={lab} onOpen={onOpen} /> : null}
-          {!particle.length && !lab.length ? <p className="margin-lead">当前筛选下，没有人在尺度之外。</p> : null}
+          {instrument.length ? <Section title="望远镜与仪器" en="Telescopes & instruments" people={instrument} onOpen={onOpen} /> : null}
+          {!particle.length && !lab.length && !instrument.length ? <p className="margin-lead">当前筛选下，没有人在尺度之外。</p> : null}
         </div>
       ) : (
         <button type="button" className="margin-tab" onClick={onToggle}>

@@ -1,11 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useAtlasState, useAvatarArrival } from "../atlas-state.tsx";
 import { mentors } from "../content.ts";
+import { directoryScrollKey, readDirectoryScroll, writeDirectoryScroll } from "../lib/directory-scroll.ts";
 import { supportsViewTransition, useOpenMentor } from "../lib/nav.ts";
 import { RosterBar } from "./RosterBar.tsx";
 import { countRoster, rosterPath, useRoster } from "../use-roster.tsx";
 import { MentorAvatar } from "./MentorAvatar.tsx";
-import { useSearchParams } from "react-router-dom";
+import { useLocation, useSearchParams } from "react-router-dom";
 
 const KIND: Record<string, string> = {
   primary: "主聘",
@@ -18,6 +19,21 @@ export default function DirectoryPage() {
   const openMentor = useOpenMentor();
   const { query, update, clear } = useRoster();
   const [params] = useSearchParams();
+  const location = useLocation();
+  const scrollerRef = useRef<HTMLDivElement>(null);
+  const scrollKey = directoryScrollKey(location.pathname, location.search);
+  useLayoutEffect(() => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    const saved = readDirectoryScroll(scrollKey);
+    if (saved > 0) el.scrollTop = saved;
+    const persist = () => writeDirectoryScroll(scrollKey, el.scrollTop);
+    el.addEventListener("scroll", persist, { passive: true });
+    return () => {
+      persist();
+      el.removeEventListener("scroll", persist);
+    };
+  }, [scrollKey]);
   const { flip } = useAtlasState();
   const [enter] = useState(() => flip?.dest === "directory" && !supportsViewTransition());
   useAvatarArrival(flip?.dest === "directory" ? flip.id : undefined, "directory");
@@ -35,7 +51,7 @@ export default function DirectoryPage() {
   }
 
   return (
-    <div className={`directory-page${enter ? " is-enter" : ""}`}>
+    <div ref={scrollerRef} className={`directory-page${enter ? " is-enter" : ""}`}>
       <header className="topbar directory-top">
         <div className="brand">
           <p className="eyebrow">李政道研究所 · Tsung-Dao Lee Institute</p>

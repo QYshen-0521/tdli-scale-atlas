@@ -71,17 +71,22 @@ export function compareSources({ sources, published }) {
         });
       }
       if (card.directions && normText(card.directions) !== normText(match.directions)) {
-        changes.push({
-          type: "update-directions",
-          sourceId: source.id,
-          personId: match.id,
-          name: card.name,
-          email: card.email,
-          before: match.directions,
-          after: card.directions,
-          href: card.href,
-          excerpt: card.directions,
-        });
+        const retained = normText(match.retainedDirections || "");
+        if (retained && normText(card.directions) === retained) {
+          // The member-page string is the quote already kept beside a clearer astronomy source.
+        } else {
+          changes.push({
+            type: "update-directions",
+            sourceId: source.id,
+            personId: match.id,
+            name: card.name,
+            email: card.email,
+            before: match.directions,
+            after: card.directions,
+            href: card.href,
+            excerpt: card.directions,
+          });
+        }
       }
       const nextNum = (card.href.match(/\/people\/(\d+)/) || [])[1];
       if (nextNum && !nums(match.profileUrls).includes(nextNum)) {

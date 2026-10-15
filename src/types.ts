@@ -120,7 +120,7 @@ export type AtlasAnnotation = {
   applicability: "chart" | "not_applicable" | "pending";
   coverage: Coverage;
   groups: Group[];
-  panelGroup?: "" | "particle" | "lab";
+  panelGroup?: "" | "particle" | "lab" | "instrument";
   regions: Region[];
   anchor: { logL: number; logM: number } | null;
   leader: { logL: number; logM: number } | null;
@@ -172,7 +172,7 @@ export type Mentor = {
   placement: "chart" | "offplane" | "pending";
   coverage: Coverage;
   groups: Group[];
-  panelGroup?: "particle" | "lab";
+  panelGroup?: "particle" | "lab" | "instrument";
   blurbZh: string;
   summaryZh: string[];
   summaryEn: string;
