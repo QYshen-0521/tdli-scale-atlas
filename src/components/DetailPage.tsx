@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useParams, useSearchParams } from "react-router-dom";
 import { useAtlasState, useAvatarArrival } from "../atlas-state.tsx";
-import { evidenceFor, mentorById, objectById, organizations } from "../content.ts";
+import { mentorById, objectById, organizations } from "../content.ts";
+import { detailFor } from "../detail-data.ts";
 import { publicUrl } from "../lib/assets.ts";
 import { paperHref } from "../lib/format.ts";
 import { supportsViewTransition, useOpenMentor } from "../lib/nav.ts";
@@ -66,6 +67,7 @@ export default function DetailPage() {
   const pictures = mentor.relatedObjects
     .map((oid) => objectById(oid))
     .filter((item): item is NonNullable<typeof item> => Boolean(item));
+  const facts = detailFor(mentor.id);
 
   return (
     <main className={`detail-page${enter ? " is-enter" : ""}`}>
@@ -137,7 +139,7 @@ export default function DetailPage() {
             <ul>
               {pictures.map((obj) => (
                 <li key={obj.id}>
-                  <img src={publicUrl(obj.image)} alt={`${obj.nameZh}，${obj.nameEn}`} />
+                  <img src={publicUrl(obj.image)} alt={`${obj.nameZh}，${obj.nameEn}`} decoding="async" loading="lazy" />
                   <span>
                     <strong>{obj.nameZh}</strong>
                     <small>{obj.nameEn}</small>
@@ -164,7 +166,7 @@ export default function DetailPage() {
 
         <section className="papers">
           <h2>代表性论文</h2>
-          {mentor.papers.length ? (
+          {facts.papers.length ? (
             <>
               <p className="fine">
                 {mentor.editorialStatus === "legacy"
@@ -172,7 +174,7 @@ export default function DetailPage() {
                   : "条目来自已核验的官方列表。"}
               </p>
               <ol>
-                {mentor.papers.map((paper) => (
+                {facts.papers.map((paper) => (
                   <li key={paper.title}>
                     <a href={paperHref(paper)} target="_blank" rel="noreferrer">
                       {paper.title}
@@ -208,23 +210,21 @@ export default function DetailPage() {
         <section className="sources">
           <h2>来源与核验</h2>
           <p className="fine">
-            身份、职称、研究方向和官方链接的核验日期是 {mentor.verifiedAt || "尚未填写"}。
+            身份、职称、研究方向和官方链接的核验日期是 {facts.verifiedAt || "尚未填写"}。
             抓到网页不等于完成核验。没有写出来的内容，只是这里还没有，不能据此推断没有招生、已经离任或没有成果。
           </p>
           {mentor.editorialStatus === "legacy" ? (
             <p className="fine">简介、荣誉、照片和尺度区域沿用仓库里更早的内容，本轮没有逐条升为已核验。</p>
           ) : null}
-          {mentor.conflicts.length ? (
+          {facts.conflicts.length ? (
             <ul className="direction-list">
-              {mentor.conflicts.map((item) => (
+              {facts.conflicts.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
           ) : null}
           <ul className="source-links">
-            {evidenceFor(mentor.id)
-              .filter((item) => item.status !== "legacy")
-              .map((item) => (
+            {facts.evidence.map((item) => (
                 <li key={item.id}>
                   <span>{fieldLabel(item.field)}</span>
                   {item.locator.startsWith("http") ? (

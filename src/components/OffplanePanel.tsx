@@ -70,7 +70,7 @@ function Section({
         {people.map((mentor) => (
           <li key={mentor.id}>
             <button type="button" onClick={() => onOpen(mentor.id)}>
-              <MentorAvatar mentor={mentor} size={40} />
+              <MentorAvatar mentor={mentor} size={40} thumb loading="lazy" />
               <span>
                 <strong>{mentor.nameZh}</strong>
                 <em>{mentor.nameEn}</em>

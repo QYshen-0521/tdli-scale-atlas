@@ -1,0 +1,762 @@
+{
+  "aiwy": [
+    "早期宇宙（一级相变，暗物质生成、原初黑洞形成、曲率扰动）",
+    "非平衡态量子场论",
+    "引力波相关物理",
+    "QCD中的强CP 问题",
+    "暗物质探测（发展中的兴趣）"
+  ],
+  "blake": [
+    "中微子实验：大规模 MeV 级中微子探测、探测器设计、高能中微子望远镜"
+  ],
+  "cam-anastasia-fialkov": [
+    "From dark ages to the present days including astrophysics and cosmology with the 21-cm line of neutral hydrogen, intensity mapping of other molecular and atomic lines, structure formation, nature of dark matter, transient phenomena such as Fast Radio Bursts, low frequency radio observations and instrumentation."
+  ],
+  "cam-anthony-challinor": [
+    "Physical and theoretical cosmology, particularly the origin, interpretation, and measurement of temperature anisotropies and polarization in the CMB."
+  ],
+  "cam-boryana-hadzhiyska": [
+    "I’m a cosmologist broadly interested in understanding how the Universe evolved from its initial conditions to the complex large-scale structures we observe today. My research sits at the intersection of cosmology, astrophysics, and data science, using both observations and simulations to map the distribution of matter -- dark and baryonic -- across cosmic time. Some of the topics I work on include the impact of baryonic feedback on structure formation, the galaxy-halo connection , and the forma…"
+  ],
+  "cam-christopher-tout": [
+    "Stellar Evolution of all types of star including rotation and magnetic fields in two and three dimensions, binary stars, population synthesis, magnetic dynamos in stars and accretion discs. Structure and evolution of exotic stars including Thorne-Zytkow objects, super-Chandrasekhar white dwarfs and products of stellar merging."
+  ],
+  "cam-debora-sijacki": [
+    "I am interested in the formation and evolution of cosmic structures from small mass galaxies at high redshifts to the most massive galaxy clusters of the present-day Universe. Structure formation is one of the most fascinating fields of astrophysics. Due to the non-linearity and large variety of physical phenomena occurring on a vast range of scales, it is very challenging to model theoretically, and the full complexity of these processes still needs to be unraveled. My primary research focus i…"
+  ],
+  "cam-hiranya-peiris": [
+    "My research aims to test fundamental physics using large cosmological datasets, including the cosmic microwave background (CMB) and galaxy surveys, using an interdisciplinary approach combining observations, theoretical physics, and advanced statistical and machine learning methods. I am increasingly engaged in the interface between cosmology and galaxy evolution, and in gravitational wave astrophysics. I also enjoy thinking about stellar dynamics and the structure of the Milky Way. More broadl…"
+  ],
+  "cam-ian-parry": [
+    "Development of unfolding space telescopes",
+    "TIR space telescopes for climate change mitigation",
+    "Searching for biosignatures in the spectra of exoplanets"
+  ],
+  "cam-kaisey-mandel": [
+    "Supernova cosmology",
+    "Gravitationally-lensed supernovae",
+    "Astrostatistics & astronomical machine learning",
+    "Time-domain & transient astronomy",
+    "Bayesian modelling & statistical computation",
+    "Simulation-based Inference",
+    "LSST:UK (UK participation in the Legacy Survey of Space and Time)",
+    "Time-Domain Extragalactic Survey (TiDES) with 4MOST",
+    "International CHASC Astro-Statistics Collaboration",
+    "MSCA-RISE ASTROSTAT-II Collaboration Network"
+  ],
+  "cam-mark-wyatt": [
+    "The aim of my research is to understand how planetary systems form and evolve. It involves both theoretical and observational studies of extrasolar planetary systems, as well as of our own solar system. The main strength of my research is in the development of models of the physical and dynamical evolution of circumstellar material and their application to the interpretation of circumstellar disk observations. Past highlights of my work include linking clumps seen Vega’s dust disk to resonant t…"
+  ],
+  "cam-martin-haehnelt": [
+    "Formation of galaxies and their central supermassive black holes",
+    "Intergalactic medium and QSO absorption lines",
+    "Reionization",
+    "Large Scale Structure",
+    "Observational Cosmology",
+    "PI of the ERC Advanced Grant \"The Emergence of Structure during the Epoch of Reionization\"",
+    "Project Scientist for the phase A study of the ultra-stable high-resolution spectrograph CODEX for the E-ELT",
+    "Member of the Science Team and the Board for ELT/ANDES ANDES (formerly HIRES)",
+    "Coordinator of the former EC Research and training…"
+  ],
+  "cam-nikku-madhusudhan": [
+    "Research Interests: Exoplanets, Atmospheres, Interiors, Formation mechanisms, Habitability, Biosignatures, Hycean worlds Hycean Worlds research group Professor of Astrophysics and Exoplanetary Science Institute of Astronomy, University of Cambridge Madingley Road, Cambridge CB3 0HA, UK Education: PhD (MIT, USA, 2009), MS (MIT, USA, 2004), B. Tech (IIT-BHU, India, 2002) Employment: Oct 2021 - present : Professor of Astrophysics and Exoplanetary Science (University of Cambridge, UK) Oct 2017 - Se…"
+  ],
+  "cam-oliver-shorttle": [
+    "What archives of extra solar chemistry can we access that constrain planetary formation, structure, and evolution?",
+    "How important is volcanism on rocky extrasolar planets?",
+    "Can we observe volatile cycling on lava ocean planets?",
+    "How does melting and melt transport influence basalt chemistry?",
+    "What is the volatile element signature of recycled seafloor?",
+    "How important is hydrothermal circulation in transferring bioessential elements from the solid Earth to the oceans?",
+    "What does a mafic-dominated carb…"
+  ],
+  "cam-richard-g-mcmahon": [
+    "i-act_manager_badge.jpg https://www.i-act.co.uk/ News story on Dawn our new supercomputer for AI, Machine Learning, Data analytics and Simulations Dawn website Institute of Physics Juno Equality Diversity and Inclusion: My Head of Department Supporting Letter for our 2021 Juno Application My Head of Department Supporting Letter for our 2021 Juno Application The main focus"
+  ],
+  "cam-vasily-belokurov": [
+    "Dark Matter?",
+    "Galaxy formation and evolution",
+    "Galactic archaeology",
+    "Galactic structure and sub-structure",
+    "Dwarf galaxies",
+    "Accretion history of the Milky Way",
+    "Tidal streams",
+    "Gravitational lensing",
+    "Gravitational microlensing",
+    "Surveys like Gaia, APOGEE, GALAH, SDSS, OGLE, RAVE, LSST",
+    "Transients and variable stars",
+    "Machine learning techniques"
+  ],
+  "cam-will-handley": [
+    "I am a cosmologist and statistician working at the interface of theory, observation, and inference. My research aims to understand the properties of the Universe, from its earliest moments to its ultimate fate , by combining cutting-edge data analysis techniques with astrophysical observations. My group and I develop novel Bayesian machine learning algorithms, particularly focusing on nested sampling and its synergy with Simulation Based Inference. These powerful tools allow us to extract infor…"
+  ],
+  "cam-wyn-evans": [
+    "Galactic structure and dynamics. The bar, disk and halo of the Milky Way galaxy. The M31 galaxy and the Local Group. The dark matter problem and astroparticle physics. Extremely dark matter dominated objects such as the dwarf spheroidal and dwarf irregular galaxies of the Local Group. Survey science, the Sloan Digital sky survey, the GAIA satellite, transient astronomy, science alerts. Theoretical galaxy models, self-consistent solutions of the Boltzmann equation. Galactic stability and spiral…"
+  ],
+  "chenxun": [
+    "暗物质直接探测",
+    "中微子探测",
+    "粒子物理实验数据处理",
+    "蒙特卡洛模拟",
+    "机器学习在粒子物理中的应用"
+  ],
+  "chenyf": [
+    "粒子物理",
+    "黑洞和引力波",
+    "量子精密测量"
+  ],
+  "cuixy": [
+    "暗物质直接探测",
+    "液氙制冷与纯化",
+    "精馏方法去除杂质与本底控制",
+    "加速暗物质研究"
+  ],
+  "darius": [
+    "行星/系外行星内部",
+    "行星/系外行星的大气层",
+    "行星/系外行星的形成"
+  ],
+  "feng": [
+    "系外行星",
+    "贝叶斯统计",
+    "天体动力学",
+    "时序分析",
+    "奥托云",
+    "双星",
+    "星系动力学",
+    "行星可居性"
+  ],
+  "ge": [
+    "暗物质和中微子相关的粒子物理、天体物理和宇宙学理论和唯象研究"
+  ],
+  "gexulei": [
+    "超强飞秒激光技术",
+    "激光等离子体物理"
+  ],
+  "guyizhou": [
+    "星系形成与演化",
+    "大尺度结构"
+  ],
+  "hanjun": [
+    "致密物质",
+    "中子星",
+    "核天体物理",
+    "多信使天文学"
+  ],
+  "he": [
+    "电弱和强相互作用",
+    "超越标准模型的新物理特性",
+    "粒子天体物理学",
+    "量子力学中的拓扑阶段"
+  ],
+  "hehj": [
+    "中微子物理和费米子质量",
+    "希格斯物理和暗物质",
+    "引力、暗物质、暗能量和暴胀"
+  ],
+  "huangtq": [
+    "南海中微子望远镜计划助理研究员"
+  ],
+  "huangxj": [
+    "超短超强激光技术研究和相关大型激光装置的设计及研制工作"
+  ],
+  "jianghj": [
+    "天文光谱仪的设计与研制",
+    "光谱探测新技术与新方法",
+    "天文望远镜的设计与研制"
+  ],
+  "jing": [
+    "星系形成和演化",
+    "天文学数值模拟",
+    "宇宙学和宇宙大尺度结构",
+    "星系动力学和银河系"
+  ],
+  "khaw": [
+    "超越标准模型物理",
+    "精确测量缪子物理",
+    "反常磁矩和电偶极矩",
+    "暗物质和暗光子",
+    "缪子冷却和缪子偶素生成"
+  ],
+  "lai": [
+    "地外行星：动力学、原行星盘、恒星-行星相互作用",
+    "致密物体：中子星、黑洞、白矮星、引力波、中微子等",
+    "天体物理动力学：天体力学、波、振动、不稳定性"
+  ],
+  "lishu": [
+    "希格斯新物理、暗物质探测、高能对撞机实验"
+  ],
+  "liu": [
+    "暗物质实验",
+    "中微子实验"
+  ],
+  "meihl": [
+    "中微子天文学",
+    "实验中微子物理物理学",
+    "超出标准模型新物理寻找"
+  ],
+  "mizuno": [
+    "相对论性致密物体（如黑洞、中子星）的吸积和射流",
+    "相对论等离子体中的磁活动（如耗散、重连、不稳定性、湍流）",
+    "引力理论（如黑洞阴影）"
+  ],
+  "nakai": [
+    "超越标准模型的物理学",
+    "粒子宇宙学",
+    "量子场论",
+    "超对称",
+    "机器学习的应用"
+  ],
+  "naoc-6506002": [
+    "研究方向包括银河系星团和潮汐星流、近邻星系、星系形成及演化和星系团等。"
+  ],
+  "naoc-6984942": [
+    "主要从事恒星物理、宇宙高精度测距、银河系结构等方面的研究。"
+  ],
+  "naoc-6985172": [
+    "主要从事恒星光谱分析和银河系化学演化方面的研究。"
+  ],
+  "naoc-6985443": [
+    "射电与雷达天文学、空间大地测量与天文地球动力学、天体测量与天体力学、月球与行星科学"
+  ],
+  "naoc-6985451": [
+    "主要从事致密天体吸积理论，X-射线双星，活动星系核，以及黑洞潮汐瓦解事件等方面的研究。"
+  ],
+  "naoc-6985550": [
+    "主要从事太阳系外行星和生命探寻等领域的研究。"
+  ],
+  "naoc-6985606": [
+    "宇宙学，宇宙黎明与氢的再电离，超长波天文学"
+  ],
+  "naoc-6985609": [
+    "主要从事银河系结构形成和演化方面的研究。"
+  ],
+  "naoc-6985654": [
+    "主要从事银河系考古方面的研究，立足我国LAMOST巡天及后续观测，围绕第一代恒星及银河系早期演化取得了创新性成果。"
+  ],
+  "naoc-6985667": [
+    "主要从事大规模巡天数据分析及恒星物理、银河系结构与演化等近场宇宙学方面的研究。"
+  ],
+  "naoc-6985669": [
+    "主要从事黑洞吸积与外流方面的研究。"
+  ],
+  "naoc-6985671": [
+    "主要从事恒星光谱学、元素丰度和银河系化学演化方面的研究。"
+  ],
+  "naoc-6985740": [
+    "引力波基础理论和数据分析、暗物质理论、中微子理论"
+  ],
+  "naoc-6985754": [
+    "主要从事引力理论和宇宙学方面的研究，包括引力波和黑洞物理、早期宇宙和暗物质暗能量等。"
+  ],
+  "naoc-6985866": [
+    "研究领域为宇宙学、大尺度结构、星系巡天、中微子及引力透镜等。"
+  ],
+  "naoc-6985889": [
+    "主要从事太阳物理方面的研究。"
+  ],
+  "naoc-6985926": [
+    "主要从事星系形成与演化方面的研究。"
+  ],
+  "naoc-6985928": [
+    "研究方向是电子工程与天文学相结合的交叉领域，围绕天文仪器设备研制展开，服务射电及光学望远镜的建设/升级。"
+  ],
+  "naoc-6985938": [
+    "主要从事恒星晚期演化，特别是行星状星云相关的天体物理学方面的研究。"
+  ],
+  "naoc-6985945": [
+    "研究领域为星系形成与演化的多波段观测研究、光学红外天文图像处理方法，并在超大质量星系的结构演化、星系团的搜寻与证认、高红移星系结构性质方面均做出了系列性研究工作，其中关于“高红移恒星形成星系结构性质”的一系列研究成果，被《天文学和天体物理学年鉴》（ARA&A）重点引述。"
+  ],
+  "naoc-6985947": [
+    "主要从事太阳系外行星搜寻方面的研究。"
+  ],
+  "naoc-6985961": [
+    "主要从事LAMOST、LOT、QTT等大型天文望远镜的主动光学/主动反射面技术等方面的研究。"
+  ],
+  "naoc-6985987": [
+    "主要从事银河系结构与化学演化、白矮星以及天文数据处理、机器学习方面的研究。"
+  ],
+  "naoc-6985990": [
+    "研究领域为致密天体和恒星的多波段观测研究。"
+  ],
+  "naoc-6985997": [
+    "研究方向：天文信息学、天文统计学、多波段天文学、类星体和活动星系核。"
+  ],
+  "naoc-6986001": [
+    "主要从事天文数据处理、海量光谱分析和数据挖掘等工作。"
+  ],
+  "naoc-6986004": [
+    "主要从事近邻星系的光学红外性质、红外类星体等多方面的研究。"
+  ],
+  "naoc-6986006": [
+    "主要从事双星活动演化及星震方面的研究，总计发表研究论文120余篇。"
+  ],
+  "naoc-6986018": [
+    "主要从事银河系的形成和演化、恒星元素确定、实验室天体物理等方面的研究。"
+  ],
+  "naoc-6986023": [
+    "主要从事天体物理和天文数据分析等方面的研究。"
+  ],
+  "naoc-6986047": [
+    "主要从事高能天体物理方面的研究，包括活动星系核、星际尘埃、X射线双星、X射线暂现源等。"
+  ],
+  "naoc-6986053": [
+    "主要从事星系宇宙学及机器学习在天体物理中的应用方面的研究。"
+  ],
+  "naoc-6986058": [
+    "研究方向为活动星系核和高能天体物理。"
+  ],
+  "naoc-6986066": [
+    "主要从事暗能量和暗物质理论模型、宇宙大尺度结构、发射线强度映射巡天、宇宙红外背景等方面的研究。"
+  ],
+  "naoc-6986083": [
+    "主要从事超新星和伽马射线暴、空间天文探测、天体辐射转移等方面的研究。"
+  ],
+  "naoc-6986085": [
+    "主要从事银河系结构、星族演化和恒星物理等方面的观测研究。"
+  ],
+  "naoc-6986086": [
+    "主要从事超导薄膜生长，超导转变边传感器研制，超导微量能器研制和X射线高分辨率光谱等",
+    "光电转换材料、电子轰击增益机理、紫外增强成像阵列等技术研究和应用。"
+  ],
+  "naoc-6986087": [
+    "主要从事光学稳像和光学综合孔径技术方面的研究。"
+  ],
+  "naoc-6986127": [
+    "主要从事大射电望远镜馈源支撑系统研究、索并联机器人研究等，发表SCI/EI收录论文40余篇，授权发明专利16项，出版并联机器人学术专著1本，参编英文专著1本。"
+  ],
+  "naoc-6986163": [
+    "主要从事天体物理及空间科学方面的研究。"
+  ],
+  "naoc-6986164": [
+    "银河系结构、脉冲星、星系团、其他"
+  ],
+  "naoc-6986165": [
+    "主要从事太阳物理方面的研究。"
+  ],
+  "naoc-6986175": [
+    "主要从事星系宇宙学相关研究：利用数值模拟的方法研究暗晕的形成和演化，星系的形成演化以及与暗晕的关联",
+    "利用FAST对HI观测研究其在宇宙中的分布以及在星系形成中的作用",
+    "利用深度学习等方法探索利用星系巡天数据对理论模型的限制等。"
+  ],
+  "naoc-6986176": [
+    "研究方向为依托大尺度星系巡天的暗能量性质等宇宙学前沿问题。"
+  ],
+  "naoc-6986208": [
+    "主要从事太阳物理方面的研究。"
+  ],
+  "naoc-6986213": [
+    "主要从事太阳磁场结构和演化、太阳爆发活动、太阳低层大气活动现象等方面的研究。"
+  ],
+  "naoc-6986252": [
+    "主要从事太阳活动区物理方面的研究。"
+  ],
+  "naoc-6986260": [
+    "星系演化与黑洞吸积"
+  ],
+  "naoc-6986261": [
+    "主要从事宇宙学以及几何代数和引力理论方面的研究。"
+  ],
+  "naoc-6986266": [
+    "天文信息学、虚拟天文台、天文大数据"
+  ],
+  "naoc-6986268": [
+    "主要从事太阳物理研究和天文仪器研制工作，个人及团队发展目标：“做最前沿的科学研究，发展最先进的观测设备，为国家需求服务”。"
+  ],
+  "naoc-6986269": [
+    "主要从事引力论理论和宇宙学方面的研究。"
+  ],
+  "naoc-6986272": [
+    "恒星物理，科学工程管理"
+  ],
+  "naoc-6986273": [
+    "天体物理，射电天文技术与方法"
+  ],
+  "naoc-6986278": [
+    "主要从事恒星与星团形成及早期演化、天文应用等方面的研究。"
+  ],
+  "naoc-6986280": [
+    "主要从事太阳磁场测量、原子结构计算、等离子体光谱诊断等方面的研究。"
+  ],
+  "naoc-6986297": [
+    "理论天体物理，包括黑洞物理，引力波天体物理，活动星系核和类星体，星系宇宙学等"
+  ],
+  "naoc-6986299": [
+    "主要从事应用天文学等方面的研究。"
+  ],
+  "naoc-6986303": [
+    "射电巡天、瞬变天体、大射电望远镜SKA与FAST等"
+  ],
+  "naoc-6986304": [
+    "主要从事暗物质、宇宙学、星系团、理论天体物理等方面研究。"
+  ],
+  "naoc-6986306": [
+    "主要从事南极天文和多波段类星体方面的研究。"
+  ],
+  "naoc-6986308": [
+    "射电天文技术与方法, 月球和行星微波探测,卫星通信,雷达天文学"
+  ],
+  "naoc-6986311": [
+    "研究方向包括太阳射电天文学、日冕加热机制、天体等离子体中的粒子加速及相应的辐射过程等。"
+  ],
+  "naoc-6986313": [
+    "中性氢天文学，星际介质，超新星遗迹， 高能宇宙线，活动星系核，射电天文（技术）"
+  ],
+  "naoc-6986317": [
+    "主要从事宇宙大尺度结构、星系动力学、星系形成与演化等方面的研究。"
+  ],
+  "naoc-6986331": [
+    "主要从事射电天文学方面的研究，包括致密射电源的高分辨率观测与研究、射电望远镜电磁兼容与干扰消减技术等。"
+  ],
+  "naoc-6986337": [
+    "主要从事脉动变星及太阳系外行星的观测研究。"
+  ],
+  "naoc-6986339": [
+    "主要从事大尺度中性氢星系巡天，星系中的恒星形成，星际介质和星系演化的多波段观测方面的研究。"
+  ],
+  "naoc-6986343": [
+    "研究方向为月球与行星数据科学，主要利用机器学习和人工智能技术进行数据分析与挖掘。"
+  ],
+  "naoc-6986467": [
+    "主要从事脉冲星和快速射电暴（FRBs）等暂现源射电天文观测研究。"
+  ],
+  "naoc-6986468": [
+    "星系巡天数据分析及宇宙学应用"
+  ],
+  "naoc-6986472": [
+    "主要从事恒星光谱和元素丰度方面的研究。"
+  ],
+  "naoc-6986473": [
+    "低表面亮度星系的形成和演化"
+  ],
+  "naoc-7608144": [
+    "南极天文，天文选址，望远镜阵系统"
+  ],
+  "naoc-8199886": [
+    "宇宙大尺度结构形成与数值模拟"
+  ],
+  "nju-i11499": [
+    "为天体力学和非线性动力学，迄今已在国内外重要刊物"
+  ],
+  "nju-i11500": [
+    "为太阳物理。主持设计和研制了我国第一座太阳塔，创建了太阳塔实验室。主持国家级各类项目和课题以及国际合作项目20余项，先后在国内外学术期刊上"
+  ],
+  "nju-i11501": [
+    "为“大望远镜”。 在望远镜光学的研究中，提出了多项新的思想和光学系统。提出一系列新的折轴系统和透棱镜改正器。和王亚男共同建立了一个特殊的光学系统优化程序。领导研制成中国第一个Lyot双折射滤光器。 提出了应用主动光学产生按传统概念不能实现的面形变化的光学系统的思想, 领导研制成中国第一个主动光学实验系统。和王绶琯共同提出了大天区面积多目标光纤光谱望远镜(LAMOST)的初步方案，作为国家大科学工程之一, 现已研制成功。"
+  ],
+  "nju-i11502": [
+    "长期在天体物理领域内从事教学与研究工作，主要研究伽码射线源、脉冲星和中子星、超新星遗迹等，是我国高能天体物理研究的先驱者之一，为高能天体物理学在我国的发展作出了重要贡献。1992年担任攀登计划项目《天体激烈活动的多波段观测与研究》首席科学家。著有《普通天文教程》,《恒星大气物理》等著作，并在国内外期刊上发表学术论文70余篇。参与的科研项目“高能天体的研究”获1985年国家教委科技进步奖二等奖，“超新星遗迹和中子星的研究”获1987年国家自然科学三等奖，“超新星爆发的产物及其前身星的研究”获1998年教育部科技进步一等奖和1999年国家自然科学三等奖。《恒星大气物理》获1995年普通高等学校优秀教材一等奖和1997年国家级教学成果奖二等奖。"
+  ],
+  "nju-i137103": [
+    "太阳活动现象的探测和观测研究，人工智能与天文的交叉研究。"
+  ],
+  "nju-i13818": [
+    "包括中子星、伽玛射线暴、快速射电暴、超亮超新星、宇宙学等。他和合作者共发表SCI论文234篇（截至2019年10月），包括Science 2篇、Nature Physics等子刊4篇、Physical Review Letters 3篇，其余绝大数论文均发表在国际天文一流核心刊物上。共被引用8300余篇次（ADS检索），连续五年入选ESI（或IOP）高被引作者榜单。代表性成果包括：（1）在伽玛暴方向上提出了研究其起源和中心引擎的新途径，即从星风介质揭示长伽玛暴起源于大质量恒星塌缩，预言了余辉光变曲线平台并揭示伽玛暴的中心引擎是强磁场毫秒脉冲星，在Science杂志发表的论文提出短伽玛暴的晚期X射线耀发产生于双中子星并合后的毫秒脉冲星"
+  ],
+  "nju-i13819": [
+    "主要从事太阳活动的多波段光谱观测、太阳活动的物理机制、太阳大气的辐射动力学、空间天气学等领域研究。承担国家杰出青年科学基金、国家自然科学基金创新研究群体项目、国家973计划项目课题、国家自然科学基金重点项目、国家自然科学基金面上项目、天文联合基金重点项目、海外及港澳学者合作研究基金等科研项目10多项。已发表SCI论文160多篇。科研成果获1995年度教育部科技进步一等奖（排名第二）、1997年度国家自然科学三等奖（排名第三）、2004年度教育部自然科学一等奖（排名第一）。1999年获教育部首届“青年教师奖”，2003年获江苏青年五四奖章，2010年获得国务院政府特殊津贴。"
+  ],
+  "nju-i13820": [
+    "研究领域为高能天体物理，研究对象包括黑洞、中子星、超新星、Ｘ射线双星等。"
+  ],
+  "nju-i13821": [
+    "主要从事天体物理专业太阳物理领域的研究，包括太阳耀斑、日冕物质抛射、暗条等活动现象。研究手段以磁流体力学数值模拟为主，部分从事观测资料处理工作。"
+  ],
+  "nju-i13822": [
+    "外行星系统探测、形成与动力学。 主持国家重点研发项目、国家自然基金重点项目等。共"
+  ],
+  "nju-i13823": [
+    "为高能星际物理。着重于超新星遗迹及其它气体爆炸性运动，以及从恒星到星系层次这类物理作用伴随的星（系）际激波和高温高能气体从射电到X、g射线多波段的辐射特性。"
+  ],
+  "nju-i13824": [
+    "主要从事高能天体物理尤其是宇宙伽玛射线暴、中子星、脉冲星、快速射电暴等的研究。到2018年10月，已发表SCI论文107篇，研究论文已被国内外同行他引逾1300篇次。2006年获得国家杰出青年科学基金资助，还曾主持过全国优秀博士学位论文作者专项基金和自然科学基金青年项目、面上项目等，2009-2013曾担任973项目课题组长。截止2018年10月，已指导博士毕业5人，指导硕士毕业十余人。"
+  ],
+  "nju-i13825": [
+    "主要从事高能宇宙线、高能中微子、伽玛射线暴等天体物理问题的研究。发表SCI论文 100 多篇（包含PRL 1 篇， Science 1 篇， Nature 1 篇），论文引用3000多 次。主要学术成果包括：（1）提出了极高能宇宙线起源的一种新模型--巨超新星遗迹模型， 解释了从第二个膝区往上全部宇宙线的起源， 并用此模型解释了 IceCube 高能中微子的起源",
+    "用巨超新星遗迹解释高能中微子的工作于 2016 年入选 ThomsonReuter 公司基本科学指标数据库（简称 ESI） 前 1％高被引论文。（2）通过分析费米卫星巡天数据，发现了数个星系的伽玛射线辐射，并发现第一个有伽玛辐射的超亮红外星系，将星系的红外-伽玛辐射的相关性延展至更高的光度范围 。 此工作被美国天文学会以“研究亮点\"予以报道。此发现被…"
+  ],
+  "nju-i13826": [
+    "星系形成和演化，超大质量黑洞增长"
+  ],
+  "nju-i13827": [
+    "(1) 近邻星系的冷气体和恒星形成",
+    "(2) 恒星形成的物理规律",
+    "(3) 近邻星系中心超大黑洞活动与反馈",
+    "(4) 星系核活动与星暴的关联"
+  ],
+  "nju-i13829": [
+    "为太阳系天体动力学、行星系统动力学、非线性天体力学。近年主要研究兴趣在行星特洛伊天体和海王星外天体动力学、雅科夫斯基效应等非引力效应。"
+  ],
+  "nju-i13830": [
+    "天体测量方法、天文参考系和银河系天文学。发表SCI论文20多篇。"
+  ],
+  "nju-i13831": [
+    "主要从事高能时域天文和宇宙学研究，包括伽玛射线暴、快速射电暴、引力波电磁对应体及以暂现源（伽玛射线暴、快速射电暴等）为工具研究宇宙学（加速膨胀和暗能量等）。发表SCI论文100余篇（包括Nature 3篇，第一作者和通讯作者的Nature子刊3篇），ESI高被引论文9篇，受邀撰写综述3篇，引用5000余次，归一化引用1000余次，连续四年（2020-2023年）入选爱思唯尔中国高被引学者。"
+  ],
+  "nju-i13833": [
+    "主要从事活动星系核（AGN）及星系演化的研究，以光学光谱数据的分析见长，数据分析和理论研究相结合。课题涉及黑洞的增长和演化、星系的恒星形成历史、恒星形成和黑洞活动的相互影响，以及它们在星系演化过程中的作用等领域。"
+  ],
+  "nju-i13836": [
+    "活动星系核， X射线天文学 。"
+  ],
+  "nju-i13839": [
+    "通过理论、观测和模拟等多种手段，研究太阳活动中的流体或磁流体力学过程，包括宁静冕环的流体力学建模、耀斑环的热力学演化、日冕大尺度波动的传播过程等。"
+  ],
+  "nju-i13841": [
+    "天体物理和空间科学：太阳物理"
+  ],
+  "nju-i13843": [
+    "Project 1: Chinese H α Solar Explorer (CHASE)"
+  ],
+  "nju-i13845": [
+    "太阳系第9行星，银河系流浪行星，机器学习在天体力学中的应用，太阳系小天体动力学，行星系统动力学，非线性天体力学"
+  ],
+  "nju-i13850": [
+    "长期研究领域包括但不限于"
+  ],
+  "nju-i13857": [
+    "是太阳系外行星（Exoplanet）。系外行星的概念可以追溯到400多年前的哥白尼和布鲁诺时代。1995年人类第一次在类似太阳的恒星周围发现了太阳系外行星，揭开了系外行星的研究序幕。发现者，米歇尔*梅耶和迪迪埃*奎罗兹获得了2019年诺贝尔物理学奖。 系外行星研究要回答一个终极问题“人类在宇宙中是否是孤独的”。翻译成科学问题是： （1）地球（太阳系）在宇宙中是特殊的么？ （2）行星（系统）是如何形成和演化的？ 到目前为止，发现的系外行星数目已经超过5000。可以说系外行星大普查的时代已经来临。我们终于有机会通过大样本普查统计来认真回答刚提到的这些基本问题了。 将LAMOST、Kepler Gaia三大天文基本观测数据结合起来，可以让"
+  ],
+  "nju-i13861": [
+    "疏散星团中年轻行星系统研究，星团环境对行星系统的形成和系统构型的影响"
+  ],
+  "nju-i13862": [
+    "个人简历 Curriculum Vitae"
+  ],
+  "nju-i13864": [
+    "1、 摄动理论及应用 研究内容：摄动函数展开、哈密顿动力学、共振动力学、ZLK机制、潮汐效应、长期演化、恒星和行星倾斜角起源与演化。 2、 航天器轨道力学 研究内容：平动点动力学、空间流形动力学、低能探测轨道、小推力轨道优化、地月及行星际空间轨道设计。 3、 小天体热物理与动力学 研究内容：热物理AI建模、非引力效应、轨旋耦合、小行星轨道特性。"
+  ],
+  "nju-i13865": [
+    "宇宙学、宇宙大尺度结构形成数值模拟、宇宙学星系巡天观测及数据分析、引力波数值模拟、弱引力实验"
+  ],
+  "nju-i14824": [
+    "致密星双星的形成与演化，以及双星系统的星族合成研究。"
+  ],
+  "nju-i201361": [
+    "研究领域包括星系形成与演化、星系团与大尺度结构以及超大质量黑洞的增长与反馈。在各类天文国际核心期刊发表论文逾90篇，H因子41。主要学术成绩包括：2019年以第一和唯一通讯作者在《自然》杂志发文揭示大质量、光学暗星系在宇宙早期的普遍存在",
+    "2024年 以第一和唯一通讯作者在《自然》杂志发文揭示超大质量黑洞在调制星系冷气体含量的核心作用，为黑洞的反馈机制影响星系的形成演化提供了重要观测证据，相关成果获评“2024年中国科学十大进展”",
+    "发现迄今已知红移最高，且同时具备大质量暗晕和剧烈恒星形成活动的一类新型的X射线星系团。 应邀为Nature, Nature Astronomy, ApJL, ApJ, A&A, MNRAS 等天文国际核心期刊审稿。曾担任JCMT时间分配委员会委员(2017-2019)和ALMA Pr…"
+  ],
+  "nju-i201373": [
+    "Solar Radiative Magnetohydrodynamic Simulations from the Uppermost Convection Zone to the Corona"
+  ],
+  "nju-i223379": [
+    "Research fields"
+  ],
+  "nju-i250739": [
+    "● 高精度天文参考系： 研究天球参考系的构建、实现与长期维持机制，结合 Gaia 空间天体测量与 VLBI 地基观测技术，提升天体位置测量精度与参考系稳定性，支撑微角秒级天体测量数据的天体物理应用，以及高精度时空基准与深空导航体系的建立。"
+  ],
+  "nju-i272872": [
+    "为银河系考古和近邻宇宙学： 我致力于通过动力学寻找和认证与银河系并合的矮星系与球状星团的遗迹（星流、子结构），然后利用高分辨光谱获得单颗恒星详细的化学元素丰度信息，以此研究初代恒星，初代星系的形成和演化。在近邻宇宙，我感兴趣寻找小质量矮星系，以此重构暗端星系的质量函数，为宇宙学模型提供观测限制。我参与中国空间望远镜巡天项目(CSST)中小质量矮星系的搜寻课题 ，指导紫金山天文台博士生完成了CSST搜寻矮星系能力的评估。同时，我正在系统搜寻银河系晕中的掩食双星，通过视向速度的时序观测，精确测量星流中单颗恒星的年龄，以此确定其宿主矮星系或者球状星团的生成时间。 研究方式是数据驱动和观测主导： * 2022-2023 发展了基于神经网络的"
+  ],
+  "nju-i289840": [
+    "星系形成与演化，星系动力学，星系团动力学，暗物质，引力，宇宙学"
+  ],
+  "nju-i306525": [
+    "太阳系小天体动力学"
+  ],
+  "nju-i309972": [
+    "大质量恒星和星团形成"
+  ],
+  "nju-i336301": [
+    "大质量恒星结构和演化，双星演化，X-射线双星，星团和星族"
+  ],
+  "nju-i339863": [
+    "宇宙早期的恒星与星系形成 矮星系、银河系及本星系群的结构与演化 暗物质晕、子晕与恒星晕 星系动力学理论与动力学建模 半解析模型、理想化多体模拟与宇宙学模拟 天文统计与机器学习方法"
+  ],
+  "nju-i356002": [
+    "Research Interests Exoplanet Formation and Detection: I work on the formation, characterization, and detection of exoplanets orbiting both main-sequence and evolved stars. Asteroseismology: My research focuses on asteroseismology—the study of stellar oscillations to infer fundamental stellar properties and to probe stellar internal structure and dynamics."
+  ],
+  "nju-i357743": [
+    "主要研究兴趣涉及双星演化理论和星族合成，研究对象包括黑洞双星、Be星双星、极亮X射线源、双星脉冲星等。"
+  ],
+  "nju-i358032": [
+    "簇射物理，超高能粒子探测实验技术，暗物质唯象"
+  ],
+  "nju-i358035": [
+    "当前的主要研究兴趣包括："
+  ],
+  "nju-i358046": [
+    "。恒星形成于弥漫星际介质中的致密分子云。那句“我们的征途是星辰大海”，用来形容分子云这片孕育恒星的主要场所恰如其分。而我的工作，就是探索从分子云到恒星团这一转化中的坍缩、碎裂、吸积、反馈、盘形成等详细物理过程，以及探究调控包括恒星形成率、恒星形成效率、初始质量函数等宏观规律的主要影响因素。 星际磁场：宇宙“秩序”的代言人 这是我的聚焦研究方向。在恒星形成的复杂过程中，引力、磁场与湍流是三大核心调控因素。其中，引力使星际气体汇聚，是触发恒星形成的主导力量。磁场则引导物质流动，让恒星形成活动有序发生，扮演着“秩序”的角色。湍动会扰乱气体运动，使得恒星形成过程更加无序，代表着“混沌”的力量。由于偏振观测技术的固有挑战，磁场目前仍是三者中认"
+  ],
+  "nju-i358744": [
+    "为高能天体物理与粒子天体物理，尤其关注地外高能粒子（宇宙射线、光子、中微子）的天体物理起源，相关天体（如脉冲星风云、活动星系核、伽马射线暴等）的性质，以及粒子的加速与输运机制。"
+  ],
+  "nju-i358747": [
+    "吸积的白矮星双星的观测、演化与星族特征"
+  ],
+  "nju-i362018": [
+    "星系宇宙学",
+    "星系形成理论，解析、半解析建模，数值模拟。"
+  ],
+  "nju-i362051": [
+    "Structure, dynamics & formation of galaxies"
+  ],
+  "nju-i372385": [
+    "星系物理、 高能天体物理、空间天文技术。"
+  ],
+  "nju-i394588": [
+    "聚焦从巨分子云（~100 pc）到原恒星包层（～1000 au）和原恒星盘（~10 to 100 au）的多尺度气体结构形成与演化过程",
+    "具体包括多层级气体结构的形成、塌缩、碎裂，原恒星/年轻星周围的喷流、外向流与吸积盘的形成与演化，极致密与超致密电离氢区（UC HII, HC HII）的形成与演化，大质量恒星的形成，双星与多星系统的形成等。"
+  ],
+  "nju-i43225": [
+    "(Research Topics) Galactic Chemical Evolution How chemical elements are produced and distributed in galaxies over cosmic time? By combining observations with numerical models (such as GalCEM), we trace the enrichment history of elements (inc. isotopes), revealing the life cycle of matter from the Big Bang to the presen"
+  ],
+  "nju-i44994": [
+    "Study Fields: Solar/Stellar Eruptions and Magnetic Reconnection"
+  ],
+  "nju-i67192": [
+    "1. L型亚矮星的探测、发现、光谱分类、星族的观测和物理特性 ( Primeval - I ; Primeval - IV ; Zhang+18c ; Primeval - V )。"
+  ],
+  "ogihara": [
+    "行星形成",
+    "太阳系外行星",
+    "太阳系",
+    "数值模拟"
+  ],
+  "pan": [
+    "引力波天体物理／宇宙学",
+    "致密星天体物理",
+    "多体动力学"
+  ],
+  "qian": [
+    "超快非线性光学及强场光学技术"
+  ],
+  "quhl": [
+    "人工智能与粒子物理",
+    "中微子与暗物质实验",
+    "对撞机物理"
+  ],
+  "ramsey": [
+    "2.电弱相变",
+    "10.对撞机现象学",
+    "9.有效场论",
+    "8.中微子性质",
+    "7.基本对称性检验",
+    "6.暗物质",
+    "5.希格斯玻色子性质和扩展的希格斯扇形",
+    "4.非平衡和早期宇宙量子场论",
+    "3.重生",
+    "我的研究方向集中在早期宇宙的量子场论及其在粒子物理学和宇宙学中重要的开放性问题上的应用",
+    "大型强子对撞机和未来可能发生的对撞机中，高能碰撞中寻找超出标准模型的物理学",
+    "以及在低和高能量下测试基本对称性和中微子特性。研究问题主要包括：",
+    "1.标准模型以外的物理",
+    "研究中反映出我对科学好奇心的特定主题包括：",
+    "5.量子场论如何在非零温度和非平衡环境下工作？",
+    "4.微小的，不消失的中微子的起源是什么？",
+    "3.暗物质由什么组成，它如何相互作用？",
+    "2.在炎热的早期宇宙中电弱对称是如何被破坏的？",
+    "1.为什么宇宙包含的物质多于反物质？"
+  ],
+  "sheng": [
+    "相对论激光—基于粒子加速器的等离子体及辐射（从太赫兹到伽马射线）",
+    "激光驱动的高能量密度物理和实验室天体物理",
+    "量子电动力学区域内的由特高密度激光驱动的高场强物理"
+  ],
+  "sunqh": [
+    "恒星形成、结构与演化",
+    "恒星大气、化学元素丰度、锂元素丰度",
+    "恒星与行星的相互作用关系",
+    "行星形成环境"
+  ],
+  "tan": [
+    "系外行星大气",
+    "行星与褐矮星的大气动力学"
+  ],
+  "tang": [
+    "高红移星系与第一代星系",
+    "宇宙再电离",
+    "星系形成与演化",
+    "活动星系核"
+  ],
+  "wangjs": [
+    "致密天体活动与高能暂现源产生机制：引力波电磁对应体、快速射电暴、快变光学暂现源、X射线耀发和伽马暴",
+    "宇宙线起源与加速机制：喷流等相对论流体中的粒子加速与多信使辐射，高能粒子的传播与对周边介质的反馈"
+  ],
+  "wangzhou": [
+    "液氙暗物质探测实验团队副研究员"
+  ],
+  "wilczek": [
+    "“纯“粒子物理，特别是理论思想和具体可观察现象之间的联系（例如渐近自由的应用，耦合强度的统一）",
+    "物质在超高温和/或超高密度下的行为（如量子色动力学的相结构，及其在宇宙学、中子星和恒星爆炸中的应用）",
+    "粒子物理学的深入认识在宇宙学中的应用（例如，作为暗物质候选的轴子，以及用于轴子和弱相互作用重粒子的搜索技术）",
+    "黑洞的量子理论（例如量子毛的存在、纠缠熵等"
+  ],
+  "wu": [
+    "基于等离子体的粒子加速、非线性光学和实验室天体物理研究（理论模拟+实验）",
+    "强激光与等离子体相互作用一直是国际前沿研究领域，其中最具吸引力的方向之一便是以强激光为驱动源，以等离子体为介质的新型粒子加速器研究。它具有超过传统加速器千倍以上的加速梯度，有望大幅降低高能加速器的规模和成本，为其在基础科学、医疗、工业等领域的应用带来重大变革。基于等离子体加速器的下一代先进光源和超高能粒子对撞机等大科学装置将成为探索物质微观世界的重要利器。 除了驱动粒子加速，强激光与等离子体相互作用也可在实验室产生与天体环境相似的极端物理条件，为天体物理提供了新的研究思路。针对宇宙大尺度磁场起源、高能宇宙线加速、相对论性喷流产生、快速射电暴爆发等重大前沿科学问题，实验室天体物理通过主动、近距、可控的模拟实验，能够深化对关键天文现象的理解，向着揭开浩渺宇宙的神秘面纱迈出重要一步。 同时，等离子体不受光致损伤阈值的限制，且具有极高的储能密度和丰富的光学特性。它可作为先进的光学元器件来多维度操控高功率激光（如能量放大、脉宽压缩、模式调控、频率转换等），提升光束输出性能，进一步支撑和推动基于等离子体的粒子加速和实验室天体物理等前沿领域的发展，助力对自然界极小与极大尺度的探索。"
+  ],
+  "xiangxin": [
+    "中微子天文学",
+    "实验中微子物理学",
+    "实验暗物质探测"
+  ],
+  "xiekp": [
+    "高能物理/粒子物理",
+    "对撞机现象学",
+    "微扰量子色动力学，部分子分布函数，重味",
+    "电弱相互作用和Higgs物理",
+    "标准模型精确检验与新物理",
+    "中微子"
+  ],
+  "xu": [
+    "中微子天文学",
+    "实验中微子物理学",
+    "多信使天文学"
+  ],
+  "yanagida": [
+    "理论物理（粒子物理理论）",
+    "天体粒子物理学",
+    "暴涨与早期宇宙",
+    "超越标准模型的理论模型",
+    "中微子物理学"
+  ],
+  "yang": [
+    "宇宙学",
+    "星系群和星系团",
+    "天文学数值模拟",
+    "星系形成和演化"
+  ],
+  "yangkai": [
+    "恒星形成与演化",
+    "星际介质",
+    "天体化学",
+    "谱线观测"
+  ],
+  "yi": [
+    "激光等离子体相互作用",
+    "强场光学",
+    "实验室天体物理"
+  ],
+  "zhangjie": [
+    "高能量密度物理与激光聚变"
+  ],
+  "zhangpj": [
+    "宇宙学",
+    "宇宙大尺度结构"
+  ],
+  "zheng": [
+    "星系结构、形成与演化",
+    "高红移原星系团",
+    "星系标度关系"
+  ],
+  "zhouhao": [
+    "天体粒子实验",
+    "高能伽马射线",
+    "宇宙射线和中微子",
+    "多信使天文学"
+  ],
+  "zhouning": [
+    "结合PandaX液氙暗物质直接探测实验和ATLAS对撞机探测实验来寻找暗物质"
+  ],
+  "zhupf": [
+    "基于超短电子脉冲的超快技术研究与应用"
+  ],
+  "zu": [
+    "宇宙学，暗物质与暗能量，大尺度结构，星系形成与演化，活动星系核",
+    "暗物质与暗能量",
+    "大尺度结构",
+    "星系形成与演化",
+    "活动星系核"
+  ]
+}

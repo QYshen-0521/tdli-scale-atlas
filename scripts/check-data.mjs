@@ -16,13 +16,24 @@ const ledger = read("data/coverage/ledger.json");
 const pilotLedger = read("data/coverage/pilot-ledger.json");
 const coverageRows = ledger.concat(pilotLedger);
 const legacy = read("data/mentors.json");
+const editorial = read("data/editorial.json");
+const directions = read("data/directions.json");
 const errors = [];
+
+function thumbFor(assetPath) {
+  if (/\.svg$/i.test(assetPath)) return null;
+  const slash = assetPath.lastIndexOf("/");
+  if (slash < 0) return null;
+  return `${assetPath.slice(0, slash)}/thumbs${assetPath.slice(slash)}`;
+}
 
 const objectIds = new Set(objects.map((obj) => obj.id));
 const objectGroups = new Set(["planet", "compact", "galaxy", "cosmos"]);
 for (const obj of objects) {
   if (!obj.image.startsWith("/assets/")) errors.push(`object ${obj.id} image path`);
   if (!existsSync(path.join(root, "public", obj.image))) errors.push(`missing file ${obj.image}`);
+  const objectThumb = thumbFor(obj.image);
+  if (objectThumb && !existsSync(path.join(root, "public", objectThumb))) errors.push(`missing thumb ${objectThumb}`);
   if (!(obj.logL > 0) || !(obj.logM > 0)) errors.push(`bad logs ${obj.id}`);
   if (!objectGroups.has(obj.group)) errors.push(`object ${obj.id} group`);
 }
@@ -155,6 +166,23 @@ for (const [id, nums] of Object.entries(aliasPairs)) {
 }
 const yanagida = affiliations.find((item) => item.personId === "yanagida");
 if (!yanagida || yanagida.current || yanagida.kind !== "retired") errors.push("yanagida should be retired and not current");
+for (const person of people) {
+  const claim = evidence.find((item) => item.personId === person.id && item.field === "directions" && item.value);
+  if (!claim) continue;
+  const expected = claim.value.split("；").map((item) => item.trim()).filter(Boolean);
+  const got = directions[person.id];
+  if (!got || got.join("\n") !== expected.join("\n")) errors.push(`directions index ${person.id}`);
+}
+for (const id of Object.keys(directions)) {
+  if (!personIds.has(id)) errors.push(`directions index extra ${id}`);
+}
+for (const entry of editorial) {
+  if (!entry.photo) continue;
+  if (!existsSync(path.join(root, "public", entry.photo))) errors.push(`missing photo ${entry.photo}`);
+  const photoThumb = thumbFor(entry.photo);
+  if (photoThumb && !existsSync(path.join(root, "public", photoThumb))) errors.push(`missing thumb ${photoThumb}`);
+}
+
 const emails = new Map();
 for (const person of people) {
   if (!person.email) continue;
