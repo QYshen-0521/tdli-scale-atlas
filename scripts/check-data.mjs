@@ -201,6 +201,8 @@ const pilot = spawnSync(process.execPath, ["scripts/sync/pilot-self-check.mjs"],
 if (pilot.status !== 0) errors.push(`pilot self-check failed\n${pilot.stdout}\n${pilot.stderr}`);
 const portraits = spawnSync(process.execPath, ["scripts/sync/photos-self-check.mjs"], { cwd: root, encoding: "utf8" });
 if (portraits.status !== 0) errors.push(`photo self-check failed\n${portraits.stdout}\n${portraits.stderr}`);
+const applyDirections = spawnSync(process.execPath, ["scripts/sync/apply-self-check.mjs"], { cwd: root, encoding: "utf8" });
+if (applyDirections.status !== 0) errors.push(`apply self-check failed\n${applyDirections.stdout}\n${applyDirections.stderr}`);
 
 if (errors.length) {
   console.error(errors.join("\n"));
