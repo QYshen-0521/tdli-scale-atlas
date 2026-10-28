@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fillMissingPortraits } from "./photos.mjs";
 
@@ -6,8 +6,23 @@ function read(root, file) {
   return JSON.parse(readFileSync(path.join(root, file), "utf8"));
 }
 
+function readOptional(root, file) {
+  const full = path.join(root, file);
+  if (!existsSync(full)) return null;
+  return JSON.parse(readFileSync(full, "utf8"));
+}
+
 function write(root, file, data) {
   writeFileSync(path.join(root, file), `${JSON.stringify(data, null, 2)}\n`);
+}
+
+// Same split as scripts/check-data.mjs: full-width semicolon only.
+export function directionItems(value) {
+  return String(value || "").split("；").map((item) => item.trim()).filter(Boolean);
+}
+
+function sortedDirections(directions) {
+  return Object.fromEntries(Object.entries(directions).sort(([a], [b]) => a.localeCompare(b)));
 }
 
 export async function applyReportToData(root, report, options = {}) {
@@ -19,9 +34,18 @@ export async function applyReportToData(root, report, options = {}) {
   const ledger = read(root, "data/coverage/ledger.json");
   const pilotLedgerPath = "data/coverage/pilot-ledger.json";
   const pilotLedger = read(root, pilotLedgerPath);
+  const directionsPath = "data/directions.json";
+  const directions = readOptional(root, directionsPath) || {};
   let pilotTouched = false;
+  let directionsTouched = false;
   let touched = 0;
   const addedEditorial = [];
+  const syncDirections = (personId, value) => {
+    const items = directionItems(value);
+    if (!personId || !items.length) return;
+    directions[personId] = items;
+    directionsTouched = true;
+  };
   for (const change of report.changes || []) {
     if (change.type === "absent" || change.type === "source-failed") continue;
     if (change.type === "update-title") {
@@ -44,6 +68,7 @@ export async function applyReportToData(root, report, options = {}) {
       if (retained && norm(change.after) === norm(retained.value)) continue;
       claim.value = change.after;
       claim.status = "verified";
+      syncDirections(change.personId, change.after);
       touched += 1;
     } else if (change.type === "add-alias") {
       const person = people.find((item) => item.id === change.personId);
@@ -87,6 +112,7 @@ export async function applyReportToData(root, report, options = {}) {
           });
           claim.value = change.directions;
           claim.note = "与另一任职来源冲突，采用天文相关表述更清楚的一份。";
+          syncDirections(change.personId, change.directions);
         }
       }
       pilotLedger.push({
@@ -145,7 +171,8 @@ export async function applyReportToData(root, report, options = {}) {
         divisionLabel: change.orgId || change.division || "astro",
       });
       const stamp = report.checkedAt?.slice(0, 10) || "";
-      for (const [field, value] of [["name", change.name], ["title", change.after], ["directions", change.directions || change.excerpt || ""], ["profileUrl", profileUrl]]) {
+      const directionValue = change.directions || change.excerpt || "";
+      for (const [field, value] of [["name", change.name], ["title", change.after], ["directions", directionValue], ["profileUrl", profileUrl]]) {
         evidence.push({
           id: `ev-${id}-${field}`,
           personId: id,
@@ -161,6 +188,7 @@ export async function applyReportToData(root, report, options = {}) {
           note: "周更提案写入。合并前请再看一眼来源。",
         });
       }
+      syncDirections(id, directionValue);
       annotations.push({
         personId: id,
         status: "pending",
@@ -243,6 +271,7 @@ export async function applyReportToData(root, report, options = {}) {
   write(root, "data/editorial.json", editorial);
   write(root, "data/coverage/ledger.json", ledger);
   if (pilotTouched) write(root, pilotLedgerPath, pilotLedger);
+  if (directionsTouched) write(root, directionsPath, sortedDirections(directions));
   return { touched, photoMisses };
 }
 
